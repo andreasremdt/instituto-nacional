@@ -1,0 +1,62 @@
+// -----------------------------------------------------------------------------
+// Navigation
+// -----------------------------------------------------------------------------
+
+.main-navigation {
+    height: $navigation-height;
+    align-items: center;
+    padding: 0 10px;
+    position: relative;
+
+    background-color: rgba(0, 0, 0, .4);
+
+    .link {
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: $navigation-height;
+
+        font-weight: 400;
+        line-height: $navigation-height;
+
+        color: white;
+
+        &:hover {
+            color: $brand-color;
+        }
+
+        &.-active {
+            color: $brand-color;
+
+            font-weight: 500;
+
+            border-bottom: 3px solid $brand-color;
+        }
+
+        &.-extra {
+            margin-left: auto;
+            margin-right: -10px;
+            padding-left: 40px;
+            padding-right: 60px;
+            position: relative;
+
+            background-color: $brand-color;
+
+            &:hover {
+                color: white;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: -20px;
+                height: 100%;
+                width: 40px;
+
+                background-color: $brand-color;
+
+                transform: skew(35deg, 0deg);
+            }
+        }
+    }
+}

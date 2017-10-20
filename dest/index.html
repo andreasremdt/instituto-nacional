@@ -6,103 +6,86 @@
         <title>Bienvenidos | Escuela Nacional de Medio Ambiente</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Merienda+One|Roboto:300,400,500" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <!-- main-header -->
-        <header class="main-header">
-            <div class="container row">
+        <div class="container">
 
+            <header class="main-header row">
                 <!-- page logo -->
+                <img src="images/header/logo.png" alt="Escuela Nacional de Medio Ambiente" width="70" height="70">
+
                 <a href="index.html" class="logo">
-                    <img src="images/header/logo.png" alt="Escuela Nacional de Medio Ambiente" width="60" height="60">
-                    <h1>Escuela Ambiental</h1>
-                    <h3>Ministerio de Medio Ambiente y Recursos Naturales</h3>
+                    <h1>Escuela <span class="_green">Ambiental</span></h1>
+                    <p>Ministerio de Medio Ambiente</p>
                 </a> <!-- end page logo -->
 
                 <!-- contact links -->
-                <ul class="contact">
+                <ul class="contact _no-bullets">
                     <li>
-                        <img src="images/header/address.svg" alt="Ubicación" width="50" height="50">
-                        Calle a Salto Jimenoa<br>
-                        42000 Jarabacoa, La Vega
+                        <img src="images/header/address.svg" class="icon" alt="Ubicación" width="40" height="40">
+                        <span>
+                            Calle a Salto Jimenoa<br>
+                            42000 Jarabacoa, La Vega
+                        </span>
                     </li>
                     <li>
-                        <img src="images/header/phone.svg" alt="Teléfono" width="50" height="50">
-                        <a href="tel:8494089048">(849) 408 9048</a><br>
-                        <a href="mailto:escuela.ambiental@hotmail.com">escuela.ambiental@hotmail.com</a>
+                        <img src="images/header/phone.svg" class="icon" alt="Teléfono" width="40" height="40">
+                        <span>
+                            <a href="tel:8494089048">(849) 408 9048</a><br>
+                        </span>
                     </li>
                 </ul> <!-- end contact links -->
 
                 <!-- social links -->
-                <ul class="social">
-                    <li>
-                        <a href="https://facebook.com" target="_blank" title="Siguenos en Facebook">
-                            <img src="images/header/facebook.svg" alt="Facebook" width="50" height="50">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com" target="_blank" title="Siguenos en Twitter">
-                            <img src="images/header/twitter.svg" alt="Twitter" width="50" height="50">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://youtube.com" target="_blank" title="Siguenos en Youtube">
-                            <img src="images/header/youtube.svg" alt="YouTube" width="50" height="50">
-                        </a>
-                    </li>
-                </ul> <!-- end social links -->
+                <nav class="social">
+                    <a href="https://facebook.com" target="_blank" class="link" title="Siguenos en Facebook">
+                        <img src="images/header/facebook.svg" alt="Facebook" width="20" height="20">
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="link" title="Siguenos en Twitter">
+                        <img src="images/header/twitter.svg" alt="Twitter" width="20" height="20">
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="link" title="Siguenos en Youtube">
+                        <img src="images/header/youtube.svg" alt="YouTube" width="20" height="20">
+                    </a>
+                </nav> <!-- end social links -->
 
-            </div> <!-- end container -->
+            </header> <!-- end main-header -->
+        </div> <!-- end container -->
 
 
 
-            <!-- main-navigation -->
-            <div class="container">
-                <nav class="main-navigation row">
-                    <a href="index.html" class="link active">Inicio</a>
-                    <a href="escuela.html" class="link">La Escuela</a>
-                    <a href="servivios.html" class="link">Servicios</a>
-                    <a href="blog.html" class="link">Blog</a>
-                    <a href="contactenos.html" class="link -extra">Contáctenos</a>
-                </nav> <!-- end main-navigation -->
+        <!-- main-navigation -->
+        <div class="container">
 
-            </div> <!-- end container -->
-        </header> <!-- end main-header -->
+            <nav class="main-navigation row">
+                <a href="index.html" class="link -active">Inicio</a>
+                <a href="escuela.html" class="link">La Escuela</a>
+                <a href="servivios.html" class="link">Servicios</a>
+                <a href="blog.html" class="link">Blog</a>
+                <a href="contactenos.html" class="link -extra _uppercase">Contáctenos</a>
+            </nav> <!-- end main-navigation -->
+
+        </div> <!-- end container -->
 
 
 
         <!-- hero-unit -->
-        <section class="hero-unit" data-src="images/hero-unit/standard.jpg">
+        <section class="hero-unit -large">
             <div class="container row">
+                <h3 class="subtitle _green _curly">Bienvenido</h3>
+                <h2 class="title">La Escuela que ensena el Medio Ambiente</h2>
+                <p class="intro _uppercase">Usted quiere una carrera en el verde? Proteger nuestro mundo? Comienze aquí.</p>
 
-                <!-- page title -->
-                <h2>La <span class="_green">Escuela</span></h2>
-
-                <!-- breadcrumbs menu -->
-                <nav class="breadcrumbs">
-                    <a href="index.html">Inicio</a>
-                    <a href="escuela.html">La Escuela</a>
-                </nav> <!-- end breadcrumbs menu -->
-
-            </div> <!-- end container -->
-        </section> <!-- hero-unit -->
-
-
-
-        <!-- hero-unit -->
-        <section class="hero-unit -large" data-src="images/hero-unit/cover.jpg">
-            <div class="container row">
-
-                <h3 class="_green _curly">Bienvenido</h3>
-                <h2>La Escuela que ensena el Medio Ambiente</h2>
-                <p class="_uppercase">Usted quiere una carrera en el verde? Proteger nuestro mundo? Comienze aquí.</p>
-                <div>
+                <div class="buttons">
                     <a href="escuela.html" class="button -green">Nuestra Escuela</a>
                     <a href="contactenos.html" class="button -transparent">Contactenos</a>
                 </div>
-
-            </div> <!-- end container -->
-        </section> <!-- hero-unit -->
+            </div>
+        </section>  <!-- hero-unit -->
 
 
 
