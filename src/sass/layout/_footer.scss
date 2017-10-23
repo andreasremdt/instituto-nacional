@@ -1,0 +1,82 @@
+// -----------------------------------------------------------------------------
+// Footer Styling
+// -----------------------------------------------------------------------------
+
+.main-footer {
+    padding-top: 3.5rem;
+
+    color: $mid-grey;
+    background-color: $dark-grey;
+
+    font-weight: 300;
+
+    .title {
+        margin-top: 0;
+
+        color: white;
+
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    .link {
+        color: white;
+    }
+
+    .logo {
+        display: inline-block;
+        margin-bottom: 2rem;
+
+        h2 {
+            margin: 0;
+
+            color: white;
+
+            font-size: 1.2rem;
+            font-family: "Merienda One",serif;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .news-item {
+        margin-bottom: 2rem;
+
+        > .text {
+            margin-bottom: 0;
+        }
+    }
+
+    .quick-links {
+        padding-left: 1.5rem;
+
+        .item {
+            margin: 1rem 0;
+        }
+    }
+
+    .social-icons {
+        .icon {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            margin-right: 5px;
+
+            border-radius: 50%;
+
+            line-height: 40px;
+            text-align: center;
+
+            background-color: tint($dark-grey, 10%);
+        }
+    }
+
+    .copyright {
+        margin: 0;
+        padding: 1rem 0;
+
+        border-top: 1px solid shade($mid-grey, 50%);
+    }
+}

@@ -1,0 +1,56 @@
+// -----------------------------------------------------------------------------
+// Homepage
+// -----------------------------------------------------------------------------
+
+.about {
+    padding: 5rem 0;
+
+    .pretitle {
+        margin-bottom: 0;
+
+        font-size: 1.5rem;
+    }
+
+    .title {
+        margin-top: 0;
+
+        font-size: 2.5rem;
+    }
+
+    .tile {
+        margin-top: 2rem;
+
+        img {
+            width: 100%;
+        }
+
+        figcaption {
+            padding: 1rem;
+
+            background-color: $bg-grey;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 0;
+
+            font-weight: 300;
+
+            color: $mid-grey;
+        }
+
+        &:hover {
+            box-shadow: 0 2px 10px rgba(0,0,0, .1);
+            figcaption {
+                background-color: $dark-grey;
+            }
+
+            h3 {
+                color: white;
+            }
+        }
+    }
+}

@@ -54,9 +54,17 @@
   text-transform: uppercase;
 }
 
+._centered {
+  text-align: center;
+}
+
 ._no-bullets {
   padding-left: 0;
   margin: 0;
 
   list-style-type: none;
+}
+
+._img-responsive {
+  width: 100%;
 }
