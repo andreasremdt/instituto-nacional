@@ -27,6 +27,9 @@ $font-size: 16px !default;
 $font-weight: 400 !default;
 
 
+/// White color
+/// @type Color
+$white: #FFFFFF;
 
 /// Copy text color
 /// @type Color
@@ -69,6 +72,7 @@ $social-icons-size: 40px !default;
 /// The navigation's height
 /// @type Length
 $navigation-height: 55px !default;
+$navigation-width: 250px !default;
 
 
 

@@ -3,35 +3,19 @@
 // -----------------------------------------------------------------------------
 
 .about {
-    padding: 5rem 0;
-
     .pretitle {
         margin-bottom: 0;
 
         font-size: 1.5rem;
     }
 
-    .title {
-        margin-top: 0;
-
-        font-size: 2.5rem;
-    }
-
     .tile {
         margin-top: 2rem;
-
-        img {
-            width: 100%;
-        }
 
         figcaption {
             padding: 1rem;
 
             background-color: $bg-grey;
-        }
-
-        h3 {
-            margin-top: 0;
         }
 
         p {
@@ -52,5 +36,137 @@
                 color: white;
             }
         }
+    }
+}
+
+// Careers
+// ---------------------------------------------------------
+.careers {
+    position: relative;
+
+    background: transparent url('../images/pages/home/careers-cover.jpg') center center no-repeat;
+    background-size: cover;
+
+    z-index: 0;
+
+    &::after {
+        content: '';
+
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+
+        background-color: rgba(255, 255, 255, 0.9);
+
+        z-index: -2;
+    }
+
+    .tabs {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .selector {
+        width: 320px;
+        padding: 1.5rem;
+        margin-bottom: 3px;
+
+        background: white;
+        color: $dark-grey;
+
+        border: none;
+
+        font-weight: 500;
+        text-align: left;
+        text-transform: uppercase;
+
+        cursor: pointer;
+        -webkit-appearance: none;
+
+        > .icon {
+            margin-right: 1rem;
+        }
+
+        &:hover {
+            background-color: $brand-color;
+            color: white;
+        }
+    }
+
+    .tab-content {
+        flex: 1;
+    }
+
+    .tab {
+        padding-left: 4rem;
+
+        .image {
+            float: left;
+            margin: .5rem 1rem 1rem 0;
+        }
+    }
+}
+
+
+// Latest News
+// ---------------------------------------------------------
+.latest-news {
+    background: transparent url('../images/pages/home/news.jpg') center center no-repeat;
+    background-size: cover;
+
+    .article {
+        margin-top: 1rem;
+
+        background-color: white;
+
+        border-radius: 8px;
+        border: 1px solid $light-grey;
+    }
+
+    .image {
+        margin-bottom: 1.5rem;
+
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+
+    .category {
+        display: inline-block;
+        padding: .2rem 1rem;
+        margin-bottom: 1.5rem;
+
+        font-size: 75%;
+        font-weight: 500;
+
+        color: $brand-color;
+        background-color: tint($brand-color, 90%);
+
+        border-radius: 1rem;
+        border: 1px solid tint($brand-color, 70%);
+    }
+
+    .content {
+        padding: 0 2rem;
+    }
+
+    .title {
+        font-weight: 500;
+    }
+
+    .footer {
+        padding: 1rem 2rem;
+        justify-content: space-between;
+
+        color: $mid-grey;
+
+        font-weight: 300;
+        font-size: 90%;
+
+        border-top: 1px solid $light-grey;
     }
 }

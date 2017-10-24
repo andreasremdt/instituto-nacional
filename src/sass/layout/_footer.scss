@@ -11,8 +11,6 @@
     font-weight: 300;
 
     .title {
-        margin-top: 0;
-
         color: white;
 
         font-weight: 400;
@@ -76,6 +74,8 @@
     .copyright {
         margin: 0;
         padding: 1rem 0;
+
+        font-size: 90%;
 
         border-top: 1px solid shade($mid-grey, 50%);
     }

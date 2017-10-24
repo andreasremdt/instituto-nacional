@@ -3,8 +3,6 @@
 // -----------------------------------------------------------------------------
 
 .hero-unit {
-    margin-top: -$navigation-height;
-
     color: white;
 
     &.-large {
@@ -19,8 +17,6 @@
         }
 
         .subtitle {
-            margin-top: 0;
-
             position: relative;
 
             font-size: 2rem;
@@ -39,7 +35,7 @@
         }
 
         .title {
-            margin: 0;
+            margin-bottom: 0;
 
             text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
 
@@ -53,6 +49,7 @@
             margin-left: 40px;
 
             font-size: 1.1rem;
+            font-weight: 300;
             letter-spacing: 1px;
 
             text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);

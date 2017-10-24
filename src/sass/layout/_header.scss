@@ -6,48 +6,52 @@
     height: $header-height;
     align-items: center;
 
+    line-height: 1.4;
     font-weight: 300;
 
-    .logo {
-        line-height: 1.4;
-        margin-left: 15px;
+    // Page Logo
+    > .logo {
+        display: inline-block;
+        flex: 1;
+        margin-left: 1rem;
 
-        h1 {
-            margin: 0;
+        > .title {
+            margin-bottom: 0;
 
             font-size: 1.8rem;
-            font-family: $text-font-stack-curly;
         }
 
-        p {
+        > .subtitle {
             margin: 0;
 
             color: $mid-grey;
         }
     }
 
-    .contact {
-        margin-left: auto;
-
-        li {
-            display: inline-flex;
-            align-items: center;
-            margin-right: 30px;
-
-            line-height: 1.4;
+    // Phone & Address
+    > .contact {
+        @include respond-to(large) {
+            display: none;
         }
 
-        .icon {
-            padding: 10px;
-            margin-right: 15px;
+        > .item {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 2rem;
 
-            background-color: $brand-color;
+            > .icon {
+                padding: 10px;
+                margin-right: 1rem;
+
+                background-color: $brand-color;
+            }
         }
     }
 
+    // Social Icons
     .social {
         .link {
-            display: inline-block;
+            display: inline-flex;
             width: $social-icons-size;
             margin-left: 5px;
             height: $social-icons-size;
@@ -55,8 +59,10 @@
             border: 1px solid $light-grey;
             border-radius: 50%;
 
-            line-height: $social-icons-size;
-            text-align: center;
+            align-items: center;
+            justify-content: center;
+
+            transition: border-color .15s ease-in-out;
 
             &:hover {
                 border-color: $brand-color;

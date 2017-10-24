@@ -22,10 +22,12 @@
 
         border-color: $brand-color;
 
-        &:hover {
-            background-color: shade($brand-color, 10%);
+        transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
 
-            border-color: shade($brand-color, 10%);
+        &:hover {
+            background-color: shade($brand-color, 20%);
+
+            border-color: shade($brand-color, 20%);
         }
     }
 

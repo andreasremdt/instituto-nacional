@@ -11,45 +11,58 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <!-- main-header -->
+
         <div class="container">
 
+            <!-- main-header -->
             <header class="main-header row">
-                <!-- page logo -->
-                <img src="images/header/logo.png" alt="Escuela Nacional de Medio Ambiente" width="70" height="70">
 
+                <!-- page logo -->
+                <img src="images/header/logo.png"  alt="Escuela Nacional de Medio Ambiente" width="70" height="70">
                 <a href="index.html" class="logo">
-                    <h1>Escuela <span class="_green">Ambiental</span></h1>
-                    <p>Ministerio de Medio Ambiente</p>
+                    <h1 class="title _curly">Escuela <span class="_green">Ambiental</span></h1>
+                    <p class="subtitle">Ministerio de Medio Ambiente</p>
                 </a> <!-- end page logo -->
+
+
 
                 <!-- contact links -->
                 <ul class="contact _no-bullets">
-                    <li>
-                        <img src="images/header/address.svg" class="icon" alt="Ubicación" width="40" height="40">
+                    <li class="item">
+                        <svg class="icon" width="40" height="40">
+                            <use xlink:href="images/header/icons-defs.svg#address">
+                        </svg>
                         <span>
-                            Calle a Salto Jimenoa<br>
+                            Calle al Salto Jimenoa<br>
                             42000 Jarabacoa, La Vega
                         </span>
                     </li>
-                    <li>
-                        <img src="images/header/phone.svg" class="icon" alt="Teléfono" width="40" height="40">
-                        <span>
-                            <a href="tel:8494089048">(849) 408 9048</a><br>
-                        </span>
+                    <li class="item">
+                        <svg class="icon" width="40" height="40">
+                            <use xlink:href="images/header/icons-defs.svg#phone">
+                        </svg>
+                        <a href="tel:8494089048">(849) 408 9048</a><br>
                     </li>
                 </ul> <!-- end contact links -->
+
+
 
                 <!-- social links -->
                 <nav class="social">
                     <a href="https://facebook.com" target="_blank" class="link" title="Siguenos en Facebook">
-                        <img src="images/header/facebook.svg" alt="Facebook" width="20" height="20">
+                        <svg class="icon" width="20" height="20">
+                            <use xlink:href="images/header/icons-defs.svg#facebook">
+                        </svg>
                     </a>
                     <a href="https://twitter.com" target="_blank" class="link" title="Siguenos en Twitter">
-                        <img src="images/header/twitter.svg" alt="Twitter" width="20" height="20">
+                        <svg class="icon" width="20" height="20">
+                            <use xlink:href="images/header/icons-defs.svg#twitter">
+                        </svg>
                     </a>
                     <a href="https://youtube.com" target="_blank" class="link" title="Siguenos en Youtube">
-                        <img src="images/header/youtube.svg" alt="YouTube" width="20" height="20">
+                        <svg class="icon" width="20" height="20">
+                            <use xlink:href="images/header/icons-defs.svg#youtube">
+                        </svg>
                     </a>
                 </nav> <!-- end social links -->
 
@@ -58,15 +71,15 @@
 
 
 
-        <!-- main-navigation -->
         <div class="container">
 
+            <!-- main-navigation -->
             <nav class="main-navigation row">
                 <a href="index.html" class="link -active">Inicio</a>
                 <a href="escuela.html" class="link">La Escuela</a>
                 <a href="servivios.html" class="link">Servicios</a>
                 <a href="blog.html" class="link">Blog</a>
-                <a href="contactenos.html" class="link -extra _uppercase">Contáctenos</a>
+                <a href="contactenos.html" class="link -extra">Contáctenos</a>
             </nav> <!-- end main-navigation -->
 
         </div> <!-- end container -->
@@ -77,12 +90,12 @@
         <section class="hero-unit -large">
             <div class="container row">
                 <h3 class="subtitle _green _curly">Bienvenido</h3>
-                <h2 class="title">La Escuela que ensena el Medio Ambiente</h2>
-                <p class="intro _uppercase">Usted quiere una carrera en el verde? Proteger nuestro mundo? Comienze aquí.</p>
+                <h2 class="title">Únete con el Medio Ambiente</h2>
+                <p class="intro _uppercase">¿Quieres aprender todo del Medio Ambiente y proteger tu mundo?<br>¡Empieza aquí!</p>
 
                 <div class="buttons">
                     <a href="escuela.html" class="button -green">Nuestra Escuela</a>
-                    <a href="contactenos.html" class="button -transparent">Contactenos</a>
+                    <a href="contactenos.html" class="button -transparent">Contáctenos</a>
                 </div>
             </div>
         </section>  <!-- hero-unit -->
@@ -90,16 +103,16 @@
 
 
         <!-- about -->
-        <section class="about">
+        <section class="about _section">
             <div class="container">
-                <h3 class="pretitle _green _curly _centered">377+ estudiantes graduarón</h3>
-                <h2 class="title _centered">Preperando tecnicos desde 1975!</h2>
+                <h3 class="pretitle _green _curly _centered">377+ estudiantes graduados</h3>
+                <h2 class="_big _centered">Preperando técnicos desde 1968</h2>
                 <p class="_centered">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ullam natus earum ut, in veniam, explicabo assumenda quaerat aperiam sequi quisquam perspiciatis, rem pariatur consequuntur debitis! Aut, reprehenderit eos pariatur.</p>
 
                 <div class="row grid">
                     <a href="#" class="tile grid-item">
                         <figure>
-                            <img src="images/pages/home/campus.jpg" alt="Nuestro Campus" width="300" height="250">
+                            <img src="images/pages/home/campus.jpg" class="_img-full" alt="Nuestro Campus" width="300" height="250">
                             <figcaption>
                                 <h3>Un campus con todo</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -109,7 +122,7 @@
 
                     <a href="#" class="tile grid-item">
                         <figure>
-                            <img src="images/pages/home/carreras.jpg" alt="Carreras" width="300" height="250">
+                            <img src="images/pages/home/carreras.jpg" class="_img-full" alt="Carreras" width="300" height="250">
                             <figcaption>
                                 <h3>2 carreras</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -119,7 +132,7 @@
 
                     <a href="#" class="tile grid-item">
                         <figure>
-                            <img src="images/pages/home/profesores.jpg" alt="Profesores" width="300" height="250">
+                            <img src="images/pages/home/profesores.jpg" class="_img-full" alt="Profesores" width="300" height="250">
                             <figcaption>
                                 <h3>Profesores</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -133,118 +146,132 @@
 
 
         <!-- careers -->
-        <section class="careers">
-            <div class="row">
+        <section class="careers _section">
+            <div class="container">
+                <div class="row">
 
-                <!-- tabs -->
-                <div class="tabs">
-                    <button type="button">
-                        <img src="images/pages/home/fire.svg" alt="Bomberos" width="40" height="40"> Bomberos
-                    </button>
-                    <button type="button">
-                        <img src="images/pages/home/nature.svg" alt="Gestión Ambiental" width="40" height="40"> Gestión Ambiental
-                    </button>
-                </div> <!-- end tabs -->
+                    <!-- tabs -->
+                    <div class="tabs">
+                        <button type="button" class="selector" data-action="tab" data-target="forestales">
+                            <img src="images/pages/home/pagelines.svg" class="icon" alt="Bomberos" width="25" height="25"> Recursos Forestales
+                        </button>
+                        <button type="button" class="selector" data-action="tab" data-target="gestion">
+                            <img src="images/pages/home/drop.svg" class="icon" alt="Gestión Ambiental" width="25" height="25"> Gestión Ambiental
+                        </button>
+                    </div> <!-- end tabs -->
 
-                <!-- tab content -->
-                <div class="tab-content">
-                    <article data-content="bomberos">
-                        <h2>Bomberos</h2>
+                    <!-- tab content -->
+                    <div class="tab-content">
+                        <article class="tab" data-tab="forestales">
+                            <h2 class="_big _lined">Recursos Forestales</h2>
 
-                        <figure>
-                            <img src="images/pages/home/fire-color.svg" alt="Bomberos" width="100" height="100">
-                            <figcaption>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ad quaerat labore magni libero, quae unde debitis consequatur! Numquam reiciendis, quae aliquam quasi maiores magnam nam tenetur iure sequi modi.</p>
-                            </figcaption>
-                        </figure>
+                            <figure>
+                                <img src="images/pages/home/firefighter.jpg" class="image" alt="Bomberos" width="200" height="134">
+                                <figcaption>
+                                    <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ad quaerat labore magni libero, quae unde debitis consequatur! Numquam reiciendis, quae aliquam quasi maiores magnam nam tenetur iure sequi modi.</p>
+                                </figcaption>
+                            </figure>
 
-                        <ul class="list -checkmarks">
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                        </ul>
-                    </article>
+                            <ul class="list -checkmarks">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            </ul>
+                        </article>
 
-                    <article data-content="gestion">
-                        <h2>Gestión Ambiental</h2>
+                        <article class="tab" hidden data-tab="gestion">
+                            <h2 class="_big _lined">Gestión Ambiental</h2>
 
-                        <figure>
-                            <img src="images/pages/home/nature-color.svg" alt="Gestión Ambiental" width="100" height="100">
-                            <figcaption>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ad quaerat labore magni libero, quae unde debitis consequatur! Numquam reiciendis, quae aliquam quasi maiores magnam nam tenetur iure sequi modi.</p>
-                            </figcaption>
-                        </figure>
+                            <figure>
+                                <img src="images/pages/home/gestion-ambiental.jpg" class="image" alt="Gestión Ambiental" width="200" height="134">
+                                <figcaption>
+                                    <p class="caption">Los estudiantes de la Gestión Ambiental aprenden de cuidar y proteger el medio ambiente usando las politicas ambientals  para disminuir la contaminación.</p>
+                                </figcaption>
+                            </figure>
 
-                        <ul class="list -checkmarks">
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                        </ul>
-                    </article>
-                </div> <!-- end tab-content -->
+                            <ul class="list -checkmarks">
+                                <li>Buscar estrategias para desminuir los impactos ambientales.</li>
+                                <li>Buscar un desarollo sostenible.</li>
+                                <li>Proteger y conservar el medio ambiente.</li>
+                            </ul>
 
-            </div> <!-- end row -->
+                            <a href="#" class="button -green">Lee más</a>
+                        </article>
+                    </div> <!-- end tab-content -->
+                </div> <!-- end row -->
+            </div> <!-- end container -->
         </section> <!-- end careers -->
 
 
+
+
+
         <!-- news -->
-        <section class="news">
+        <section class="latest-news _section">
             <div class="container">
 
-                <h2>Ultimos Noticias</h2>
+                <h2 class="_big _lined">Ultimos Noticias</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam nemo sapiente explicabo.</p>
 
-                <div class="row">
-                    <article>
+                <div class="row grid">
+                    <article class="grid-item article">
                         <figure>
-                            <img src="images/pages/home/cows.jpg" alt="Cows" width="300" height="250">
+                            <img src="images/pages/home/carreras.jpg" class="image _img-full" alt="Cows" width="300" height="250">
                         </figure>
 
-                        <ul class="categories">
-                            <li>Naturaleza</li>
-                        </ul>
+                        <div class="content">
+                            <ul class="_no-bullets _uppercase">
+                                <li class="category">Naturaleza</li>
+                            </ul>
 
-                        <h4><a href="blog-detail.html">Lorem ipsum dolor sit amet</a></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, laudantium dolore cumque! Odio voluptates est, cumque amet magni laboriosam soluta rerum cupiditate placeat alias! Non fugiat corrupti doloribus accusamus, sint?</p>
+                            <h3 class="title _uppercase"><a href="blog-detail.html">Lorem ipsum dolor sit amet</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, laudantium dolore cumque!</p>
+                        </div>
 
-                        <footer class="footer _flex">
+
+                        <footer class="footer row">
                             <span>De John Doe</span>
                             <span>Hace 2 días</span>
                         </footer>
                     </article>
 
-                    <article>
+                    <article class="grid-item article">
                         <figure>
-                            <img src="images/pages/home/cows.jpg" alt="Cows" width="300" height="250">
+                            <img src="images/pages/home/profesores.jpg" class="image _img-full" alt="Cows" width="300" height="250">
                         </figure>
 
-                        <ul class="categories">
-                            <li>Naturaleza</li>
-                            <li>Noticias</li>
-                        </ul>
+                        <div class="content">
+                            <ul class="_no-bullets _uppercase">
+                                <li class="category">Naturaleza</li>
+                                <li class="category">Noticias</li>
+                            </ul>
 
-                        <h4><a href="blog-detail.html">Lorem ipsum dolor sit amet</a></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, laudantium dolore cumque! Odio voluptates est, cumque amet magni laboriosam soluta rerum cupiditate placeat alias! Non fugiat corrupti doloribus accusamus, sint?</p>
+                            <h3 class="title _uppercase"><a href="blog-detail.html">Lorem ipsum dolor sit amet</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, laudantium dolore cumque!</p>
+                        </div>
 
-                        <footer class="footer _flex">
+
+                        <footer class="footer row">
                             <span>De John Doe</span>
                             <span>Hace 2 días</span>
                         </footer>
                     </article>
 
-                    <article>
+                    <article class="grid-item article">
                         <figure>
-                            <img src="images/pages/home/cows.jpg" alt="Cows" width="300" height="250">
+                            <img src="images/pages/home/campus.jpg" class="image _img-full" alt="Cows" width="300" height="250">
                         </figure>
 
-                        <ul class="categories">
-                            <li>Naturaleza</li>
-                        </ul>
+                        <div class="content">
+                            <ul class="_no-bullets _uppercase">
+                                <li class="category">Naturaleza</li>
+                            </ul>
 
-                        <h4><a href="blog-detail.html">Lorem ipsum dolor sit amet</a></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, laudantium dolore cumque! Odio voluptates est, cumque amet magni laboriosam soluta rerum cupiditate placeat alias! Non fugiat corrupti doloribus accusamus, sint?</p>
+                            <h3 class="title _uppercase"><a href="blog-detail.html">Lorem ipsum dolor sit amet</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, laudantium dolore cumque!</p>
+                        </div>
 
-                        <footer class="footer _flex">
+                        <footer class="footer row">
                             <span>De John Doe</span>
                             <span>Hace 2 días</span>
                         </footer>
@@ -340,5 +367,6 @@
             </div> <!-- end container -->
         </footer> <!-- end main-footer -->
 
+        <script src="js/main.js" async></script>
     </body>
 </html>
