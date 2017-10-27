@@ -31,7 +31,7 @@
  * Shamelessly borrowed from HTML5Boilerplate:
  * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
  */
-.visually-hidden {
+._hidden {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -40,6 +40,10 @@
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+._flex {
+    display: flex
 }
 
 ._green {
@@ -71,10 +75,20 @@
 
 ._big {
   font-size: 2.5rem;
+
+  @media screen and (max-width: 768px) {
+      line-height: 1.3;
+
+      font-size: 2rem;
+  }
 }
 
 ._section {
-  padding: 5rem 0;
+  padding: 7rem 0;
+
+  @media screen and(max-width: 440px) {
+    padding: 4rem 0;
+  }
 }
 
 ._lined {
@@ -84,7 +98,7 @@
     content: '';
     position: absolute;
     left: 0;
-    top: 120%;
+    top: 115%;
     width: 50px;
 
     border-bottom: 2px solid $brand-color;

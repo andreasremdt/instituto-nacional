@@ -74,13 +74,15 @@ $social-icons-size: 40px !default;
 $navigation-height: 55px !default;
 $navigation-width: 250px !default;
 
+$border-radius: 4px;
+
 
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
-  'small': 320px,
+  'small': 440px,
   'medium': 768px,
   'large': 1024px,
 ) !default;

@@ -24,7 +24,7 @@
         background-color: rgba(0, 0, 0, 0.85);
 
         z-index: 99;
-        transition: left .2s ease-in-out;
+        transition: left .3s ease-out;
 
         &.-opened {
             left: 0;

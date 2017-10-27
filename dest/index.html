@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://fonts.googleapis.com/css?family=Merienda+One|Roboto:300,400,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merienda+One%7CRoboto:300,400,500,700" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -15,7 +15,7 @@
         <div class="container">
 
             <!-- main-header -->
-            <header class="main-header row">
+            <header class="main-header _flex">
 
                 <!-- page logo -->
                 <img src="images/header/logo.png"  alt="Escuela Nacional de Medio Ambiente" width="70" height="70">
@@ -30,7 +30,7 @@
                 <ul class="contact _no-bullets">
                     <li class="item">
                         <svg class="icon" width="40" height="40">
-                            <use xlink:href="images/header/icons-defs.svg#address">
+                            <use xlink:href="images/header/icons-defs.svg#address"></use>
                         </svg>
                         <span>
                             Calle al Salto Jimenoa<br>
@@ -39,7 +39,7 @@
                     </li>
                     <li class="item">
                         <svg class="icon" width="40" height="40">
-                            <use xlink:href="images/header/icons-defs.svg#phone">
+                            <use xlink:href="images/header/icons-defs.svg#phone"></use>
                         </svg>
                         <a href="tel:8494089048">(849) 408 9048</a><br>
                     </li>
@@ -51,20 +51,27 @@
                 <nav class="social">
                     <a href="https://facebook.com" target="_blank" class="link" title="Siguenos en Facebook">
                         <svg class="icon" width="20" height="20">
-                            <use xlink:href="images/header/icons-defs.svg#facebook">
+                            <use xlink:href="images/header/icons-defs.svg#facebook"></use>
                         </svg>
                     </a>
                     <a href="https://twitter.com" target="_blank" class="link" title="Siguenos en Twitter">
                         <svg class="icon" width="20" height="20">
-                            <use xlink:href="images/header/icons-defs.svg#twitter">
+                            <use xlink:href="images/header/icons-defs.svg#twitter"></use>
                         </svg>
                     </a>
                     <a href="https://youtube.com" target="_blank" class="link" title="Siguenos en Youtube">
                         <svg class="icon" width="20" height="20">
-                            <use xlink:href="images/header/icons-defs.svg#youtube">
+                            <use xlink:href="images/header/icons-defs.svg#youtube"></use>
                         </svg>
                     </a>
                 </nav> <!-- end social links -->
+
+                <!-- mobile menu toggle -->
+                <button type="button" data-action="menu" class="toggle" title="Toggle Navigation">
+                    <svg class="icon" width="28" height="28">
+                        <use xlink:href="images/header/icons-defs.svg#bars"></use>
+                    </svg>
+                </button> <!-- end mobile menu toggle -->
 
             </header> <!-- end main-header -->
         </div> <!-- end container -->
@@ -74,7 +81,7 @@
         <div class="container">
 
             <!-- main-navigation -->
-            <nav class="main-navigation row">
+            <nav class="main-navigation _flex">
                 <a href="index.html" class="link -active">Inicio</a>
                 <a href="escuela.html" class="link">La Escuela</a>
                 <a href="servivios.html" class="link">Servicios</a>
@@ -88,10 +95,10 @@
 
         <!-- hero-unit -->
         <section class="hero-unit -large">
-            <div class="container row">
-                <h3 class="subtitle _green _curly">Bienvenido</h3>
-                <h2 class="title">Únete con el Medio Ambiente</h2>
-                <p class="intro _uppercase">¿Quieres aprender todo del Medio Ambiente y proteger tu mundo?<br>¡Empieza aquí!</p>
+            <div class="container _flex">
+                <h3 class="pretitle _green _curly">Bienvenido</h3>
+                <h2 class="title _big">Únete con el Medio Ambiente</h2>
+                <p class="intro _uppercase">¿Quieres estudiar todo del Medio Ambiente y proteger tu mundo?<br>¡Empieza aqui!</p>
 
                 <div class="buttons">
                     <a href="escuela.html" class="button -green">Nuestra Escuela</a>
@@ -107,98 +114,120 @@
             <div class="container">
                 <h3 class="pretitle _green _curly _centered">377+ estudiantes graduados</h3>
                 <h2 class="_big _centered">Preperando técnicos desde 1968</h2>
-                <p class="_centered">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ullam natus earum ut, in veniam, explicabo assumenda quaerat aperiam sequi quisquam perspiciatis, rem pariatur consequuntur debitis! Aut, reprehenderit eos pariatur.</p>
+                <p class="_centered">Úbicado en el corazón verde de la República Dominicana en Jarabacoa, preparamos jóvenes de todo el país para una carrera técnica. Nuestros estudiantes se gradúan como <strong>Gestores Ambientales</strong>, <strong>Ciencias Forestales</strong> o <strong>Manejo de Recursos Naturales</strong> y trabajan en empresas que se dedican al <strong>medio ambiente</strong>.</p>
 
-                <div class="row grid">
-                    <a href="#" class="tile grid-item">
+                <div class="grid">
+                    <a href="campus.html" class="tile grid-item">
                         <figure>
-                            <img src="images/pages/home/campus.jpg" class="_img-full" alt="Nuestro Campus" width="300" height="250">
-                            <figcaption>
-                                <h3>Un campus con todo</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <img src="images/pages/home/campus.jpg" class="image _img-full" alt="Nuestro Campus" width="300" height="250">
+                            <figcaption class="caption">
+                                <h3 class="title">2 campus</h3>
+                                <p class="text">20 hectáreas de lo mejor del medio ambiente</p>
                             </figcaption>
                         </figure>
                     </a>
 
-                    <a href="#" class="tile grid-item">
+                    <a href="carreras.html" class="tile grid-item">
                         <figure>
-                            <img src="images/pages/home/carreras.jpg" class="_img-full" alt="Carreras" width="300" height="250">
-                            <figcaption>
-                                <h3>2 carreras</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <img src="images/pages/home/carreras.jpg" class="image _img-full" alt="Carreras" width="300" height="250">
+                            <figcaption class="caption">
+                                <h3 class="title">3 carreras</h3>
+                                <p class="text">Gestión Ambiental, Recursos Forestales o Manejo de Recursos Naturales</p>
                             </figcaption>
                         </figure>
                     </a>
 
-                    <a href="#" class="tile grid-item">
+                    <a href="profesores.html" class="tile grid-item">
                         <figure>
-                            <img src="images/pages/home/profesores.jpg" class="_img-full" alt="Profesores" width="300" height="250">
-                            <figcaption>
-                                <h3>Profesores</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <img src="images/pages/home/profesores.jpg" class="image _img-full" alt="Profesores" width="300" height="250">
+                            <figcaption class="caption">
+                                <h3 class="title">12 Profesores</h3>
+                                <p class="text">Cada asignatura tiene su especialista</p>
                             </figcaption>
                         </figure>
                     </a>
-                </div> <!-- end row -->
+                </div> <!-- end grid -->
             </div> <!-- end container -->
         </section> <!-- end about -->
 
 
 
         <!-- careers -->
-        <section class="careers _section">
-            <div class="container">
-                <div class="row">
+        <section class="careers">
+            <h2 class="_hidden">Carreras</h2>
+            <div class="container _flex _section">
 
-                    <!-- tabs -->
-                    <div class="tabs">
-                        <button type="button" class="selector" data-action="tab" data-target="forestales">
-                            <img src="images/pages/home/pagelines.svg" class="icon" alt="Bomberos" width="25" height="25"> Recursos Forestales
-                        </button>
-                        <button type="button" class="selector" data-action="tab" data-target="gestion">
-                            <img src="images/pages/home/drop.svg" class="icon" alt="Gestión Ambiental" width="25" height="25"> Gestión Ambiental
-                        </button>
-                    </div> <!-- end tabs -->
+                <!-- tabs -->
+                <div class="tabs _flex">
+                    <button type="button" class="selector _flex -active" data-action="tab" data-target="manejo">
+                        <svg class="icon" width="28" height="28">
+                            <use xlink:href="images/pages/home/icons-defs.svg#nature"></use>
+                        </svg> Manejo de Recursos Naturales
+                    </button>
+                    <button type="button" class="selector _flex" data-action="tab" data-target="forestales">
+                        <svg class="icon" width="28" height="28">
+                            <use xlink:href="images/pages/home/icons-defs.svg#fire"></use>
+                        </svg> Perito Forestal
+                    </button>
+                    <button type="button" class="selector _flex" data-action="tab" data-target="gestion">
+                        <svg class="icon" width="28" height="28">
+                            <use xlink:href="images/pages/home/icons-defs.svg#water"></use>
+                        </svg> Gestión Ambiental
+                    </button>
+                </div> <!-- end tabs -->
 
-                    <!-- tab content -->
-                    <div class="tab-content">
-                        <article class="tab" data-tab="forestales">
-                            <h2 class="_big _lined">Recursos Forestales</h2>
+                <!-- tab content -->
+                <div class="tab-content">
+                    <article class="tab" data-tab="manejo">
+                        <h2 class="title _big _lined">Manejo de Recursos Naturales</h2>
 
-                            <figure>
-                                <img src="images/pages/home/firefighter.jpg" class="image" alt="Bomberos" width="200" height="134">
-                                <figcaption>
-                                    <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ad quaerat labore magni libero, quae unde debitis consequatur! Numquam reiciendis, quae aliquam quasi maiores magnam nam tenetur iure sequi modi.</p>
-                                </figcaption>
-                            </figure>
+                        <figure class="intro _flex">
+                            <img src="images/pages/home/firefighter.jpg" class="image" alt="Bomberos" width="200" height="134">
+                            <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at labore fuga esse quae architecto, soluta distinctio similique ab libero, in atque consequuntur deleniti tenetur tempora itaque. Nemo, nulla sapiente.</figcaption>
+                        </figure>
 
-                            <ul class="list -checkmarks">
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                            </ul>
-                        </article>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        </ul>
 
-                        <article class="tab" hidden data-tab="gestion">
-                            <h2 class="_big _lined">Gestión Ambiental</h2>
+                        <a href="#" class="button -green">Más</a>
+                    </article>
 
-                            <figure>
-                                <img src="images/pages/home/gestion-ambiental.jpg" class="image" alt="Gestión Ambiental" width="200" height="134">
-                                <figcaption>
-                                    <p class="caption">Los estudiantes de la Gestión Ambiental aprenden de cuidar y proteger el medio ambiente usando las politicas ambientals  para disminuir la contaminación.</p>
-                                </figcaption>
-                            </figure>
+                    <article class="tab" hidden data-tab="forestales">
+                        <h2 class="title _big _lined">Perito Forestal</h2>
 
-                            <ul class="list -checkmarks">
-                                <li>Buscar estrategias para desminuir los impactos ambientales.</li>
-                                <li>Buscar un desarollo sostenible.</li>
-                                <li>Proteger y conservar el medio ambiente.</li>
-                            </ul>
+                        <figure class="intro _flex">
+                            <img src="images/pages/home/firefighter.jpg" class="image" alt="Bomberos" width="200" height="134">
+                            <figcaption>El Perito Forestal es un profesional forestal con conocimientos teóricos y prácticos en las técnicas de producción y protección de bosques.</figcaption>
+                        </figure>
 
-                            <a href="#" class="button -green">Lee más</a>
-                        </article>
-                    </div> <!-- end tab-content -->
-                </div> <!-- end row -->
+                        <ul>
+                            <li>Desarollar un proyecto productivo propio.</li>
+                            <li>Protección y desarollo de bosques.</li>
+                        </ul>
+
+                        <a href="#" class="button -green">Más</a>
+                    </article>
+
+                    <article class="tab" hidden data-tab="gestion">
+                        <h2 class="title _big _lined">Gestión Ambiental</h2>
+
+                        <figure class="intro _flex">
+                            <img src="images/pages/home/gestion-ambiental.jpg" class="image" alt="Gestión Ambiental" width="200" height="134">
+                            <figcaption>Los estudiantes de la Gestión Ambiental aprenden de cuidar y proteger el medio ambiente usando las politicas ambientals  para disminuir la contaminación.</figcaption>
+                        </figure>
+
+                        <ul>
+                            <li>Buscar estrategias para desminuir los impactos ambientales.</li>
+                            <li>Buscar un desarollo sostenible.</li>
+                            <li>Proteger y conservar el medio ambiente.</li>
+                        </ul>
+
+                        <a href="#" class="button -green">Más</a>
+                    </article>
+                </div> <!-- end tab-content -->
             </div> <!-- end container -->
         </section> <!-- end careers -->
 
@@ -210,11 +239,11 @@
         <section class="latest-news _section">
             <div class="container">
 
-                <h2 class="_big _lined">Ultimos Noticias</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam nemo sapiente explicabo.</p>
+                <h2 class="_big _lined">Últimas Noticias</h2>
+                <p>Lea nuestras últimas noticias sobre grandes eventos o anuncios interesantes.</p>
 
-                <div class="row grid">
-                    <article class="grid-item article">
+                <div class="grid">
+                    <article class="grid-item article _flex">
                         <figure>
                             <img src="images/pages/home/carreras.jpg" class="image _img-full" alt="Cows" width="300" height="250">
                         </figure>
@@ -229,13 +258,13 @@
                         </div>
 
 
-                        <footer class="footer row">
+                        <footer class="footer _flex">
                             <span>De John Doe</span>
                             <span>Hace 2 días</span>
                         </footer>
                     </article>
 
-                    <article class="grid-item article">
+                    <article class="grid-item article _flex">
                         <figure>
                             <img src="images/pages/home/profesores.jpg" class="image _img-full" alt="Cows" width="300" height="250">
                         </figure>
@@ -251,13 +280,13 @@
                         </div>
 
 
-                        <footer class="footer row">
+                        <footer class="footer _flex">
                             <span>De John Doe</span>
                             <span>Hace 2 días</span>
                         </footer>
                     </article>
 
-                    <article class="grid-item article">
+                    <article class="grid-item article _flex">
                         <figure>
                             <img src="images/pages/home/campus.jpg" class="image _img-full" alt="Cows" width="300" height="250">
                         </figure>
@@ -271,12 +300,12 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, laudantium dolore cumque!</p>
                         </div>
 
-                        <footer class="footer row">
+                        <footer class="footer _flex">
                             <span>De John Doe</span>
                             <span>Hace 2 días</span>
                         </footer>
                     </article>
-                </div> <!-- end row -->
+                </div> <!-- end grid -->
             </div> <!-- end container -->
         </section> <!-- end news -->
 
@@ -285,29 +314,33 @@
         <!-- main-footer -->
         <footer class="main-footer">
             <div class="container">
-                <div class="row grid">
+                <div class="grid">
                     <section class="grid-item">
 
                         <!-- page logo -->
                         <a href="index.html" class="logo">
-                            <h2>Escuela <span class="_green">Ambiental</span></h2>
-                            <p>Ministerio de Medio Ambiente y Recursos Naturales</p>
+                            <h2 class="title _curly">Escuela <span class="_green">Ambiental</span></h2>
+                            <p class="subtitle">Ministerio de Medio Ambiente y Recursos Naturales</p>
                         </a> <!-- end page logo -->
 
                         <h3 class="title _uppercase">Follow Us:</h3>
 
                         <!-- social icons -->
-                        <nav class="social-icons">
-                            <a href="https://facebook.com" class="icon" target="_blank" title="Siguenos en Facebook">
-                                <img src="images/footer/facebook.svg" alt="Facebook" width="20" height="20">
+                        <nav class="social">
+                            <a href="https://facebook.com" target="_blank" class="link" title="Siguenos en Facebook">
+                                <svg class="icon" width="20" height="20">
+                                    <use xlink:href="images/header/icons-defs.svg#facebook"></use>
+                                </svg>
                             </a>
-
-                            <a href="https://twitter.com" class="icon" target="_blank" title="Siguenos en Twitter">
-                                <img src="images/footer/twitter.svg" alt="Twitter" width="20" height="20">
+                            <a href="https://twitter.com" target="_blank" class="link" title="Siguenos en Twitter">
+                                <svg class="icon" width="20" height="20">
+                                    <use xlink:href="images/header/icons-defs.svg#twitter"></use>
+                                </svg>
                             </a>
-
-                            <a href="https://youtube.com" class="icon" target="_blank" title="Siguenos en Youtube">
-                                <img src="images/footer/youtube.svg" alt="YouTube" width="20" height="20">
+                            <a href="https://youtube.com" target="_blank" class="link" title="Siguenos en Youtube">
+                                <svg class="icon" width="20" height="20">
+                                    <use xlink:href="images/header/icons-defs.svg#youtube"></use>
+                                </svg>
                             </a>
                         </nav> <!-- end social-icons -->
                     </section>
@@ -316,12 +349,12 @@
                         <h3 class="title _uppercase">Noticias</h3>
 
                         <article class="news-item">
-                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <h4 class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
                             <a class="link" href="blog-detail.html">Lee más</a>
                         </article>
 
                         <article class="news-item">
-                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <h4 class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
                             <a class="link" href="blog-detail.html">Lee más</a>
                         </article>
                     </section>
@@ -330,24 +363,28 @@
                         <h3 class="title _uppercase">Fotografiás</h3>
 
                         <figure class="gallery">
-                            <a href="#">
-                                <img src="images/footer/campus.jpg" alt="" width="70" height="70">
-                            </a>
-                            <a href="#">
-                                <img src="images/footer/carreras.jpg" alt="" width="70" height="70">
-                            </a>
-                            <a href="#">
-                                <img src="images/footer/profesores.jpg" alt="" width="70" height="70">
-                            </a>
-                            <a href="#">
-                                <img src="images/footer/campus.jpg" alt="" width="70" height="70">
-                            </a>
-                            <a href="#">
-                                <img src="images/footer/carreras.jpg" alt="" width="70" height="70">
-                            </a>
-                            <a href="#">
-                                <img src="images/footer/profesores.jpg" alt="" width="70" height="70">
-                            </a>
+                            <div class="_flex">
+                                <a href="#" class="item">
+                                    <img src="images/footer/campus.jpg" alt="" width="100" height="100">
+                                </a>
+                                <a href="#" class="item">
+                                    <img src="images/footer/carreras.jpg" alt="" width="100" height="100">
+                                </a>
+                                <a href="#" class="item">
+                                    <img src="images/footer/profesores.jpg" alt="" width="100" height="100">
+                                </a>
+                            </div>
+                            <div class="_flex">
+                                <a href="#" class="item">
+                                    <img src="images/footer/campus.jpg" alt="" width="100" height="100">
+                                </a>
+                                <a href="#" class="item">
+                                    <img src="images/footer/carreras.jpg" alt="" width="100" height="100">
+                                </a>
+                                <a href="#" class="item">
+                                    <img src="images/footer/profesores.jpg" alt="" width="100" height="100">
+                                </a>
+                            </div>
                         </figure>
                     </section>
 
@@ -361,9 +398,9 @@
                             <li class="item"><a href="contactenos.html">Contáctenos</a></li>
                         </ul>
                     </section>
-                </div> <!-- end row -->
+                </div> <!-- end grid -->
 
-                <p class="copyright _centered">Copyright &copy; 2017 <a href="index.html">Escuela Ambiental</a>. All Rights Reserved.</p>
+                <p class="copyright _centered">Copyright &copy; 2017 Escuela Ambiental. All Rights Reserved.</p>
             </div> <!-- end container -->
         </footer> <!-- end main-footer -->
 

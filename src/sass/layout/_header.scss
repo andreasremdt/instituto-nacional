@@ -11,12 +11,17 @@
 
     // Page Logo
     > .logo {
+
         display: inline-block;
         flex: 1;
         margin-left: 1rem;
 
         > .title {
             margin-bottom: 0;
+
+            @media screen and (max-width: 440px) {
+                font-size: 1.4rem;
+            }
 
             font-size: 1.8rem;
         }
@@ -30,6 +35,8 @@
 
     // Phone & Address
     > .contact {
+
+        // Hide the contact on small screens
         @include respond-to(large) {
             display: none;
         }
@@ -50,6 +57,11 @@
 
     // Social Icons
     .social {
+        // Hide the social icons on small screens
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+
         .link {
             display: inline-flex;
             width: $social-icons-size;
@@ -59,14 +71,41 @@
             border: 1px solid $light-grey;
             border-radius: 50%;
 
+            fill: $mid-grey;
+
             align-items: center;
             justify-content: center;
 
-            transition: border-color .15s ease-in-out;
+            transition: border-color .15s ease-in-out, fill .15s ease-in-out;
 
             &:hover {
+                fill: $brand-color;
                 border-color: $brand-color;
             }
+        }
+    }
+
+    // Mobile Menu Toggle
+    .toggle {
+
+        // Hide the button on bigger screens
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+
+        padding: 0;
+
+        background-color: transparent;
+        fill: $mid-grey;
+
+        border: none;
+
+        cursor: pointer;
+        outline: none;
+        -webkit-appearance: none;
+
+        &.-active {
+            fill: $brand-color;
         }
     }
 }
