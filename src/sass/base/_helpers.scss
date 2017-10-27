@@ -103,4 +103,8 @@
 
     border-bottom: 2px solid $brand-color;
   }
+
+  &.-center::before {
+    left: calc(50% - 25px);
+  }
 }

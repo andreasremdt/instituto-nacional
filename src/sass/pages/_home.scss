@@ -18,17 +18,10 @@
 
         background-color: $bg-grey;
 
-        border-radius: $border-radius;
-
         transition: transform .25s ease-out, background-color .15s ease-in-out, box-shadow .25s ease-out;
 
         .caption {
             padding: 1rem;
-        }
-
-        .image {
-            border-top-right-radius: $border-radius;
-            border-top-left-radius: $border-radius;
         }
 
         .text {

@@ -65,16 +65,23 @@
         text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
 
         > .container {
-            height: 380px;
             align-items: center;
             justify-content: space-between;
+
+            @media screen and (min-width: 768px) {
+                height: 300px;
+            }
+
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                padding: 1.5rem 0;
+            }
         }
 
         .title {
-            color: white;
+            margin-bottom: 0;
 
-            font-size: 3rem;
-            font-weight: 500;
+            color: $white;
         }
     }
 }

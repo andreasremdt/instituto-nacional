@@ -43,7 +43,7 @@
 
         transition: color .15s ease-in-out;
 
-        &.-active {
+        &.-active:not(.-extra) {
             color: $brand-color;
 
             font-weight: 500;
@@ -54,7 +54,7 @@
         }
 
         @media screen and(min-width: 768px) {
-            &.-active {
+            &.-active:not(.-extra) {
                 border-bottom: 3px solid $brand-color;
             }
 
