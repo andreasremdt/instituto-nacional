@@ -43,7 +43,7 @@
 
         transition: color .15s ease-in-out;
 
-        &.-active:not(.-extra) {
+        &.-active:not(:last-of-type) {
             color: $brand-color;
 
             font-weight: 500;
@@ -54,11 +54,11 @@
         }
 
         @media screen and(min-width: 768px) {
-            &.-active:not(.-extra) {
+            &.-active:not(:last-of-type) {
                 border-bottom: 3px solid $brand-color;
             }
 
-            &.-extra {
+            &:last-of-type {
                 margin: 0 0 0 auto;
                 padding: 0 60px 0 40px;
                 position: relative;

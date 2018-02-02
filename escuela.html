@@ -1,4 +1,5 @@
 ---
+title: La Escuela
 layout: default
 ---
 
@@ -10,7 +11,7 @@ layout: default
 
         <div class="grid objectives">
             <figure class="grid-item">
-                <video src="images/pages/about/la-escuela.mp4" controls class="video _img-full" poster="images/pages/about/carreras.jpg"></video>
+                <video src="/images/pages/about/la-escuela.mp4" controls class="video _img-full" poster="/images/pages/about/carreras.jpg"></video>
             </figure>
             <div class="grid-item">
                 <h3>Nuestro <span class="_green">objectivo</span></h3>
@@ -27,14 +28,14 @@ layout: default
         <div class="grid">
             <article class="grid-item">
                 <svg class="icon" width="50" height="50">
-                    <use xlink:href="images/pages/about/icons-defs.svg#rocket"></use>
+                    <use xlink:href="/images/pages/about/icons-defs.svg#rocket"></use>
                 </svg>
                 <h3>Misión</h3>
                 <p>Formar profesionales de nivel técnico superior altamente calificados, con espíritu crítico, creativo, con visión global que contribuyan a una correcta aplicación de una política pública para la conservación y regulación del medio ambiente y el manejo de los recursos naturales de la República Dominicana.</p>
             </article>
             <article class="grid-item">
                 <svg class="icon" width="50" height="50">
-                    <use xlink:href="images/pages/about/icons-defs.svg#eye"></use>
+                    <use xlink:href="/images/pages/about/icons-defs.svg#eye"></use>
                 </svg>
                 <h3>Visión</h3>
                 <p>Ser una Institución Técnica de Educación Superior líder de la formación, capacitación y actualización de técnicos y profesionales en la gestión de medio ambiente y en el manejo de los recursos naturales que contribuyan con la implementación de un modelo de desarrollo sostenible que garantice una calidad de vida adecuada para las generaciones presentes y futuras.</p>
@@ -67,15 +68,17 @@ layout: default
     <div class="container">
         <div class="grid">
             <div class="grid-item">
-                <h2 class="_big _lined">Nuestras carreras</h2>
-                <p>Ofrecemos 3 carreras diferentes: <strong>Manejo de Recursos Naturales</strong>, <strong>Perito Forestal</strong> y <strong>Gestión Ambiental</strong>.</p>
+                <h2 class="_big _lined">Nuestras <span class="_green">carreras</span></h2>
+                <p>Ofrecemos 2 carreras diferentes: <strong>Ciencias Forestales</strong> y <strong>Gestión Ambiental</strong>.</p>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur minima nobis harum in, ipsa a voluptatem sapiente animi voluptates optio vero necessitatibus distinctio eligendi sunt possimus consectetur, recusandae voluptatibus? Aliquam.</p>
-
-                <a href="carreras.html" class="button -green">¿Cuál es para mí?</a>
+                <p>Haga clic en los botones abajo para obtener más informaciones acerca de estas carreras. ¿Tal vez te gusta?</p>
+                
+                 {% for item in site.carreras %}
+                    <a href="{{ item.url }}" class="button -green">{{ item.title }}</a>
+                {% endfor %}
             </div>
             <figure class="grid-item">
-                <img src="images/pages/about/carreras.jpg" alt="Carreras" width="800" height="533" class="_img-full">
+                <img src="/images/pages/about/carreras.jpg" alt="Carreras" width="800" height="533" class="_img-full">
             </figure>
         </div>
     </div>
@@ -87,7 +90,7 @@ layout: default
     <div class="container">
         <div class="grid">
             <figure class="grid-item">
-                <img src="images/pages/about/campus.jpg" alt="Campus" width="800" height="533" class="_img-full">
+                <img src="/images/pages/about/campus.jpg" alt="Campus" width="800" height="533" class="_img-full">
             </figure>
             <div class="grid-item">
                 <h2 class="_big _lined">El campus</h2>
@@ -112,7 +115,7 @@ layout: default
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur minima nobis harum in, ipsa a voluptatem sapiente animi voluptates optio vero necessitatibus distinctio eligendi sunt possimus consectetur, recusandae voluptatibus? Aliquam.</p>
             </div>
             <figure class="grid-item">
-                <img src="images/pages/about/campus.jpg" alt="Campus" width="800" height="533" class="_img-full">
+                <img src="/images/pages/about/campus.jpg" alt="Campus" width="800" height="533" class="_img-full">
             </figure>
         </div>
     </div>

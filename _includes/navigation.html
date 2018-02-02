@@ -2,10 +2,9 @@
 
   <!-- main-navigation -->
   <nav class="main-navigation _flex">
-    <a href="index.html" class="link -active">Inicio</a>
-    <a href="escuela.html" class="link">La Escuela</a>
-    <a href="servicios.html" class="link">Servicios</a>
-    <a href="blog.html" class="link">Blog</a>
-    <a href="contactenos.html" class="link -extra">Contáctenos</a>
+    {% for item in site.data.navigation %}
+      <a href="{{ item.link }}" class="link{% if item.link == page.url %} -active{% endif %}">{{ item.name }}</a>
+    {% endfor %}
   </nav> <!-- end main-navigation -->
+  
 </div> <!-- end container -->

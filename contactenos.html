@@ -1,4 +1,5 @@
 ---
+title: Contáctenos
 layout: default
 ---
 
@@ -9,18 +10,17 @@ layout: default
         <section class="grid">
             <article class="grid-item box _centered">
                 <h3 class="heading _uppercase">Correo electrónico</h3>
-                <a class="content" href="mailto:escuela.ambiental@hotmail.com">escuela.ambiental@hotmail.com</a>
+                <a class="content" href="mailto:{{ site.email }}">{{ site.email }}</a>
             </article>
 
             <article class="grid-item box _centered">
                 <h3 class="heading _uppercase">Número de teléfono</h3>
-                <a class="content" href="tel:8494089048">(849) 408 9048</a>
+                <a class="content" href="tel:{{ site.phone | remove: ' ' }}">{{ site.phone }}</a>
             </article>
 
             <article class="grid-item box _centered">
                 <h3 class="heading _uppercase">Ubicación</h3>
-                <p class="content">Escuela Ambiental<br>
-                Piedra Blanca, Jarabacoa, La Vega</p>
+                <p class="content">{{ site.address }}</p>
             </article>
         </section>
 

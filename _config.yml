@@ -1,3 +1,29 @@
+# Base Variables
+title: Instituto Tecnico
+subtitle: Estudios Superiores en Medio Ambiente y Recursos Naturales
+phone: 809 365 4650
+address: Calle al Salto Jimenoa<br>42000 Jarabacoa, La Vega
+email: escuela.ambiental@hotmail.com
+
+# Social Links
+social:
+  - title: Siguenos en Facebook
+    url: https://www.facebook.com/escuelaambientalofficial/
+    icon: facebook
+  - title: Siguenos en Twitter
+    url: https://twitter.com/escuelalnatural/
+    icon: twitter
+
+# SASS
 sass:
   sass_dir: _sass
   style: compressed
+
+# URLs
+permalink: pretty
+
+# Collections
+collections:
+  carreras:
+    output: true
+    permalink: /:collection/:name

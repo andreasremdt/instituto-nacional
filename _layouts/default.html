@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Bienvenidos | Instituto Nacional de Estudios Superiores y Medio Ambiente</title>
+    <title>{{ page.title }} | {{ site.title }} de {{ site.subtitle }}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,12 +21,20 @@
       <div class="container _flex">
     
         <!-- page title -->
-        <h2 class="title _big">La Escuela</h2>
-    
+        <h2 class="title _big">{{ page.title }}</h2>
+
+        {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+        
         <!-- breadcrumbs menu -->
         <nav class="breadcrumbs">
-          <a href="index.html" class="link">Inicio</a>
-          <a href="escuela.html" class="link">La Escuela</a>
+          <a href="/" class="link">Inicio</a>
+          {% for crumb in crumbs offset: 1 %}
+            {% if forloop.last %}
+              <a href="#" class="link">{{ crumb | replace:'-',' ' | remove:'.html' }}</a>
+            {% else %} /
+              <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}" class="link">{{ crumb | replace:'-',' ' | remove:'.html' }}</a>
+            {% endif %}
+          {% endfor %}
         </nav> <!-- end breadcrumbs menu -->
     
       </div> <!-- end container -->

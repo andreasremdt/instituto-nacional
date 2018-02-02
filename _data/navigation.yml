@@ -1,0 +1,10 @@
+- link: /
+  name: Inicio
+- link: /escuela/
+  name: La Escuela
+- link: /servicios/
+  name: Servicios
+- link: /blog/
+  name: Blog
+- link: /contactenos/
+  name: Contáctenos
