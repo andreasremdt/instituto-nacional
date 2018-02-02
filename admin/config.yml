@@ -15,5 +15,13 @@ collections:
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "careers" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
       - { label: "Content", name: "body", widget: "markdown" }
+  - name: "redes"
+    label: "Redes Sociales"
+    folder: "_data/social.yml"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Text", name: "text", widget: "string" }
+      - { label: "URL", name: "url", widget: "string" }
