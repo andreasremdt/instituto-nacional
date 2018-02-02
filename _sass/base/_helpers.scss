@@ -1,0 +1,258 @@
+// -----------------------------------------------------------------------------
+// Helper classes
+// -----------------------------------------------------------------------------
+
+/**
+ * Main content containers
+ * 1. Make the container full-width with a maximum width
+ * 2. Center it in the viewport
+ * 3. Leave some space on the edges, especially valuable on small screens
+ */
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: $max-width; /* 1 */
+}
+
+/**
+ * Hide text while making it readable for screen readers
+ * 1. Needed in WebKit-based browsers because of an implementation bug;
+ *    See: https://code.google.com/p/chromium/issues/detail?id=457146
+ */
+.hide-text {
+  overflow: hidden;
+  padding: 0; /* 1 */
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+/**
+ * Hide element while making it readable for screen readers
+ * Shamelessly borrowed from HTML5Boilerplate:
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+ */
+._hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+._flex {
+    display: flex
+}
+
+._green {
+  color: $brand-color;
+}
+
+._curly {
+  font-family: $text-font-stack-curly;
+}
+
+._uppercase {
+  text-transform: uppercase;
+}
+
+._centered {
+  text-align: center;
+}
+
+._right {
+  text-align: right;
+}
+
+._no-bullets {
+  padding-left: 0;
+  margin: 0;
+
+  list-style-type: none;
+}
+
+._img-full {
+  width: 100%;
+}
+
+._big {
+  font-size: 2.5rem;
+
+  @media screen and (max-width: 768px) {
+      line-height: 1.3;
+
+      font-size: 2rem;
+  }
+}
+
+._section {
+  padding: 7rem 0;
+
+  @media screen and(max-width: 440px) {
+    padding: 4rem 0;
+  }
+}
+
+._lined {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 115%;
+    width: 50px;
+
+    border-bottom: 2px solid $brand-color;
+  }
+
+  &.-center::before {
+    left: calc(50% - 25px);
+  }
+}
+
+._bg-grey {
+  background-color: $bg-grey;
+}
+
+
+.tile {
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    background-color: $bg-grey;
+
+    transition: transform .25s ease-out, background-color .15s ease-in-out, box-shadow .25s ease-out;
+
+    .caption {
+        padding: 1rem;
+    }
+
+    .text {
+        margin-bottom: 0;
+
+        font-weight: 300;
+
+        color: $mid-grey;
+
+        transition: color .15s ease-in-out;
+    }
+
+    &:hover {
+        transform: translateY(-1rem);
+
+        box-shadow: 0 25px 20px -10px rgba(0, 0, 0, 0.15);
+        background-color: $dark-grey;
+
+        .title {
+            color: $white;
+        }
+    }
+}
+
+.box {
+  padding: 1.5rem 1rem;
+  margin-bottom: 1rem;
+
+  border: 1px solid $light-grey;
+
+  background-color: $bg-grey;
+
+  transition: background-color .15s ease-in-out, color .15s ease-in-out, border-color .15s ease-in-out;
+
+  &.-active {
+    background-color: $dark-grey;
+    color: $white;
+    border-color: $dark-grey;
+
+    > .heading {
+      color: $white;
+    }
+  }
+
+  > .heading {
+      position: relative;
+      margin-bottom: 2rem;
+
+      &::before {
+          content: '';
+          position: absolute;
+          left: calc(50% - 25px);
+          top: 150%;
+          width: 50px;
+
+          border-bottom: 1px solid tint($mid-grey, 20%);
+        }
+  }
+
+  > .content {
+      margin-bottom: 0;
+
+      font-weight: 300;
+  }
+}
+
+
+.blog-post {
+    flex-direction: column;
+    margin-top: 1rem;
+
+    background-color: white;
+
+    border-radius: $border-radius;
+    border: 1px solid $light-grey;
+
+    .image {
+        margin-bottom: 1.5rem;
+
+        border-top-right-radius: $border-radius;
+        border-top-left-radius: $border-radius;
+    }
+
+    .category {
+        display: inline-block;
+        padding: .2rem 1rem;
+        margin-bottom: .3rem;
+
+        font-size: 75%;
+        font-weight: 500;
+
+        color: $brand-color;
+        background-color: tint($brand-color, 90%);
+
+        border-radius: 1rem;
+        border: 1px solid tint($brand-color, 70%);
+    }
+
+    .content {
+        flex: 1;
+        padding: 0 2rem;
+    }
+
+    .title {
+        margin-top: 1rem;
+
+        font-weight: 500;
+
+        transition: color .15s ease-in-out;
+
+        &:hover {
+            color: $brand-color;
+        }
+    }
+
+    .footer {
+        padding: 1rem 2rem;
+        justify-content: space-between;
+
+        color: $mid-grey;
+
+        font-weight: 300;
+        font-size: 90%;
+
+        border-top: 1px solid $light-grey;
+    }
+}

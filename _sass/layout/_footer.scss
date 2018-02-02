@@ -1,0 +1,100 @@
+// -----------------------------------------------------------------------------
+// Footer Styling
+// -----------------------------------------------------------------------------
+
+.main-footer {
+    padding-top: 3.5rem;
+
+    color: $mid-grey;
+    background-color: $dark-grey;
+
+    font-weight: 300;
+
+    @media screen and (max-width: 768px) {
+        .grid-item:not(:last-child) {
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+
+            border-bottom:  1px solid shade($mid-grey, 50%);
+        }
+    }
+
+    .title {
+        color: white;
+
+        font-weight: 400;
+    }
+
+    .link {
+        color: white;
+    }
+
+    .logo {
+        display: inline-block;
+        margin-bottom: 2rem;
+
+        > .title {
+            margin: 0;
+
+            color: $white;
+
+            font-size: 1.3rem;
+        }
+
+        > .subtitle {
+            margin: 0;
+        }
+    }
+
+    .news-item {
+        margin-bottom: 2rem;
+
+        > .title {
+            margin-bottom: 0;
+
+            font-weight: inherit;
+
+            color: inherit;
+        }
+    }
+
+    .quick-links {
+        padding-left: 1.5rem;
+
+        .item {
+            margin: 1rem 0;
+        }
+    }
+
+    .social {
+        .link {
+            display: inline-flex;
+            width: $social-icons-size;
+            margin-right: 5px;
+            height: $social-icons-size;
+
+            border-radius: 50%;
+
+            fill: $white;
+            background-color: tint($dark-grey, 10%);
+
+            align-items: center;
+            justify-content: center;
+
+            transition: background-color .15s ease-in-out;
+
+            &:hover {
+                background-color: tint($dark-grey, 20%);
+            }
+        }
+    }
+
+    .copyright {
+        margin: 0;
+        padding: 1rem 0;
+
+        font-size: 90%;
+
+        border-top: 1px solid shade($mid-grey, 50%);
+    }
+}

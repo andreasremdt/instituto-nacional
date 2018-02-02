@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// Contact Page
+// -----------------------------------------------------------------------------
+
+.contact {
+    .title {
+        margin: 4rem 0;
+    }
+
+    .button {
+        padding: 1rem 1.5rem;
+        width: 100%;
+        margin-bottom: 0;
+
+        border-radius: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        .map {
+            height: 400px;
+            margin-top: 2rem;
+        }
+    }
+}

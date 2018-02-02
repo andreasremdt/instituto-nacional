@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Bienvenidos | Instituto Nacional de Estudios Superiores y Medio Ambiente</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Merienda+One%7CRoboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+
+    {% include header.html %}
+    {% include navigation.html %}
+
+    <!-- hero-unit -->
+    <section class="hero-unit -normal _uppercase">
+      <div class="container _flex">
+    
+        <!-- page title -->
+        <h2 class="title _big">La Escuela</h2>
+    
+        <!-- breadcrumbs menu -->
+        <nav class="breadcrumbs">
+          <a href="index.html" class="link">Inicio</a>
+          <a href="escuela.html" class="link">La Escuela</a>
+        </nav> <!-- end breadcrumbs menu -->
+    
+      </div> <!-- end container -->
+    </section> <!-- hero-unit -->
+
+    {{ content }}
+    
+    {% include footer.html %}
+
+    <script src="js/main.js" async></script>
+  </body>
+</html>

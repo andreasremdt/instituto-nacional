@@ -1,0 +1,46 @@
+// -----------------------------------------------------------------------------
+// Buttons
+// -----------------------------------------------------------------------------
+
+.button {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-bottom: 4px;
+
+    font-weight: 500;
+    font-size: 95%;
+    text-transform: uppercase;
+
+    border: 2px solid;
+    border-radius: 4px;
+
+    &.-green {
+        background-color: $brand-color;
+        color: white;
+
+        border-color: $brand-color;
+
+        transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+
+        &:hover {
+            background-color: shade($brand-color, 20%);
+
+            border-color: shade($brand-color, 20%);
+        }
+    }
+
+    &.-transparent {
+        background-color: rgba(255, 255, 255, .1);
+        color: white;
+
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+
+        border-color: $white;
+
+        transition: background-color .15s ease-in-out;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+}

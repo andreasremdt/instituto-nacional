@@ -1,0 +1,94 @@
+// -----------------------------------------------------------------------------
+// SASS Variables
+// -----------------------------------------------------------------------------
+
+/// Fallback fonts
+/// @type List
+$font-fallbacks: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, 'Segoe UI', sans-serif !default;
+
+/// Regular font family
+/// @type List
+$text-font-stack-body: Roboto, $font-fallbacks;
+
+/// Code (serif) font family
+/// @type List
+$text-font-stack-curly: 'Merienda One', serif !default;
+
+/// Default line height
+/// @type Float
+$line-height: 1.7 !default;
+
+/// Default font-size
+/// @type Integer
+$font-size: 16px !default;
+
+/// Default font-weight
+/// @type Integer
+$font-weight: 400 !default;
+
+
+/// White color
+/// @type Color
+$white: #FFFFFF;
+
+/// Copy text color
+/// @type Color
+$text-color: #676767 !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: #9DC701 !default;
+
+/// Light grey
+/// @type Color
+$light-grey: #ECECEC !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: #ABABA9 !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: #313A43 !default;
+
+/// Background grey
+/// @type Color
+$bg-grey: #FAFAFA !default;
+
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+/// The header's height
+/// @type Length
+$header-height: 140px !default;
+
+/// The dimension for the social icons
+/// @type Length
+$social-icons-size: 40px !default;
+
+/// The navigation's height
+/// @type Length
+$navigation-height: 55px !default;
+$navigation-width: 250px !default;
+
+$border-radius: 4px;
+
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 440px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+$base-url: '/images/' !default;

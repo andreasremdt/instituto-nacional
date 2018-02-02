@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Bienvenidos | Instituto Nacional de Estudios Superiores y Medio Ambiente</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Merienda+One%7CRoboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+
+    {% include header.html %}
+    {% include navigation.html %}
+
+    <!-- hero-unit -->
+    <section class="hero-unit -large">
+      <div class="container _flex">
+        <h3 class="pretitle _green _curly">Bienvenido</h3>
+        <h2 class="title _big">Únete con el Medio Ambiente</h2>
+        <p class="intro _uppercase">¿Quieres estudiar todo del Medio Ambiente y proteger tu mundo?
+          <br>¡Empieza aqui!</p>
+    
+        <div class="buttons">
+          <a href="escuela.html" class="button -green">Nuestra Escuela</a>
+          <a href="contactenos.html" class="button -transparent">Contáctenos</a>
+        </div>
+      </div>
+    </section> <!-- hero-unit -->
+    
+    {{ content }}
+    
+    {% include footer.html %}
+
+    <script src="js/main.js" async></script>
+  </body>
+</html>

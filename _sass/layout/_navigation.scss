@@ -1,0 +1,91 @@
+// -----------------------------------------------------------------------------
+// Navigation
+// -----------------------------------------------------------------------------
+
+.main-navigation {
+    @media screen and(min-width: 768px) {
+        align-items: center;
+        position: relative;
+        top: $navigation-height;
+        margin-top: -$navigation-height;
+
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    @include respond-to(medium) {
+        position: fixed;
+        top: 0;
+        left: -$navigation-width;
+        height: 100vh;
+        padding: 2rem 0;
+        flex-direction: column;
+        width: $navigation-width;
+
+        background-color: rgba(0, 0, 0, 0.85);
+
+        z-index: 99;
+        transition: left .3s ease-out;
+
+        &.-opened {
+            left: 0;
+        }
+    }
+
+    > .link {
+        display: block;
+        height: $navigation-height;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+
+        line-height: $navigation-height;
+
+        color: $white;
+
+        transition: color .15s ease-in-out;
+
+        &.-active:not(.-extra) {
+            color: $brand-color;
+
+            font-weight: 500;
+        }
+
+        &:hover, &:focus {
+            color: $brand-color;
+        }
+
+        @media screen and(min-width: 768px) {
+            &.-active:not(.-extra) {
+                border-bottom: 3px solid $brand-color;
+            }
+
+            &.-extra {
+                margin: 0 0 0 auto;
+                padding: 0 60px 0 40px;
+                position: relative;
+
+                background-color: $brand-color;
+
+                text-transform: uppercase;
+
+                transition: background-color .15s ease-in-out;
+
+                &:hover, &:focus {
+                    color: white;
+                    background-color: shade($brand-color, 20%);
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: -20px;
+                    height: 100%;
+                    width: 40px;
+
+                    background-color: inherit;
+
+                    transform: skew(35deg, 0deg);
+                }
+            }
+        }
+    }
+}

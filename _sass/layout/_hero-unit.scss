@@ -1,0 +1,87 @@
+// -----------------------------------------------------------------------------
+// Hero Unit
+// -----------------------------------------------------------------------------
+
+.hero-unit {
+    color: white;
+
+    &.-large {
+        background: url('../images/hero-unit/cover.jpg') center center no-repeat;
+        background-size: cover;
+
+        > .container {
+            height: 700px;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .pretitle {
+            position: relative;
+
+            font-size: 1.6rem;
+
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 130%;
+                width: 50px;
+
+                border-bottom: 2px solid white;
+            }
+        }
+
+        .title {
+            margin-bottom: 0;
+
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+
+            color: white;
+        }
+
+        .intro {
+            margin-bottom: 2rem;
+            margin-left: 40px;
+
+            font-size: 1.1rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+        }
+
+        .buttons {
+            margin-left: 40px;
+        }
+    }
+
+    &.-normal {
+        background: url('../images/hero-unit/normal.jpg') center center no-repeat;
+        background-size: cover;
+
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+
+        > .container {
+            align-items: center;
+            justify-content: space-between;
+
+            @media screen and (min-width: 768px) {
+                height: 300px;
+            }
+
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                padding: 1.5rem 0;
+            }
+        }
+
+        .title {
+            margin-bottom: 0;
+
+            color: $white;
+        }
+    }
+}

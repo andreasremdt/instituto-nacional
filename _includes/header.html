@@ -1,0 +1,48 @@
+<div class="container">
+
+  <!-- main-header -->
+  <header class="main-header _flex">
+
+    <!-- page logo -->
+    <img src="images/header/logo.png" alt="Escuela Nacional de Medio Ambiente" width="70" height="70">
+    <a href="index.html" class="logo">
+      <h1 class="title _curly">Instituto <span class="_green">Nacional</span>
+      </h1>
+      <p class="subtitle">Estudios Superiores y Medio Ambiente</p>
+    </a> <!-- end page logo -->
+
+
+
+    <!-- contact links -->
+    <ul class="contact _no-bullets">
+      <li class="item">
+        <svg class="icon" width="40" height="40">
+          <use xlink:href="images/header/icons-defs.svg#address"></use>
+        </svg>
+        <span>Calle al Salto Jimenoa<br>42000 Jarabacoa, La Vega
+        </span>
+      </li>
+      <li class="item">
+        <svg class="icon" width="40" height="40">
+          <use xlink:href="images/header/icons-defs.svg#phone"></use>
+        </svg>
+        <a href="tel:8494089048">(849) 408 9048</a>
+        <br>
+      </li>
+    </ul> <!-- end contact links -->
+
+
+
+     {% include social.html %}
+
+
+
+    <!-- mobile menu toggle -->
+    <button type="button" data-action="menu" class="toggle" title="Toggle Navigation">
+      <svg class="icon" width="28" height="28">
+        <use xlink:href="images/header/icons-defs.svg#bars"></use>
+      </svg>
+    </button> <!-- end mobile menu toggle -->
+
+  </header> <!-- end main-header -->
+</div> <!-- end container -->

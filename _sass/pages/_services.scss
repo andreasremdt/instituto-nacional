@@ -1,0 +1,44 @@
+// -----------------------------------------------------------------------------
+// Services Page
+// -----------------------------------------------------------------------------
+
+.tourism {
+    margin-top: 3rem;
+
+    .services {
+        margin: 3rem 0;
+
+        .icon {
+            padding: 1rem;
+
+            background-color: $brand-color;
+            fill: $white;
+        }
+    }
+
+    .service:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    .image {
+        flex-basis: 30%;
+    }
+
+    .content {
+        flex-basis: 70%;
+    }
+}
+
+.nature-day {
+    margin-top: 3rem;
+
+    .what-is {
+        margin: 3rem 0;
+    }
+}
+
+
+.contact-us-now {
+    background: transparent url('../images/pages/services/background.jpg') center center no-repeat;
+    background-size: cover;
+}
