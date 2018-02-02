@@ -1,12 +1,16 @@
 ---
 layout: careers
 title: Gestión Ambiental
+image: /images/freebie-psd-flat-ui-kit-large.jpg
 ---
-
 ## ¿Qué es?
+
+Testing
+
 Es un profesional con la capacidad, los conocimientos y las habilidades necesarias para aplicar las herramientas fundamentales en la evaluación y control de proyectos de gestión ambiental, con vocación social. Así como también, para la gestión, auditoría y control de calidad en la protección del medio ambiente mediante la aplicación de las normas establecidas; con eficacia, eficiencia y sentido ético.
 
 ## ¿Qué sabe hacer?
+
 Los técnicos egresados podrán ejercer las actividades y funciones siguientes:
 
 1. Conoce y valora el estado de equilibrio del medio ambiente, pudiendo discriminar las intervenciones humanas que generan impacto en él, para buscar las medidas de protección.
