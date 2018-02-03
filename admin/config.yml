@@ -7,8 +7,8 @@ publish_mode: editorial_workflow
 media_folder: "images/"
 
 collections:
-  - name: "carreras"
-    label: "Carreras"
+  - name: "careers"
+    label: "Careers"
     folder: "_carreras"
     create: false
     slug: "{{slug}}"
@@ -16,13 +16,14 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "careers" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Content", name: "body", widget: "markdown" }
-  - name: "config"
-    label: "Configuración"
-    files:
-      - name: "redes"
-        label: "Redes Sociales"
-        file: "_data/social.yml"
-        fields:
-          - { label: "Name", name: "name", widget: "string" }
-          - { label: "Text", name: "text", widget: "string" }
-          - { label: "URL", name: "url", widget: "string" }
+  - label: "Blog"
+    name: "blog"
+    folder: "_posts"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widhet: "string" }
+      - { label: "Publish date", name: "date", widget: "datetime" }
+      - { label: "Featured image", name: "image_path", widget: "image" }
+      - { label: "Tags", name: "tags", widget: "select", options: ["news", "nature", "other"] }
+      - { label: "Body", name: "body", widget: "markdown" }

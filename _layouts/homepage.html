@@ -18,20 +18,127 @@
     <!-- hero-unit -->
     <section class="hero-unit -large">
       <div class="container _flex">
-        <h3 class="pretitle _green _curly">Bienvenido</h3>
-        <h2 class="title _big">Únete con el Medio Ambiente</h2>
-        <p class="intro _uppercase">¿Quieres estudiar todo del Medio Ambiente y proteger tu mundo?
-          <br>¡Empieza aqui!</p>
+        <h3 class="pretitle _green _curly">{{ page.title }}</h3>
+        <h2 class="title _big">{{ page.sections.hero.title }}</h2>
+        <p class="intro _uppercase">{{ page.sections.hero.subtitle }}</p>
     
         <div class="buttons">
-          <a href="escuela.html" class="button -green">Nuestra Escuela</a>
-          <a href="contactenos.html" class="button -transparent">Contáctenos</a>
+          {% for button in page.sections.hero.buttons %}
+            <a href="{{ button.url }}" class="button -{{ button.color }}">{{ button.title }}</a>
+          {% endfor %}
         </div>
       </div>
     </section> <!-- hero-unit -->
     
-    {{ content }}
+
+    <!-- about -->
+    <section class="about _section">
+      <div class="container">
+        <h3 class="pretitle _green _curly _centered">{{ page.sections.about.pretitle }}</h3>
+        <h2 class="_big _centered">{{ page.sections.about.title }}</h2>
+        <p class="_centered">{{ content }}</p>
+
+        <div class="grid">
+
+          {% for item in page.sections.about.items %}
+            <a href="{{ item.url }}" class="tile grid-item">
+              <figure>
+                <img src="{{ item.image_path }}" class="_img-full" alt="{{ item.title }}" width="300" height="250">
+                <figcaption class="caption">
+                  <h3 class="title">{{ item.title }}</h3>
+                  <p class="text">{{ item.caption }}</p>
+                </figcaption>
+              </figure>
+            </a>
+          {% endfor %}
     
+        </div> <!-- end grid -->
+      </div> <!-- end container -->
+    </section> <!-- end about -->
+
+
+    <!-- careers -->
+    <section class="careers">
+      <h2 class="_hidden">Carreras</h2>
+      <div class="container _flex _section">
+    
+        <!-- tabs -->
+        <div class="tabs _flex">
+          {% for career in site.carreras %}
+            <button type="button" class="selector _flex" data-action="tab" data-target="{{ career.title | slugify }}">
+              <svg class="icon" width="28" height="28">
+                <use xlink:href="images/pages/home/icons-defs.svg#{{ career.icon }}"></use>
+              </svg> {{ career.title }}
+            </button>
+          {% endfor %}
+        </div>
+        <!-- end tabs -->
+    
+        <!-- tab content -->
+        <div class="tab-content">
+          {% for career in site.carreras %}
+            <article class="tab" hidden data-tab="{{ career.title | slugify }}">
+              <h2 class="title _big _lined">{{ career.title }}</h2>
+            
+              <figure class="intro _flex">
+                <img src="{{ career.image_path }}" class="image" alt="{{ career.title }}" width="200" height="134">
+                <figcaption>{{ career.excerpt }}</figcaption>
+              </figure>
+            
+              <ul>
+                {% for responsabiltiy in career.responsabilidades %}
+                  <li>{{ responsabiltiy }}</li>
+                {% endfor %}
+              </ul>
+            
+              <a href="{{ career.url }}" class="button -green">Más</a>
+            </article>
+          {% endfor %}
+  
+        </div> <!-- end tab-content -->
+      </div> <!-- end container -->
+    </section> <!-- end careers -->
+
+
+
+    <!-- news -->
+    <section class="latest-news _section">
+      <div class="container">
+    
+        <h2 class="_big _lined">{{ page.sections.news.title }}</h2>
+        <p>{{ page.sections.news.subtitle }}</p>
+
+        <div class="grid">
+          {% for post in site.posts %}
+            <article class="grid-item blog-post _flex">
+              <figure>
+                <img src="{{ post.image_path }}" class="image _img-full" alt="{{ post.title }}" width="300" height="250">
+              </figure>
+      
+              <div class="content">
+                <ul class="_no-bullets _uppercase">
+                  <li class="category">{{ post.tag }}</li>
+                </ul>
+      
+                <h3 class="title _uppercase">
+                  <a href="{{ post.url }}">{{ post.title }}</a>
+                </h3>
+                <p>{{ post.excerpt | strip_html | truncatewords:30 }}</p>
+              </div>
+      
+      
+              <footer class="footer _flex">
+                <span>De {{ post.author }}</span>
+                <span>{{ post.date | date: "%d/%m/%Y" }}</span>
+              </footer>
+            </article>
+          {% endfor %}
+
+        </div> <!-- end grid -->
+      </div>  <!-- end container -->
+    </section> <!-- end news -->
+    
+
     {% include footer.html %}
 
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>

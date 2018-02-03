@@ -1,6 +1,13 @@
 ---
 layout: careers
 title: Gestión Ambiental
+icon: water
+image_path: /images/pages/home/gestion-ambiental.jpg
+excerpt: Es un profesional con la capacidad, los conocimientos y las habilidades necesarias para aplicar las herramientas fundamentales en la evaluación y control de proyectos de gestión ambiental, con vocación social.
+responsabilidades:
+  - Lorem ipsum 1
+  - Lorem ipsum 2
+  - Lorem ipsum 3
 ---
 
 ## ¿Qué es?

@@ -1,6 +1,13 @@
 ---
 layout: careers
 title: Ciencias Forestales
+icon: nature
+image_path: /images/pages/home/firefighter.jpg
+excerpt: Es un profesional forestal con conocimientos teóricos prácticos en las técnicas de producción y protección de bosques y con la capacidad de transferirlo a los potenciales productores.
+responsabilidades:
+  - Lorem ipsum 1
+  - Lorem ipsum 2
+  - Lorem ipsum 3
 ---
 
 ## ¿Qué es?
