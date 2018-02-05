@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<!-- history -->
+<main class="history _section">
+  <div class="container">
+    <h3 class="pretitle _centered _curly _green">{{ page.pre_heading }}</h3>
+    <h2 class="title _centered _big _lined -center">{{ page.heading }}</h2>
+    
+    {{ content }}
+    
+    <ol class="history-list">
+      {% for entry in page.entries %}
+        <li class="entry _flex">
+          <h4 class="year _centered _green">{{ entry.year }}</h4>
+          <p class="content">{{ entry.content }}</p>
+        </li>
+      {% endfor %}
+    </ol>
+  </div> <!-- end container -->
+</main> <!-- end history -->

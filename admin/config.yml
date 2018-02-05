@@ -27,10 +27,22 @@ collections:
       - { label: "Featured image", name: "image_path", widget: "image" }
       - { label: "Tag", name: "tag", widget: "select", options: ["news", "nature", "other"] }
       - { label: "Body", name: "body", widget: "markdown" }
-  - label: "Pages"
+  - label: "Páginas"
     name: "pages"
     create: false
     files:
+      - label: "Historia"
+        name: "history"
+        file: "historia.md"
+        fields:
+          - { label: "Pre-encabezado", name: "pre_heading", widget: "string" }
+          - { label: "Encabezado", name: "heading", widget: "string" }
+          - label: "Entradas"
+            name: "entries"
+            widget: "list"
+            fields:
+              - { label: "Año", name: "year", widget: "number" }
+              - { label: "Contenido", name: "content", widget: "markdown" }
       - label: "Profesores"
         name: "profesores"
         file: "profesores.md"
@@ -44,7 +56,7 @@ collections:
               - { label: "Nombre de profesor", name: "name", widget: "string" }
               - { label: "Descripción", name: "description", widget: "text" }
               - { label: "Imagen", name: "image_path", widget: "image" }
-      - label: "Homepage"
+      - label: "Inicio"
         name: "home"
         file: "index.md"
         fields:
@@ -109,4 +121,3 @@ collections:
                 fields:
                   - { label: Title, name: title, widget: string }
                   - { label: Subtitle, name: subtitle, widget: string }
-

@@ -10,7 +10,7 @@
           <p class="subtitle">{{ site.subtitle }}</p>
         </a> <!-- end page logo -->
 
-        <h3 class="title _uppercase">Follow Us:</h3>
+        <h3 class="title _uppercase">Síguenos:</h3>
 
         {% include social.html %}
       </section>
@@ -18,15 +18,12 @@
       <section class="grid-item">
         <h3 class="title _uppercase">Noticias</h3>
 
-        <article class="news-item">
-          <h4 class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
-          <a class="link" href="blog-detail.html">Lee más</a>
-        </article>
-
-        <article class="news-item">
-          <h4 class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
-          <a class="link" href="blog-detail.html">Lee más</a>
-        </article>
+        {% for post in site.posts limit: 2 %}
+          <article class="news-item">
+            <h4 class="title">{{ post.excerpt | strip_html | truncatewords:10 }}</h4>
+            <a class="link" href="{{ post.url }}">Lee más</a>
+          </article>
+        {% endfor %}
       </section>
 
       <section class="grid-item">
@@ -59,25 +56,18 @@
       </section>
 
       <section class="grid-item">
-        <h3 class="title _uppercase">Quick Links</h3>
+        <h3 class="title _uppercase">Navigación</h3>
 
-        <ul class="quick-links">
-          <li class="item">
-            <a href="escuela.html">La Escuela</a>
-          </li>
-          <li class="item">
-            <a href="servicios.html">Servicios</a>
-          </li>
-          <li class="item">
-            <a href="blog.html">Blog</a>
-          </li>
-          <li class="item">
-            <a href="contactenos.html">Contáctenos</a>
-          </li>
+        <ul class="_no-bullets">
+          {% for item in site.data.navigation %}
+            <li>
+              <a href="{{ item.link }}">{{ item.name }}</a>
+            </li>
+          {% endfor %}
         </ul>
       </section>
     </div> <!-- end grid -->
 
-    <p class="copyright _centered">Copyright &copy; 2017 Escuela Ambiental. All Rights Reserved.</p>
+    <p class="copyright _centered">Copyright &copy; {{ 'now' | date: "%Y" }} {{ site.title }}. Todos los derechos reservados.</p>
   </div> <!-- end container -->
 </footer> <!-- end main-footer -->
