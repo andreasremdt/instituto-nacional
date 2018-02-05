@@ -109,7 +109,7 @@
         <p>{{ page.sections.news.subtitle }}</p>
 
         <div class="grid">
-          {% for post in site.posts %}
+          {% for post in site.posts limit: 3 %}
             <article class="grid-item blog-post _flex">
               <figure>
                 <img src="{{ post.image_path }}" class="image _img-full" alt="{{ post.title }}" width="300" height="250">

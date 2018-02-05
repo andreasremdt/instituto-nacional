@@ -25,5 +25,88 @@ collections:
       - { label: "Author", name: "author", widhet: "string" }
       - { label: "Publish date", name: "date", widget: "datetime" }
       - { label: "Featured image", name: "image_path", widget: "image" }
-      - { label: "Tags", name: "tags", widget: "select", options: ["news", "nature", "other"] }
+      - { label: "Tag", name: "tag", widget: "select", options: ["news", "nature", "other"] }
       - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Pages"
+    name: "pages"
+    create: false
+    files:
+      - label: "Profesores"
+        name: "profesores"
+        file: "profesores.md"
+        fields:
+          - { label: "Título de la página", name: "title", widget: "string" }
+          - { label: "Contenido", name: "body", widget: "markdown" }
+          - label: "Lista de profesores"
+            name: "teachers"
+            widget: "list"
+            fields:
+              - { label: "Nombre de profesor", name: "name", widget: "string" }
+              - { label: "Descripción", name: "description", widget: "text" }
+              - { label: "Imagen", name: "image_path", widget: "image" }
+      - label: "Homepage"
+        name: "home"
+        file: "index.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - label: Sections
+            name: sections
+            widget: object
+            fields:
+              - label: Hero Section
+                name: hero
+                widget: object
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Subtitle, name: subtitle, widget: string }
+                  - label: Links
+                    name: buttons
+                    widget: list
+                    fields:
+                      - { label: Title, name: title, widget: string }
+                      - label: URL
+                        name: url
+                        widget: select
+                        options:
+                          - { label: Homepage, value: / }
+                          - { label: La Escuela, value: /escuela/ }
+                          - { label: Campus, value: /campus/ }
+                          - { label: Carreras, value: /carreras/ }
+                          - { label: Profesores, value: /profesores/ }
+                          - { label: Servicios, value: /servicios/ }
+                          - { label: Blog, value: /blog/ }
+                          - { label: Contáctenos, value: /contactenos/ }
+                      - { label: Color, name: color, default: green, widget: select, options: [green, transparent] }
+              - label: About Section
+                name: about
+                widget: object
+                fields:
+                  - { label: Pre-title, name: pretitle, widget: string }
+                  - { label: Title, name: title, widget: string }
+                  - label: Items
+                    name: items
+                    widget: list
+                    fields:
+                      - { label: Title, name: title, widget: string }
+                      - { label: Text, name: caption, widget: string }
+                      - { label: Image, name: image_path, widget: image }
+                      - label: URL
+                        name: url
+                        widget: select
+                        options:
+                          - { label: Homepage, value: / }
+                          - { label: La Escuela, value: /escuela/ }
+                          - { label: Campus, value: /campus/ }
+                          - { label: Carreras, value: /carreras/ }
+                          - { label: Profesores, value: /profesores/ }
+                          - { label: Servicios, value: /servicios/ }
+                          - { label: Blog, value: /blog/ }
+                          - { label: Contáctenos, value: /contactenos/ }
+              - label: News Section
+                name: news
+                widget: object
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Subtitle, name: subtitle, widget: string }
+

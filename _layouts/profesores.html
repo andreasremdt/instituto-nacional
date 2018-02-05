@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<!-- teachers -->
+<main class="_section">
+  <div class="container">
+
+    {{ content }}
+
+    <div class="grid">
+      {% for teacher in page.teachers %}
+      <figure class="tile grid-item">
+        <img src="{{ teacher.image_path }}" class="_img-full" alt="{{ teacher.name }}">
+        <figcaption class="caption">
+          <h3 class="title">{{ teacher.name }}</h3>
+          <p class="text">{{ teacher.description }}</p>
+        </figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</main> <!-- end teachers -->

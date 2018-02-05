@@ -1,6 +1,6 @@
 <!-- social icons -->
 <nav class="social">
-  {% for item in site.data.social %}
+  {% for item in site.social %}
     <a href="{{ item.url }}" target="_blank" rel="noopener" class="link" title="{{ item.text }}">
       <svg class="icon" width="20" height="20">
         <use xlink:href="/images/header/icons-defs.svg#{{ item.name | downcase }}"></use>
