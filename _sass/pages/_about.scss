@@ -1,3 +1,54 @@
-// -----------------------------------------------------------------------------
-// About Page
-// -----------------------------------------------------------------------------
+.about-us {
+  .intro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-column-gap: 3rem;
+  }
+
+  .intro__pretitle {
+    margin: 0;
+    
+    text-align: right;
+    font-size: 1.6rem;
+  }
+
+  .intro__title {
+    margin: 0 0 3rem 0;
+
+    text-align: right;
+  }
+
+  .intro__content {
+    margin: 0 0 3rem 0;
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+    align-self: end;
+  }
+
+  .article {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 3.4rem auto;
+    grid-column-gap: 1.5rem;
+  }
+
+  .article__title {
+    font-weight: 500;
+  }
+
+  .article__icon {
+    padding: 1.5rem;
+    margin-top: 5px;
+    box-sizing: content-box;
+
+    grid-row: 1 / -1;
+    
+    fill: $brand-color;
+
+    border: 1px solid $light-grey;
+  }
+
+
+}

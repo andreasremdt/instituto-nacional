@@ -6,7 +6,7 @@
     color: white;
 
     &.-large {
-        background: url('../images/hero-unit/cover.jpg') center center no-repeat;
+        background: url('../images/hero-big.jpg') center center no-repeat;
         background-size: cover;
 
         > .container {
@@ -59,7 +59,7 @@
     }
 
     &.-normal {
-        background: url('../images/hero-unit/normal.jpg') center center no-repeat;
+        background: url('../images/hero-small.jpg') center center no-repeat;
         background-size: cover;
 
         text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);

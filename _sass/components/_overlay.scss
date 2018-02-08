@@ -1,0 +1,29 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.overlay__inner {
+  position: relative;
+}
+
+.overlay__image {
+  max-width: 90vw;
+  max-height: 80vh;
+}
+
+.overlay__caption {
+  position: absolute;
+  bottom: 0;
+  
+  color: white;
+}
