@@ -5,12 +5,12 @@ title: Bienvenidos
 
 <section class="section -big about">
   <div class="container">
-    <h3 class="pretitle _green _curly _centered">{{ site.data.home.sections.about.pretitle }}</h3>
-    <h2 class="_big _centered">{{ site.data.home.sections.about.title }}</h2>
-    <p class="_centered">{{ site.data.home.sections.about.content | markdownify }}</p>
+    <h3 class="pretitle _green _curly _centered">{{ site.data.home.about.pretitle }}</h3>
+    <h2 class="_big _centered">{{ site.data.home.about.title }}</h2>
+    <p class="_centered">{{ site.data.home.about.content | markdownify }}</p>
 
     <div class="grid">
-      {% for item in site.data.home.sections.about.items %}
+      {% for item in site.data.home.about.items %}
         <a href="{{ item.url }}" class="content-tile grid-4">
           <figure>
             <img src="{{ item.image_path }}" class="_img-fluid" alt="{{ item.title }}" width="300" height="250">
@@ -72,8 +72,8 @@ title: Bienvenidos
 
 <section class="section -big latest-news">
   <div class="container">
-    <h2 class="_big _lined">{{ site.data.home.sections.news.title }}</h2>
-    <p>{{ site.data.home.sections.news.subtitle }}</p>
+    <h2 class="_big _lined">{{ site.data.home.news.title }}</h2>
+    <p>{{ site.data.home.news.subtitle }}</p>
 
     <div class="grid">
       {% for post in site.posts limit: 3 %}

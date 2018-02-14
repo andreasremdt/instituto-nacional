@@ -2,13 +2,12 @@
   <section class="hero-unit -home">
     <div class="container inner">
       <h3 class="pretitle _green _curly _lined">{{ page.title }}</h3>
-      <h2 class="title _big">{{ site.data.home.sections.hero.title }}</h2>
-      <p class="intro _uppercase">{{ site.data.home.sections.hero.subtitle }}</p>
+      <h2 class="title _big">{{ site.data.home.hero.title }}</h2>
+      <p class="intro _uppercase">{{ site.data.home.hero.subtitle }}</p>
 
       <div class="buttons">
-        {% for button in site.data.home.sections.hero.buttons %}
-          <a href="{{ button.url }}" class="button -{{ button.color }}">{{ button.title }}</a>
-        {% endfor %}
+        <a href="/instituto/" class="button -green">Nuestro Instituto</a>
+        <a href="/contactenos/" class="button -transparent">Contáctenos</a>
       </div>
     </div>
   </section>

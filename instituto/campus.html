@@ -4,38 +4,42 @@ title: Campus
 ---
 
 <div class="section -big campus _centered">
-  <ul class="gallery-filter">
-    <li class="item">
-      <a class="button -green" href="#" data-category="">Todas</a>
-    </li>
-    <li class="item">
-      <a class="button" href="#" data-category="recinto 1">Recintos 1</a>
-    </li>
-    <li class="item">
-      <a class="button" href="#" data-category="recinto 2">Recintos 2</a>
-    </li>
-    <li class="item">
-      <a class="button" href="#" data-category="aulas">Aulas</a>
-    </li>
-    <li class="item">
-      <a class="button" href="#" data-category="otros">Otros lugares</a>
-    </li>
-  </ul>
+  <nav>
+    <button class="button -green" type="button" data-action="filter" data-filter="">Todas</button>
+    <button class="button" type="button" data-action="filter" data-filter="recinto 1">Recintos 1</button>
+    <button class="button" type="button" data-action="filter" data-filter="recinto 2">Recintos 2</button>
+    <button class="button" type="button" data-action="filter" data-filter="aulas">Aulas</button>
+    <button class="button" type="button" data-action="filter" data-filter="otros">Otros lugares</button>
+  </nav>
 </div>
 
-<div class="gallery-wrapper">
+<figure class="gallery-wrapper">
   {% for image in site.data.campus.images %}
-    <figure class="figure" data-categories="{{ image.category }}">
-      <img class="image" src="{{ image.src}}" alt="{{ image.caption }}" width="320" height="180">
-      <figcaption class="caption">{{ image.caption }}</figcaption>
-    </figure>
+    <a href="{{ image.src }}" class="item" title="{{ image.caption }}" data-action="image" data-categories="{{ image.category }}">
+      <img src="{{ image.src }}" class="image" alt="{{ image.caption }}" width="320" height="180">
+    </a>
   {% endfor %}
-</div>
+</figure>
 
-<!-- overlay -->
-<div class="overlay overlay--is-hidden">
-  <figure class="overlay__inner">
-    <img class="overlay__image" src="" alt="">
-    <figcaption class="overlay__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, officia obcaecati, harum dignissimos, consectetur assumenda dicta quisquam magni consequatur molestias beatae voluptatum nam neque eos!</figcaption>
-  </figure>
-</div> <!-- end overlay -->
+
+
+<div class="image-lightbox -hidden">
+  <div class="inner">
+    <button class="close" type="button" title="Close">&times;</button>
+    <button class="prev" type="button" title="Previous photo">
+      <svg viewBox="0 0 11 28" width="40" height="40">
+        <path d="M9.797 8.5c0 0.125-0.063 0.266-0.156 0.359l-6.141 6.141 6.141 6.141c0.094 0.094 0.156 0.234 0.156 0.359s-0.063 0.266-0.156 0.359l-0.781 0.781c-0.094 0.094-0.234 0.156-0.359 0.156s-0.266-0.063-0.359-0.156l-7.281-7.281c-0.094-0.094-0.156-0.234-0.156-0.359s0.063-0.266 0.156-0.359l7.281-7.281c0.094-0.094 0.234-0.156 0.359-0.156s0.266 0.063 0.359 0.156l0.781 0.781c0.094 0.094 0.156 0.219 0.156 0.359z"></path>
+      </svg>
+    </button>
+    <button class="next" type="button" title="Next photo">
+      <svg viewBox="0 0 9 28" width="40" height="40">
+        <path d="M9.297 15c0 0.125-0.063 0.266-0.156 0.359l-7.281 7.281c-0.094 0.094-0.234 0.156-0.359 0.156s-0.266-0.063-0.359-0.156l-0.781-0.781c-0.094-0.094-0.156-0.219-0.156-0.359 0-0.125 0.063-0.266 0.156-0.359l6.141-6.141-6.141-6.141c-0.094-0.094-0.156-0.234-0.156-0.359s0.063-0.266 0.156-0.359l0.781-0.781c0.094-0.094 0.234-0.156 0.359-0.156s0.266 0.063 0.359 0.156l7.281 7.281c0.094 0.094 0.156 0.234 0.156 0.359z"></path>
+      </svg>
+    </button>
+
+    <figure>
+      <img class="image" src="/images/area-bosque-seco-2.jpg" alt="">
+      <figcaption class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, officia obcaecati, harum dignissimos, consectetur assumenda dicta quisquam magni consequatur molestias beatae voluptatum nam neque eos!</figcaption>
+    </figure>
+  </div>
+</div>

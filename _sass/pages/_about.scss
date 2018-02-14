@@ -38,3 +38,38 @@
     margin-bottom: 4rem;
   }
 }
+
+.about-careers,
+.about-campus,
+.about-teachers {
+  .grid-7 {
+    align-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-intro {
+    .grid-5 {
+      text-align: left;
+    }
+  }
+
+  .about-careers {
+    .grid-7 {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .about-campus {
+    .grid-7 {
+      order: -1;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .about-teachers {
+    .grid-7 {
+      margin-bottom: 1rem;
+    }
+  }
+}

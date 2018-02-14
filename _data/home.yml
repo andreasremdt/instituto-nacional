@@ -1,31 +1,23 @@
-sections:
-  hero:
-    title: Únete con el Medio Ambiente
-    subtitle: ¿Quieres estudiar todo del medio ambiente y proteger tu mundo?<br>¡Empieza aquí!
-    buttons:
-      - title: Nuestra Escuela
-        url: /escuela/
-        color: green
-      - title: Contáctenos
-        url: /contactenos/
-        color: transparent
-  about:
-    pretitle: 377+ estudiantes graduados
-    title: Preperando técnicos desde 1968
-    content: Úbicado en el corazón verde de la República Dominicana en Jarabacoa, preparamos jóvenes de todo el país para una carrera técnica. Nuestros estudiantes se gradúan como **Gestores Ambientales** y **Ciencias Forestales** y trabajan en empresas que se dedican al **medio ambiente**.
-    items:
-      - title: 2 campus
-        caption: 20 hectáreas de lo mejor del medio ambiente
-        image_path: /images/pages/home/campus.jpg
-        url: /campus/
-      - title: 2 carreras
-        caption: Gestión Ambiental y Ciencias Forestales
-        image_path: /images/pages/home/carreras.jpg
-        url: /carreras/
-      - title: 12 profesores
-        caption: Cada asignatura tiene su especialista
-        image_path: /images/pages/home/profesores.jpg
-        url: /profesores/
-  news:
-    title: Últimas Noticias
-    subtitle: Lea nuestras últimas noticias sobre grandes eventos o anuncios interesantes.
+hero:
+  title: Únete con el Medio Ambiente
+  subtitle: ¿Quieres estudiar todo del medio ambiente y proteger tu mundo?<br>¡Empieza aquí!
+about:
+  pretitle: 377+ estudiantes graduados
+  title: Preperando técnicos desde 1968
+  content: Úbicado en el corazón verde de la República Dominicana en Jarabacoa, preparamos jóvenes de todo el país para una carrera técnica. Nuestros estudiantes se gradúan como **Gestores Ambientales** y **Ciencias Forestales** y trabajan en empresas que se dedican al **medio ambiente**.
+  items:
+    - title: 2 campus
+      caption: 20 hectáreas de lo mejor del medio ambiente
+      image_path: /images/pages/home/campus.jpg
+      url: /instituto/campus/
+    - title: 2 carreras
+      caption: Gestión Ambiental y Ciencias Forestales
+      image_path: /images/pages/home/carreras.jpg
+      url: /instituto/carreras/
+    - title: 12 profesores
+      caption: Cada asignatura tiene su especialista
+      image_path: /images/pages/home/profesores.jpg
+      url: /instituto/profesores/
+news:
+  title: Últimas Noticias
+  subtitle: Lea nuestras últimas noticias sobre grandes eventos o anuncios interesantes.
