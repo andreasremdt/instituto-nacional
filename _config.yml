@@ -1,5 +1,5 @@
 # Base Variables
-title: Instituto Ambiental
+title: Instituto del Ambiente
 subtitle: Estudios Superiores en Medio Ambiente y Recursos Naturales
 phone: 809 365 4650
 address: Calle al Salto Jimenoa<br>42000 Jarabacoa, La Vega
@@ -26,4 +26,4 @@ permalink: pretty
 collections:
   carreras:
     output: true
-    permalink: /:collection/:name
+    permalink: /instituto/:collection/:name

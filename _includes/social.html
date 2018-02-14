@@ -1,10 +1,9 @@
-<!-- social icons -->
-<nav class="social">
+<nav class="social-links">
   {% for item in site.social %}
     <a href="{{ item.url }}" target="_blank" rel="noopener" class="link" title="{{ item.text }}">
       <svg class="icon" width="20" height="20">
-        <use xlink:href="/images/header/icons-defs.svg#{{ item.name | downcase }}"></use>
+        <use xlink:href="/images/icons/symbol-defs.svg#{{ item.name | downcase }}"></use>
       </svg>
     </a>
   {% endfor %}
-</nav> <!-- end social-icons -->
+</nav>

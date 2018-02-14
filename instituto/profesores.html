@@ -1,0 +1,23 @@
+---
+layout: default
+title: Profesores
+---
+
+<main class="section -big">
+  <div class="container">
+
+    {{ site.data.teachers.content }}
+
+    <div class="grid">
+      {% for teacher in site.data.teachers.teachers %}
+      <figure class="content-tile grid-3">
+        <img src="{{ teacher.image_path }}" class="_img-fluid" alt="{{ teacher.name }}">
+        <figcaption class="caption">
+          <h3 class="title">{{ teacher.name }}</h3>
+          <p class="text">{{ teacher.description }}</p>
+        </figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</main>

@@ -1,15 +1,15 @@
-.not-found {
+.error-404 {
   background: transparent url('/images/404-background.jpg') bottom right no-repeat;
   background-size: contain;
-}
-
-.not-found__title {
-  margin: 0;
-
-  font-size: 4.5rem;
-  line-height: 1.2;
-}
-
-.not-found__content {
-  margin: 0 0 3rem;
+  
+  .title {
+    margin: 0;
+  
+    font-size: 4.5rem;
+    line-height: 1.2;
+  }
+  
+  .content {
+    margin: 0 0 3rem;
+  }
 }

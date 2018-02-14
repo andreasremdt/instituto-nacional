@@ -1,10 +1,7 @@
-<div class="container">
+<nav class="page-navigation container">
+  <h2 class="heading">Navegación</h2>
 
-  <!-- main-navigation -->
-  <nav class="main-navigation _flex">
-    {% for item in site.data.navigation %}
-      <a href="{{ item.link }}" class="link{% if item.link == page.url %} -active{% endif %}">{{ item.name }}</a>
-    {% endfor %}
-  </nav> <!-- end main-navigation -->
-  
-</div> <!-- end container -->
+  {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" class="link{% if item.link == page.url %} -active{% endif %}">{{ item.name }}</a>
+  {% endfor %}
+</nav>

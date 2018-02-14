@@ -3,62 +3,35 @@ title: Contáctenos
 layout: default
 ---
 
-<!-- contact -->
-<div class="contact _section">
-    <div class="container">
-
-        <section class="grid">
-            <article class="grid-item box _centered">
-                <h3 class="heading _uppercase">Correo electrónico</h3>
-                <a class="content" href="mailto:{{ site.email }}">{{ site.email }}</a>
-            </article>
-
-            <article class="grid-item box _centered">
-                <h3 class="heading _uppercase">Número de teléfono</h3>
-                <a class="content" href="tel:{{ site.phone | remove: ' ' }}">{{ site.phone }}</a>
-            </article>
-
-            <article class="grid-item box _centered">
-                <h3 class="heading _uppercase">Ubicación</h3>
-                <p class="content">{{ site.address }}</p>
-            </article>
-        </section>
-
-        <section>
-            <h2 class="title _big _centered _lined -center">Escríbenos un correo electrónico</h2>
-
-            <div class="grid">
-                <form action="#" method="POST" class="grid-item">
-                    <input type="text" class="input" name="name" placeholder="Su nombre..." required>
-                    <input type="email" class="input" name="email" placeholder="Su correo electrónico..." required>
-                    <textarea class="input" name="message" rows="6" placeholder="Su mensaje..." required></textarea>
-                    <button type="submit" class="button -green">Enviar</button>
-                </form>
-
-                <!-- google maps -->
-                <div class="grid-item map"></div> <!-- end google maps -->
-            </div>
-        </section>
-    </div>
-</div> <!-- end contact -->
-
-
-<script>
-    function initMap() {
-        var url = {
-            lat: 19.1235663,
-            lng: -70.6060518
-        };
-
-        var map = new google.maps.Map(document.querySelector('div.map'), {
-            zoom: 14,
-            center: url,
-            disableDefaultUI: true
-        });
-        var marker = new google.maps.Marker({
-            position: url,
-            map: map
-        });
-    }
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvasE3DqVJKzmtB5xXkYfFtQkQ7kxEhZM&callback=initMap">
+<main class="contact section -big">
+  <div class="container">
+    <section class="grid">
+      <article class="grid-4 box _centered">
+        <h3 class="_uppercase _lined -center">Correo electrónico</h3>
+        <a class="content" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </article>
+  
+      <article class="grid-4 box _centered">
+        <h3 class="_uppercase _lined -center">Número de teléfono</h3>
+        <a class="content" href="tel:{{ site.phone | remove: ' ' }}">{{ site.phone }}</a>
+      </article>
+  
+      <article class="grid-4 box _centered">
+        <h3 class="_uppercase _lined -center">Ubicación</h3>
+        <p class="content">{{ site.address }}</p>
+      </article>
+    </section>
+  
+    <section class="grid">
+      <h2 class="grid-12 title _big _centered _lined -center">Escríbenos un correo electrónico</h2>
+      <form action="#" method="POST" class="grid-6">
+        <input type="text" class="input" name="name" placeholder="Su nombre..." required>
+        <input type="email" class="input" name="email" placeholder="Su correo electrónico..." required>
+        <textarea class="input" name="message" rows="6" placeholder="Su mensaje..." required></textarea>
+        <button type="submit" class="button -green">Enviar</button>
+      </form>
+  
+      <div class="grid-6 map"></div>
+    </section>
+  </div>
+</main>

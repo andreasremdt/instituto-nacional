@@ -12,23 +12,27 @@
 @import 'base/helpers';
 @import 'base/typography';
 
+@import 'layout/layout';
 @import 'layout/header';
 @import 'layout/navigation';
 @import 'layout/grid';
+@import 'layout/social';
 @import 'layout/breadcrumbs';
 @import 'layout/hero-unit';
 @import 'layout/footer';
 @import 'layout/forms';
 
 @import 'components/buttons';
+@import 'components/posts';
 @import 'components/inputs';
 @import 'components/overlay';
+@import 'components/tiles';
+@import 'components/boxes';
 
 @import 'pages/home';
 @import 'pages/contact';
 @import 'pages/about';
 @import 'pages/services';
-@import 'pages/teachers';
 @import 'pages/blog';
 @import 'pages/history';
 @import 'pages/campus';

@@ -1,16 +1,8 @@
-// -----------------------------------------------------------------------------
-// Breadcrumbs
-// -----------------------------------------------------------------------------
-
 .breadcrumbs {
-    > .link:last-child {
-        color: $brand-color;
-    }
+  > .link:not(:last-child)::after {
+    margin-left: 7px;
+    margin-right: 7px;
 
-    > .link:not(:last-child)::after {
-        margin-left: 7px;
-        margin-right: 7px;
-
-        content: '/';
-    }
+    content: '\\';
+  }
 }

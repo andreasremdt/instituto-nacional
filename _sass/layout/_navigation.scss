@@ -1,91 +1,103 @@
-// -----------------------------------------------------------------------------
-// Navigation
-// -----------------------------------------------------------------------------
+.page-navigation {
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    margin-top: -3.5rem;
+    position: relative;
+    top: 3.5rem;
+  
+    background-color: rgba(0, 0, 0, 0.4);
 
-.main-navigation {
-    @media screen and(min-width: 768px) {
-        align-items: center;
-        position: relative;
-        top: $navigation-height;
-        margin-top: -$navigation-height;
-
-        background-color: rgba(0, 0, 0, 0.4);
-    }
-
-    @include respond-to(medium) {
-        position: fixed;
-        top: 0;
-        left: -$navigation-width;
-        height: 100vh;
-        padding: 2rem 0;
-        flex-direction: column;
-        width: $navigation-width;
-
-        background-color: rgba(0, 0, 0, 0.85);
-
-        z-index: 99;
-        transition: left .3s ease-out;
-
-        &.-opened {
-            left: 0;
-        }
+    > .heading {
+      display: none;
     }
 
     > .link {
-        display: block;
-        height: $navigation-height;
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
+      display: block;
+      height: 3.5rem;
+      margin: 0 1.5rem;
 
-        line-height: $navigation-height;
+      line-height: 3.5rem;
 
-        color: $white;
+      color: white;
 
-        transition: color .15s ease-in-out;
+      transition: color .15s ease-in-out;
 
-        &.-active:not(:last-of-type) {
-            color: $brand-color;
+      &.-active:not(:last-of-type) {
+        color: var(--brand-color);
 
-            font-weight: 500;
-        }
+        font-weight: 500;
+      }
+
+      &:hover, &:focus {
+        color: var(--brand-color);
+      }
+
+      &:last-of-type {
+        margin: 0 -1.5rem 0 auto;
+        padding: 0 60px 0 40px;
+        position: relative;
+
+        background-color: var(--brand-color);
+
+        text-transform: uppercase;
+
+        transition: background-color .15s ease-in-out;
 
         &:hover, &:focus {
-            color: $brand-color;
+          color: white;
+          background-color: shade($brand-color, 20%);
         }
 
-        @media screen and(min-width: 768px) {
-            &.-active:not(:last-of-type) {
-                border-bottom: 3px solid $brand-color;
-            }
+        &::before {
+          content: '';
+          position: absolute;
+          left: -20px;
+          height: 100%;
+          width: 40px;
 
-            &:last-of-type {
-                margin: 0 0 0 auto;
-                padding: 0 60px 0 40px;
-                position: relative;
+          background-color: inherit;
 
-                background-color: $brand-color;
-
-                text-transform: uppercase;
-
-                transition: background-color .15s ease-in-out;
-
-                &:hover, &:focus {
-                    color: white;
-                    background-color: shade($brand-color, 20%);
-                }
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    left: -20px;
-                    height: 100%;
-                    width: 40px;
-
-                    background-color: inherit;
-
-                    transform: skew(35deg, 0deg);
-                }
-            }
+          transform: skew(35deg, 0deg);
         }
+      }
     }
+  }
+
+  @media (max-width: 768px) {
+    position: fixed;
+    top: 0;
+    left: -20rem;
+    bottom: 0;
+    padding-top: 1.5rem;
+    width: 20rem;
+
+    background-color: var(--brand-color);
+
+    z-index: 9;
+    transition: left .3s ease-out;
+
+    &.-opened {
+      left: 0;
+    }
+
+    > .heading {
+      color: shade($brand-color, 50%);
+    }
+
+    > .link {
+      display: block;
+      margin-left: -1.5rem;
+      margin-right: -1.5rem;
+      padding: 1rem 1.5rem;
+
+      font-size: 1.1rem;
+
+      color: white;
+
+      &:hover, &:focus, &.-active {
+        background-color: shade($brand-color, 10%);
+      }
+    }
+  }
 }

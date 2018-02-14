@@ -1,269 +1,146 @@
 ---
 layout: default
+title: Servicios
+description: This is a sample description
 ---
 
-<div class="_section">
+<main class="section -big">
+  <header class="container grid">
+    <button class="box grid-6" data-action="tab" data-target="turismo">
+      <h3 class="heading _uppercase">Turismo educativo</h3>
+      <p class="content">Talleres, reuniones, fiestas, eventos y más...</p>
+    </button>
+    <button class="box grid-6" data-action="tab" data-target="dia">
+      <h3 class="heading _uppercase">Un día con la naturaleza</h3>
+      <p class="content">Descubre la belleza de nuestra naturaleza</p>
+    </button>
+  </header>
 
-    <!-- the tab selector -->
+
+  <section class="tourism" hidden data-tab="turismo">
     <div class="container">
-        <div class="grid">
-            <button class="box grid-item" data-action="tab" data-target="turismo">
-                <h3 class="heading _uppercase">Turismo educativo</h3>
-                <p class="content">Talleres, reuniones, fiestas, eventos y más...</p>
-            </button>
-            <button class="box grid-item" data-action="tab" data-target="dia">
-                <h3 class="heading _uppercase">Un día con la naturaleza</h3>
-                <p class="content">Descubre la belleza de nuestra naturaleza</p>
-            </button>
-        </div> <!-- end tab selector -->
+      <h2 class="_big _lined">{{ site.data.turismo.title }}</h2>
+      <p>{{ site.data.turismo.introduction }}</p>
     </div>
 
-    <!-- turismo educativo -->
-    <section class="tourism" hidden data-tab="turismo">
-        <div class="container">
-            <h2 class="_big _lined">Nuestros servicios para <span class="_green">turismo educativo</span></h2>
-            <p>La escuela (Recinto II) tiene capacidad para recibir y/o alojar hasta 60 personas por evento.</p>
-        </div>
 
-        <div class="services _bg-grey _section _centered">
-            <div class="container">
-                <div class="grid">
-                    <div class="grid-item">
-                        <svg class="icon" width="60" height="60">
-                            <use xlink:href="/images/pages/services/icons-defs.svg#leaf"></use>
-                        </svg>
-                        <p>Un fin de semana con la naturaleza</p>
-                    </div>
-                    <div class="grid-item">
-                        <svg class="icon" width="60" height="60">
-                            <use xlink:href="/images/pages/services/icons-defs.svg#pagelines"></use>
-                        </svg>
-                        <p>Un día con la naturaleza</p>
-                    </div>
-                    <div class="grid-item">
-                        <svg class="icon" width="60" height="60">
-                            <use xlink:href="/images/pages/services/icons-defs.svg#clock"></use>
-                        </svg>
-                        <p>30 horas para servicio ambiental</p>
-                    </div>
-                    <div class="grid-item">
-                        <svg class="icon" width="60" height="60">
-                            <use xlink:href="/images/pages/services/icons-defs.svg#cloud"></use>
-                        </svg>
-                        <p>Retiros espirituales</p>
-                    </div>
-                    <div class="grid-item">
-                        <svg class="icon" width="60" height="60">
-                            <use xlink:href="/images/pages/services/icons-defs.svg#television"></use>
-                        </svg>
-                        <p>Talleres y conferencias</p>
-                    </div>
-                    <div class="grid-item">
-                        <svg class="icon" width="60" height="60">
-                            <use xlink:href="/images/pages/services/icons-defs.svg#family"></use>
-                        </svg>
-                        <p>Reuniones familiares y empresariales</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="services section _centered">
+      <div class="container grid">
+        {% for item in site.data.turismo.services %}
+          <div class="grid-2">
+            <svg class="icon" width="60" height="60">
+              <use xlink:href="/images/pages/services/icons-defs.svg#{{ item.icon }}"></use>
+            </svg>
+            <p>{{ item.name }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
 
-        <div class="container">
-            <h2>Características de <span class="_green">nuestros servicios</span></h2>
-
-            <article class="service grid">
-                <div class="image grid-item">
-                    <figure>
-                        <img src="/images/pages/services/turismo-1.jpg" alt="Turismo">
-                    </figure>
-                </div>
-                <div class="content grid-item">
-                    <h4>Flexibilidad</h4>
-
-                    <ul>
-                        <li>Servicios básicos sin diseño curricular de los cursos (instalaciones, alojamiento, equipos tecnológicos).</li>
-                        <li>Soporte técnico y operativo (apoyo en diseño curricular, facilitadores e instalaciones).</li>
-                        <li>Acuerdos de intercambios internacionales (diseño curricular, facilitadores, estudiantes, participación activa del personal y servicios básicos).</li>
-                    </ul>
-                </div>
-            </article>
-
-            <article class="service grid">
-                <div class="image grid-item">
-                    <figure>
-                        <img src="/images/pages/services/turismo-2.jpg" alt="Turismo">
-                    </figure>
-                </div>
-                <div class="content grid-item">
-                    <h4>Bajo costo</h4>
-
-                    <ul>
-                        <li>Opciones de servicio de alimentación económicas y diferentes, que se adaptan a las necesidades del grupo.</li>
-                        <li>Capacidad para 60 personas. No se cobra gastos de alojamiento, sólo una contribución para limpieza y mantenimiento de las instalaciones.</li>
-                    </ul>
-                </div>
-                </article>
-
-            <article class="service grid">
-                <div class="image grid-item">
-                    <figure>
-                        <img src="/images/pages/services/turismo-3.jpg" alt="Turismo">
-                    </figure>
-                </div>
-                <div class="content grid-item">
-                    <h4>Ambiente acogedor</h4>
-
-                    <ul>
-                        <li>Clima agradable. La naturaleza funciona como laboratorio de prácticas relacionadas al medio ambiente.</li>
-                        <li>Exento de ruido.</li>
-                        <li>Atractivos naturales (ríos, senderos, jardines).</li>
-                        <li>Servicio de electricidad y agua permanente.</li>
-                    </ul>
-            </div>
-            </article>
-
-            <article class="service grid">
-                <div class="image grid-item">
-                    <figure>
-                        <img src="/images/pages/services/turismo-4.jpg" alt="Turismo">
-                    </figure>
-                </div>
-                <div class="content grid-item">
-                    <h4>Accesibilidad</h4>
-
-                    <ul>
-                        <li>Fácil acceso.</li>
-                        <li>Buena ubicación.</li>
-                    </ul>
-                </div>
-                </article>
-
-            <article class="service grid">
-                <div class="image grid-item">
-                    <figure>
-                        <img src="/images/pages/services/turismo-5.jpg" alt="Turismo">
-                    </figure>
-                </div>
-                <div class="content grid-item">
-                    <h4>Seguridad y privacidad</h4>
-
-                    <ul>
-                        <li>Área protegida (vigilada por guardaparques y personal de seguridad).</li>
-                        <li>Destino final (no hay circulación de vehículos).</li>
-                    </ul>
-                </div>
-            </article>
-        </div> <!-- end container -->
-    </section> <!-- end turismo educativo -->
-
-
-
-
-    <!-- un dia con la naturaleza -->
-    <section class="nature-day" hidden data-tab="dia">
-        <div class="container">
-            <h2 class="_big _lined">Ven a disfrutar <span class="_green">un día con la naturaleza</span></h2>
-            
+    <div class="container">
+      <h2>{{ site.data.turismo.characteristics_title }}</h2>
+      
+      {% for characteristic in site.data.turismo.characteristics %}
+        <article class="service grid">
+          <div class="grid-4">
             <figure>
-                <img src="/images/pages/services/un-dia-con-la-naturaleza.jpg" class="_img-full" alt="Un día con la naturaleza" width="1920" height="943">
-                <figcaption>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim optio ab fugiat, minima et laudantium, mollitia vel beatae. Deleniti delectus facilis veniam quo, quasi quod dolores deserunt ipsam vel doloribus.</p>
-                </figcaption>
+              <img src="{{ characteristic.image_path }}" class="_img-fluid" alt="{{ characteristic.title }}">
             </figure>
-        </div>
-
-        <article class="what-is _bg-grey _section">
-            <div class="container">
-                <h2>¿Qué es un día con la <span class="_green">naturaleza</span>?</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam perspiciatis expedita ipsum obcaecati quisquam deserunt minima, eligendi corporis laboriosam a reprehenderit iusto, temporibus aspernatur fugit modi tenetur enim quia. Soluta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet accusamus odit, porro cupiditate eos quasi unde, aut, iste accusantium, voluptatum reprehenderit corrupti molestiae! Commodi, fugiat! Quas, accusamus recusandae cum! Voluptas.</p>
-            </div>
-        </article>
-
-        <div class="container">
-            <h2>Actividades</h2>
-
-            <div class="grid">
-                <div class="grid-item">
-                    <ul>
-                        <li>Brindis y Eco-charla: “Conservación de los Recursos Naturales” en Recinto I.</li>
-                        <li>Recorrido por instalaciones y senderos ecológicos.</li>
-                        <li>Plantar un árbol en el bosque “Un Día con la Naturaleza o Visita al Vivero.</li>
-                        <li>Almuerzo local.</li>
-                        <li>Visita al Salto de Jimenoa e Hidroeléctrica Jimena.</li>
-                    </ul>
-                </div>
-                <div class="grid-item">
-                    <ul>
-                        <li>Recorrido Sendero Enriquillo Recinto II.</li>
-                        <li>Opción a baño en el río Jimenoa.</li>
-                        <li>City Tour en Jarabacoa.</li>
-                        <li>Despedida.</li>
-                    </ul>
-                </div>
-            </div>
-
-                <h2>Información General</h2>
-
+          </div>
+          <div class="grid-8">
+            <h4 class="title">{{ characteristic.title }}</h4>
+  
             <ul>
-                <li>Solicitar visitas con un mes de anticipación.</li>
-                <li>Grupo mínimo de 25 personas.</li>
-                <li>No incluye transporte.</li>
-                <li>Los precios varían de acuerdo al menú seleccionado.</li>
+              {% for item in characteristic.items %}
+                <li>{{ item }}</li>
+              {% endfor %}
             </ul>
-        </div>
-
-        <section class="_centered _bg-grey _section">
-            <div class="container">
-            <h2>Opciones de Menus</h2>
-
-            <div class="grid">
-                <div class="grid-item">
-                    <h3 class="_green">#1 - Sancocho Dominicano</h3>
-                    <p>Habichuelas, lentejas o arvejas<br>
-                    Arroz Blanco</p>
-                </div>
-                <div class="grid-item">
-                    <h3 class="_green">#2 - Arroz Blanco</h3>
-                    <p>Habichuelas Rojas<br>
-                    Pollo al Caldero<br>
-                    Tostones<br>
-                    Ensalada Verde<br>
-                    Postre (Especialidad de la Región)</p>
-                </div>
-                <div class="grid-item">
-                    <h3 class="_green">#3 - Moro de Gandules</h3>
-                    <p>Carne de Cerdo y Pollo al horno<br>
-                    Ensaladas de la Estación<br>
-                    Plátano al Caldero o Tostones<br>
-                    Postre (Especialidad de la región)<br>
-                    Eco-merienda</p>
-                </div>
-                <div class="grid-item">
-                    <h3 class="_green">#4 - BBQ a la Orilla del río</h3>
-                    <p>Pollo, chuleta, pincho<br>
-                    Guineítos encebollados y Ensalada Verde<br>
-                    Postre (Especialidad de la región)<br>
-                    Eco-merienda</p>
-                </div>
-            </div>
-
-            <p><em>Nota: Estas opciones incluyen agua y café.</em></p>
-        </section>
-    </section> <!-- end un dia con la naturaleza -->
-
-
-</div> <!-- end container -->
-
-
-
-<section class="contact-us-now _section _centered">
-    <div class="container">
-        <h2 class="_big _lined -center">Contáctanos ahora</h2>
-        <p>¿Tiene alguna pregunta o desea hacer una reserva? Puede contactarnos y estaremos encantados de ayudarle.</p>
-
-        <div>
-            <a href="contactenos.html" class="button -green">Escribe un email</a>
-            <a href="tel:8494089048" class="button -green">Llámenos</a>
-        </div>
+          </div>
+        </article>
+      {% endfor %}
     </div>
+  </section>
+
+
+  <section class="nature-day" hidden data-tab="dia">
+    <div class="container">
+      <h2 class="_big _lined">{{ site.data.naturaleza.title }}</h2>
+      <p>{{ site.data.naturaleza.introduction }}</p>
+
+      <figure>
+        <img src="{{ site.data.naturaleza.image_path }}" class="_img-fluid" alt="{{ site.data.naturaleza.title }}">
+      </figure>
+    </div>
+  
+    <section class="what-is section">
+      <div class="container">
+        <h2 class="_lined">{{ site.data.naturaleza.what_is_title }}</h2>
+        <p>{{ site.data.naturaleza.what_is_content }}</p>
+      </div>
+    </section>
+  
+    <section class="container grid">
+      <div class="grid-6">
+        <h2>{{ site.data.naturaleza.activities_title }}</h2>
+        <ul>
+          {% for activity in site.data.naturaleza.activities %}
+            <li>{{ activity }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="grid-6">
+        <h2>{{ site.data.naturaleza.information_title }}</h2>
+        <ul>
+          {% for information in site.data.naturaleza.information %}
+            <li>{{ information }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container grid">
+        <img src="{{ site.data.naturaleza.image_path }}" alt="" class="grid-3">
+        <img src="{{ site.data.naturaleza.image_path }}" alt="" class="grid-3">
+        <img src="{{ site.data.naturaleza.image_path }}" alt="" class="grid-3">
+        <img src="{{ site.data.naturaleza.image_path }}" alt="" class="grid-3">
+      </div>
+    </section>
+
+  
+    <section class="section menu">
+      <div class="container">
+        <h2 class="_centered">{{ site.data.naturaleza.meals_title }}</h2>
+  
+        <div class="grid">
+          {% for meal in site.data.naturaleza.meals %}
+            <div class="grid-3">
+              <h3 class="_green">{{ meal.title }}</h3>
+              <ul>
+                {% for item in meal.items %}
+                  <li>{{ item }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endfor %}
+        </div>
+  
+        <p class="_centered"><em>Nota: Estas opciones incluyen agua y café.</em></p>
+    </section>
+  </section>
+</main>
+
+
+
+<section class="contact-us-now section -big _centered">
+  <div class="container">
+    <h2 class="_big _lined -center">Contáctanos</h2>
+    <p>¿Tiene alguna pregunta o desea hacer una reserva? Puede contactarnos y estaremos encantados de ayudarle.</p>
+
+    <div>
+      <a href="mailto:{{ site.email }}" class="button -green">Escribe un email</a>
+      <a href="tel:{{ site.phone | remove: ' '}}" class="button -green">Llámenos</a>
+    </div>
+  </div>
 </section>

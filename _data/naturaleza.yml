@@ -1,0 +1,48 @@
+title: Ven a disfrutar un día con la naturaleza
+introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim optio ab fugiat, minima et laudantium, mollitia vel beatae. Deleniti delectus facilis veniam quo, quasi quod dolores deserunt ipsam vel doloribus.
+image_path: /images/pages/services/un-dia-con-la-naturaleza.jpg
+what_is_title: ¿Qué es un día con la naturaleza?
+what_is_content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam perspiciatis expedita ipsum obcaecati quisquam deserunt minima, eligendi corporis laboriosam a reprehenderit iusto, temporibus aspernatur fugit modi tenetur enim quia. Soluta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet accusamus odit, porro cupiditate eos quasi unde, aut, iste accusantium, voluptatum reprehenderit corrupti molestiae! Commodi, fugiat! Quas, accusamus recusandae cum! Voluptas.
+activities_title: Actividades
+activities:
+  - Brindis y Eco-charla “Conservación de los Recursos Naturales” en Recinto I
+  - Recorrido por instalaciones y senderos ecológicos
+  - Plantar un árbol en el bosque “Un Día con la Naturaleza o Visita al Vivero
+  - Almuerzo local
+  - Visita al Salto de Jimenoa e Hidroeléctrica Jimena
+  - Recorrido Sendero Enriquillo Recinto II
+  - Opción a baño en el río Jimenoa
+  - City Tour en Jarabacoa
+  - Despedida
+information_title: Información General
+information:
+  - Solicitar visitas con un mes de anticipación.
+  - Grupo mínimo de 25 personas.
+  - No incluye transporte.
+  - Los precios varían de acuerdo al menú seleccionado.
+meals_title: Opciones de menus
+meals:
+  - title: Sancocho Dominicano
+    items:
+      - Habichuelas, lentejas o arvejas
+      - Arroz Blanco
+  - title: Arroz Blanco
+    items:
+      - Habichuelas Rojas
+      - Pollo al Caldero
+      - Tostones
+      - Ensalada Verde
+      - Postre (Especialidad de la Región)
+  - title: Moro de Gandules
+    items:
+      - Carne de Cerdo y Pollo al horno
+      - Ensaladas de la Estación
+      - Plátano al Caldero o Tostones
+      - Postre (Especialidad de la región)
+      - Eco-merienda
+  - title: BBQ a la Orilla del río
+    items:
+      - Pollo, chuleta, pincho
+      - Guineítos encebollados y Ensalada Verde
+      - Postre (Especialidad de la región)
+      - Eco-merienda

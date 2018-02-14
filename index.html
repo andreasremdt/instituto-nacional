@@ -1,0 +1,104 @@
+---
+layout: default
+title: Bienvenidos
+---
+
+<section class="section -big about">
+  <div class="container">
+    <h3 class="pretitle _green _curly _centered">{{ site.data.home.sections.about.pretitle }}</h3>
+    <h2 class="_big _centered">{{ site.data.home.sections.about.title }}</h2>
+    <p class="_centered">{{ site.data.home.sections.about.content | markdownify }}</p>
+
+    <div class="grid">
+      {% for item in site.data.home.sections.about.items %}
+        <a href="{{ item.url }}" class="content-tile grid-4">
+          <figure>
+            <img src="{{ item.image_path }}" class="_img-fluid" alt="{{ item.title }}" width="300" height="250">
+            <figcaption class="caption">
+              <h3 class="title">{{ item.title }}</h3>
+              <p class="text">{{ item.caption }}</p>
+            </figcaption>
+          </figure>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+
+
+<section class="careers section -big">
+  <h2 class="_hidden">Carreras</h2>
+  
+  <div class="container">
+    <div class="tabs">
+      {% for career in site.carreras %}
+        <button type="button" class="selector" data-action="tab" data-target="{{ career.title | slugify }}">
+          <svg class="icon" width="28" height="28">
+            <use xlink:href="images/icons/symbol-defs.svg#{{ career.icon }}"></use>
+          </svg> {{ career.title }}
+        </button>
+      {% endfor %}
+    </div>
+
+    <div class="tab-content">
+      {% for career in site.carreras %}
+        <article class="tab" hidden data-tab="{{ career.title | slugify }}">
+          <h2 class="title _big _lined">{{ career.title }}</h2>
+        
+          <figure class="intro _flex">
+            <img src="{{ career.image_path }}" class="image" alt="{{ career.title }}" width="200" height="134">
+            <figcaption>
+              {{ career.excerpt }}
+            
+              <ul>
+                {% for responsabiltiy in career.responsabilidades %}
+                  <li>{{ responsabiltiy }}</li>
+                {% endfor %}
+              </ul>
+            </figcaption>
+          </figure>
+        
+        
+          <a href="{{ career.url }}" class="button -green">Más</a>
+        </article>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section -big latest-news">
+  <div class="container">
+    <h2 class="_big _lined">{{ site.data.home.sections.news.title }}</h2>
+    <p>{{ site.data.home.sections.news.subtitle }}</p>
+
+    <div class="grid">
+      {% for post in site.posts limit: 3 %}
+        <article class="grid-4 news">
+          <figure>
+            <img src="{{ post.image_path }}" class="image _img-fluid" alt="{{ post.title }}" width="300" height="250">
+          </figure>
+  
+          <div class="content">
+            <ul class="categories _uppercase">
+              <li class="category">{{ post.tag }}</li>
+            </ul>
+  
+            <h3 class="title _uppercase">
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </h3>
+            <p>{{ post.excerpt | strip_html | truncatewords:30 }}</p>
+          </div>
+  
+          <footer class="footer">
+            <time datatime="{{ post.date }}">{{ post.date | date: "%d/%m/%Y" }}</time>
+          </footer>
+        </article>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,36 @@
+.content-tile {
+  margin: 2rem 0;
+
+  background-color: var(--bg-gray);
+
+  transition: transform .25s ease-out, background-color .15s ease-in-out, box-shadow .25s ease-out;
+
+  .caption {
+    padding: 1.5rem 1rem;
+
+    > .title {
+      margin: 0;
+    }
+
+    > .text {
+      margin: 0;
+
+      font-weight: 300;
+
+      color: var(--gray);
+
+      transition: color .15s ease-in-out;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-1rem);
+
+    box-shadow: 0 25px 20px -10px rgba(0, 0, 0, 0.15);
+    background-color: var(--dark-gray);
+
+    .title {
+      color: white;
+    }
+  }
+}

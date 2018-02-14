@@ -1,87 +1,59 @@
-// -----------------------------------------------------------------------------
-// Hero Unit
-// -----------------------------------------------------------------------------
-
 .hero-unit {
-    color: white;
+  color: white;
+  
+  background: var(--background, url(../images/hero-small.jpg)) center center no-repeat;
+  background-size: cover;
 
-    &.-large {
-        background: url('../images/hero-big.jpg') center center no-repeat;
-        background-size: cover;
+  &.-home {
+    --height: 700px;
+    --background: url(../images/hero-big.jpg);
+    --direction: column;
+    --align: flex-start;
+    --justify: center;
+  }
 
-        > .container {
-            height: 700px;
-            align-items: flex-start;
-            flex-direction: column;
-            justify-content: center;
-        }
+  > .inner {
+    display: flex;
+    height: var(--height, 300px);
+    align-items: var(--align, center);
+    flex-direction: var(--direction, row);
+    justify-content: var(--justify, space-between);
 
-        .pretitle {
-            position: relative;
-
-            font-size: 1.6rem;
-
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
-
-            &::before {
-                content: '';
-                position: absolute;
-                left: 0;
-                top: 130%;
-                width: 50px;
-
-                border-bottom: 2px solid white;
-            }
-        }
-
-        .title {
-            margin-bottom: 0;
-
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
-
-            color: white;
-        }
-
-        .intro {
-            margin-bottom: 2rem;
-            margin-left: 40px;
-
-            font-size: 1.1rem;
-            font-weight: 300;
-            letter-spacing: 1px;
-
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
-        }
-
-        .buttons {
-            margin-left: 40px;
-        }
+    @media (max-width: 600px) {
+      --direction: column;
+      --justify: center;
     }
 
-    &.-normal {
-        background: url('../images/hero-small.jpg') center center no-repeat;
-        background-size: cover;
+    > .pretitle {
+      --line-color: white;
 
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+      font-size: 1.6rem;
 
-        > .container {
-            align-items: center;
-            justify-content: space-between;
-
-            @media screen and (min-width: 768px) {
-                height: 300px;
-            }
-
-            @media screen and (max-width: 768px) {
-                flex-direction: column;
-                padding: 1.5rem 0;
-            }
-        }
-
-        .title {
-            margin-bottom: 0;
-
-            color: $white;
-        }
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
     }
+
+    > .title {
+      margin-bottom: 0;
+
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+      color: inherit;
+    }
+
+    .intro {
+      margin-bottom: 2rem;
+      margin-left: 40px;
+
+      font-size: 1.1rem;
+
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+    }
+
+    .buttons {
+      margin-left: 40px;
+
+      > .button {
+        margin-bottom: 4px;
+      }
+    }
+  }
 }

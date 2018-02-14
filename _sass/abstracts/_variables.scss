@@ -1,7 +1,14 @@
 // -----------------------------------------------------------------------------
 // SASS Variables
 // -----------------------------------------------------------------------------
-
+:root {
+  --brand-color: hsl(73, 99%, 39%);
+  --gray: hsl(60, 1%, 67%);
+  --light-gray: hsl(0, 0%, 93%);
+  --dark-gray: hsl(210, 16%, 23%);
+  --bg-gray: hsl(0, 0%, 98%);
+  --border-radius: 4px;
+}
 /// Fallback fonts
 /// @type List
 $font-fallbacks: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, 'Segoe UI', sans-serif !default;

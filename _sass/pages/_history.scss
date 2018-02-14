@@ -1,105 +1,96 @@
-// -----------------------------------------------------------------------------
-// History Page
-// -----------------------------------------------------------------------------
-
 .history {
-    background: transparent url('../images/pages/history/background.png') 50px bottom no-repeat;
-    background-size: 400px;
+  background: transparent url('../images/background.png') 50px bottom no-repeat;
+  background-size: 400px;
 
-    .pretitle {
-        margin-bottom: 0;
+  .pretitle {
+    margin-bottom: 0;
 
-        font-weight: 400;
-        font-size: 1.5rem;
-    }
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
 
-    .title {
-        margin-bottom: 5rem;
-    }
+  .title {
+    margin-bottom: 5rem;
+  }
 }
 
 .history-list {
-    padding-left: 0;
-    margin: 0;
-    position: relative;
+  padding-left: 0;
+  margin: 0;
+  position: relative;
 
-    list-style-type: none;
+  list-style-type: none;
 
-    &::before {
+  &::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    top: 4%;
+    bottom: 10%;
+    left: calc(2rem + 40px);
+
+    background-color: var(--light-gray);
+
+    @media screen and (min-width: 768px) {
+      left: calc(2rem + 40px);
+    }
+
+    @media screen and (max-width: 768px) {
+      left: calc(30px);
+    }
+  }
+
+  > .entry {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+
+    > .year {
+      flex-shrink: 0;
+      position: relative;
+      margin: 0 2rem;
+      width: var(--year-size, 80px);
+      height: var(--year-size, 80px);
+
+      line-height: var(--year-size, 80px);
+      font-weight: 300;
+
+      border: 1px solid var(--light-gray);
+
+      background-color: white;
+
+      z-index: 99;
+
+      @media screen and (max-width: 768px) {
+        --year-size: 60px;
+
+        margin: 0 1rem 0 0;
+      }
+
+      &::before {
         content: '';
         position: absolute;
-        width: 1px;
-        top: 4%;
-        bottom: 10%;
-        left: calc(2rem + 40px);
+        height: 1px;
+        top: 50%;
+        left: 100%;
 
         background-color: $light-grey;
 
         @media screen and (min-width: 768px) {
-            left: calc(2rem + 40px);
+          width: 30px;
         }
 
         @media screen and (max-width: 768px) {
-            left: calc(30px);
+          width: 10px;
         }
+      }
     }
 
-    > .entry {
-        margin-top: 2rem;
-        align-items: center;
+    > .content {
+      margin: 0;
+      padding: .5rem 1rem;
 
-        > .year {
-            flex-shrink: 0;
-            position: relative;
-
-            border: 1px solid $light-grey;
-
-            background-color: $white;
-
-            z-index: 99;
-
-            font-weight: 300;
-
-            @media screen and (min-width: 768px) {
-                margin: 0 2rem;
-                width: 80px;
-                height: 80px;
-
-                line-height: 80px;
-            }
-
-            @media screen and (max-width: 768px) {
-                margin: 0 1rem 0 0;
-                width: 60px;
-                height: 60px;
-
-                line-height: 60px;
-            }
-
-            &::before {
-                content: '';
-                position: absolute;
-                height: 1px;
-                top: 50%;
-                left: 100%;
-
-                background-color: $light-grey;
-
-                @media screen and (min-width: 768px) {
-                    width: 30px;
-                }
-
-                @media screen and (max-width: 768px) {
-                    width: 10px;
-                }
-            }
-        }
-
-        > .content {
-            margin: 0;
-            padding: .5rem 1rem;
-
-            background-color: rgba(255, 255, 255, 0.8);
-        }
+      background-color: rgba(255, 255, 255, 0.8);
     }
+  }
 }

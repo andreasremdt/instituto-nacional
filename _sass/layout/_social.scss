@@ -1,0 +1,28 @@
+.social-links {
+  > .link {
+    display: inline-flex;
+    width: 2.7rem;
+    height: 2.7rem;
+
+    border: 1px solid var(--light-gray);
+    border-radius: 50%;
+
+    fill: var(--gray);
+
+    align-items: center;
+    justify-content: center;
+
+    transition: border-color .15s ease-in-out, fill .15s ease-in-out;
+
+    &:hover {
+      fill: var(--brand-color);
+      border-color: var(--brand-color);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header .social-links {
+    display: none;
+  }
+}

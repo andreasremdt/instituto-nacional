@@ -1,0 +1,41 @@
+---
+layout: default
+title: Campus
+---
+
+<div class="section -big campus _centered">
+  <ul class="gallery-filter">
+    <li class="item">
+      <a class="button -green" href="#" data-category="">Todas</a>
+    </li>
+    <li class="item">
+      <a class="button" href="#" data-category="recinto 1">Recintos 1</a>
+    </li>
+    <li class="item">
+      <a class="button" href="#" data-category="recinto 2">Recintos 2</a>
+    </li>
+    <li class="item">
+      <a class="button" href="#" data-category="aulas">Aulas</a>
+    </li>
+    <li class="item">
+      <a class="button" href="#" data-category="otros">Otros lugares</a>
+    </li>
+  </ul>
+</div>
+
+<div class="gallery-wrapper">
+  {% for image in site.data.campus.images %}
+    <figure class="figure" data-categories="{{ image.category }}">
+      <img class="image" src="{{ image.src}}" alt="{{ image.caption }}" width="320" height="180">
+      <figcaption class="caption">{{ image.caption }}</figcaption>
+    </figure>
+  {% endfor %}
+</div>
+
+<!-- overlay -->
+<div class="overlay overlay--is-hidden">
+  <figure class="overlay__inner">
+    <img class="overlay__image" src="" alt="">
+    <figcaption class="overlay__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, officia obcaecati, harum dignissimos, consectetur assumenda dicta quisquam magni consequatur molestias beatae voluptatum nam neque eos!</figcaption>
+  </figure>
+</div> <!-- end overlay -->

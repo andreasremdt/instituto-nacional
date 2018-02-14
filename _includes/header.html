@@ -1,47 +1,30 @@
-<div class="container">
-
-  <!-- main-header -->
-  <header class="main-header _flex">
-
-    <!-- page logo -->
-    <img src="/images/header/logo.png" alt="{{ site.title }} {{ site.subtitle }}" width="70" height="70">
+<header>
+  <div class="page-header container">
     <a href="/" class="logo">
-      <h1 class="title _curly">{{ site.title }}</h1>
+      <h1 class="title">{{ site.title }}</h1>
       <p class="subtitle">{{ site.subtitle }}</p>
-    </a> <!-- end page logo -->
+    </a>
 
-
-
-    <!-- contact links -->
-    <ul class="contact _no-bullets">
-      <li class="item">
+    <ul class="contacts">
+      <li class="contact">
         <svg class="icon" width="40" height="40">
-          <use xlink:href="/images/header/icons-defs.svg#address"></use>
-        </svg>
-        <span>{{ site.address }}
-        </span>
+          <use xlink:href="/images/icons/symbol-defs.svg#address"></use>
+        </svg><span>{{ site.address }}</span>
       </li>
-      <li class="item">
+      <li class="contact">
         <svg class="icon" width="40" height="40">
-          <use xlink:href="/images/header/icons-defs.svg#phone"></use>
-        </svg>
-        <a href="tel:{{ site.phone | remove: ' '}}">{{ site.phone }}</a>
+          <use xlink:href="/images/icons/symbol-defs.svg#phone"></use>
+        </svg><a href="tel:{{ site.phone | remove: ' '}}">{{ site.phone }}</a>
         <br>
       </li>
-    </ul> <!-- end contact links -->
+    </ul>
 
+    {% include social.html %}
 
-
-     {% include social.html %}
-
-
-
-    <!-- mobile menu toggle -->
-    <button type="button" data-action="menu" class="toggle" title="Toggle Navigation">
+    <button type="button" data-action="menu" class="button -menu" title="Toggle Navigation">
       <svg class="icon" width="28" height="28">
-        <use xlink:href="/images/header/icons-defs.svg#bars"></use>
+        <use xlink:href="/images/icons/symbol-defs.svg#bars"></use>
       </svg>
-    </button> <!-- end mobile menu toggle -->
-
-  </header> <!-- end main-header -->
-</div> <!-- end container -->
+    </button>
+  </div>
+</header>

@@ -1,111 +1,69 @@
-// -----------------------------------------------------------------------------
-// Header
-// -----------------------------------------------------------------------------
+.page-header {
+  display: flex;
+  align-items: center;
+  height: 8rem;
+  
+  line-height: 1.4;
+  font-weight: 300;
 
-.main-header {
-    height: $header-height;
-    align-items: center;
-
-    line-height: 1.4;
-    font-weight: 300;
-
-    // Page Logo
-    > .logo {
-
-        display: inline-block;
-        flex: 1;
-        margin-left: 1rem;
-
-        > .title {
-            margin-bottom: 0;
-
-            @media screen and (max-width: 440px) {
-                font-size: 1.4rem;
-            }
-
-            font-size: 1.8rem;
-        }
-
-        > .subtitle {
-            margin: 0;
-
-            color: $mid-grey;
-        }
+  > .logo {
+    @media (min-width: 600px) {
+      background: transparent url('../images/logo.png') left center no-repeat;
+      padding-left: 90px;
     }
 
-    // Phone & Address
+    display: inline-block;
+
+    flex: 1;
+
+    > .title {
+      margin-bottom: 0;
+
+      font-family: $text-font-stack-curly;
+      font-size: 1.8rem;
+
+      @media (max-width: 450px) {
+        font-size: 1.1rem;
+      }
+  }
+
+    > .subtitle {
+      margin: 0;
+
+      color: var(--gray);
+    }
+  }
+
+  > .contacts {
+    @media (max-width: 1160px) {
+      display: none;
+    }
+
+    padding-left: 0;
+    margin: 0;
+
+    list-style-type: none;
+
     > .contact {
+      display: inline-flex;
+      align-items: center;
+      margin-right: 2rem;
 
-        // Hide the contact on small screens
-        @include respond-to(large) {
-            display: none;
-        }
+      > .icon {
+        padding: 10px;
+        margin-right: 1rem;
 
-        > .item {
-            display: inline-flex;
-            align-items: center;
-            margin-right: 2rem;
-
-            > .icon {
-                padding: 10px;
-                margin-right: 1rem;
-
-                background-color: $brand-color;
-            }
-        }
+        background-color: $brand-color;
+      }
     }
+  }
 
-    // Social Icons
-    .social {
-        // Hide the social icons on small screens
-        @media screen and (max-width: 768px) {
-            display: none;
-        }
+  > .button {
+    position: relative;
+    z-index: 10;
 
-        .link {
-            display: inline-flex;
-            width: $social-icons-size;
-            margin-left: 5px;
-            height: $social-icons-size;
-
-            border: 1px solid $light-grey;
-            border-radius: 50%;
-
-            fill: $mid-grey;
-
-            align-items: center;
-            justify-content: center;
-
-            transition: border-color .15s ease-in-out, fill .15s ease-in-out;
-
-            &:hover {
-                fill: $brand-color;
-                border-color: $brand-color;
-            }
-        }
+    @media (min-width: 768px) {
+      display: none;
     }
-
-    // Mobile Menu Toggle
-    .toggle {
-
-        // Hide the button on bigger screens
-        @media screen and (min-width: 768px) {
-            display: none;
-        }
-
-        padding: 0;
-
-        background-color: transparent;
-        fill: $mid-grey;
-
-        border: none;
-
-        cursor: pointer;
-        outline: none;
-        -webkit-appearance: none;
-
-        &.-active {
-            fill: $brand-color;
-        }
-    }
+  }
 }

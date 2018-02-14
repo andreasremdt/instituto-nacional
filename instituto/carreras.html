@@ -1,0 +1,18 @@
+---
+layout: default
+title: Carreras
+---
+
+<main class="section -big">
+  <div class="container">
+    <h2 class="_big">Actualmente, ofrecemos {{ site.carreras.length }} <span class="_green">carreras:</span></h2>
+    {% for career in site.carreras %}
+      <article>
+        <h3>{{ career.title }}</h3>
+        <p>{{ career.excerpt }}</p>
+        <img src="{{ career.image_path }}" alt="">
+        <a href="{{ career.url }}" class="button -green">Más detalles</a>
+      </article>
+    {% endfor %}
+  </div>
+</main>
