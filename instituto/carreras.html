@@ -3,16 +3,24 @@ layout: default
 title: Carreras
 ---
 
+{% assign careers = site.carreras | size %}
+
 <main class="section -big">
   <div class="container">
-    <h2 class="_big">Actualmente, ofrecemos {{ site.carreras.length }} <span class="_green">carreras:</span></h2>
-    {% for career in site.carreras %}
-      <article>
-        <h3>{{ career.title }}</h3>
-        <p>{{ career.excerpt }}</p>
-        <img src="{{ career.image_path }}" alt="">
-        <a href="{{ career.url }}" class="button -green">Más detalles</a>
-      </article>
-    {% endfor %}
+    <h2 class="_big">Actualmente, ofrecemos {{ careers }} <span class="_green">carreras:</span></h2>
+
+    <div class="grid">
+      {% for career in site.carreras %}
+        <a href="{{ career.url }}" class="content-tile grid-{{ 12 | divided_by:careers }}">
+          <figure>
+            <img src="{{ career.image_path }}" class="_img-fluid" alt="{{ career.title }}" width="300" height="250">
+            <figcaption class="caption">
+              <h3 class="title">{{ career.title }}</h3>
+              <p class="text">{{ career.excerpt }}</p>
+            </figcaption>
+          </figure>
+        </a>
+      {% endfor %}
+    </div>
   </div>
 </main>

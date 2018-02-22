@@ -13,7 +13,7 @@
    */
   const pageTitle = document.querySelector('.page-header .title'),
         pageTitleArray = pageTitle.textContent.split(' ');
-  
+    
   pageTitle.innerHTML = pageTitleArray.map((item, index) => {
     if (pageTitleArray.length === index + 1) {
       return `<span class="_green">${item}</span>`;

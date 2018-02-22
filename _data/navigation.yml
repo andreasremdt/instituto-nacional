@@ -1,10 +1,26 @@
-- link: /
-  name: Inicio
-- link: /instituto/
-  name: El Instituto
-- link: /servicios/
-  name: Servicios
-- link: /blog/
-  name: Blog
-- link: /contactenos/
-  name: Contáctenos
+- name: "Inicio"
+  url: "/"
+- name: "Instituto"
+  url: "/instituto/"
+  children:
+    - name: "Carreras"
+      url: "/instituto/carreras/"
+    - name: "Campus"
+      url: "/instituto/campus/"
+    - name: "Profesores"
+      url: "/instituto/profesores/"
+    - name: "Historia"
+      url: "/instituto/historia/"
+    - name: "Requisitos de Admission"
+      url: "/instituto/requisitos/"
+- name: "Servicios"
+  url: "/servicios/"
+  children:
+    - name: "Turismo Educativo"
+      url: "/servicios/#turismo-educativo"
+    - name: "Un Día con la Naturaleza"
+      url: "/servicios/#un-dia-con-la-naturaleza"
+- name: "Blog"
+  url: "/blog/"
+- name: "Contáctenos"
+  url: "/contactenos/"
