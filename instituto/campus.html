@@ -16,7 +16,7 @@ title: Campus
 <figure class="gallery-wrapper">
   {% for image in site.data.campus.images %}
     <a href="{{ image.src }}" class="item" title="{{ image.caption }}" data-action="image" data-categories="{{ image.category }}">
-      <img src="{{ image.src }}" class="image" alt="{{ image.caption }}" width="320" height="180">
+      <img src="{{ image.src }}" class="image _img-fluid" alt="{{ image.caption }}" width="320" height="180">
     </a>
   {% endfor %}
 </figure>

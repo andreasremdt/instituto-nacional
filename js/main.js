@@ -1,19 +1,14 @@
 (function() {
   'use strict';
 
-  // Variables
-  const tabButtons = document.querySelectorAll('button[data-action="tab"]'),
-        tabContents = document.querySelectorAll('[data-tab]');
-        
-
-  
 
   /**
    * Color the last word of the page title in green.
    */
   const pageTitle = document.querySelector('.page-header .title'),
         pageTitleArray = pageTitle.textContent.split(' ');
-    
+  
+  // Filter the last word in the title and make it appear green
   pageTitle.innerHTML = pageTitleArray.map((item, index) => {
     if (pageTitleArray.length === index + 1) {
       return `<span class="_green">${item}</span>`;
@@ -21,6 +16,55 @@
 
     return item;
   }).join(' ');
+
+
+
+  /**
+   * Tabmenu (with buttons)
+   */
+  const tabButtons = document.querySelectorAll('button[data-action="tab"]'),
+        tabContents = document.querySelectorAll('[data-tab]');
+  
+  if (tabButtons.length > 0) {
+
+    // Register event listeners
+    window.addEventListener('load', onPageLoad);
+    window.addEventListener('hashchange', onPageLoad);
+    tabButtons.forEach(button => button.addEventListener('click', (e) => enableTab(e.currentTarget.dataset.target)));
+
+    // On page load check if the hash exists and enable to
+    // associated tab
+    function onPageLoad() {
+      if (window.location.hash) {
+        const id = window.location.hash.replace('#', '');
+
+        enableTab(id);
+      }
+    }
+
+    // Enable a specific tab based on the given id
+    function enableTab(id) {
+      window.location.hash = id;
+
+      // Enable button styles
+      tabButtons.forEach(button => {
+        if (button.dataset.target === id) {
+          button.classList.add('-active');
+        } else {
+          button.classList.remove('-active');
+        }
+      });
+
+      // Hide / show tab content
+      tabContents.forEach(content => {
+        if (content.dataset.tab === id) {
+          content.removeAttribute('hidden');
+        } else {
+          content.setAttribute('hidden', 'true');
+        }
+      });
+    }
+  }
 
 
 
@@ -163,34 +207,4 @@
     filters.forEach(filter => filter.addEventListener('click', filterGallery));
     new Lightbox(images);
   }
-
-
-
-
-  
-
-  
-
-
-
-  // Tab Menu
-  tabButtons.forEach((button) => {
-    button.addEventListener('click', (event) => {
-
-      // Remove active class from all buttons
-      tabButtons.forEach((btn) => btn.classList.remove('-active'));
-
-      // Add active class to current button
-      button.classList.add('-active');
-
-      tabContents.forEach((tabContent) => {
-        if (tabContent.dataset.tab === button.dataset.target) {
-          tabContent.removeAttribute('hidden');
-        } else {
-          tabContent.setAttribute('hidden', true);
-        }
-      });
-    });
-  });
-
 })();

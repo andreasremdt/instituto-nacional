@@ -6,18 +6,18 @@ description: This is a sample description
 
 <main class="section -big">
   <header class="container grid">
-    <button class="box grid-6" data-action="tab" data-target="turismo">
-      <h3 class="heading _uppercase">Turismo educativo</h3>
+    <button class="box grid-6" data-action="tab" data-target="turismo-educativo">
+      <h3 class="heading _uppercase _lined -center">Turismo educativo</h3>
       <p class="content">Talleres, reuniones, fiestas, eventos y más...</p>
     </button>
-    <button class="box grid-6" data-action="tab" data-target="dia">
-      <h3 class="heading _uppercase">Un día con la naturaleza</h3>
+    <button class="box grid-6" data-action="tab" data-target="un-dia-con-la-naturaleza">
+      <h3 class="heading _uppercase _lined -center">Un día con la naturaleza</h3>
       <p class="content">Descubre la belleza de nuestra naturaleza</p>
     </button>
   </header>
 
 
-  <section class="tourism" hidden data-tab="turismo">
+  <section class="tourism" hidden data-tab="turismo-educativo">
     <div class="container">
       <h2 class="_big _lined">{{ site.data.turismo.title }}</h2>
       <p>{{ site.data.turismo.introduction }}</p>
@@ -62,7 +62,7 @@ description: This is a sample description
   </section>
 
 
-  <section class="nature-day" hidden data-tab="dia">
+  <section class="nature-day" hidden data-tab="un-dia-con-la-naturaleza">
     <div class="container">
       <h2 class="_big _lined">{{ site.data.naturaleza.title }}</h2>
       <p>{{ site.data.naturaleza.introduction }}</p>
