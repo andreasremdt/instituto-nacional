@@ -42,6 +42,8 @@
     > .menu {
       display: flex;
       align-items: center;
+      margin-left: -1.5rem;
+      margin-right: -1.5rem;
 
       > .item {
         position: relative;
@@ -54,7 +56,6 @@
           margin: 0 -1.5rem 0 auto;
         
           > .link {
-            margin: 0;
             padding: 0 60px 0 40px;
             position: relative;
 
