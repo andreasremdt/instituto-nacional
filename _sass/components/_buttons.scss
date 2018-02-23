@@ -57,3 +57,15 @@
     }
   }
 }
+
+.text-link {
+  color: var(--brand-color);
+
+  border-bottom: 1px dotted var(--brand-color);
+
+  transition: color .15s ease-in-out;
+
+  &:hover {
+    color: $text-color;
+  }
+}

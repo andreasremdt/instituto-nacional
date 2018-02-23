@@ -1,0 +1,44 @@
+.styled-list {
+  padding: 0;
+  margin: 3rem 0;
+
+  list-style-type: none;
+  counter-reset: styled-list;
+
+  > .item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 4.5rem;
+
+    &::before {
+      width: 3rem;
+      height: 3rem;
+      position: absolute;
+      left: 0;
+      top: calc(50% - 1.5rem);
+            
+      background-color: var(--brand-color);
+      color: white;
+      
+      line-height: 3rem;
+      text-align: center;
+
+      content: counter(styled-list);
+      counter-increment: styled-list;
+      z-index: 2;
+    }
+
+    &:not(:last-of-type)::after {
+      position: absolute;
+      width: 1px;
+      left: 1.5rem;
+      top: 1.5rem;
+      bottom: -2.5rem;
+  
+      background: var(--brand-color);
+  
+      content: '';
+      z-index: 1;
+    }
+  }
+}

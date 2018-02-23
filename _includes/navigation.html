@@ -3,7 +3,7 @@
   
   <ul class="menu">
     {% for item in site.data.navigation %}
-      <li class="item">
+      <li class="item{% if item.children %} -dropdown{% endif %}">
         <a href="{{ item.url }}" class="link{% if item.url == page.url %} -active{% endif %}">{{ item.name }}</a>
         {% if item.children %}
         <ul class="submenu">

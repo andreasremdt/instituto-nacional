@@ -1,7 +1,7 @@
 .hero-unit {
   color: white;
   
-  background: var(--background, url(../images/hero-small.jpg)) center center no-repeat;
+  background: linear-gradient( rgba(0, 0, 0, .3), rgba(0, 0, 0, .3) ), var(--background, url(../images/hero-small.jpg)) center center no-repeat;
   background-size: cover;
 
   &.-home {

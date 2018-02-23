@@ -48,6 +48,11 @@
       > .item {
         position: relative;
 
+        &.-dropdown {
+          background: url('../icons/angle-down.svg') 95% center no-repeat;
+          background-size: 12px;
+        }
+
         &:hover .submenu {
           transform: scaleY(1);
         }
@@ -100,7 +105,7 @@
           white-space: nowrap;
           z-index: 10;
           
-          background-color: rgba(0, 0, 0, .6);
+          background-color: rgba(0, 0, 0, .7);
 
           transition: transform .2s ease-in-out;
         }
@@ -135,6 +140,10 @@
       padding: .4rem 0;
 
       color: shade($brand-color, 50%);
+
+      &.-active {
+        color: white;
+      }
     }
 
     .submenu {
