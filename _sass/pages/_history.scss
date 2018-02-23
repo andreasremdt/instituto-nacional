@@ -1,6 +1,12 @@
 .history {
-  background: transparent url('../images/background.png') 50px bottom no-repeat;
-  background-size: 400px;
+  @media (min-width: 900px) {
+    background: transparent url('../images/background.png') 50px bottom no-repeat;
+    background-size: 400px;
+  }
+
+  @media (max-width: 1400px) {
+    background-size: 200px;
+  }
 
   .pretitle {
     margin-bottom: 0;
@@ -8,62 +14,49 @@
     font-weight: 400;
     font-size: 1.5rem;
   }
-
-  .title {
-    margin-bottom: 5rem;
-  }
 }
 
 .history-list {
   padding-left: 0;
-  margin: 0;
   position: relative;
-
+  
   list-style-type: none;
+  
+  @media (min-width: 900px) {
+    margin: 0 10rem;
+  }
 
   &::before {
     content: '';
     position: absolute;
     width: 1px;
-    top: 4%;
+    top: 5%;
     bottom: 10%;
-    left: calc(2rem + 40px);
+    left: 30px;
 
-    background-color: var(--light-gray);
-
-    @media screen and (min-width: 768px) {
-      left: calc(2rem + 40px);
-    }
-
-    @media screen and (max-width: 768px) {
-      left: calc(30px);
-    }
+    background-color: var(--brand-color);
   }
 
   > .entry {
     display: flex;
-    margin-top: 2rem;
     align-items: center;
 
     > .year {
       flex-shrink: 0;
       position: relative;
-      margin: 0 2rem;
-      width: var(--year-size, 80px);
-      height: var(--year-size, 80px);
+      margin: 0 2rem 0 0;
+      width: 60px;
+      height: 60px;
 
-      line-height: var(--year-size, 80px);
+      line-height: 60px;
       font-weight: 300;
 
-      border: 1px solid var(--light-gray);
-
-      background-color: white;
+      background-color: var(--brand-color);
+      color: white;
 
       z-index: 99;
 
       @media screen and (max-width: 768px) {
-        --year-size: 60px;
-
         margin: 0 1rem 0 0;
       }
 
@@ -73,12 +66,9 @@
         height: 1px;
         top: 50%;
         left: 100%;
+        width: 30px;
 
-        background-color: $light-grey;
-
-        @media screen and (min-width: 768px) {
-          width: 30px;
-        }
+        background-color: var(--brand-color);
 
         @media screen and (max-width: 768px) {
           width: 10px;
@@ -87,10 +77,7 @@
     }
 
     > .content {
-      margin: 0;
-      padding: .5rem 1rem;
-
-      background-color: rgba(255, 255, 255, 0.8);
+      margin: 2rem 0 2rem 1rem;
     }
   }
 }

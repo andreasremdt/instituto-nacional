@@ -6,12 +6,12 @@ title: Historia
 <main class="history section -big">
   <div class="container">
     <h3 class="pretitle _centered _curly _green">{{ site.data.history.pre_heading }}</h3>
-    <h2 class="title _centered _big _lined -center">{{ site.data.history.heading }}</h2>
+    <h2 class="_centered _big _lined -center">{{ site.data.history.heading }}</h2>
         
     <ol class="history-list">
       {% for entry in site.data.history.entries %}
         <li class="entry">
-          <h4 class="year _centered _green">{{ entry.year }}</h4>
+          <h4 class="year _centered">{{ entry.year }}</h4>
           <p class="content">{{ entry.content }}</p>
         </li>
       {% endfor %}

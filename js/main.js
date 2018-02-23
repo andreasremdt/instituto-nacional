@@ -3,19 +3,23 @@
 
 
   /**
-   * Color the last word of the page title in green.
+   * Color the last word of the given string in green.
    */
-  const pageTitle = document.querySelector('.page-header .title'),
-        pageTitleArray = pageTitle.textContent.split(' ');
-  
-  // Filter the last word in the title and make it appear green
-  pageTitle.innerHTML = pageTitleArray.map((item, index) => {
-    if (pageTitleArray.length === index + 1) {
-      return `<span class="_green">${item}</span>`;
-    }
+  const elements = document.querySelectorAll('[data-action="colorize"]');
 
-    return item;
-  }).join(' ');
+  elements.forEach(element => {
+    const arr = element.textContent.split(' ');
+
+    if (arr.length <= 1) return;
+
+    element.innerHTML = arr.map((item, index) => {
+      if (arr.length === index + 1) {
+        return `<span class="_green">${item}</span>`;
+      }
+
+      return item;
+    }).join(' ');
+  });
 
 
 

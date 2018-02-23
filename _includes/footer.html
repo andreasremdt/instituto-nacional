@@ -1,8 +1,8 @@
 <footer class="main-footer">
   <div class="container grid">
-    <section class="grid-3">
+    <section class="grid-5">
       <div class="logo">
-        <h2 class="heading _curly">{{ site.title }}</h2>
+        <h2 class="heading _curly" data-action="colorize">{{ site.title }}</h2>
         <p class="subtitle">{{ site.subtitle }}</p>
       </div>
 
@@ -11,7 +11,7 @@
       {% include social.html %}
     </section>
 
-    <section class="grid-3">
+    <section class="grid-4">
       <h3 class="heading _uppercase">Noticias</h3>
 
       {% for post in site.posts limit: 2 %}
@@ -20,18 +20,6 @@
           <a class="link" href="{{ post.url }}">Lee más &raquo;</a>
         </article>
       {% endfor %}
-    </section>
-
-    <section class="grid-3">
-      <h3 class="heading _uppercase">Fotos</h3>
-
-      <figure class="gallery">
-        {% for image in site.data.campus.images limit:6 %}
-          <a href="/campus/" class="link">
-            <img src="{{ image.src }}" alt="{{ image.caption }}" class="image" width="80" height="80">
-          </a>
-        {% endfor %}
-      </figure>
     </section>
 
     <nav class="navigation grid-3">

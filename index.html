@@ -33,7 +33,7 @@ title: Bienvenidos
   <div class="container">
     <div class="tabs">
       {% for career in site.carreras %}
-        <button type="button" class="selector" data-action="tab" data-target="{{ career.title | slugify }}">
+        <button type="button" class="selector" data-action="tab" data-target="{{ career.title | slugify | cgi_escape }}">
           <svg class="icon" width="28" height="28">
             <use xlink:href="images/icons/symbol-defs.svg#{{ career.icon }}"></use>
           </svg> {{ career.title }}
@@ -43,19 +43,13 @@ title: Bienvenidos
 
     <div class="tab-content">
       {% for career in site.carreras %}
-        <article class="tab" hidden data-tab="{{ career.title | slugify }}">
-          <h2 class="title _big _lined">{{ career.title }}</h2>
+        <article class="tab" hidden data-tab="{{ career.title | slugify | cgi_escape }}">
+          <h2 class="title _big _lined" data-action="colorize">{{ career.title }}</h2>
         
           <figure class="intro _flex">
             <img src="{{ career.image_path }}" class="image" alt="{{ career.title }}" width="200" height="134">
             <figcaption>
-              {{ career.excerpt }}
-            
-              <ul>
-                {% for responsabiltiy in career.responsabilidades %}
-                  <li>{{ responsabiltiy }}</li>
-                {% endfor %}
-              </ul>
+              <p>{{ career.excerpt }}</p>
             </figcaption>
           </figure>
         
@@ -72,12 +66,12 @@ title: Bienvenidos
 
 <section class="section -big latest-news">
   <div class="container">
-    <h2 class="_big _lined">{{ site.data.home.news.title }}</h2>
+    <h2 class="_big _lined" data-action="colorize">{{ site.data.home.news.title }}</h2>
     <p>{{ site.data.home.news.subtitle }}</p>
 
     <div class="grid">
       {% for post in site.posts limit: 3 %}
-        <article class="grid-4 news">
+        <article class="grid-4 post-preview">
           <figure>
             <img src="{{ post.image_path }}" class="image _img-fluid" alt="{{ post.title }}" width="300" height="250">
           </figure>

@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="container section -big">
+  <div class="grid">
+    <article class="post-preview grid-8">
+      <figure>
+        <img src="{{ page.image_path }}" class="image _img-fluid" alt="{{ post.title }}" width="300" height="250">
+      </figure>
+
+      <div class="content">
+        <ul class="categories _uppercase">
+          <li class="category">{{ page.tag }}</li>
+        </ul>
+
+        <h3 class="title _uppercase">{{ page.title }}</h3>
+        <p>{{ content }}</p>
+      </div>
+
+      <footer class="footer">
+        <time datatime="{{ page.date }}">{{ page.date | date: "%d/%m/%Y" }}</time>
+      </footer>
+    </article>
+    <aside class="grid-4">sidebar</aside>
+  </div>
+</div>

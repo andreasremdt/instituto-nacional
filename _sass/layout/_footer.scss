@@ -40,27 +40,6 @@
     }
   }
 
-  .gallery {
-    grid-template-columns: repeat(3, 1fr);
-
-    > .link {
-      display: inline-block;
-      margin-right: -4px;
-
-      > .image {
-        width: 80px;
-        height: 80px;
-
-        object-fit: cover;
-
-        transition: opacity .15s ease-in-out;
-
-        &:hover {
-          opacity: .5;
-        }
-      }
-    }
-  }
 
   .social-links > .link {
     fill: white;
@@ -83,10 +62,6 @@
       font-weight: inherit;
 
       color: inherit;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
     }
   }
 
