@@ -1,7 +1,9 @@
 .content-tile {
-  margin: 2rem 0;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
-  background-color: var(--bg-gray);
+  background-color: $bg-grey;
 
   transition: transform .25s ease-out, background-color .15s ease-in-out, box-shadow .25s ease-out;
 
@@ -17,8 +19,7 @@
 
       font-weight: 300;
 
-      color: var(--gray);
-
+      color: $mid-grey;
       transition: color .15s ease-in-out;
     }
   }
@@ -27,7 +28,7 @@
     transform: translateY(-1rem);
 
     box-shadow: 0 25px 20px -10px rgba(0, 0, 0, 0.15);
-    background-color: var(--dark-gray);
+    background-color: $dark-grey;
 
     .title {
       color: white;

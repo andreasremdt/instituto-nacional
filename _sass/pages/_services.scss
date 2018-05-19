@@ -1,4 +1,4 @@
-.tourism {
+/*.tourism {
   margin-top: 3rem;
 
   > .services {
@@ -41,8 +41,16 @@
     background-color: var(--bg-gray);
   }
 }
+*/
 
-.contact-us-now {
-  background: transparent url('../images/pages/services/background.jpg') center center no-repeat;
-  background-size: cover;
+#services {
+  padding-bottom: 0;
+
+  article {
+    margin-bottom: 1.5rem;
+  }
+
+  h4 {
+    font-weight: 500;
+  }
 }

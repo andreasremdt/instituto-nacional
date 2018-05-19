@@ -1,7 +1,7 @@
-<nav class="social-links">
+<nav class="hidden md:block flex-no-shrink">
   {% for item in site.social %}
-    <a href="{{ item.url }}" target="_blank" rel="noopener" class="link" title="{{ item.text }}">
-      <svg class="icon" width="20" height="20">
+    <a href="{{ item.url }}" target="_blank" rel="noopener" class="link inline-flex w-12 ml-2 h-12 items-center justify-center border-grey-light border-solid border text-grey hover:text-green hover:border-green rounded-full" title="{{ item.text }}">
+      <svg width="20" height="20">
         <use xlink:href="/images/icons/symbol-defs.svg#{{ item.name | downcase }}"></use>
       </svg>
     </a>

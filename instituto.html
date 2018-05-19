@@ -3,137 +3,130 @@ title: El Instituto
 layout: default
 ---
 
-<section class="section -big about-intro">
-  <div class="container grid">
-    <div class="grid-5 _right">
-      <p class="_curly _green pretitle">{{ site.data.about.intro.pretitle }}</p>
-      <h2 class="_big">{{ site.data.about.intro.title }}</h2>
+<section class="py-16 max-w-2xl px-6 mx-auto">
+  <div class="md:flex md:items-end">
+    <div class="md:text-right md:w-2/5 md:mr-8 mb-6 md:mb-0">
+      <p class="font-serif text-green text-xl">{{ site.data.about.intro.pretitle }}</p>
+      <h2 class="text-black text-4xl">{{ site.data.about.intro.title }}</h2>
     </div>
   
-    <p class="grid-7 text">{{ site.data.about.intro.content }}</p>
+    <p class="md:w-3/5 text-lg text-grey-dark mb-2">{{ site.data.about.intro.content }}</p>
   </div>
 </section>
 
 
 
-<section class="container grid about-principles">
-  {% for principle in site.data.about.principles %}
-    <article class="grid-6">
-      <h3 class="title _uppercase _lined">{{ principle.title }}</h3>
-      <svg class="icon _green" width="40" height="40">
-        <use xlink:href="/images/icons/symbol-defs.svg#{{ principle.icon }}"></use>
-      </svg>
-      <p>{{ principle.content }}</p>
-    </article>
-  {% endfor %}
-</section>
-
-
-
-<section class="section">
-  <div class="container">
-    <figure class="iframe-wrapper">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/kCsTN1Z9dQE?rel=0" frameborder="0" allow="autoplay; encrypted-media"
-        allowfullscreen></iframe>
-    </figure>
+<section class="max-w-2xl px-6 mx-auto">
+  <div class="md:flex md:-mx-4">
+    {% for principle in site.data.about.principles %}
+      <article class="md:mx-4 mb-6">
+        <h3 class="text-lined-left-green uppercase text-black mb-6">{{ principle.title }}</h3>
+        <svg class="text-green border border-solid border-grey-light p-3 box-content float-left mt-1 mr-6 mb-2" width="40" height="40">
+          <use xlink:href="/images/icons/symbol-defs.svg#{{ principle.icon }}"></use>
+        </svg>
+        <p class="font-light">{{ principle.content }}</p>
+      </article>
+    {% endfor %}
   </div>
 </section>
 
 
 
-<section class="section about-careers">
-  <div class="container grid">
-    <div class="grid-7 _right">
-      <h2 class="_big _lined -right">{{ site.data.about.careers.title }}</h2>
+<section class="py-16 max-w-2xl px-6 mx-auto">
+  <figure class="iframe-wrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kCsTN1Z9dQE?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+      allowfullscreen></iframe>
+  </figure>
+</section>
+
+
+
+<section class="max-w-2xl md:px-6 mx-auto md:py-16 md:border-t border-solid border-grey-light">
+  <div class="relative flex items-center">
+    <div class="text-right md:mr-8 md:w-3/5 z-20 px-6 py-8 md:p-0">
+      <h2 class="text-black mb-6 text-3xl bg-white inline-block px-3 md:px-0">{{ site.data.about.careers.title }}</h2>
     
-       <p>{{ site.data.about.careers.content | markdownify }}</p>
+       <p class="bg-white p-3 md:p-0">{{ site.data.about.careers.content }}</p>
     
-       <a href="/instituto/carreras/" class="button -green">Las carreras</a>
+       <a href="/instituto/requisitos/" class="text-green bg-white uppercase px-6 py-3 inline-block hover:bg-grey-lighter mt-6">Como aplicar</a>
+       <a href="/instituto/carreras/" class="text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark mt-6">Las carreras</a>
     </div>
   
-    <figure class="grid-5">
-      <img src="{{ site.data.about.careers.image_path }}" alt="{{ site.data.about.careers.title }}" width="800" height="533">
+    <figure class="md:w-2/5 absolute md:static pin-l pin-t w-full h-full z-10">
+      <img src="{{ site.data.about.careers.image_path }}" class="w-full h-full object-cover" alt="{{ site.data.about.careers.title }}" width="800" height="533">
     </figure>
   </div>
 </section>
 
 
 
-<section class="section about-campus">
-  <div class="container grid">
-    <figure class="grid-5">
-      <img src="{{ site.data.about.campus.image_path }}" alt="{{ site.data.about.campus.title }}" width="800" height="533">
+<section class="md:py-16 md:bg-grey-lighter md:px-6">
+  <div class="max-w-2xl mx-auto flex items-center relative">
+    <figure class="md:w-2/5 absolute md:static pin-l pin-t w-full h-full z-10">
+      <img src="{{ site.data.about.campus.image_path }}" class="w-full h-full object-cover" alt="{{ site.data.about.campus.title }}" width="800" height="533">
     </figure>
   
-    <div class="grid-7">
-      <h2 class="_big _lined">{{ site.data.about.campus.title }}</h2>
+    <div class="md:ml-8 md:w-3/5 z-20 px-6 py-8 md:p-0">
+      <h2 class="text-black mb-6 text-3xl bg-white md:bg-transparent inline-block px-3 md:px-0">{{ site.data.about.campus.title }}</h2>
   
-      <p>{{ site.data.about.campus.content }}</p>
+      <p class="bg-white md:bg-transparent p-3 md:p-0">{{ site.data.about.campus.content }}</p>
   
-      <a href="/instituto/campus/" class="button -green">Detalles y fotografías</a>
+      <a href="/instituto/campus/" class="text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark mt-6">Detalles y fotografías</a>
     </div>
   </div>
 </section>
 
 
 
-<section class="section about-teachers">
-  <div class="container grid">
-    <div class="grid-7 _right">
-      <h2 class="_big _lined -right">Profesores</h2>
+<section class="max-w-2xl md:px-6 mx-auto md:py-16">
+  <div class="flex items-center relative">
+    <div class="text-right md:mr-8 md:w-3/5 z-20 px-6 py-8 md:p-0">
+      <h2 class="text-black mb-6 text-3xl bg-white md:bg-transparent inline-block px-3 md:px-0">{{ site.data.about.teachers.title }}</h2>
 
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dolorum ad, tempore laudantium sed, impedit, perferendis magni quis ut enim autem. Culpa ab molestias reiciendis ipsum assumenda facilis. Cumque, enim.</p>
+      <p class="bg-white md:bg-transparent p-3 md:p-0">{{ site.data.about.teachers.content }}</p>
 
-      <a href="/instituto/profesores/" class="button -green">Los profesores</a>
+      <a href="/instituto/profesores/" class="text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark mt-6">Los profesores</a>
     </div>
 
-    <figure class="grid-5">
-      <img src="{{ site.data.about.careers.image_path }}" alt="{{ site.data.about.careers.title }}" width="800" height="533">
+    <figure class="md:w-2/5 absolute md:static pin-l pin-t w-full h-full z-10">
+      <img src="{{ site.data.about.teachers.image_path }}" class="w-full h-full object-cover" alt="{{ site.data.about.teachers.title }}" width="800" height="533">
     </figure>
   </div>
 </section>
 
 
 
-<section class="section">
-  <div class="container grid">
-    <a class="box grid-6 _centered" href="/instituto/requisitos/">
-      <h3 class="_uppercase _lined -center">¿Cómo aplicar?</h3>
-      <p class="content">Más detalles sobre los requisitos de admission y como aplicar...</p>
-    </a>
-    <a class="box grid-6 _centered" href="/instituto/historia/">
-      <h3 class="_uppercase _lined -center">La Historia</h3>
-      <p class="content">Aprende más sobre la historia del instituto y los eventos más grandes.</p>
-    </a>
+<section class="py-16 bg-grey-lighter px-6">
+  <div class="max-w-2xl mx-auto md:flex md:text-center">
+    <div class="flex-1 mb-6 md:mb-0">
+      <h3 class="text-black mb-6 text-3xl">{{ site.data.about.application.title }}</h3>
+      <p class="content">{{ site.data.about.application.content }}</p>
+      <a href="/instituto/requisitos/" class="text-green bg-white uppercase px-6 py-3 inline-block hover:bg-green-dark hover:text-white mt-6">Más detalles</a>
+    </div>
+
+    <div class="md:ml-8 flex-1">
+      <h3 class="text-black mb-6 text-3xl">{{ site.data.about.history.title }}</h3>
+      <p class="content">{{ site.data.about.history.content }}</p>
+      <a href="/instituto/historia/" class="text-green bg-white uppercase px-6 py-3 inline-block hover:bg-green-dark hover:text-white mt-6">Más detalles</a>
+    </div>
   </div>
 </section>
 
 
 
-<section class="section -big _centered about-values">
-  <div class="container">
-    <h2 class="_big _lined -center title" data-action="colorize">Valores del Instituto</h2>
+<section class="py-16 px-6 bg-values bg-cover bg-no-repeat bg-center">
+  <div class="max-w-2xl mx-auto">
+    <h2 class="text-black mb-6 text-3xl inline-block bg-white px-3 py-1" data-action="colorize">{{ site.data.about.values.title }}</h2>
 
-    <div class="grid">
-      <article class="grid-3">
-        <h3>Excelencia Académica</h3>
-        <p>Para el desarrollo de programas académicos de la mas alta calidad.</p>
-      </article>
-      <article class="grid-3">
-        <h3>Responsabilidad Social Ambiental</h3>
-        <p>A través de la promoción de comportamientos responsables frente al medio ambiente en la ejecución de sus programas
-          y entre sus estudiantes.</p>
-      </article>
-      <article class="grid-3">
-        <h3>Integridad</h3>
-        <p>Expresada en la unidad de sus propósitos y acciones para garantizar un medio ambiente sano y profesionales con conciencia
-          cabal de su papel como entes sociales.</p>
-      </article>
-      <article class="grid-3">
-        <h3>Equidad</h3>
-        <p>A través de un trato igualitario, sin distinción de etnias, origen, género, opción política, nivel social y otras
-          diferencias.</p>
-      </article>
+    <div class="md:flex md:flex-wrap md:-mx-2">
+      {% for value in site.data.about.values.items %}
+        <div class="md:px-2 md:w-1/2 mb-4">
+          <article class="bg-white p-6 h-full">
+            <h3 class="text-black uppercase font-medium text-lined-left-green mb-6">{{ value.title }}</h3>
+            <p class="font-light">{{ value.text }}</p>
+          </article>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </section>

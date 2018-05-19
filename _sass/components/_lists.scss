@@ -17,7 +17,7 @@
       left: 0;
       top: calc(50% - 1.5rem);
             
-      background-color: var(--brand-color);
+      background-color: $brand-color;
       color: white;
       
       line-height: 3rem;
@@ -35,7 +35,7 @@
       top: 1.5rem;
       bottom: -3.5rem;
   
-      background: var(--brand-color);
+      background: $brand-color;
   
       content: '';
       z-index: 1;

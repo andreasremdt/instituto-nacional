@@ -1,15 +1,18 @@
-<nav class="page-navigation container">
-  <h2 class="heading">Navegación</h2>
-  
-  <ul class="menu">
+<nav class="fixed bg-grey-lighter py-6 px-8 pin-t pin-l md:p-0 h-full z-10 md:max-w-2xl md:mx-auto top-navigation md:relative">
+  <h2 class="md:hidden text-grey-darker mb-6 font-light">Navegación</h2>
+
+  <ul class="md:flex list-reset">
     {% for item in site.data.navigation %}
-      <li class="item{% if item.children %} -dropdown{% endif %}">
-        <a href="{{ item.url }}" class="link{% if item.url == page.url %} -active{% endif %}">{{ item.name }}</a>
+      <li class="md:flex md:items-center md:relative {% if forloop.last %}md:ml-auto{% else %}md:px-6{% endif %}">
+        <a href="{{ item.url }}" class="flex items-center py-2 md:border-transparent md:border-b-2 md:text-white md:h-13{% if item.url == page.url %} font-medium text-green md:border-green{% endif %}{% if forloop.last %} md:bg-green md:pr-6 md:uppercase last hover:bg-green-dark{% else %} hover:text-green{% endif %}">{{ item.name }}</a>
         {% if item.children %}
-        <ul class="submenu">
+        <svg class="hidden md:block ml-1 mb-1 text-white" width="20" height="20" aria-hidden="true">
+          <use xlink:href="/images/icons/symbol-defs.svg#arrow-down"></use>
+        </svg>
+        <ul class="md:hidden md:absolute md:pin-l md:pin-t-100 list-reset pl-4 mb-6">
           {% for subitem in item.children %}
             <li>
-              <a href="{{ subitem.url }}" class="link{% if subitem.url == page.url %} -active{% endif %}">{{ subitem.name }}</a>
+              <a href="{{ subitem.url }}" class="md:text-white block hover:text-green px-2 py-2 md:py-3 whitespace-no-wrap {% if subitem.url == page.url %} text-green{% endif %}">{{ subitem.name }}</a>
             </li>
           {% endfor %}
         </ul>

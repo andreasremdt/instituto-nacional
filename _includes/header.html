@@ -1,28 +1,38 @@
 <header>
-  <div class="page-header container">
-    <a href="/" class="logo">
-      <h1 class="title" data-action="colorize">{{ site.title }}</h1>
-      <p class="subtitle">{{ site.subtitle }}</p>
+  <div class="max-w-2xl mx-auto px-6 flex items-center h-32">
+    <a href="{{ site.baseurl }}" class="mr-auto logo">
+      <h1 class="my-0 font-serif text-medium text-black text-base sm:text-xl md:text-2xl" data-action="colorize">{{ site.title }}</h1>
+      <p class="my-0 font-light text-grey mr-2">{{ site.subtitle }}</p>
     </a>
 
-    <ul class="contacts">
-      <li class="contact">
-        <svg class="icon" width="40" height="40">
+    <ul class="list-reset hidden lg:block flex-no-shrink">
+      <li class="inline-flex items-center mr-6">
+        <svg class="p-2 mr-2 bg-green" width="40" height="40">
           <use xlink:href="/images/icons/symbol-defs.svg#address"></use>
-        </svg><span>{{ site.address }}</span>
+        </svg>
+        <span class="font-light">{{ site.address }}</span>
       </li>
-      <li class="contact">
-        <svg class="icon" width="40" height="40">
+      <li class="inline-flex items-center mr-6">
+        <svg class="p-2 mr-2 bg-green" width="40" height="40">
           <use xlink:href="/images/icons/symbol-defs.svg#phone"></use>
-        </svg><a href="tel:{{ site.phone | remove: ' '}}">{{ site.phone }}</a>
+        </svg>
+        <a href="tel:{{ site.phone | remove: ' '}}" class="font-light">{{ site.phone }}</a>
         <br>
       </li>
     </ul>
 
-    {% include social.html %}
+    <nav class="hidden md:block flex-no-shrink">
+      {% for item in site.social %}
+      <a href="{{ item.url }}" target="_blank" rel="noopener" class="link inline-flex w-10 ml-2 h-10 items-center justify-center border-grey-light border-solid border text-grey hover:text-green hover:border-green rounded-full" title="{{ item.text }}">
+        <svg width="18" height="18">
+          <use xlink:href="/images/icons/symbol-defs.svg#{{ item.name | downcase }}"></use>
+        </svg>
+      </a>
+      {% endfor %}
+    </nav>
 
-    <button type="button" data-action="menu" class="button -menu" title="Toggle Navigation">
-      <svg class="icon" width="28" height="28">
+    <button type="button" data-action="menu" class="md:hidden ml-2 bg-white hover:bg-grey-lighter z-20 py-2 px-4 rounded border text-grey-darker flex" title="Navegación de palanca">
+      <svg width="28" height="28">
         <use xlink:href="/images/icons/symbol-defs.svg#bars"></use>
       </svg>
     </button>

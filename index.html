@@ -3,91 +3,88 @@ layout: default
 title: Bienvenidos
 ---
 
-<section class="section -big about">
-  <div class="container">
-    <h3 class="pretitle _green _curly _centered">{{ site.data.home.about.pretitle }}</h3>
-    <h2 class="_big _centered">{{ site.data.home.about.title }}</h2>
-    <p class="_centered">{{ site.data.home.about.content | markdownify }}</p>
+<section class="py-16 text-center max-w-2xl px-6 mx-auto">
+    <p class="sm:text-2xl text-green font-serif">{{ site.data.home.about.pretitle }}</p>
+    <h2 class="text-4xl md:text-5xl mb-6 text-black">{{ site.data.home.about.title }}</h2>
+    
+    <div class="max-w-lg mx-auto mb-12">
+      {{ site.data.home.about.content | markdownify }}
+    </div>
 
-    <div class="grid">
+    <div class="sm:flex md:-mx-4">
       {% for item in site.data.home.about.items %}
-        <a href="{{ item.url }}" class="content-tile grid-4">
+        <a href="{{ item.url }}" class="sm:w-1/3 sm:mx-4 bg-grey-lightest block mb-4 hover:bg-grey-darkest hover:text-white lift">
           <figure>
-            <img src="{{ item.image_path }}" class="_img-fluid" alt="{{ item.title }}" width="300" height="250">
-            <figcaption class="caption">
-              <h3 class="title">{{ item.title }}</h3>
-              <p class="text">{{ item.caption }}</p>
+            <img src="{{ item.image_path }}" class="w-full" alt="{{ item.title }}" width="300" height="250">
+            <figcaption class="p-4">
+              <h3 class="mb-2 text-black font-normal text-xl">{{ item.title }}</h3>
+              <p class="font-light">{{ item.caption }}</p>
             </figcaption>
           </figure>
         </a>
       {% endfor %}
     </div>
-  </div>
 </section>
 
 
 
-<section class="careers section -big">
-  <h2 class="_hidden">Carreras</h2>
-  
-  <div class="container">
-    <div class="tabs">
+<section class="careers py-16 bg-center bg-cover relative z-0">
+  <div class="flex justify-center mb-8">
+    <h2 class="bg-white text-green px-6 py-2 text-4xl shadow-md">Carreras</h2>
+  </div>
+
+  <div class="mx-auto max-w-2xl md:flex">
+    <div class="flex flex-1 flex-col sm:flex-row md:flex-col md:items-end mx-6 mb-4">
       {% for career in site.carreras %}
-        <button type="button" class="selector" data-action="tab" data-target="{{ career.title | slugify | cgi_escape }}">
-          <svg class="icon" width="28" height="28">
+        <button type="button" class="text-left bg-white uppercase px-4 py-6 font-medium text-grey-darkest sm:mb-1 w-full md:w-4/5 flex items-center" data-action="tab" data-target="{{ career.title | slugify | cgi_escape }}">
+          <svg class="text-green mr-4" width="28" height="28">
             <use xlink:href="images/icons/symbol-defs.svg#{{ career.icon }}"></use>
           </svg> {{ career.title }}
         </button>
       {% endfor %}
     </div>
 
-    <div class="tab-content">
+    <div class="flex flex-1">
       {% for career in site.carreras %}
-        <article class="tab" hidden data-tab="{{ career.title | slugify | cgi_escape }}">
-          <h2 class="title _big _lined" data-action="colorize">{{ career.title }}</h2>
-        
-          <figure class="intro _flex">
-            <img src="{{ career.image_path }}" class="image" alt="{{ career.title }}" width="200" height="134">
-            <figcaption>
-              <p>{{ career.excerpt }}</p>
-            </figcaption>
-          </figure>
-        
-        
-          <a href="{{ career.url }}" class="button -green">Más</a>
+        <article class="bg-white mx-6 flex-col lg:flex-row shadow-md hidden" data-tab="{{ career.title | slugify | cgi_escape }}">
+          <div style="background-image: url('{{ career.image_path }}');" class="bg-cover flex-no-shrink lg:w-48 h-48 lg:h-full"></div>
+          <div class="py-4 px-6">
+            <h2 class="mb-2 font-medium" data-action="colorize">{{ career.title }}</h2>
+            <p class="font-light">{{ career.excerpt }}</p>
+            <a href="{{ career.url }}" class="text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark mt-4">Más detalles</a>
+          </div>
         </article>
       {% endfor %}
-
     </div>
   </div>
 </section>
 
 
 
-<section class="section -big latest-news">
-  <div class="container">
-    <h2 class="_big _lined" data-action="colorize">{{ site.data.home.news.title }}</h2>
-    <p>{{ site.data.home.news.subtitle }}</p>
+<section class="latest-news py-16 px-6 bg-center bg-cover">
+  <div class="mx-auto max-w-2xl">
+    <h2 class="text-lined-left-green leading-tight text-4xl mb-6 text-black" data-action="colorize">{{ site.data.home.news.title }}</h2>
+    <p class="mb-8">{{ site.data.home.news.subtitle }}</p>
 
-    <div class="grid">
+    <div class="md:flex md:-mx-4">
       {% for post in site.posts limit: 3 %}
-        <article class="grid-4 post-preview">
+        <article class="flex flex-col mb-4 bg-white md:mx-4 border-grey-light border-solid border flex-1 overflow-hidden">
           <figure>
-            <img src="{{ post.image_path }}" class="image _img-fluid" alt="{{ post.title }}" width="300" height="250">
+            <img src="{{ post.image_path }}" class="w-full sm:h-64 md:h-auto object-cover" alt="{{ post.title }}" width="300" height="250">
           </figure>
   
-          <div class="content">
-            <ul class="categories _uppercase">
-              <li class="category">{{ post.tag }}</li>
+          <div class="py-4 px-6">
+            <ul class="list-reset mb-4">
+              <li class="text-sm bg-grey-lighter inline-block font-light px-4 py-1 uppercase text-grey-dark">{{ post.tag }}</li>
             </ul>
   
-            <h3 class="title _uppercase">
+            <h3 class="text-black uppercase mb-3 hover:text-green">
               <a href="{{ post.url }}">{{ post.title }}</a>
             </h3>
-            <p>{{ post.excerpt | strip_html | truncatewords:30 }}</p>
+            <p class="font-light">{{ post.excerpt | strip_html | truncatewords:30 }}</p>
           </div>
   
-          <footer class="footer">
+          <footer class="border-t border-grey-light border-solid py-4 px-6 text-right text-grey font-light mt-auto text-sm">
             <time datatime="{{ post.date }}">{{ post.date | date: "%d/%m/%Y" }}</time>
           </footer>
         </article>

@@ -3,21 +3,20 @@ layout: default
 title: Profesores
 ---
 
-<main class="section -big">
-  <div class="container">
+<main class="py-16 px-6 max-w-2xl mx-auto text-center">
+  <p class="sm:text-xl font-light mb-8">{{ site.data.teachers.content }}</p>
 
-    {{ site.data.teachers.content }}
-
-    <div class="grid">
+    <div class="flex flex-wrap -mx-2">
       {% for teacher in site.data.teachers.teachers %}
-      <figure class="content-tile grid-3">
-        <img src="{{ teacher.image_path }}" class="_img-fluid" alt="{{ teacher.name }}">
-        <figcaption class="caption">
-          <h3 class="title">{{ teacher.name }}</h3>
-          <p class="text">{{ teacher.description }}</p>
-        </figcaption>
-      </figure>
+      <div class="sm:w-1/2 lg:w-1/4 px-2 mb-4 flex">
+        <figure class="bg-grey-lighter">
+          <img src="{{ teacher.image_path }}" class="" alt="{{ teacher.name }}">
+          <figcaption class="p-4">
+            <h3 class="text-black mb-4 text-xl font-normal">{{ teacher.name }}</h3>
+            <p class="font-light">{{ teacher.description }}</p>
+          </figcaption>
+        </figure>
+      </div>
       {% endfor %}
     </div>
-  </div>
 </main>

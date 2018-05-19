@@ -3,17 +3,18 @@ layout: default
 title: Historia
 ---
 
-<main class="history section -big">
-  <div class="container">
-    <h3 class="pretitle _centered _curly _green">{{ site.data.history.pre_heading }}</h3>
-    <h2 class="_centered _big _lined -center">{{ site.data.history.heading }}</h2>
+<main class="py-16 px-6 bg-plant">
+  <div class="max-w-2xl mx-auto">
+    <h3 class="text-green text-center font-serif">{{ site.data.history.pre_heading }}</h3>
+    <h2 class="text-center text-black text-2xl sm:text-4xl mb-8">{{ site.data.history.heading }}</h2>
         
-    <ol class="history-list">
+    <ol class="list-reset md:w-3/5 mx-auto pt-8">
       {% for entry in site.data.history.entries %}
-        <li class="entry">
-          <h4 class="year _centered">{{ entry.year }}</h4>
-          <p class="content">{{ entry.content }}</p>
+        <li class="sm:flex mt-8 sm:items-center">
+          <h4 class="font-medium sm:border sm:border-solid sm:border-grey-light sm:bg-grey-lighter text-xl sm:text-base text-green sm:text-grey-dark sm:w-16 sm:h-16 sm:mr-6 block flex-no-shrink sm:flex sm:items-center sm:justify-center">{{ entry.year }}</h4>
+          <p class="bg-white sm:px-3 sm:py-1">{{ entry.content }}</p>
         </li>
       {% endfor %}
     </ol>
+  </div>
 </main>

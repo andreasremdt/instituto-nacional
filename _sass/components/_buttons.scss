@@ -6,20 +6,20 @@
   font-size: 95%; 
   text-transform: uppercase;
 
-  background-color: var(--background-color, transparent);
-  color: var(--text-color, var(--dark-gray));
-  fill: var(--text-color, var(--dark-gray));
+  background-color: transparent;
+  color: $dark-grey;
+  fill: $dark-grey;
 
-  border: 2px solid var(--border-color, var(--light-gray));
+  border: 2px solid $light-grey;
   border-radius: 4px;
 
   cursor: pointer;
   transition: all .15s ease-in-out;
 
   &.-green {
-    --background-color: var(--brand-color);
-    --text-color: white;
-    --border-color: var(--brand-color);
+    background-color: $brand-color;
+    color: white;
+    border-color: $brand-color;
 
     &:hover {
       background-color: shade($brand-color, 20%);
@@ -29,26 +29,26 @@
   }
 
   &.-menu {
-    --background-color: white;
+    background-color: white;
     
     margin-left: 1rem;
 
     line-height: 0;
 
     &:hover {
-      border-color: var(--brand-color);
+      border-color: $brand-color;
     }
 
     &.-active {
-      --border-color: var(--brand-color);
-      --text-color: var(--brand-color);
+      border-color: $brand-color;
+      color: $brand-color;
     }
   }
 
   &.-transparent {
-    --background-color: rgba(255, 255, 255, .1);
-    --text-color: white;
-    --border-color: white;
+    background-color: rgba(255, 255, 255, .1);
+    color: white;
+    border-color: white;
 
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
 
@@ -59,9 +59,9 @@
 }
 
 .text-link {
-  color: var(--brand-color);
+  color: $brand-color;
 
-  border-bottom: 1px dotted var(--brand-color);
+  border-bottom: 1px dotted $brand-color;
 
   transition: color .15s ease-in-out;
 

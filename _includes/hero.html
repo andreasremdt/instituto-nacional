@@ -1,30 +1,30 @@
 {% if page.url == "/" %}
-  <section class="hero-unit -home">
-    <div class="container inner">
-      <h3 class="pretitle _green _curly _lined">{{ page.title }}</h3>
-      <h2 class="title _big">{{ site.data.home.hero.title }}</h2>
-      <p class="intro _uppercase">{{ site.data.home.hero.subtitle }}</p>
+  <section class="bg-hero-big">
+    <div class="flex flex-col justify-center h-full max-w-2xl mx-auto px-6">
+      <h2 class="text-green font-serif mb-6 md:text-2xl pb-2 text-lined-left text-shadow">{{ page.title }}</h2>
+      <h2 class="text-white text-3xl md:text-5xl mb-4 text-shadow">{{ site.data.home.hero.title }}</h2>
+      <p class="uppercase text-white text-lg mb-8 md:ml-6 text-shadow">{{ site.data.home.hero.subtitle }}</p>
 
-      <div class="buttons">
-        <a href="/instituto/" class="button -green">Nuestro Instituto</a>
-        <a href="/contactenos/" class="button -transparent">Contáctenos</a>
+      <div>
+        <a href="/instituto/" class="md:ml-6 text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark mb-1">Nuestro Instituto</a>
+        <a href="/contactenos/" class="text-green bg-white uppercase px-6 py-3 inline-block hover:bg-grey-light">Contáctenos</a>
       </div>
     </div>
   </section>
 {% else %}
-  <section class="hero-unit _uppercase">
-    <div class="container inner">
-      <h2 class="title _big _centered" data-action="colorize">{{ page.title }}</h2>
+  <section class="bg-hero-small">
+    <div class="text-center flex flex-col md:flex-row items-center justify-center md:justify-between h-full max-w-2xl mx-auto px-6 uppercase">
+      <h2 class="text-white text-3xl mb-3 md:mb-0 sm:text-5xl text-shadow" data-action="colorize">{{ page.title }}</h2>
 
       {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
       
       <nav class="breadcrumbs">
-        <a href="/" class="link">Inicio</a>
+        <a href="{{ site.baseurl }}" class="text-white text-shadow">Inicio</a>
         {% for crumb in crumbs offset: 1 %}
           {% if forloop.last %}
-            <a href="/{{ crumb }}" class="link _green">{{ crumb | replace:'-',' ' | remove:'.html' }}</a>
+            <a href="/{{ crumb }}" class="text-green text-shadow">{{ crumb | replace:'-',' ' | remove:'.html' }}</a>
           {% else %}
-            <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}" class="link">{{ crumb | replace:'-',' ' | remove:'.html' }}</a>
+            <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}" class="text-white text-shadow">{{ crumb | replace:'-',' ' | remove:'.html' }}</a>
           {% endif %}
         {% endfor %}
       </nav>

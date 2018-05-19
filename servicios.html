@@ -5,6 +5,54 @@ description: This is a sample description
 ---
 
 <main class="section -big">
+  <div class="container">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident corrupti, ut enim fugiat obcaecati facilis officia consequuntur. Doloribus iure architecto ea laborum saepe dolores sunt blanditiis! Repudiandae magnam odit ullam.</p>
+  
+    <div class="grid">
+      {% for service in site.data.services.servicios %}
+        <a href="{{ service.url }}" class="grid-6 content-tile">
+          <figure>
+            <img src="{{ service.image_path }}" class="_img-fluid" alt="{{ service.title }}" width="300" height="250">
+            <figcaption class="caption">
+              <h3 class="title">{{ service.title }}</h3>
+              <p class="text">{{ service.description }}</p>
+            </figcaption>
+          </figure>
+        </a>
+      {% endfor %}
+    </div>
+
+
+
+    <section class="section" id="services">
+      <h2 class="_big _lined" data-action="colorize">Características de nuestros servicios</h2>
+    
+      {% for characteristic in site.data.services.characteristics %}
+        <article class="service grid">
+          <div class="grid-4">
+            <figure>
+              <img src="{{ characteristic.image_path }}" class="_img-fluid" alt="{{ characteristic.title }}">
+            </figure>
+          </div>
+          <div class="grid-8">
+            <h4>{{ characteristic.title }}</h4>
+        
+            <ul>
+              {% for item in characteristic.items %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </article>
+      {% endfor %}
+    </section>
+  </div>
+</main>
+
+{% include contact-us.html %}
+    
+<!--
+<main class="section -big">
   <header class="container grid">
     <button class="box grid-6" data-action="tab" data-target="turismo-educativo">
       <h3 class="heading _uppercase _lined -center">Turismo educativo</h3>
@@ -38,26 +86,7 @@ description: This is a sample description
     </div>
 
     <div class="container">
-      <h2>{{ site.data.turismo.characteristics_title }}</h2>
       
-      {% for characteristic in site.data.turismo.characteristics %}
-        <article class="service grid">
-          <div class="grid-4">
-            <figure>
-              <img src="{{ characteristic.image_path }}" class="_img-fluid" alt="{{ characteristic.title }}">
-            </figure>
-          </div>
-          <div class="grid-8">
-            <h4 class="title">{{ characteristic.title }}</h4>
-  
-            <ul>
-              {% for item in characteristic.items %}
-                <li>{{ item }}</li>
-              {% endfor %}
-            </ul>
-          </div>
-        </article>
-      {% endfor %}
     </div>
   </section>
 
@@ -143,4 +172,4 @@ description: This is a sample description
       <a href="tel:{{ site.phone | remove: ' '}}" class="button -green">Llámenos</a>
     </div>
   </div>
-</section>
+</section>-->

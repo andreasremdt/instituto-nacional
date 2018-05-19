@@ -1,38 +1,38 @@
-content: Tenemos especialistas de todo el país. Cada materia tiene su propio profesor que es responsable para clases, evaluaciones y el aprendizaje de todos sus estudiantes. Conozca a nuestros profesores aquí.
+content: Tenemos 12 profesores fijos con diferentes conocimientos y experiencias laborales.<br>Además de eso, también trabajamos con el Ministerio de Medio Ambiente y podemos confiar en el conocimiento de sus profesionales para nuestras clases.
 teachers:
   - name: Xochilt Estrada
-    image_path: /images/xochilt-estrada.jpg
-    description: El profesor con lo más tiempo en la escuela y responsable para matemáticas y contabilidad.
+    image_path: /images/pages/teachers/xochilt-estrada.jpg
+    description: Xochilt es la subdirectora y responsable para la parte académica. Ella también da clases sobre manejo de conflictos, extensión entre otros.
   - name: Clairen Pupac
-    image_path: /images/clairen-pupac.jpg
-    description: Aprender inglés es un aspecto importante para ser un profesional. Ilonka se ocupa de esa materia.
+    image_path: /images/pages/teachers/clairen-pupac.jpg
+    description: Clairen trabaja como profesora de Inglés, Etíca Profesional y da la bienvenida a nuestros nuevos estudiantes cada promoción.
   - name: Ilonka Holt
-    image_path: /images/ilonka-holt.jpg
-    description: El profesor con lo más tiempo en la escuela y responsable para matemáticas y contabilidad.
+    image_path: /images/pages/teachers/ilonka-holt.jpg
+    description: Aprender Inglés es un aspecto importante para ser un profesional. Ilonka solamente se ocupa de esa materia.
   - name: Carlos Lague
-    image_path: /images/carlos-lague.jpg
-    description: Aprender inglés es un aspecto importante para ser un profesional. Ilonka se ocupa de esa materia.
+    image_path: /images/pages/teachers/carlos-lague.jpg
+    description: Carlos es el profesor con lo más tiempo en el instituto y es responsable para Matemática y Contabilidad.
   - name: Elvis Lizardo
-    image_path: /images/elvis-lizardo.jpg
-    description: El profesor con lo más tiempo en la escuela y responsable para matemáticas y contabilidad.
+    image_path: /images/pages/teachers/elvis-lizardo.jpg
+    description: Antés estudiante, ahora profesor de Botánica, Biodiversidad y Trabajo de Campo. Elvis tiene un gran conocimiento de las plantas y aves del país.
   - name: Frank Badía
-    image_path: /images/frank-badia.jpg
-    description: Aprender inglés es un aspecto importante para ser un profesional. Ilonka se ocupa de esa materia.
+    image_path: /images/pages/teachers/frank-badia.jpg
+    description: Frank trabaja, cómo Elvis, en la parte de Trabajo de Campo y Biodiversidad. Además se encarga en la ciencia de los suelos.
   - name: Elizabeth Martinez
-    image_path: /images/elizabeth-martinez.jpg
-    description: Aprender inglés es un aspecto importante para ser un profesional. Ilonka se ocupa de esa materia.
+    image_path: /images/pages/teachers/elizabeth-martinez.jpg
+    description: Elizabeth trabaja para el instituto como Bombera Forestal y da clase en eso mismo.
   - name: David Rodriguez
-    image_path: /images/david-rodriguez.jpg
-    description: Aprender inglés es un aspecto importante para ser un profesional. Ilonka se ocupa de esa materia.
+    image_path: /images/pages/teachers/david-rodriguez.jpg
+    description: Cuando David no esta ayudando a los estudiantes en Trabajo de Campo, el está desarollando el campus.
   - name: José Aracena
-    image_path: /images/jose-aracena.jpg
-    description: Aprender inglés es un aspecto importante para ser un profesional. Ilonka se ocupa de esa materia.
+    image_path: /images/pages/teachers/jose-aracena.jpg
+    description: Cuando uno visita el campus del instituto, automaticamente se da cuanta de los dibujos hermosos. José es el especialista para eso.
   - name: Roberto Herasme
-    image_path: /images/roberto-herasme.jpg
-    description: Aprender inglés es un aspecto importante para ser un profesional. Ilonka se ocupa de esa materia.
+    image_path: /images/pages/teachers/roberto-herasme.jpg
+    description: Roberto se encarga en la ensenanza de lo que es la Biodiversidad de la República Dominicana.
   - name: Sandy Grullon
-    image_path: /images/sandy-grullon.jpg
-    description: Aprender inglés es un aspecto importante para ser un profesional. Ilonka se ocupa de esa materia.
+    image_path: /images/pages/teachers/sandy-grullon.jpg
+    description: Nosotros damos mucha importancia al estado físico de nuestros estudiantes. Cada día, Sandy juega voleibol, baloncesto o otros deportes con los estudiantes.
   - name: Andreas Remdt
-    image_path: /images/andreas-remdt.jpg
-    description: Aprender inglés es un aspecto importante para ser un profesional. Ilonka se ocupa de esa materia.
+    image_path: /images/pages/teachers/andreas-remdt.jpg
+    description: Andreas comenzó como voluntario aquí y ahora es profesor de Inglés y responsable para la Informatica.

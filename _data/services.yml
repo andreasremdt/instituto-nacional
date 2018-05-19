@@ -1,0 +1,46 @@
+servicios:
+  - title: Turismo Educativo
+    url: /servicios/turismo-educativo/
+    image_path: /images/turismo-educativo.jpg
+    description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus maxime est similique nulla quis sequi provident, non excepturi assumenda laudantium.
+  - title: Educación Continuada
+    url: /servicios/educacion-continuada/
+    image_path: /images/educacion-continuada.jpg
+    description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus maxime est similique nulla quis sequi provident, non excepturi assumenda laudantium.
+  - title: Bodas, fiestas y más...
+    url: /servicios/bodas-fiestas/
+    image_path: /images/bodas-fiestas.jpg
+    description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus maxime est similique nulla quis sequi provident, non excepturi assumenda laudantium.
+  - title: 30 Días de Labor Social
+    url: /servicios/labor-social/
+    image_path: /images/labor-social.jpg
+    description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus maxime est similique nulla quis sequi provident, non excepturi assumenda laudantium.
+characteristics:
+  - title: Flexibilidad
+    image_path: /images/flexibilidad.jpg
+    items:
+      - Servicios básicos sin diseño curricular de los cursos (instalaciones, alojamiento, equipos tecnológicos).
+      - Soporte técnico y operativo (apoyo en diseño curricular, facilitadores e instalaciones).
+      - Acuerdos de intercambios internacionales (diseño curricular, facilitadores, estudiantes, participación activa del personal y servicios básicos).
+  - title: Bajo costo
+    image_path: /images/bajo-costo.jpg
+    items:
+      - Opciones de servicio de alimentación económicas y diferentes, que se adaptan a las necesidades del grupo.
+      - Capacidad para 60 personas. No se cobra gastos de alojamiento, sólo una contribución para limpieza y mantenimiento de las instalaciones.
+  - title: Ambiente acogedor
+    image_path: /images/ambiente-acogedor.jpg
+    items:
+      - Clima agradable. La naturaleza funciona como laboratorio de prácticas relacionadas al medio ambiente.
+      - Exento de ruido.
+      - Atractivos naturales (ríos, senderos, jardines).
+      - Servicio de electricidad y agua permanente.
+  - title: Accesibilidad
+    image_path: /images/accesibilidad.jpg
+    items:
+      - Fácil acceso.
+      - Buena ubicación.
+  - title: Seguridad y privacidad
+    image_path: /images/seguridad-privacidad.jpg
+    items:
+      - Área protegida (vigilada por guardaparques y personal de seguridad).
+      - Destino final (no hay circulación de vehículos).

@@ -14,7 +14,7 @@
 
     element.innerHTML = arr.map((item, index) => {
       if (arr.length === index + 1) {
-        return `<span class="_green">${item}</span>`;
+        return `<span class="text-green">${item}</span>`;
       }
 
       return item;
@@ -53,18 +53,20 @@
       // Enable button styles
       tabButtons.forEach(button => {
         if (button.dataset.target === id) {
-          button.classList.add('-active');
+          button.classList.add('bg-green', 'text-white');
+          button.firstElementChild.classList.remove('text-green');
         } else {
-          button.classList.remove('-active');
+          button.classList.remove('bg-green', 'text-white');
+          button.firstElementChild.classList.add('text-green');
         }
       });
 
       // Hide / show tab content
       tabContents.forEach(content => {
         if (content.dataset.tab === id) {
-          content.removeAttribute('hidden');
+          content.classList.replace('hidden', 'flex');
         } else {
-          content.setAttribute('hidden', 'true');
+          content.classList.replace('flex', 'hidden');
         }
       });
     }
@@ -77,11 +79,11 @@
    * the button.
    */
   const menuToggle = document.querySelector('button[data-action="menu"]'),
-        menu = document.querySelector('nav.page-navigation');
+        menu = document.querySelector('.top-navigation');
   
   menuToggle.addEventListener('click', () => {
-    menuToggle.classList.toggle('-active');
-    menu.classList.toggle('-opened');
+    menuToggle.classList.toggle('text-green');
+    menu.classList.toggle('opened');
   });
 
   

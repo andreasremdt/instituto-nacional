@@ -32,8 +32,8 @@
       position: absolute;
 
       background: white;
-      color: var(--dark-gray);
-      fill: var(--dark-gray);
+      color: $dark-grey;
+      fill: $dark-grey;
 
       line-height: 1;
 
@@ -43,7 +43,7 @@
       transition: all .15s ease-in-out;
 
       &:hover {
-        background-color: var(--brand-color);
+        background-color: $brand-color;
         fill: white;
         color: white;
       }

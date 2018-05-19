@@ -1,9 +1,8 @@
 .breadcrumbs {
-  > .link:not(:last-child)::after {
-    margin-left: 7px;
-    margin-right: 7px;
+  > a:not(:last-child)::after {
+    margin-left: .5rem;
+    margin-right: .5rem;
 
     content: '\\';
   }
-
 }

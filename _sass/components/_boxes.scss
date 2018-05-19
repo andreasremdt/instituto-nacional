@@ -3,9 +3,9 @@
   margin-bottom: 1rem;
   width: 100%;
 
-  border: 1px solid var(--light-gray);
+  border: 1px solid $light-grey;
 
-  background-color: var(--bg-gray);
+  background-color: $bg-grey;
 
   transition: background-color .15s ease-in-out, color .15s ease-in-out, border-color .15s ease-in-out;
 
