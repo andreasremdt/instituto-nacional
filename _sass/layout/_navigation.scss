@@ -7,10 +7,6 @@
       display: block;
     }
 
-    ul ul {
-      background-color: rgba(0, 0, 0, 0.4);
-    }
-
     .last {
       padding-left: 4rem;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 25px 100%);
@@ -20,11 +16,11 @@
 
 @media (max-width: 768px) {
   .top-navigation {
-    transform: translateX(-100%);
+    transform: translate3d(-100%, 0, 0);
     transition: transform .3s ease-in-out;
 
     &.opened {
-      transform: translateX(0);
+      transform: translate3d(0, 0, 0);
     }
   }
 }

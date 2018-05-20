@@ -21,7 +21,7 @@ layout: default
     {% for principle in site.data.about.principles %}
       <article class="md:mx-4 mb-6">
         <h3 class="text-lined-left-green uppercase text-black mb-6">{{ principle.title }}</h3>
-        <svg class="text-green border border-solid border-grey-light p-3 box-content float-left mt-1 mr-6 mb-2" width="40" height="40">
+        <svg class="text-green border border-solid border-grey-light p-3 box-content float-left mt-1 mr-6 mb-2" width="50" height="50">
           <use xlink:href="/images/icons/symbol-defs.svg#{{ principle.icon }}"></use>
         </svg>
         <p class="font-light">{{ principle.content }}</p>
@@ -114,7 +114,7 @@ layout: default
 
 
 
-<section class="py-16 px-6 bg-values bg-cover bg-no-repeat bg-center">
+<section class="py-16 px-6 bg-forest-roof bg-cover bg-no-repeat bg-center">
   <div class="max-w-2xl mx-auto">
     <h2 class="text-black mb-6 text-3xl inline-block bg-white px-3 py-1" data-action="colorize">{{ site.data.about.values.title }}</h2>
 

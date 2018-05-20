@@ -1,8 +1,4 @@
-.styled-list {
-  padding: 0;
-  margin: 3rem 0;
-
-  list-style-type: none;
+.list-styled {
   counter-reset: styled-list;
 
   > .item {
@@ -17,7 +13,7 @@
       left: 0;
       top: calc(50% - 1.5rem);
             
-      background-color: $brand-color;
+      background-color: #38c172;
       color: white;
       
       line-height: 3rem;
@@ -35,7 +31,7 @@
       top: 1.5rem;
       bottom: -3.5rem;
   
-      background: $brand-color;
+      background-color: #38c172;
   
       content: '';
       z-index: 1;

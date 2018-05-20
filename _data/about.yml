@@ -5,13 +5,13 @@ intro:
 principles:
   - title: Nuestro Objectivo
     content: Formar los técnicos con los conocimientos, destrezas y habilidades, que el mundo empresarial e institucional exige en los ámbitos de la gestión ambiental para actuar de manera conjunta con las comunidades y otros actores sociales, en pro del medio ambiente y de la sostenibilidad de los recursos naturales.
-    icon: flag
+    icon: book
   - title: Nuestra Misión
     content: Formar profesionales de nivel técnico superior altamente calificados, con espíritu crítico, creativo, con visión global que contribuyan a una correcta aplicación de una política pública para la conservación y regulación del medio ambiente y el manejo de los recursos naturales de la República Dominicana.
-    icon: leaf
+    icon: protect
   - title: Nuestra Visión
     content: Ser una Institución Técnica de Educación Superior líder de la formación, capacitación y actualización de técnicos y profesionales en la gestión de medio ambiente y en el manejo de los recursos naturales que contribuyan con la implementación de un modelo de desarrollo sostenible que garantice una calidad de vida adecuada para las generaciones presentes y futuras.
-    icon: eye
+    icon: shirt
 careers:
   title: Carreras
   image_path: /images/pages/about/carreras.jpg

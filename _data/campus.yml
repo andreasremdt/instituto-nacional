@@ -1,3 +1,45 @@
+intro:
+  pretitle: El paraíso de la naturaleza...
+  title: 320 tareas de tierra para explorar
+  content: Nuestro instituto cuenta con un campus extraordinante. Diferentes zonas climáticas, una gran biodiversidad de todo el país, áreas para la producción de plantas y más...
+
+areas:
+  - title: Invernaderos
+    icon: greenhouse
+    content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
+  - title: Viveros
+    icon: nursery
+    content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
+  - title: Producción a cielo abierto
+    icon: open-air-production
+    content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
+  - title: Área de compostaje
+    icon: recycling
+    content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
+  - title: Herbolario
+    icon: herbs
+    content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
+  - title: Lavandería
+    icon: laundry
+    content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
+
+installations:
+  title: Instalaciones docentes y residenciales
+  content: "El enfoque principal es enseñar a nuestros estudiantes a proteger el medio ambiente. Es entonces cuando hacemos uso de los siguentes espacios:"
+  items:
+    - title: Laboratorio de Informática
+      content: 18 computadoras con todas las aplicaciones listas para los estudios.
+    - title: Biblioteca
+      content: Bastante libros que cubren todo lo que hay sobre el medio ambiente.
+    - title: Aulas
+      content: Para la enseñanza, equipadas con proyector, pizarra, sillas y mesas.
+    - title: Laboratorios de Ciencias Basicas
+      content: Equipos nuevos y actuales para clases de física, química y biología.
+    - title: Comedor y Cocina
+      content: Cada día preparamos 3 platos, que los estudiantes comen juntos en el comedor.
+    - title: Habitaciones
+      content: Suficiente espacio para todos los estudiantes con camas, estantes y baños.
+
 images:
   - src: /images/arboles-bonsai-2.jpg
     category: recinto 1
