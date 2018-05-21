@@ -1,0 +1,284 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/preflight";
+ */
+@tailwind preflight;
+
+/**
+ * This injects any component classes registered by plugins.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/components";
+ */
+@tailwind components;
+
+/**
+ * Here you would add any of your custom component classes; stuff that you'd
+ * want loaded *before* the utilities so that the utilities could still
+ * override them.
+ *
+ * Example:
+ *
+ * .btn { ... }
+ * .form-input { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "components/buttons";
+ * @import "components/forms";
+ */
+
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/utilities";
+ */
+@tailwind utilities;
+
+/**
+ * Here you would add any custom utilities you need that don't come out of the
+ * box with Tailwind.
+ *
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "utilities/background-patterns";
+ * @import "utilities/skew-transforms";
+ */
+
+ body{
+    font-family: config('fonts.sans');
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color:#676767
+}
+*{
+    box-sizing:border-box
+}
+a{
+    color:inherit;
+    text-decoration:none
+}
+img{
+    vertical-align:middle;
+    height:auto
+}
+.font-serif{
+    font-family:"Merienda One",serif
+}
+.text-shadow{
+    text-shadow:1px 1px 1px rgba(0,0,0,0.4)
+}
+.mb-12{
+    margin-bottom:4rem
+}
+.py-16{
+    padding-top:6rem;
+    padding-bottom:6rem
+}
+.object-cover{
+    object-fit:cover
+}
+.box-content{
+    box-sizing:content-box
+}
+.transition{
+    transition:all .2s ease-in-out
+}
+.lift{
+    transition:transform .25s ease-out, background-color .15s ease-in-out, box-shadow .25s ease-out, color .25s ease-in-out
+}
+.lift:hover{
+    transform:translate3d(0, -1rem, 0);
+    box-shadow:0 25px 20px -10px rgba(0,0,0,0.15)
+}
+.lift:hover h3{
+    color:white
+}
+.text-content{
+    font-weight:300
+}
+.text-content p,.text-content ul,.text-content ol,.text-content h1,.text-content h2,.text-content h3,.text-content h4,.text-content h5,.text-content h6{
+    margin-bottom:1rem
+}
+.iframe-wrapper{
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:25px;
+    height:0
+}
+.iframe-wrapper iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%
+}
+@media (min-width: 768px){
+    .md\:h-13{
+        height:3.3rem
+    }
+    .md\:pin-t-100{
+        top:100%
+    }
+    .md\:py-16{
+        padding-top:6rem;
+        padding-bottom:6rem
+    }
+}
+.career-img{
+    clip-path:polygon(0 2%, 90% 0, 100% 100%, 3% 92%)
+}
+.text-lined-left{
+    position:relative
+}
+.text-lined-left::before{
+    content:'';
+    position:absolute;
+    left:0;
+    top:115%;
+    width:50px;
+    border-bottom:2px solid white
+}
+.text-lined-left-green{
+    position:relative
+}
+.text-lined-left-green::before{
+    content:'';
+    position:absolute;
+    left:0;
+    top:115%;
+    width:50px;
+    border-bottom:2px solid #38c172
+}
+@media (min-width: 576px){
+    .logo{
+        padding-left:4.3rem;
+        background:transparent url("/images/logo.png") center left/60px no-repeat
+    }
+}
+@media (min-width: 996px){
+    .bg-room-plant{
+        background:transparent url("../images/backgrounds/room-plant.jpg") center no-repeat;
+        background-size:cover
+    }
+}
+@media (min-width: 900px){
+    .bg-plastic-plant{
+        background:transparent url("../images/backgrounds/plastic-plant.png") 50px bottom no-repeat;
+        background-size:400px
+    }
+}
+.bg-hero-small{
+    height:300px;
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url("../images/backgrounds/hero-small.jpg") center center no-repeat
+}
+.bg-hero-big{
+    height:700px;
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url("../images/backgrounds/hero-big.jpg") center center no-repeat
+}
+.bg-forest{
+    background-image:url("../images/backgrounds/forest.jpg")
+}
+.bg-water{
+    background-image:url("../images/backgrounds/water.jpg")
+}
+.bg-forest-roof{
+    background-image:url("../images/backgrounds/forest-roof.jpg")
+}
+.bg-palm{
+    background-image:url("../images/backgrounds/palm-leaf.jpg");
+    background-size:50%
+}
+.careers{
+    min-height:40rem
+}
+@media screen and (min-width: 768px){
+    .careers::after{
+        content:'';
+        position:absolute;
+        right:0;
+        top:0;
+        width:50%;
+        height:100%;
+        background-image:linear-gradient(to right, rgba(255,255,255,0.3), transparent);
+        z-index:-2
+    }
+}
+.breadcrumbs>a:not(:last-child)::after{
+    margin-left:.5rem;
+    margin-right:.5rem;
+    content:'\\'
+}
+@media (min-width: 768px){
+    .top-navigation{
+        margin-bottom:-3.3rem;
+        background-color:rgba(0,0,0,0.4)
+    }
+    .top-navigation li:hover ul{
+        display:block
+    }
+    .top-navigation .last{
+        padding-left:4rem;
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 25px 100%)
+    }
+}
+@media (max-width: 768px){
+    .top-navigation{
+        transform:translate3d(-100%, 0, 0);
+        transition:transform .3s ease-in-out
+    }
+    .top-navigation.opened{
+        transform:translate3d(0, 0, 0)
+    }
+}
+.list-styled{
+    counter-reset:styled-list
+}
+.list-styled>.item{
+    position:relative;
+    margin-bottom:3rem;
+    padding-left:4.5rem
+}
+.list-styled>.item::before{
+    width:3rem;
+    height:3rem;
+    position:absolute;
+    left:0;
+    top:calc(50% - 1.5rem);
+    background-color:#38c172;
+    color:white;
+    line-height:3rem;
+    text-align:center;
+    content:counter(styled-list);
+    counter-increment:styled-list;
+    z-index:2
+}
+.list-styled>.item:not(:last-of-type)::after{
+    position:absolute;
+    width:1px;
+    left:1.5rem;
+    top:1.5rem;
+    bottom:-3.5rem;
+    background-color:#38c172;
+    content:'';
+    z-index:1
+}
+
+ 

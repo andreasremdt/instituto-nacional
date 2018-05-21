@@ -4,7 +4,6 @@ subtitle: Estudios Superiores en Medio Ambiente y Recursos Naturales
 phone: 809 365 4650
 address: Calle al Salto Jimenoa<br>42000 Jarabacoa, La Vega
 email: institutodelambiente@outlook.com
-baseurl: https://xenodochial-babbage-c31e89.netlify.com/
 
 # Social Icons
 social:
@@ -28,3 +27,14 @@ collections:
   carreras:
     output: true
     permalink: /instituto/:collection/:name
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - src
+  - tailwind.js

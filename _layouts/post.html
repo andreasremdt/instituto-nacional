@@ -2,26 +2,31 @@
 layout: default
 ---
 
-<div class="container section -big">
-  <div class="grid">
-    <article class="post-preview grid-8">
+<div class="py-16 px-6 mx-auto max-w-2xl">
+  <div class="md:flex">
+    <main class="md:w-3/5 md:mr-8 flex flex-col mb-8 bg-white border-grey-light border-solid border">
       <figure>
-        <img src="{{ page.image_path }}" class="image _img-fluid" alt="{{ post.title }}" width="300" height="250">
+        <img src="{{ page.image_path }}" class="w-full" alt="{{ page.title }}" width="300" height="250">
       </figure>
-
-      <div class="content">
-        <ul class="categories _uppercase">
-          <li class="category">{{ page.tag }}</li>
+    
+      <div class="p-6">
+        <ul class="list-reset mb-4">
+          <li class="text-sm bg-green inline-block font-light px-4 py-1 uppercase text-white">{{ page.tag }}</li>
         </ul>
-
-        <h3 class="title _uppercase">{{ page.title }}</h3>
-        <p>{{ content }}</p>
+    
+        <h2 class="text-black uppercase mb-3 font-medium">{{ page.title }}</h2>
+        <div class="text-content">
+          {{ page.content }}
+        </div>
+        
+        <a href="/blog/" class="text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark mt-4">Volver</a>
       </div>
-
-      <footer class="footer">
+    
+      <footer class="border-t border-grey-light border-solid py-4 px-6 text-right text-grey font-light mt-auto text-sm">
         <time datatime="{{ page.date }}">{{ page.date | date: "%d/%m/%Y" }}</time>
       </footer>
-    </article>
-    <aside class="grid-4">sidebar</aside>
+    </main>
+    
+    {% include sidebar.html %}
   </div>
 </div>
