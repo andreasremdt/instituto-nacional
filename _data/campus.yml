@@ -1,29 +1,41 @@
-intro:
+area_production:
   pretitle: El paraíso de la naturaleza...
   title: 320 tareas de tierra para explorar
-  content: Nuestro instituto cuenta con un campus extraordinante. Diferentes zonas climáticas, una gran biodiversidad de todo el país, áreas para la producción de plantas y más...
+  intro: Nuestro instituto cuenta con un campus extraordinario. Diferentes ecosistemas, una gran biodiversidad de todo el país, áreas para la producción de plantas y más...
 
-areas:
-  - title: Invernaderos
-    icon: greenhouse
-    content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
-  - title: Viveros
-    icon: nursery
-    content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
-  - title: Producción a cielo abierto
-    icon: open-air-production
-    content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
-  - title: Área de compostaje
-    icon: recycling
-    content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
-  - title: Herbolario
-    icon: herbs
-    content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
-  - title: Lavandería
-    icon: laundry
-    content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
+  items:
+    - title: Herbolario
+      icon: herbs
+      content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
+    - title: Viveros
+      icon: nursery
+      content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
+    - title: Área de compostaje
+      icon: recycling
+      content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
+    - title: Producción a cielo abierto
+      icon: open-air-production
+      content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
+    - title: Arboretum
+      icon: tree
+      content: Colección de plantas endemicas y nativas de la isla que buscan enseñar ex_situ especies de la flora existente.
+    - title: Invernaderos
+      icon: greenhouse
+      content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
+  
+  images:
+    - path: /images/pages/campus/fresas.jpg
+      caption: Produccion de fresas
+    - path: /images/pages/campus/hierbas.jpg
+      caption: Hierbas para la cocina
+    - path: /images/pages/campus/plantas-jovenes.jpg
+      caption: Plantas jovenes en el invernadero
+    - path: /images/pages/campus/vivero-pinos.jpg
+      caption: Vivero de pinos
+  image_caption: Producción de fresas, hierbas para la cocina, invernadero y vivero.
 
-installations:
+
+area_educational:
   title: Instalaciones docentes y residenciales
   content: "El enfoque principal es enseñar a nuestros estudiantes a proteger el medio ambiente. Es entonces cuando hacemos uso de los siguentes espacios:"
   items:
@@ -36,9 +48,37 @@ installations:
     - title: Laboratorios de Ciencias Basicas
       content: Equipos nuevos y actuales para clases de física, química y biología.
     - title: Comedor y Cocina
-      content: Cada día preparamos 3 platos, que los estudiantes comen juntos en el comedor.
+      content: Cada día preparamos 3 platos que los estudiantes comen juntos en el comedor.
     - title: Habitaciones
       content: Suficiente espacio para todos los estudiantes con camas, estantes y baños.
+    - title: Lavandería
+      content: Un espacio para todos los estudiantes para lavar y secar su ropa sucia.
+    - title: Cancha y Play
+      content: Durante la hora de deporte se juega voleibol, baloncesto, baseball entre otros.
+    - title: Talleres
+      content: Tenemos un taller de ebanisteria y carpinteria para trabajar con mardera.
+
+area_forests:
+  title: Bosques y áreas verdes
+
+  items:
+    - title: Parque acuatico
+      image_path: /images/parque-acuatico.jpg
+      description: lorem ipsum dolor sit amet, olor se tal.
+    - title: Senderos
+      image_path: /images/parque-acuatico.jpg
+      description: lorem ipsum dolor sit amet, olor se tal.
+    - title: Parques
+      image_path: /images/parque-acuatico.jpg
+      description: lorem ipsum dolor sit amet, olor se tal.
+
+
+
+
+
+
+
+
 
 images:
   - src: /images/arboles-bonsai-2.jpg

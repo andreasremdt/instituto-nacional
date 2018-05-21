@@ -1,0 +1,36 @@
+---
+layout: default
+title: Plan de Estudios
+---
+
+<main class="py-16 px-6 max-w-2xl mx-auto">
+  {% for career in site.data.curriculum.careers %}
+    <h2>{{ career.title }}</h2>
+    <p>{{ career.description }}</p>
+
+    {% for quarter in career.quarters %}
+      <h3>{{ quarter.title }}</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Asignatura</th>
+            <th>Crédito</th>
+            <th>Horas teóricas</th>
+            <th>Horas prácticas</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for subject in quarter.subjects %}
+            <tr>
+              <td>{{ subject.name }}</td>
+              <td>{{ subject.credit }}</td>
+              <td>{{ subject.theory }}</td>
+              <td>{{ subject.practice }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endfor %}
+  {% endfor %}
+</main>

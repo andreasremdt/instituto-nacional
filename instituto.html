@@ -6,17 +6,17 @@ layout: default
 <section class="py-16 max-w-2xl px-6 mx-auto">
   <div class="md:flex md:items-end">
     <div class="md:text-right md:w-2/5 md:mr-8 mb-6 md:mb-0">
-      <p class="font-serif text-green text-xl">{{ site.data.about.intro.pretitle }}</p>
-      <h2 class="text-black text-4xl">{{ site.data.about.intro.title }}</h2>
+      <p class="font-serif text-green text-xl mb-3">{{ site.data.about.intro.pretitle }}</p>
+      <h2 class="text-black text-4xl leading-tight">{{ site.data.about.intro.title }}</h2>
     </div>
   
-    <p class="md:w-3/5 text-lg text-grey-dark mb-2">{{ site.data.about.intro.content }}</p>
+    <p class="md:w-3/5 text-lg text-grey-dark mb-1">{{ site.data.about.intro.content }}</p>
   </div>
 </section>
 
 
 
-<section class="max-w-2xl px-6 mx-auto">
+<section class="max-w-2xl px-6 mx-auto pb-8">
   <div class="md:flex md:-mx-4">
     {% for principle in site.data.about.principles %}
       <article class="md:mx-4 mb-6">
@@ -32,16 +32,20 @@ layout: default
 
 
 
-<section class="py-16 max-w-2xl px-6 mx-auto">
-  <figure class="iframe-wrapper">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/kCsTN1Z9dQE?rel=0" frameborder="0" allow="autoplay; encrypted-media"
-      allowfullscreen></iframe>
-  </figure>
+<section class="h-128 mt-8 p-6 text-center flex items-center justify-center flex-col bg-video bg-cover bg-no-repeat bg-center">
+  <p class="font-serif text-green text-2xl">Hay mucho que ver</p>
+  <h2 class="mb-8 text-white text-3xl sm:text-5xl font-bold uppercase">Mira el video ahora</h2>
+
+  <a href="https://www.youtube.com/watch?v=kCsTN1Z9dQE" target="_blank" rel="noopener" title="Abre video" class="button-play block text-green border border-solid border-green w-16 h-16 flex items-center justify-center rounded-full hover:text-white hover:border-white">
+    <svg class="" width="30" height="30">
+      <use xlink:href="/images/icons/symbol-defs.svg#play"></use>
+    </svg>
+  </a>
 </section>
 
 
 
-<section class="max-w-2xl md:px-6 mx-auto md:py-16 md:border-t border-solid border-grey-light">
+<section class="max-w-2xl md:px-6 mx-auto md:py-16">
   <div class="relative flex items-center">
     <div class="text-right md:mr-8 md:w-3/5 z-20 px-6 py-8 md:p-0">
       <h2 class="text-black mb-6 text-3xl bg-white inline-block px-3 md:px-0">{{ site.data.about.careers.title }}</h2>
@@ -101,13 +105,13 @@ layout: default
     <div class="flex-1 mb-6 md:mb-0">
       <h3 class="text-black mb-6 text-3xl">{{ site.data.about.application.title }}</h3>
       <p class="content">{{ site.data.about.application.content }}</p>
-      <a href="/instituto/requisitos/" class="text-green bg-white uppercase px-6 py-3 inline-block hover:bg-green-dark hover:text-white mt-6">Más detalles</a>
+      <a href="/instituto/requisitos/" class="text-green bg-white uppercase px-6 py-3 inline-block hover:bg-green hover:text-white mt-6">Más detalles</a>
     </div>
 
     <div class="md:ml-8 flex-1">
       <h3 class="text-black mb-6 text-3xl">{{ site.data.about.history.title }}</h3>
       <p class="content">{{ site.data.about.history.content }}</p>
-      <a href="/instituto/historia/" class="text-green bg-white uppercase px-6 py-3 inline-block hover:bg-green-dark hover:text-white mt-6">Más detalles</a>
+      <a href="/instituto/historia/" class="text-green bg-white uppercase px-6 py-3 inline-block hover:bg-green hover:text-white mt-6">Más detalles</a>
     </div>
   </div>
 </section>

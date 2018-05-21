@@ -1,11 +1,27 @@
-<section class="contact-us-now section -big _centered">
-  <div class="container">
-    <h2 class="_big _lined -center">Contáctenos</h2>
-    <p>¿Tiene alguna pregunta o desea hacer una reserva? Puede contactarnos y estaremos encantados de ayudarle.</p>
+<section class="bg-forest-faded bg-cover bg-no-repeat bg-center py-16 px-6">
+  <div class="max-w-2xl mx-auto text-white">
+    <h2 class="text-shadow text-4xl text-center">Contáctenos</h2>
+    <p class="text-shadow text-xl font-light md:w-1/2 md:mx-auto mb-8 text-center">¿Tienes alguna pregunta o deseas hacer una reserva? Puedes contactarnos y estaremos encantados de ayudarte.</p>
 
-    <div>
-      <a href="mailto:{{ site.email }}" class="button -green">Escribe un email</a>
-      <a href="tel:{{ site.phone | remove: ' '}}" class="button -green">Llámenos</a>
+    <div class="sm:flex md:w-2/3 mx-auto">
+      <a href="mailto:{{ site.email }}" class="flex flex-1 items-center sm:mr-4 mb-4 sm:mb-0 text-white bg-green px-6 py-3 inline-block hover:bg-green-dark">
+        <svg width="30" height="30" class="mr-4">
+          <use xlink:href="/images/icons/symbol-defs.svg#envelope"></use>
+        </svg>
+        <div>
+          <span class="font-bold block">Escribe un email</span>
+          <span class="font-light">{{ site.email }}</span>
+        </div>
+      </a>
+      <a href="tel:{{ site.phone | remove: ' '}}" class="flex flex-1 items-center text-white bg-green px-6 py-3 inline-block hover:bg-green-dark">
+        <svg width="30" height="30" class="mr-4">
+          <use xlink:href="/images/icons/symbol-defs.svg#phone"></use>
+        </svg>
+        <div>
+          <span class="font-bold block">Llámenos</span>
+          <span class="font-light">{{ site.phone }}</span>
+        </div>
+      </a>
     </div>
   </div>
 </section>

@@ -79,8 +79,8 @@ img{
     vertical-align:middle;
     height:auto
 }
-.font-serif{
-    font-family:"Merienda One",serif
+.transition {
+    transition: all .2s ease-in-out;
 }
 .text-shadow{
     text-shadow:1px 1px 1px rgba(0,0,0,0.4)
@@ -163,9 +163,9 @@ img{
     content:'';
     position:absolute;
     left:0;
-    top:115%;
+    top:105%;
     width:50px;
-    border-bottom:2px solid #38c172
+    border-bottom:2px solid config('colors.green');
 }
 @media (min-width: 576px){
     .logo{
@@ -196,11 +196,17 @@ img{
 .bg-forest{
     background-image:url("../images/backgrounds/forest.jpg")
 }
+.bg-forest-faded{
+    background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url("../images/backgrounds/forest.jpg")
+}
 .bg-water{
     background-image:url("../images/backgrounds/water.jpg")
 }
 .bg-forest-roof{
     background-image:url("../images/backgrounds/forest-roof.jpg")
+}
+.bg-video{
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("../images/backgrounds/video-bg.jpg")
 }
 .bg-palm{
     background-image:url("../images/backgrounds/palm-leaf.jpg");
@@ -262,7 +268,7 @@ img{
     position:absolute;
     left:0;
     top:calc(50% - 1.5rem);
-    background-color:#38c172;
+    background-color:config('colors.green');
     color:white;
     line-height:3rem;
     text-align:center;
@@ -276,9 +282,35 @@ img{
     left:1.5rem;
     top:1.5rem;
     bottom:-3.5rem;
-    background-color:#38c172;
+    background-color:config('colors.green');
     content:'';
     z-index:1
+}
+
+.button-play {
+    position: relative;
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1);
+}
+
+.button-play::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 160%;
+    width: 4rem;
+    height: 1px;
+    background-color: white;
+}
+
+.button-play::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 160%;
+    width: 4rem;
+    height: 1px;
+    background-color: white;
 }
 
  

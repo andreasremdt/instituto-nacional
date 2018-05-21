@@ -8,22 +8,19 @@ let colors = {
   'transparent': 'transparent',
 
   'black': '#22292f',
-  'grey-darkest': '#3d4852',
+  'grey-darkest': '#313a43',
   'grey-darker': '#606f7b',
-  'grey-dark': '#8795a1',
-  'grey': '#b8c2cc',
-  'grey-light': '#dae1e7',
-  'grey-lighter': '#f1f5f8',
-  'grey-lightest': '#f8fafc',
+  'grey-dark': '#7a7e7f',
+  'grey': '#c9ced2',
+  'grey-light': '#ececec',
+  'grey-lighter': '#f8f8f8',
+  'grey-lightest': '#fafafa',
   'white': '#ffffff',
 
-  'green-darkest': '#0f2f21',
-  'green-darker': '#1a4731',
-  'green-dark': '#1f9d55',
+  'green-dark': '#81ac00',
   'green': '#9DC701',
-  'green-light': '#51d88a',
-  'green-lighter': '#a2f5bf',
-  'green-lightest': '#e3fcec'
+
+  'white-transparent': 'rgba(255, 255, 255, .1)'
 }
 
 module.exports = {
@@ -117,7 +114,8 @@ module.exports = {
   fontWeights: {
     'light': 300,
     'normal': 400,
-    'medium': 500
+    'medium': 500,
+    'bold': 700
   },
 
 
@@ -278,6 +276,7 @@ module.exports = {
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
+    '128': '30rem',
     'full': '100%',
     'screen': '100vh'
   },
@@ -576,7 +575,7 @@ module.exports = {
     minHeight: ['responsive'],
     minWidth: ['responsive'],
     negativeMargin: ['responsive'],
-    opacity: ['responsive'],
+    opacity: ['responsive', 'hover'],
     overflow: ['responsive'],
     padding: ['responsive'],
     pointerEvents: ['responsive'],
