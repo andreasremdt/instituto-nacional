@@ -2,21 +2,49 @@
 layout: default
 title: Turismo Educativo
 ---
-<main class="section">
-  <div class="container">
-    <h2 class="_big" data-action="colorize">Nuestros servicios para el turismo educativo</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, autem modi adipisci nam natus minus fuga doloribus magnam ab mollitia beatae officia officiis, praesentium numquam laborum eveniet sit commodi aperiam.</p>
-    
-    <div class="grid">
-      <div class="content-tile grid-4">
-        <figure>
-          <img src="{{ item.image_path }}" class="_img-fluid" alt="{{ item.title }}" width="300" height="250">
-          <figcaption class="caption">
-            <h3 class="title">{{ item.title }}</h3>
-            <p class="text">{{ item.caption }}</p>
-          </figcaption>
-        </figure>
-      </div>
+
+<section class="py-16 max-w-2xl px-6 mx-auto">
+  <div class="md:flex md:items-end">
+    <div class="md:text-right md:w-2/5 md:mr-8 mb-6 md:mb-0">
+      <p class="font-serif text-green text-xl mb-3">{{ site.data.tourism.pretitle }}</p>
+      <h2 class="text-black text-4xl leading-tight">{{ site.data.tourism.title }}</h2>
+    </div>
+
+    <p class="md:w-3/5 text-lg text-grey-dark mb-1">{{ site.data.tourism.content }}</p>
+  </div>
+</section>
+
+
+<section class="bg-tree educational-services bg-no-repeat py-16 relative z-0">
+  <div class="flex justify-center mb-8">
+    <h2 class="bg-white text-black px-6 py-2 text-4xl shadow-md">Nuestros eventos</h2>
+  </div>
+
+  <div class="mx-auto max-w-2xl md:flex">
+    <div class="flex flex-1 flex-col sm:flex-row md:flex-col md:items-end mx-6 mb-4">
+      {% for event in site.data.tourism.events %}
+        <button type="button" class="text-left bg-white uppercase px-4 py-6 font-medium text-grey-darkest sm:mb-1 w-full md:w-4/5 flex items-center" data-action="tab" data-target="{{ event.title | slugify | cgi_escape }}">
+          <svg class="text-green mr-4" width="28" height="28">
+            <use xlink:href="/images/icons/symbol-defs.svg#{{ event.icon }}"></use>
+          </svg> {{ event.title }}
+        </button>
+      {% endfor %}
+    </div>
+
+    <div class="flex items-start flex-1">
+      {% for event in site.data.tourism.events %}
+        <article class="bg-white mx-6 flex-col lg:flex-row shadow-md hidden" data-tab="{{ event.title | slugify | cgi_escape }}">
+          <div style="background-image: url('{{ event.image_path }}');" class="bg-cover flex-no-shrink lg:w-48 h-48 lg:h-full"></div>
+          <div class="py-4 px-6">
+            <h2 class="mb-2 font-medium text-black leading-tight" data-action="colorize">{{ event.title }}</h2>
+            <p class="font-light">{{ event.content }}</p>
+            <a href="{{ event.url }}" class="text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark mt-4">Más detalles</a>
+          </div>
+        </article>
+      {% endfor %}
     </div>
   </div>
-</main>
+</section>
+
+
+{% include contact-us.html %}

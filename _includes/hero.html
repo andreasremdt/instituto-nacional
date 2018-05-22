@@ -14,19 +14,23 @@
 {% else %}
   <section class="bg-hero-small">
     <div class="text-center flex flex-col md:flex-row items-center justify-center md:justify-between h-full max-w-2xl mx-auto px-6 uppercase">
-      <h2 class="text-white text-3xl mb-3 md:mb-0 sm:text-5xl text-shadow" data-action="colorize">{{ page.title }}</h2>
+      <h2 class="text-white text-3xl mb-3 md:mb-0 sm:text-5xl text-shadow" data-action="colorize">{% if page.layout == 'post' %}Blog{% else %}{{ page.title }}{% endif %}</h2>
 
       {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
       
       <nav class="breadcrumbs">
-        <a href="{{ site.baseurl }}" class="text-white text-shadow">Inicio</a>
-        {% for crumb in crumbs offset: 1 %}
-          {% if forloop.last %}
-            <a href="/{{ crumb }}" class="text-green text-shadow">{{ crumb | replace:'-',' ' | remove:'.html' }}</a>
-          {% else %}
-            <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}" class="text-white text-shadow">{{ crumb | replace:'-',' ' | remove:'.html' }}</a>
-          {% endif %}
-        {% endfor %}
+        <a href="/" class="text-white text-shadow">Inicio</a>
+        {% if page.layout == 'post' %}
+          <a href="/blog/" class="text-green text-shadow">Blog</a>
+        {% else %}
+          {% for crumb in crumbs offset: 1 %}
+            {% if forloop.last %}
+              <a href="/{{ crumb }}" class="text-green text-shadow">{{ crumb | replace:'-',' ' | remove:'.html' }}</a>
+            {% else %}
+              <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}" class="text-white text-shadow">{{ crumb | replace:'-',' ' | remove:'.html' }}</a>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
       </nav>
     </div>
   </section>

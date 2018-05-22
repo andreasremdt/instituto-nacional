@@ -1,6 +1,6 @@
 careers:
   - title: Ciencias Forestales
-    description: Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+    description: Es un profesional con conocimientos teóricos y prácticos en las técnicas de producción y protección de bosques y con la capacidad de transferirlo a los potenciales productores.
     quarters:
       - title: Periodo I (Nivelación)
         subjects:
@@ -216,7 +216,7 @@ careers:
             practice: 2
 
   - title: Gestion Ambiental
-    description: Lorem ipsum dolor sit amet.
+    description: Es un profesional con los conocimientos y las habilidades necesarias para aplicar las herramientas fundamentales en la evaluación y control de proyectos de gestión ambiental, con vocación social.
     quarters:
       - title: Periodo I (Nivelación)
         subjects:

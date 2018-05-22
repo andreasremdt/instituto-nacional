@@ -28,7 +28,7 @@ title: Bienvenidos
 
 
 
-<section class="bg-forest careers bg-center bg-no-repeat py-16 bg-center bg-cover relative z-0">
+<section class="bg-forest careers bg-center bg-no-repeat py-16 bg-cover relative z-0">
   <div class="flex justify-center mb-8">
     <h2 class="bg-white text-green px-6 py-2 text-4xl shadow-md">Carreras</h2>
   </div>
@@ -36,7 +36,7 @@ title: Bienvenidos
   <div class="mx-auto max-w-2xl md:flex">
     <div class="flex flex-1 flex-col sm:flex-row md:flex-col md:items-end mx-6 mb-4">
       {% for career in site.carreras %}
-        <button type="button" class="text-left bg-white uppercase px-4 py-6 font-medium hover:bg-grey-light hover:text-grey-darkest text-grey-darkest sm:mb-1 w-full md:w-4/5 flex items-center" data-action="tab" data-target="{{ career.title | slugify | cgi_escape }}">
+        <button type="button" class="text-left bg-white uppercase px-4 py-6 font-medium text-grey-darkest sm:mb-1 w-full md:w-4/5 flex items-center" data-action="tab" data-target="{{ career.title | slugify | cgi_escape }}">
           <svg class="text-green mr-4" width="28" height="28">
             <use xlink:href="images/icons/symbol-defs.svg#{{ career.icon }}"></use>
           </svg> {{ career.title }}

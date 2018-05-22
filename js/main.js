@@ -54,10 +54,16 @@
       tabButtons.forEach(button => {
         if (button.dataset.target === id) {
           button.classList.add('bg-green', 'text-white');
-          button.firstElementChild.classList.remove('text-green');
+
+          if (button.firstElementChild) {
+            button.firstElementChild.classList.remove('text-green');
+          }
         } else {
           button.classList.remove('bg-green', 'text-white');
-          button.firstElementChild.classList.add('text-green');
+          
+          if (button.firstElementChild) {
+            button.firstElementChild.classList.add('text-green');
+          }
         }
       });
 

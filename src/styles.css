@@ -82,15 +82,19 @@ img{
 .transition {
     transition: all .2s ease-in-out;
 }
+.pin-corner-l {
+    top: -2rem;
+    left: -2rem;
+}
+.pin-corner-r {
+    top: -2rem;
+    right: -2rem;
+}
 .text-shadow{
     text-shadow:1px 1px 1px rgba(0,0,0,0.4)
 }
 .mb-12{
     margin-bottom:4rem
-}
-.py-16{
-    padding-top:6rem;
-    padding-bottom:6rem
 }
 .object-cover{
     object-fit:cover
@@ -196,6 +200,9 @@ img{
 .bg-forest{
     background-image:url("../images/backgrounds/forest.jpg")
 }
+.bg-tree{
+    background-image:url("../images/backgrounds/tree.jpg")
+}
 .bg-forest-faded{
     background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url("../images/backgrounds/forest.jpg")
 }
@@ -211,6 +218,21 @@ img{
 .bg-palm{
     background-image:url("../images/backgrounds/palm-leaf.jpg");
     background-size:50%
+}
+.educational-services {
+    background-size: auto 100%;
+}
+.educational-services::after {
+    content:'';
+    position:absolute;
+    right:0;
+    top:0;
+    width:50%;
+    height:100%;
+    background-image: linear-gradient(to right,rgba(255,255,255,.7),rgba(255,255,255,.7)),url('../images/backgrounds/room-plant.jpg');
+    background-size: cover;
+    background-position: top right;
+    z-index:-2
 }
 .careers{
     min-height:40rem
@@ -248,7 +270,8 @@ img{
 @media (max-width: 768px){
     .top-navigation{
         transform:translate3d(-100%, 0, 0);
-        transition:transform .3s ease-in-out
+        transition:transform .3s ease-in-out;
+        overflow-y: auto;
     }
     .top-navigation.opened{
         transform:translate3d(0, 0, 0)

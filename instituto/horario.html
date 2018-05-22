@@ -3,34 +3,58 @@ layout: default
 title: Plan de Estudios
 ---
 
-<main class="py-16 px-6 max-w-2xl mx-auto">
-  {% for career in site.data.curriculum.careers %}
-    <h2>{{ career.title }}</h2>
-    <p>{{ career.description }}</p>
-
-    {% for quarter in career.quarters %}
-      <h3>{{ quarter.title }}</h3>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Asignatura</th>
-            <th>Crédito</th>
-            <th>Horas teóricas</th>
-            <th>Horas prácticas</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for subject in quarter.subjects %}
-            <tr>
-              <td>{{ subject.name }}</td>
-              <td>{{ subject.credit }}</td>
-              <td>{{ subject.theory }}</td>
-              <td>{{ subject.practice }}</td>
-            </tr>
-          {% endfor %}
-        </tbody>
-      </table>
+<nav class="bg-grey-lighter py-8 px-6" role="menubar">
+  <div class="max-w-2xl mx-auto sm:flex sm:items-center text-center sm:text-left">
+    <p class="font-light text-xl sm:mr-6 mb-4 sm:mb-0">Por favor elige una carrera:</p>
+    
+    {% for career in site.data.curriculum.careers %}
+      <button type="button" class="text-grey-darkest py-3 px-6 hover:bg-green hover:text-white mr-2" role="menuitem" data-action="tab" data-target="{{ career.title | slugify | cgi_escape }}">{{ career.title }}</button>
     {% endfor %}
+  </div>
+</nav>
+
+<main class="px-6 max-w-2xl mx-auto">
+  {% for career in site.data.curriculum.careers %}
+    <div class="hidden flex-col py-16" data-tab="{{ career.title | slugify | cgi_escape }}">
+      <h2 class="text-black text-4xl text-lined-left-green leading-tight mb-4" data-action="colorize">{{ career.title }}</h2>
+      <p class="mb-12">{{ career.description }}</p>
+
+      {% for quarter in career.quarters %}
+        <div class="py-8 sm:py-16 sm:px-6 sm:relative {% if forloop.first %}sm:pt-0{% endif %} {% if forloop.last %}sm:pb-0{% endif %} flex flex-col {% unless forloop.first %}sm:border-t-2{% endunless %} sm:border-dashed sm:border-green {% cycle 'sm:items-start sm:border-l-2', 'sm:items-end sm:border-r-2' %}">
+          <span class="hidden sm:absolute {% cycle 'pin-corner-l', 'pin-corner-r' %} bg-green w-16 h-16 text-white font-light text-2xl rounded-full sm:flex sm:items-center sm:justify-center">{{ forloop.index }}</span>
+          <table {% if forloop.first %}class="mt-8"{% endif %}>
+            <caption class="text-left text-2xl font-light px-4 py-2 bg-grey-lighter text-gray-darker mb-6">{{ quarter.title }}</caption>
+            <thead class="text-black uppercase font-medium text-left text-sm text-green">
+              <tr>
+                <th class="py-2 px-4">Asignatura</th>
+                <th class="py-2 px-4 hidden sm:table-cell">Crédito</th>
+                <th class="py-2 px-4 hidden sm:table-cell">Horas teóricas</th>
+                <th class="py-2 px-4 hidden sm:table-cell">Horas prácticas</th>
+              </tr>
+            </thead>
+            <tbody class="font-light">
+              {% for subject in quarter.subjects %}
+                <tr>
+                  <td class="py-2 px-4 border-solid border-t border-grey-light">{{ subject.name }}</td>
+                  <td class="py-2 px-4 hidden sm:table-cell border-solid border-t border-grey-light">{{ subject.credit }}</td>
+                  <td class="py-2 px-4 hidden sm:table-cell border-solid border-t border-grey-light">{{ subject.theory }}</td>
+                  <td class="py-2 px-4 hidden sm:table-cell border-solid border-t border-grey-light">{{ subject.practice }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      {% endfor %}
+
+      <div class="bg-grey-lighter flex items-center justify-center p-3 sm:p-6 mt-8">
+        <svg class="mr-8" width="100" height="100">
+          <use xlink:href="/images/icons/symbol-defs.svg#graduate"></use>
+        </svg>
+        <p class="text-xl sm:text-3xl font-light">Graduación</p>
+        <svg class="ml-8" width="100" height="100">
+          <use xlink:href="/images/icons/symbol-defs.svg#diploma"></use>
+        </svg>
+      </div>
+    </div>
   {% endfor %}
 </main>

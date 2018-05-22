@@ -9,10 +9,10 @@
         <svg class="hidden md:block ml-1 text-white" width="20" height="20" aria-hidden="true">
           <use xlink:href="/images/icons/symbol-defs.svg#arrow-down"></use>
         </svg>
-        <ul class="md:hidden md:absolute md:bg-green md:pin-l md:pin-t-100 list-reset pl-4 mb-6">
+        <ul class="md:hidden md:absolute md:bg-green md:pin-l md:pin-t-100 list-reset pl-4 md:pl-0 mb-6 md:mb-0">
           {% for subitem in item.children %}
             <li>
-              <a href="{{ subitem.url }}" class="md:text-grey-lighter block hover:text-white px-2 py-2 md:py-3 whitespace-no-wrap {% if subitem.url == page.url %} text-green{% endif %}">{{ subitem.name }}</a>
+              <a href="{{ subitem.url }}" class="md:text-grey-lighter block hover:bg-green-dark px-6 py-2 md:py-3 whitespace-no-wrap {% if subitem.url == page.url %} text-green{% endif %}">{{ subitem.name }}</a>
             </li>
           {% endfor %}
         </ul>
