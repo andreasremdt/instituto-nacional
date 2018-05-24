@@ -11,7 +11,7 @@ principles:
     icon: protect
   - title: Nuestra Visión
     content: Ser una Institución Técnica de Educación Superior líder de la formación, capacitación y actualización de técnicos y profesionales en la gestión de medio ambiente y en el manejo de los recursos naturales que contribuyan con la implementación de un modelo de desarrollo sostenible que garantice una calidad de vida adecuada para las generaciones presentes y futuras.
-    icon: shirt
+    icon: vision
 careers:
   title: Carreras
   image_path: /images/pages/about/carreras.jpg

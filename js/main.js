@@ -1,6 +1,85 @@
 (function() {
   'use strict';
 
+  // Let's load the page first and then apply JavaScript enhancements
+  document.addEventListener('DOMContentLoaded', () => {
+    
+    /**
+     * ---------------------------------------------------------------------------
+     * 1. Image Gallery Filtering (Isotope)
+     * https://isotope.metafizzy.co/
+     * 
+     * Makes use of a plugin in order to make the gallery page
+     * filterable. Users can click a category and the gallery will
+     * only display images within this category.
+     * 
+     * Only works if an element `data-gallery` is present in the DOM.
+     */
+
+    const gallery = document.querySelector('[data-gallery]');
+
+    if (gallery) {
+      const buttons = document.querySelectorAll('button[data-filter]');
+      const plugin = new Isotope(gallery, {
+        itemSelector: '[data-gallery-item]',
+        layoutMode: 'fitRows'
+      });
+
+      buttons.forEach(button => button.addEventListener('click', (event) => {
+        buttons.forEach(button => button.classList.replace('bg-green-dark', 'bg-green'));
+        event.target.classList.replace('bg-green', 'bg-green-dark');
+
+        const filter = event.target.dataset.filter;
+
+        plugin.arrange({ filter: (filter === '*' ? '*' : `[data-category="${filter}"]`) });
+      }));
+    }
+
+
+
+    /**
+     * ---------------------------------------------------------------------------
+     * 2. Image Lightbox (fancybox3)
+     * http://fancyapps.com/fancybox/3/
+     * 
+     * Uses the fancybox3 plugin to open the images in a bigger window.
+     * 
+     * Only works if image elements are present in the DOM.
+     */
+
+    const images = document.querySelectorAll('[data-lightbox]');
+
+    if (images.length > 0) {
+      images.forEach(image => image.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        const $visibleImages = $('[data-lightbox]:visible');
+
+        $.fancybox.open($visibleImages, {}, $visibleImages.index(this));
+      }));
+    }
+
+
+
+    /**
+     * ---------------------------------------------------------------------------
+     * 3. FAQs
+     */
+
+    const faq = document.querySelector('[data-faq]');
+
+    if (faq) {
+      const dds = faq.querySelectorAll('dd'),
+            dts = faq.querySelectorAll('dt');
+      
+      dts.forEach(dt => dt.addEventListener('click', (event) => {
+        dt.nextElementSibling.classList.toggle('hidden');
+        dt.classList.toggle('text-green');
+      }));
+
+      dds.forEach(dd => dd.classList.add('hidden'));
+    }
+  });
 
   /**
    * Color the last word of the given string in green.
@@ -91,33 +170,5 @@
     menuToggle.classList.toggle('text-green');
     menu.classList.toggle('opened');
   });
-
-  
-
-
-
-  /**
-   * Image slider
-   */
-  var imageSliders = document.querySelectorAll('[data-image-slider]');
-
-  [].forEach.call(imageSliders, function(slider) {
-    var left = slider.querySelector('[data-left]'), 
-        right = slider.querySelector('[data-right]'),
-        imgWidth = slider.querySelector('img').offsetWidth,
-        offset = 0,
-        wrapper = slider.firstElementChild;
-
-    left.addEventListener('click', function(evt) {
-      offset += imgWidth;
-      wrapper.style.transform = `translate3d(${offset}px, 0, 0)`;
-    });
-
-    right.addEventListener('click', function (evt) {
-      offset -= imgWidth;
-      wrapper.style.transform = `translate3d(${offset}px, 0, 0)`;
-    });
-  });
-
 
 })();

@@ -26,7 +26,7 @@
       url: "/servicios/educacion-continuada/"
     - name: "Bodas, Fiestas y más..."
       url: "/servicios/bodas-fiestas/"
-    - name: "30 Horas de Labor Social"
+    - name: "Labor Social"
       url: "/servicios/labor-social/"
 - name: "Blog"
   url: "/blog/"

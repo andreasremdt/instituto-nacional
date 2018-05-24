@@ -1,19 +1,29 @@
 ---
 layout: default
-title: 30 días de labor social
+title: Labor social
 ---
 
-<main class="px-6 py-16 mx-auto max-w-2xl">
-  <div class="md:flex md:-mx-4">
-    {% for principle in site.data.about.principles %}
-    <article class="md:mx-4 mb-6">
-      <h3 class="text-lined-left-green uppercase text-black mb-6">{{ principle.title }}</h3>
-      <svg class="text-green border border-solid border-grey-light p-3 box-content float-left mt-1 mr-6 mb-2" width="50" height="50">
-        <use xlink:href="/images/icons/symbol-defs.svg#{{ principle.icon }}"></use>
-      </svg>
-      <p class="font-light">{{ principle.content }}</p>
-    </article>
-    {% endfor %}
+<main class="bg-palm bg-no-repeat bg-right-bottom px-6 py-16">
+  <div class=" mx-auto max-w-2xl">
+    <h2 class="text-lined-left-green leading-tight text-2xl sm:text-4xl mb-6 text-black" data-action="colorize">Pasa 30 días de labor social en nuestro instituto</h2>
+    <p class="font-light text-xl py-2 mb-8">Nosotros te podemos ofrecer mucho para tu desarollo personal. Puedes asistir en nuestras clases, ayudar a formar el campus, interactuar con los profesores y estudiantes y mucho más.</p>
+
+    <dl class="sm:w-3/5" data-faq>
+      <dt class="font-medium uppercase text-black pt-4 mt-4 hover:text-green cursor-pointer">¿Qué es labor social?</dt>
+      <dd class="mt-2 ml-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi vel maiores, similique eaque accusantium aliquam iste, laboriosam nam non ipsam ut facere dicta et possimus distinctio atque facilis velit quidem!</dd>
+      <dt class="font-medium uppercase text-black pt-4 mt-4 hover:text-green cursor-pointer border-t border-solid border-grey-light">¿Cuándo puedo hacerlo?</dt>
+      <dd class="mt-2 ml-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, iusto.</dd>
+      <dt class="font-medium uppercase text-black pt-4 mt-4 hover:text-green cursor-pointer border-t border-solid border-grey-light">¿Cuánto tiempo dura?</dt>
+      <dd class="mt-2 ml-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, illo!</dd>
+      <dt class="font-medium uppercase text-black pt-4 mt-4 hover:text-green cursor-pointer border-t border-solid border-grey-light">¿Cuales son los beneficios?</dt>
+      <dd class="mt-2 ml-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo inventore velit et esse accusantium facilis obcaecati cupiditate illum unde nobis?</dd>
+      <dt class="font-medium uppercase text-black pt-4 mt-4 hover:text-green cursor-pointer border-t border-solid border-grey-light">¿Hay algún requisito?</dt>
+      <dd class="mt-2 ml-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quibusdam autem minima explicabo sapiente dolore ab veritatis excepturi rem? Dolorem, modi mollitia.</dd>
+      <dt class="font-medium uppercase text-black pt-4 mt-4 hover:text-green cursor-pointer border-t border-solid border-grey-light">¿Que haré durante ese tiempo?</dt>
+      <dd class="mt-2 ml-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum veritatis consectetur aut labore doloremque rem nulla. Ab optio consectetur magni itaque laudantium quam assumenda officia eum, ipsa dolorum iusto sunt?</dd>
+      <dt class="font-medium uppercase text-black pt-4 mt-4 hover:text-green cursor-pointer border-t border-solid border-grey-light">¿Cómo puedo aplicar?</dt>
+      <dd class="mt-2 ml-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum veritatis consectetur aut labore doloremque rem nulla. Ab optio consectetur magni itaque laudantium quam assumenda officia eum, ipsa dolorum iusto sunt?</dd>
+    </dl>
   </div>
 </main>
 

@@ -21,9 +21,9 @@ title: Turismo Educativo
   </div>
 
   <div class="mx-auto max-w-2xl md:flex">
-    <div class="flex flex-1 flex-col sm:flex-row md:flex-col md:items-end mx-6 mb-4">
+    <div class="flex flex-1 flex-col sm:flex-row md:flex-col md:items-end mx-6 mb-4 md:mb-0">
       {% for event in site.data.tourism.events %}
-        <button type="button" class="text-left bg-white uppercase px-4 py-6 font-medium text-grey-darkest sm:mb-1 w-full md:w-4/5 flex items-center" data-action="tab" data-target="{{ event.title | slugify | cgi_escape }}">
+        <button type="button" class="text-left bg-white uppercase px-4 py-6 font-medium text-grey-darkest {% unless forloop.last %}sm:mb-1{% endunless %} w-full md:w-4/5 flex items-center" data-action="tab" data-target="{{ event.title | slugify | cgi_escape }}">
           <svg class="text-green mr-4" width="28" height="28">
             <use xlink:href="/images/icons/symbol-defs.svg#{{ event.icon }}"></use>
           </svg> {{ event.title }}
@@ -31,7 +31,7 @@ title: Turismo Educativo
       {% endfor %}
     </div>
 
-    <div class="flex items-start flex-1">
+    <div class="flex flex-1">
       {% for event in site.data.tourism.events %}
         <article class="bg-white mx-6 flex-col lg:flex-row shadow-md hidden" data-tab="{{ event.title | slugify | cgi_escape }}">
           <div style="background-image: url('{{ event.image_path }}');" class="bg-cover flex-no-shrink lg:w-48 h-48 lg:h-full"></div>

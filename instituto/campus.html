@@ -34,7 +34,7 @@ title: Campus
 
 <figure class="mt-8 flex flex-wrap">
   {% for image in site.data.campus.area_production.images %}
-    <a href="{{ image.path }}" class="block opacity-75 hover:opacity-100 w-1/4 flex-no-shrink">
+    <a data-fancybox="gallery" href="{{ image.path }}" class="block opacity-75 transition hover:opacity-100 w-1/4 flex-no-shrink">
       <img src="{{ image.path }}" alt="{{ image.caption }}" width="640" height="360">
     </a>
   {% endfor %}

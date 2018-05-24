@@ -1,15 +1,15 @@
 pretitle: Aprender es proteger
 title: Eventos educativos para grupos de personas
-content: Proteger y cuidar el medio ambiente exige un cierto conocimiento de ese mismo. Por eso ofrecemos servicios educativos para grupos de personas que quieren aprender más sobre nuestra naturaleza.
+content: Proteger y cuidar el medio ambiente exige un cierto conocimiento del mismo. Por eso ofrecemos servicios educativos para grupos de personas que quieren aprender más sobre la naturaleza.
 
 events:
   - title: Un día con la naturaleza
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatem quidem numquam nesciunt delectus eos excepturi, corrupti consectetur beatae optio. Doloremque expedita dignissimos nihil et rerum sed itaque quis recusandae.
-    image_path: 
+    image_path: /images/pages/services/dia-con-la-naturaleza.jpg
     icon: think-green
   - title: Un fin de semana con la naturaleza
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatem quidem numquam nesciunt delectus eos excepturi, corrupti consectetur beatae optio. Doloremque expedita dignissimos nihil et rerum sed itaque quis recusandae.
-    image_path:
+    image_path: /images/pages/services/fin-de-semana-con-la-naturaleza.jpg
     icon: trees
   - title: Campamentos
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatem quidem numquam nesciunt delectus eos excepturi, corrupti consectetur beatae optio. Doloremque expedita dignissimos nihil et rerum sed itaque quis recusandae.
@@ -21,5 +21,5 @@ events:
     icon: grill
   - title: Excursiones (al Salto Jimenoa)
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatem quidem numquam nesciunt delectus eos excepturi, corrupti consectetur beatae optio. Doloremque expedita dignissimos nihil et rerum sed itaque quis recusandae.
-    image_path:
+    image_path: /images/pages/services/excursiones.jpg
     icon: trips

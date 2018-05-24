@@ -26,6 +26,13 @@
     
     {% include footer.html %}
 
+    <script src="/js/jquery.min.js" defer></script>
+    
+    {% if page.url == "/instituto/galeria/" %}
+      <script src="/js/isotope.min.js" defer></script>
+    {% endif %}
+
+    <script src="/js/fancybox.min.js" defer></script>
     <script src="/js/main.js" defer></script>
 
      {% if page.url == "/" %}
