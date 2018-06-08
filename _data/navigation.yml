@@ -30,5 +30,5 @@
       url: "/servicios/labor-social/"
 - name: "Blog"
   url: "/blog/"
-- name: "Contáctenos"
-  url: "/contactenos/"
+- name: "Contáctanos"
+  url: "/contactanos/"

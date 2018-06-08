@@ -6,13 +6,13 @@ weddings:
   items:
     - title: Espacioso
       icon: altar
-      content: Con 320 tareas de tierra que contiene bosques, clubes, campos, pistas, lagos y más, encontrarás un lugar agradable para tu ceremonia. Por ejemplo, podrías usar nuestro club, bajo techo, con sillas y espacio para 100 personas.
+      content: Con 320 tareas de tierra que contiene bosques, clubes, campos, senderos, lagos y más, encontrarás un lugar agradable para tu ceremonia.  Por ejemplo, podrías usar nuestro club, bajo techo, con espacio para más de 100 personas.
     - title: Flexible
       icon: wedding-day
-      content: ¿Aún no estas seguro de cómo y cuándo tendrás la boda? ¿No sabes cuanta gente vendrá ni que comida hará? No te preocupes, estamos flexibles y podemos manejar los cambios. Solamente dejanos saber algunos días antes y estaremos bien.
-    - title: Economico
+      content: ¿Aún no estas seguro de cómo y cuándo tendrás la boda? ¿No sabes cuanta gente vendrá ni que comida harás? No te preocupes, somos flexibles. Solamente déjanos saber dos semanas antes y te ayudaremos.
+    - title: Económico
       icon: money
-      content: ¿Quieres una boda hermosa con la naturaleza, pero no tienes mucho dinero? No te preocupes, te tenemos cubierto. Aunque nuestro campus puede ofrecerte mucho, nuestros precios son moderados y justos.
+      content: ¿Quieres una boda hermosa en la naturaleza, pero no tienes mucho dinero? No te preocupes, tenemos el plan perfecto para ti. Aunque nuestro campus puede ofrecerte mucho, nuestros precios son moderados y justos.
 
   images:
     - title: Titulo 1
@@ -23,11 +23,11 @@ weddings:
       image_path: /images/pages/services/boda-3.jpg
     - title: Titulo 4
       image_path: /images/pages/services/boda-4.jpg
-  image_caption: Estas fotos fueron tomadas de la boda de Miss. República Dominicana.
+  image_caption: Estas fotos fueron tomadas de la boda de la Miss. República Dominicana Kimberly Castillo.
 
 others:
   title: Otras actividades
-  intro: No es necesario que te cases aquí para tomar nuestros servicios. ¿Quiéres tirar fotos en la naturaleza o celebrar algo? ¡Hablemos!
+  intro: No es necesario que te cases aquí para utilizar nuestros servicios. ¿Quiéres tomar fotos en la naturaleza o celebrar algo? ¡Hablemos!
 
   items:
     - title: Graduaciones
@@ -36,6 +36,6 @@ others:
     - title: Cumpleaños
       icon: celebrate
       content: Fiestas de cumpleaños, con niños, jovenes, adultos e invitados.
-    - title: Tirar fotos
+    - title: Sesiones fotográficas
       icon: camera
       content: Eventos para tomar fotos de la naturaleza o de personas con la naturaleza.

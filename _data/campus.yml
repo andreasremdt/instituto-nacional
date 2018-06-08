@@ -1,7 +1,7 @@
 area_production:
   pretitle: El paraíso de la naturaleza...
   title: 320 tareas de tierra para explorar
-  intro: Nuestro instituto cuenta con un campus extraordinario. Diferentes ecosistemas, una gran biodiversidad de todo el país, áreas para la producción de plantas y más...
+  intro: Nuestro instituto cuenta con un campus extraordinario. Diferentes ecosistemas, áreas temáticas representativas de la biodiversidad de todo el país, áreas para la producción de plantas y más...
 
   items:
     - title: Herbolario
@@ -36,33 +36,33 @@ area_production:
 
 
 area_educational:
-  title: Instalaciones docentes y residenciales
-  content: "El enfoque principal es enseñar a nuestros estudiantes a proteger el medio ambiente. Es entonces cuando hacemos uso de los siguentes espacios:"
+  title: Instalaciones docentes y Residencia
+  content: "El enfoque principal es enseñar a nuestros estudiantes a proteger el Medio Ambiente. Es entonces cuando hacemos uso de los siguentes espacios:"
   items:
     - title: Laboratorio de Informática
       content: 18 computadoras con todas las aplicaciones listas para los estudios.
     - title: Biblioteca
-      content: Bastante libros que cubren todo lo que hay sobre el medio ambiente.
+      content: Una gran variedad de libros y documentos sobre Medio Ambiente y Recursos Naturales.
     - title: Aulas
       content: Para la enseñanza, equipadas con proyector, pizarra, sillas y mesas.
     - title: Laboratorios de Ciencias Basicas
-      content: Equipos nuevos y actuales para clases de física, química y biología.
+      content: Equipos nuevos y actualizados para clases de física, química y biología.
     - title: Comedor y Cocina
-      content: Cada día preparamos 3 platos que los estudiantes comen juntos en el comedor.
+      content: En estos espacios se preparan y sirven los aliementos que se consumen diariamente en el Instituto. 
     - title: Habitaciones
       content: Suficiente espacio para todos los estudiantes con camas, estantes y baños.
     - title: Lavandería
-      content: Un espacio para todos los estudiantes para lavar y secar su ropa sucia.
+      content: Un espacio para los estudiantes para el lavado y secado de su ropa.
     - title: Cancha y Play
-      content: Durante la hora de deporte se juega voleibol, baloncesto, baseball entre otros.
+      content: Durante la hora de deporte se practica voleibol, baloncesto, baseball entre otros.
     - title: Talleres
-      content: Tenemos un taller de ebanisteria y carpinteria para trabajar con mardera.
+      content: Tenemos un taller de ebanistería y carpintería para trabajar con mardera.
 
 area_forests:
   title: Bosques y áreas verdes
 
   items:
-    - title: Parque acuatico
+    - title: Parque acuático
       image_path: /images/parque-acuatico.jpg
       description: lorem ipsum dolor sit amet, olor se tal.
     - title: Senderos

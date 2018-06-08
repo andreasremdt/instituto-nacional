@@ -86,3 +86,23 @@ title: Campus
     {% endfor %}
   </div>
 </section>
+
+
+<figure class="mt-8 flex flex-wrap">
+  {% for image in site.data.campus.area_production.images %}
+    <a data-fancybox="gallery" href="{{ image.path }}" class="block opacity-75 transition hover:opacity-100 w-1/4 flex-no-shrink">
+      <img src="{{ image.path }}" alt="{{ image.caption }}" width="640" height="360">
+    </a>
+  {% endfor %}
+  <figcaption class="bg-grey-lighter py-8 w-full text-center">
+    <p class="font-light text-lg mx-auto max-w-2xl mb-4">{{ site.data.campus.area_production.image_caption }}</p>
+    <a href="/instituto/galeria/" class="text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark">Ver todas las fotos en la galería</a>
+  </figcaption>
+</figure>
+
+
+<section class="py-16 mx-auto max-w-2xl px-6">
+  <h2 class="text-4xl text-black text-center" data-action="colorize">Recinto del Salto</h2>
+  <p class="text-center font-light text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta hic quos nesciunt quidem provident labore consequatur quas
+    minus corrupti beatae.</p>
+</section>
