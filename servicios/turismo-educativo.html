@@ -38,7 +38,9 @@ title: Turismo Educativo
           <div class="py-4 px-6">
             <h2 class="mb-2 font-medium text-black leading-tight" data-action="colorize">{{ event.title }}</h2>
             <p class="font-light">{{ event.content }}</p>
-            <a href="{{ event.url }}" class="text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark mt-4">Más detalles</a>
+            {% if event.url %}
+              <a href="{{ event.url }}" class="text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark mt-4">Más detalles</a>
+            {% endif %}
           </div>
         </article>
       {% endfor %}
