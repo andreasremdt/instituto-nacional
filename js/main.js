@@ -170,5 +170,26 @@
     menuToggle.classList.toggle('text-green');
     menu.classList.toggle('opened');
   });
-
 })();
+
+
+/**
+   * Google Maps
+   */
+
+function initMap() {
+  var url = {
+    lat: 19.1235663,
+    lng: -70.6060518
+  };
+
+  var map = new google.maps.Map(document.querySelector('div.map'), {
+    zoom: 14,
+    center: url,
+    disableDefaultUI: true
+  });
+  var marker = new google.maps.Marker({
+    position: url,
+    map: map
+  });
+}

@@ -1,0 +1,30 @@
+---
+layout: default
+
+title: Programa
+permalink: /servicios/labor-social/programa
+---
+
+<main class="mx-auto max-w-2xl px-6 py-16">
+  {% for entry in site.data.socialwork.program %}
+    <table class="w-full mb-12">
+      <caption class="text-left text-2xl font-light px-4 py-2 bg-grey-lighter text-gray-darker mb-4">{{ entry.day }}</caption>
+      <thead class="text-black uppercase font-medium text-left text-sm text-green">
+        <tr>
+          <th class="py-2 px-4">Hora</th>
+          <th class="py-2 px-4">Actividad</th>
+        </tr>
+      </thead>
+      <tbody class="font-light">
+        {% for row in entry.rows %}
+          <tr>
+            <td class="py-2 px-4 border-solid border-t border-grey-light w-32">{{ row.time }}</td>
+            <td class="py-2 px-4 border-solid border-t border-grey-light">{{ row.activity }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endfor %}
+
+  <a href="/servicios/labor-social/" class="text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark">Volver</a>
+</main>

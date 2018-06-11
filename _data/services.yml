@@ -2,7 +2,7 @@ servicios:
   - title: Turismo Educativo
     url: /servicios/turismo-educativo/
     image_path: /images/pages/services/turismo-educativo.jpg
-    description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus maxime est similique nulla quis sequi provident, non excepturi assumenda laudantium.
+    description: Proteger y cuidar el Medio Ambiente exige un cierto conocimiento del mismo. Por eso ofrecemos servicios educativos para grupos de personas que quieren aprender más sobre la naturaleza.
   - title: Educación Continuada
     url: /servicios/educacion-continuada/
     image_path: /images/pages/services/educacion-continuada.jpg

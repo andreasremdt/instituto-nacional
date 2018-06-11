@@ -5,28 +5,14 @@ title: Labor social
 
 <main class="bg-palm bg-no-repeat bg-right-bottom px-6 py-16">
   <div class=" mx-auto max-w-2xl">
-    <h2 class="text-lined-left-green leading-tight text-2xl sm:text-4xl mb-6 text-black" data-action="colorize">Certificación de las treinta (30) horas de Servicio Ambiental Estudiantil</h2>
-    <p class="font-light text-xl py-2 mb-8">Puedes cumplir tus 30 horas de labor social en el Instituto del Ambiente de una forma más divertida. Trabajando en nuestros viveros forestales, reforestando nuestros senderos ecologicos entre otras...</p>
+    <h2 class="text-lined-left-green leading-tight text-2xl sm:text-4xl mb-6 text-black" data-action="colorize">{{ site.data.socialwork.title }}</h2>
+    <p class="font-light text-xl py-2 mb-8">{{ site.data.socialwork.introduction }}</p>
 
     <dl class="sm:w-3/5" data-faq>
-      <dt class="font-medium uppercase text-black pt-4 mt-4 hover:text-green cursor-pointer">¿Qué es esta labor social?</dt>
-      <dd class="mt-2 ml-4">La labor social es una serie de actividades en beneficio del Medio Ambiente por un periodo de 30 horas y es un requisito para la graduación del bachiller.</dd>
-      <dt class="font-medium uppercase text-black pt-4 mt-4 hover:text-green cursor-pointer border-t border-solid border-grey-light">¿Cúal es la definición?</dt>
-      <dd class="mt-2 ml-4">La Dirección de Educación y Capacitación Ambiental imparte charlas de sensibilización y trabajos de campo a estudiantes
-      de 5to. y 6to. año de Bachillerato dentro del marco de las 60 horas de Servicio Social Estudiantil que establece la Ley 179-03.</dd>
-      <dt class="font-medium uppercase text-black pt-4 mt-4 hover:text-green cursor-pointer border-t border-solid border-grey-light">¿Cúales actividades haré?</dt>
-      <dd class="mt-2 ml-4">Puedes hacer trabajos individuales en nuestros viveros forestales o puedes venir con tu grupo a desarollar el siguente programa de 3 días:
-
-      TABLA
-      </dd>
-      <dt class="font-medium uppercase text-black pt-4 mt-4 hover:text-green cursor-pointer border-t border-solid border-grey-light">¿Cuándo puedo hacerlo?</dt>
-      <dd class="mt-2 ml-4">Durante todo el año.</dd>
-      <dt class="font-medium uppercase text-black pt-4 mt-4 hover:text-green cursor-pointer border-t border-solid border-grey-light">¿Cuales son los beneficios?</dt>
-      <dd class="mt-2 ml-4">Incluimos muchas actividades del turismo educativo y visitas a áreas protegidas. Nuestro progama no te va a aburrir y aprenderás bastante sobre el Medio Ambiente.</dd>
-      <dt class="font-medium uppercase text-black pt-4 mt-4 hover:text-green cursor-pointer border-t border-solid border-grey-light">¿Hay algún requisito?</dt>
-      <dd class="mt-2 ml-4">Ser estudiante del 5to o 6to grado de una Institucion de Educación Formal.</dd>
-      <dt class="font-medium uppercase text-black pt-4 mt-4 hover:text-green cursor-pointer border-t border-solid border-grey-light">¿Cómo puedo aplicar?</dt>
-      <dd class="mt-2 ml-4">Envía una solicitud por escrito al Instituto del Ambiente al correo <a href="mailto:{{ site.email }}" class="text-green">{{ site.email }}</a>.</dd>
+      {% for item in site.data.socialwork.items %}
+        <dt class="font-medium uppercase text-black pt-4 mt-4 hover:text-green cursor-pointer{% unless forloop.first %} border-t border-solid border-grey-light{% endunless %}">{{ item.question }}</dt>
+        <dd class="mt-2 ml-4 content">{{ item.answer | markdownify }}</dd>
+      {% endfor %}
     </dl>
   </div>
 </main>

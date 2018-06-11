@@ -121,6 +121,13 @@ img{
 .text-content p,.text-content ul,.text-content ol,.text-content h1,.text-content h2,.text-content h3,.text-content h4,.text-content h5,.text-content h6{
     margin-bottom:1rem
 }
+.content a {
+  color: config('colors.green');
+}
+
+.content a:hover {
+  color: config('colors.green-dark');
+}
 .iframe-wrapper{
     position:relative;
     padding-bottom:56.25%;

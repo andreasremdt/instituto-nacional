@@ -27,37 +27,13 @@
     {% include footer.html %}
 
     <script src="/js/jquery.min.js" defer></script>
+    <script src="/js/fancybox.min.js" defer></script>
+    <script src="/js/main.js" defer></script>
     
     {% if page.url == "/instituto/galeria/" %}
       <script src="/js/isotope.min.js" defer></script>
-    {% endif %}
-
-    <script src="/js/fancybox.min.js" defer></script>
-    <script src="/js/main.js" defer></script>
-
-     {% if page.url == "/" %}
-
     {% elsif page.url == "/contactanos/" %}
-      <script>
-        function initMap() {
-          var url = {
-            lat: 19.1235663,
-            lng: -70.6060518
-          };
-
-          var map = new google.maps.Map(document.querySelector('div.map'), {
-            zoom: 14,
-            center: url,
-            disableDefaultUI: true
-          });
-          var marker = new google.maps.Marker({
-            position: url,
-            map: map
-          });
-        }
-      </script>
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvasE3DqVJKzmtB5xXkYfFtQkQ7kxEhZM&callback=initMap"></script>
     {% endif %}
-
   </body>
 </html>
