@@ -12,7 +12,7 @@ layout: default
           <img src="{{ teacher.thumbnail }}" alt="{{ teacher.name }}">
           <figcaption class="p-4">
             <h3 class="text-black mb-4 text-xl font-normal">{{ teacher.name }}</h3>
-            <p class="font-light">{{ content | strip_html }}</p>
+            <p class="font-light">{{ teacher.content | strip_html }}</p>
           </figcaption>
         </figure>
       </div>

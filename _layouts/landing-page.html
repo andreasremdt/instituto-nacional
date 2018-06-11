@@ -1,32 +1,29 @@
 ---
 layout: default
-title: Bienvenidos
 ---
 
 <section class="py-16 text-center max-w-2xl px-6 mx-auto">
-    <p class="sm:text-2xl text-green font-serif">{{ site.data.home.about.pretitle }}</p>
-    <h2 class="text-4xl md:text-5xl mb-6 text-black">{{ site.data.home.about.title }}</h2>
-    
-    <div class="max-w-lg mx-auto mb-12">
-      {{ site.data.home.about.content | markdownify }}
-    </div>
+  <p class="sm:text-2xl text-green font-serif">{{ page.pre_heading }}</p>
+  <h2 class="text-4xl md:text-5xl mb-6 text-black">{{ page.heading }}</h2>
 
-    <div class="sm:flex md:-mx-4">
-      {% for item in site.data.home.about.items %}
-        <a href="{{ item.url }}" class="sm:w-1/3 sm:mx-4 bg-grey-lightest block mb-4 hover:bg-grey-darkest hover:text-white lift">
-          <figure>
-            <img src="{{ item.image_path }}" class="w-full" alt="{{ item.title }}" width="300" height="250">
-            <figcaption class="px-4 py-3">
-              <h3 class="mb-2 text-black font-medium text-xl">{{ item.title }}</h3>
-              <p class="font-light">{{ item.caption }}</p>
-            </figcaption>
-          </figure>
-        </a>
-      {% endfor %}
-    </div>
+  <div class="max-w-lg mx-auto mb-12">
+    {{ content }}
+  </div>
+
+  <div class="sm:flex md:-mx-4">
+    {% for tile in page.tiles %}
+      <a href="{{ tile.url }}" class="sm:w-1/3 sm:mx-4 bg-grey-lightest block mb-4 hover:bg-grey-darkest hover:text-white lift">
+        <figure>
+          <img src="{{ tile.thumbnail }}" class="w-full" alt="{{ tile.name }}" width="300" height="250">
+          <figcaption class="px-4 py-3">
+            <h3 class="mb-2 text-black font-medium text-xl">{{ tile.name }}</h3>
+            <p class="font-light">{{ tile.description }}</p>
+          </figcaption>
+        </figure>
+      </a>
+    {% endfor %}
+  </div>
 </section>
-
-
 
 <section class="bg-forest careers bg-center bg-no-repeat py-16 bg-cover relative z-0">
   <div class="flex justify-center mb-8">
@@ -35,7 +32,7 @@ title: Bienvenidos
 
   <div class="mx-auto max-w-2xl md:flex">
     <div class="flex flex-1 flex-col sm:flex-row md:flex-col md:items-end mx-6 mb-4">
-      {% for career in site.carreras %}
+      {% for career in site.careers %}
         <button type="button" class="text-left bg-white uppercase px-4 py-6 font-medium text-grey-darkest sm:mb-1 w-full md:w-4/5 flex items-center" data-action="tab" data-target="{{ career.title | slugify | cgi_escape }}">
           <svg class="text-green mr-4" width="28" height="28">
             <use xlink:href="images/icons/symbol-defs.svg#{{ career.icon }}"></use>
@@ -45,7 +42,7 @@ title: Bienvenidos
     </div>
 
     <div class="flex flex-1">
-      {% for career in site.carreras %}
+      {% for career in site.careers %}
         <article class="bg-white mx-6 flex-col lg:flex-row shadow-md hidden" data-tab="{{ career.title | slugify | cgi_escape }}">
           <div style="background-image: url('{{ career.image_path }}');" class="bg-cover flex-no-shrink lg:w-48 h-48 lg:h-full"></div>
           <div class="py-4 px-6">
@@ -59,12 +56,10 @@ title: Bienvenidos
   </div>
 </section>
 
-
-
 <section class="bg-water bg-no-repeat py-16 px-6 bg-center bg-cover">
   <div class="mx-auto max-w-2xl">
-    <h2 class="text-lined-left-green leading-tight text-4xl mb-6 text-black" data-action="colorize">{{ site.data.home.news.title }}</h2>
-    <p class="mb-8">{{ site.data.home.news.subtitle }}</p>
+    <h2 class="text-lined-left-green leading-tight text-4xl mb-6 text-black" data-action="colorize">Últimas Noticias</h2>
+    <p class="mb-8">Lea nuestras últimas noticias sobre grandes eventos o anuncios interesantes.</p>
 
     <div class="md:flex md:-mx-4">
       {% for post in site.posts limit: 3 %}
@@ -89,7 +84,6 @@ title: Bienvenidos
           </footer>
         </article>
       {% endfor %}
-
     </div>
   </div>
 </section>

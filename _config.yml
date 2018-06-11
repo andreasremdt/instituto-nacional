@@ -24,7 +24,7 @@ permalink: pretty
 
 # Collections
 collections:
-  carreras:
+  careers:
     output: true
     permalink: /instituto/:collection/:name
   teachers:
