@@ -27,6 +27,8 @@ collections:
   carreras:
     output: true
     permalink: /instituto/:collection/:name
+  teachers:
+    output: false
 
 exclude:
   - Gemfile

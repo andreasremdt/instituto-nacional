@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<main class="py-16 px-6 max-w-2xl mx-auto text-center">
+  <p class="sm:text-xl font-light mb-12 max-w-lg mx-auto">{{ content | strip_html }}</p>
+
+  <div class="flex flex-wrap -mx-4">
+    {% for teacher in site.teachers %}
+      <div class="sm:w-1/2 lg:w-1/3 px-4 mb-8 flex">
+        <figure class="bg-grey-lighter">
+          <img src="{{ teacher.thumbnail }}" alt="{{ teacher.name }}">
+          <figcaption class="p-4">
+            <h3 class="text-black mb-4 text-xl font-normal">{{ teacher.name }}</h3>
+            <p class="font-light">{{ content | strip_html }}</p>
+          </figcaption>
+        </figure>
+      </div>
+    {% endfor %}
+  </div>
+</main>
