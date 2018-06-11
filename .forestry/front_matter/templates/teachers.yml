@@ -1,0 +1,16 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: Teacher's name
+  name: name
+  description: Enter the first and last name of the teacher
+  config:
+    required: true
+- type: file
+  name: thumbnail
+  label: Thumbnail
+  description: 'Upload or select an existing image of the teacher '
+  config:
+    maxSize: '1'
