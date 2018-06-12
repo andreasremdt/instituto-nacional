@@ -1,9 +1,190 @@
 ---
-layout: careers
+layout: career
+
 title: Gestión Ambiental
+description: Es un profesional con los conocimientos y las habilidades necesarias para aplicar las herramientas fundamentales en la evaluación y control de proyectos de gestión ambiental, con vocación social.
+
 icon: water
-image_path: /images/pages/careers/gestion-ambiental.jpg
-excerpt: Es un profesional con los conocimientos y las habilidades necesarias para aplicar las herramientas fundamentales en la evaluación y control de proyectos de gestión ambiental, con vocación social.
+thumbnail: /uploads/2018/06/12/gestion-ambiental.jpg
+
+curriculum:
+  - title: Periodo I (Nivelación)
+    subjects:
+      - name: Introducción Recursos Naturales y Sociedad
+        credit: 3
+        theory: 3
+        practice: 0
+      - name: Lengua española y comunicación
+        credit: 3
+        theory: 2
+        practice: 2
+      - name: Algebra superior
+        credit: 4
+        theory: 3
+        practice: 2
+      - name: Química general
+        credit: 3
+        theory: 3
+        practice: 0
+      - name: Laboratorio de química general
+        credit: 1
+        theory: 0
+        practice: 3
+      - name: Educación física
+        credit: 2
+        theory: 1
+        practice: 3
+      - name: Informática aplicada
+        credit: 3
+        theory: 2
+        practice: 2
+      - name: Orientación institucional
+        credit: 1
+        theory: 1
+        practice: 0
+
+  - title: Periodo II
+    subjects:
+      - name: Metodos estadisticos
+        credit: 3
+        theory: 2
+        practice: 2
+      - name: Física general
+        credit: 3
+        theory: 3
+        practice: 0
+      - name: Laboratorio física general
+        credit: 1
+        theory: 0
+        practice: 3
+      - name: Marco legal y politicas publicas ambientales
+        credit: 3
+        theory: 3
+        practice: 0
+      - name: Principios de administración
+        credit: 3
+        theory: 3
+        practice: 0
+      - name: Técnica de comunicación y manejo de conflictos
+        credit: 3
+        theory: 2
+        practice: 2
+      - name: Elementos de socialogía y urbanismo
+        credit: 3
+        theory: 2
+        practice: 2
+
+  - title: Periodo III
+    subjects:
+      - name: Teledetección y sistemas de información geografíca
+        credit: 3
+        theory: 2
+        practice: 2
+      - name: Contabilidad básica
+        credit: 4
+        theory: 3
+        practice: 2
+      - name: Elementos de economia ambiental
+        credit: 3
+        theory: 2
+        practice: 2
+      - name: Introducción a la gestion ambiental
+        credit: 3
+        theory: 2
+        practice: 2
+      - name: Biología
+        credit: 3
+        theory: 3
+        practice: 0
+      - name: Laboratorio de biología
+        credit: 1
+        theory: 0
+        practice: 3
+      - name: Instrumentos y mediciones ambientales
+        credit: 3
+        theory: 2
+        practice: 2
+
+  - title: Periodo IV
+    subjects:
+      - name: Principios de biodiversidad
+        credit: 3
+        theory: 2
+        practice: 2
+      - name: Extensión y comunicación ambiental
+        credit: 3
+        theory: 2
+        practice: 2
+      - name: Elementos del ecoturismo 
+        credit: 3
+        theory: 3
+        practice: 0
+      - name: Ecología general
+        credit: 3
+        theory: 2
+        practice: 2
+      - name: Calidad y control ambiental
+        credit: 3
+        theory: 2
+        practice: 2
+      - name: Introducción al desarollo sostenible
+        credit: 3
+        theory: 3
+        practice: 0
+
+  - title: Periodo V
+    subjects:
+      - name: Gestion del talento humano
+        credit: 3
+        theory: 3
+        practice: 0
+      - name: Meteorología y bioclimatología
+        credit: 3
+        theory: 2
+        practice: 2
+      - name: Inglés tecnico
+        credit: 3
+        theory: 1
+        practice: 4
+      - name: Evaluación y control de proyectos ambientales
+        credit: 3
+        theory: 2
+        practice: 2
+      - name: Manejo de suelos y contaminación
+        credit: 3
+        theory: 2
+        practice: 2
+      - name: Gestion integrada del medio ambiente
+        credit: 3
+        theory: 2
+        practice: 2
+
+  - title: Periodo VI
+    subjects:
+      - name: Etica profesional aplicada
+        credit: 3
+        theory: 2
+        practice: 2
+      - name: Seguridad e higiene ambiental
+        credit: 3
+        theory: 2
+        practice: 2
+      - name: Tecnicas de saneamiento y restauración ambiental
+        credit: 3
+        theory: 2
+        practice: 2
+      - name: Evaluación de impacto ambiental
+        credit: 3
+        theory: 2
+        practice: 2
+      - name: Manejo de cuencas hidrografícas
+        credit: 3
+        theory: 2
+        practice: 2
+      - name: Proyecto de pasantia
+        credit: 3
+        theory: 1
+        practice: 4
 ---
 
 <h3 class="text-black text-2xl mb-4">¿Qué es?</h3>

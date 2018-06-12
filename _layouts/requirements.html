@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<main class="py-16 px-6 bg-room-plant">
+  <div class="max-w-2xl mx-auto">
+    <div class="sm:flex sm:-mx-4">
+      <div class="sm:flex-1 sm:mx-4 mb-6 sm:mb-0">
+        <h2 class="text-black mb-4">{{ page.can_i_apply.title }}</h2>
+ 
+        {{ page.can_i_apply.content | markdownify }}
+      </div>
+      <div class="flex-1 sm:mx-4">
+        <h2 class="text-black mb-4">{{ page.how_to_apply.title }}</h2>
+  
+        {{ page.how_to_apply.content | markdownify }}
+      </div>
+    </div>
+
+    <div class="py-16 md:w-3/5">
+      <h2 class="text-black mb-4">{{ page.process.title }}</h2>
+      <ol class="list-reset list-styled">
+        {% for item in page.process.items %}
+          <li class="item">{{ item }}</li>
+        {% endfor %}
+      </ol>
+
+      {% for footnote in page.process.footnotes %}
+        <sup>{{ forloop.index }}. {{ footnote }}</sup>
+      {% endfor %}
+    </div>
+
+    <h2 class="text-black mb-4">{{ page.requirements.title }}</h2>
+    <p>{{ page.requirements.content }}</p>
+
+    <div class="sm:flex mt-6">
+      <ul class="sm:mr-4">
+        {% for item in page.requirements.items limit:7 %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+      <ul>
+        {% for item in page.requirements.items offset:7 %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</main>

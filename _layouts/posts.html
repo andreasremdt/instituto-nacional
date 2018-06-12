@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="py-16 px-6 mx-auto max-w-2xl">
+  <div class="md:flex">
+    <main class="md:w-3/4 md:mr-8">
+       {% for post in site.posts %}
+        <article class="flex flex-col mb-8 bg-white border-grey-light border-solid border">
+          <figure>
+            <img src="{{ post.image_path }}" class="w-full sm:h-64 object-cover" alt="{{ post.title }}" width="300" height="250">
+          </figure>
+        
+          <div class="p-6">
+            <ul class="list-reset mb-4">
+              <li class="text-sm bg-green inline-block font-light px-4 py-1 uppercase text-white">{{ post.tag }}</li>
+            </ul>
+        
+            <h3 class="text-black uppercase mb-3 font-medium hover:text-green">
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </h3>
+            <p class="font-light">{{ post.excerpt | strip_html | truncatewords:30 }}</p>
+          </div>
+        
+          <footer class="border-t border-grey-light border-solid py-4 px-6 text-right text-grey font-light mt-auto text-sm">
+            <time datatime="{{ post.date }}">{{ post.date | date: "%d/%m/%Y" }}</time>
+          </footer>
+        </article>
+      {% endfor %}
+    </main>
+    
+    {% include sidebar.html %}
+  </div>
+</div>

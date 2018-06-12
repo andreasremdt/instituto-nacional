@@ -37,6 +37,5 @@ exclude:
   - node_modules
   - package.json
   - package-lock.json
-  - README.md
   - src
   - tailwind.js

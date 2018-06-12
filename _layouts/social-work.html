@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<main class="bg-palm bg-no-repeat bg-right-bottom px-6 py-16">
+  <div class=" mx-auto max-w-2xl">
+    <h2 class="text-lined-left-green leading-tight text-2xl sm:text-4xl mb-6 text-black" data-action="colorize">{{ page.intro.title }}</h2>
+    <p class="font-light text-xl py-2 mb-8">{{ content | strip_html }}</p>
+
+    <dl class="sm:w-3/5" data-faq>
+      {% for item in page.items %}
+        <dt class="font-medium uppercase text-black pt-4 mt-4 hover:text-green cursor-pointer{% unless forloop.first %} border-t border-solid border-grey-light{% endunless %}">{{ item.question }}</dt>
+        <dd class="mt-2 ml-4 content">{{ item.answer | markdownify }}</dd>
+      {% endfor %}
+    </dl>
+  </div>
+</main>
+
+{% include contact-us.html %}

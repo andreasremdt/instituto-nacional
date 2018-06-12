@@ -2,10 +2,15 @@
 layout: landing-page
 
 title: Bienvenidos
-description: das
+description: El Instituto del Ambiente es una institucion para la enseñanza sobre el Medio Ambiente.
 
-pre_heading: 377+ estudiantes graduados
-heading: Preparando técnicos desde 1968
+hero:
+  title: Únete con el Medio Ambiente
+  subtitle: ¿Quieres estudiar en el área de medio ambiente y proteger tu mundo?<br>¡Empieza aquí!
+
+about:
+  pretitle: 377+ estudiantes graduados
+  title: Preparando técnicos desde 1968
 
 tiles:
   - name: El Campus
