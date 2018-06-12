@@ -5,6 +5,7 @@ title: "Profesores"
 description: "Nuestros profesores son el fundamento para una educación sostenible"
 
 permalink: /instituto/profesores/
+menus: institute
 ---
 
 Tenemos 12 profesores fijos con diferentes conocimientos y experiencias laborales.

@@ -4,6 +4,14 @@ layout: landing-page
 title: Bienvenidos
 description: El Instituto del Ambiente es una institucion para la enseñanza sobre el Medio Ambiente.
 
+menus:
+  header:
+    title: Inicio
+    weight: 1
+  footer:
+    title: Inicio
+    weight: 1
+
 hero:
   title: Únete con el Medio Ambiente
   subtitle: ¿Quieres estudiar en el área de medio ambiente y proteger tu mundo?<br>¡Empieza aquí!

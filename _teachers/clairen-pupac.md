@@ -1,5 +1,5 @@
 ---
-name: Clairen de Pupac
+title: Clairen de Pupac
 thumbnail: /uploads/2018/06/11/clairen-pupac.jpg
 published: true
 ---

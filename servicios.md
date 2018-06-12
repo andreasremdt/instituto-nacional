@@ -4,6 +4,15 @@ layout: services
 title: Servicios
 description: This is a sample description
 
+menus:
+  header:
+    title: Servicios
+    weight: 3
+    identifier: services
+  footer:
+    title: Servicios
+    weight: 3
+
 intro:
   pretitle: Aprovecha la belleza de la naturaleza
   title: Nuestros Servicios

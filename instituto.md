@@ -4,6 +4,15 @@ layout: institute
 title: El Instituto
 description: adasds
 
+menus:
+  header:
+    title: Instituto
+    weight: 2
+    identifier: institute
+  footer:
+    title: El Instituto
+    weight: 2
+
 intro:
   pretitle: 326 estudiantes graduarón...
   title: ¡Ven a conocer Nuestro Instituto!

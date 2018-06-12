@@ -4,6 +4,8 @@ layout: tourism
 title: Turismo Educativo
 description: adasdasd
 
+menus: services
+
 permalink: /servicios/turismo-educativo/
 
 intro:

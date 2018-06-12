@@ -5,6 +5,7 @@ title: Historia
 description: La historia del Instituto desde su fundación
 
 permalink: /instituto/historia/
+menus: institute
 
 pre_heading: 50 años de experiencia
 heading: Sirviendo al medio ambiente desde 1968

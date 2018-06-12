@@ -1,5 +1,5 @@
 ---
-name: Sandy Grullon
+title: Sandy Grullon
 thumbnail: /uploads/2018/06/11/sandy-grullon.jpg
 published: true
 ---

@@ -35,9 +35,9 @@
         <h3 class="text-white font-normal text-lg uppercase mb-4">Navegación</h3>
 
         <ul class="list-reset">
-          {% for item in site.data.navigation %}
+          {% for item in site.menus.footer %}
             <li>
-              <a href="{{ item.url }}" class="font-light inline-block mb-1 hover:text-white">{{ item.name }}</a>
+              <a href="{{ item.url }}" class="font-light inline-block mb-1 hover:text-white">{{ item.title }}</a>
             </li>
           {% endfor %}
         </ul>

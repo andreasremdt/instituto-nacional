@@ -1,5 +1,5 @@
 ---
-name: José Aracena
+title: José Aracena
 thumbnail: /uploads/2018/06/11/jose-aracena.jpg
 published: true
 ---

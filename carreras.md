@@ -5,4 +5,5 @@ title: Carreras
 description: sadasdsadsad
 
 permalink: /instituto/carreras/
+menus: institute
 ---

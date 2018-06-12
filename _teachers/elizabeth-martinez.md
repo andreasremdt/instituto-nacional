@@ -1,5 +1,5 @@
 ---
-name: Elizabeth Martinez
+title: Elizabeth Martinez
 thumbnail: /uploads/2018/06/11/elizabeth-martinez.jpg
 published: true
 ---

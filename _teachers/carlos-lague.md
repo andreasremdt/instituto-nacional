@@ -1,5 +1,5 @@
 ---
-name: Carlos Lagué
+title: Carlos Lagué
 thumbnail: /uploads/2018/06/11/carlos-lague.jpg
 published: true
 ---

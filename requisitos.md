@@ -5,6 +5,7 @@ title: Requisitos de Admisión
 description: sdasd
 
 permalink: /instituto/requisitos/
+menus: institute
 
 can_i_apply:
   title: ¿Puedo aplicar?

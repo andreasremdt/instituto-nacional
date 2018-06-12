@@ -1,5 +1,5 @@
 ---
-name: Xochilt Estrada
+title: Xochilt Estrada
 thumbnail: /uploads/2018/06/11/xochilt-estrada.jpg
 published: true
 ---

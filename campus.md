@@ -5,6 +5,7 @@ title: Campus
 description: asdasdas
 
 permalink: /instituto/campus/
+menus: institute
 
 area_production:
   pretitle: El paraíso de la naturaleza...

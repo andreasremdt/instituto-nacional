@@ -5,6 +5,7 @@ title: Galería
 description: asdasdasd
 
 permalink: /instituto/galeria/
+menus: institute
 
 images:
   - src: /images/arboles-bonsai-2.jpg

@@ -6,6 +6,8 @@ description: sadasdasd
 
 permalink: /servicios/bodas-fiestas/
 
+menus: services
+
 intro:
   title: Casarte en el medio ambiente
   pretitle: Una boda en el verde

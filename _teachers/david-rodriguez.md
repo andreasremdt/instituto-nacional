@@ -1,5 +1,5 @@
 ---
-name: David Rodriguez
+title: David Rodriguez
 thumbnail: /uploads/2018/06/11/david-rodriguez.jpg
 published: true
 ---

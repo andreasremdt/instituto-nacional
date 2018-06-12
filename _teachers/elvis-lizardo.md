@@ -1,5 +1,5 @@
 ---
-name: Elvis Lizardo
+title: Elvis Lizardo
 thumbnail: /uploads/2018/06/11/elvis-lizardo.jpg
 published: true
 ---
