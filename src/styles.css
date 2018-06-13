@@ -140,6 +140,17 @@ table {
         background-size:400px
     }
 }
+
+.slided-out {
+  transform: scaleY(0);
+  height: 0;
+  will-change: transform;
+}
+
+.transition {
+  transition: all .2s ease-in-out;
+}
+
 .bg-hero-small{
     height:300px;
     background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url("../images/backgrounds/hero-small.jpg") center center no-repeat

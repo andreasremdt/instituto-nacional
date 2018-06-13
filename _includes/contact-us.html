@@ -1,27 +1,62 @@
 <section class="bg-forest-faded bg-cover bg-no-repeat bg-center py-16 px-6">
-  <div class="max-w-2xl mx-auto text-white">
-    <h2 class="text-shadow text-4xl text-center">Contáctanos</h2>
-    <p class="text-shadow text-xl font-light md:w-1/2 md:mx-auto mb-8 text-center">¿Tienes alguna pregunta o deseas hacer una reserva? Puedes contactarnos y estaremos encantados de ayudarte.</p>
+  <div class="max-w-2xl mx-auto text-white text-center">
+    <h2 class="text-shadow text-4xl">Contáctanos</h2>
+    <p class="text-shadow text-xl font-light md:w-1/2 md:mx-auto mb-8">¿Tienes alguna pregunta o deseas hacer una reserva? Puedes contactarnos y estaremos encantados de ayudarte.</p>
 
-    <div class="sm:flex md:w-2/3 mx-auto">
-      <a href="mailto:{{ site.email }}" class="flex flex-1 items-center sm:mr-4 mb-4 sm:mb-0 text-white bg-green px-6 py-3 inline-block hover:bg-green-dark">
-        <svg width="30" height="30" class="mr-4">
-          <use xlink:href="/images/icons/symbol-defs.svg#envelope"></use>
-        </svg>
-        <div>
-          <span class="font-bold block">Escribe un correo electrónico</span>
-          <span class="font-light">{{ site.email }}</span>
-        </div>
-      </a>
-      <a href="tel:{{ site.phone | remove: ' '}}" class="flex flex-1 items-center text-white bg-green px-6 py-3 inline-block hover:bg-green-dark">
-        <svg width="30" height="30" class="mr-4">
-          <use xlink:href="/images/icons/symbol-defs.svg#phone"></use>
-        </svg>
-        <div>
-          <span class="font-bold block">Llámanos</span>
-          <span class="font-light">{{ site.phone }}</span>
-        </div>
-      </a>
+    <a href="/contactanos/" class="text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark" data-contact-toggle>Contáctanos ahora</a>
+  </div>
+</section>
+
+<section class="hidden" data-contact-wrapper>
+  <div class="mx-auto max-w-2xl py-16 px-6">
+    <p class="max-w-lg mx-auto text-center mb-6">La forma más fácil de comunicarte con nosotros es completar el siguiente formulario. Nos pondremos en contacto contigo lo antes posible.</p>
+    
+    <form action="/contactanos/gracias/" name="contact-details" data-netlify="true" class="flex flex-col-reverse flex-col md:flex-row md:-mx-3 pb-16">
+      <div class="md:mx-3 md:w-1/2">
+        <input type="text" name="name" placeholder="Tu nombre..." class="bg-grey-lightest border hover:border-grey border-solid border-grey-light w-full px-6 py-4 text-grey-darker font-light mb-3" required>
+        <input type="email" name="email" placeholder="Tu correo electrónico..." class="bg-grey-lightest border hover:border-grey border-solid border-grey-light w-full px-6 py-4 text-grey-darker font-light mb-3" required>
+        <input type="tel" name="phone" placeholder="Tu número de teléfono..." class="bg-grey-lightest border hover:border-grey border-solid border-grey-light w-full px-6 py-4 text-grey-darker font-light mb-3">
+        <select name="subject" class="bg-grey-lightest border hover:border-grey border-solid border-grey-light w-full px-6 py-4 text-grey-darker font-light mb-3" required>
+          <option value="" disabled selected>Tu asunto...</option>
+          <option value="">Quiero aplicarme al Instituto como estudiante</option>
+          <option value="">Quiero hacer la Labor Social en el Institito</option>
+          <option value="">Quiero acampar</option>
+          <option value="">Quiero hacer una boda / fiesta / actividad en el Instituto</option>
+          <option value="">Quiero reservar un Día con la Naturaleza</option>
+          <option value="">Quiero reservar un Fin de Semana con la Naturaleza</option>
+          <option value="">Quiero preguntar algo general</option>
+          <option value="">Algo diferente</option>
+        </select>
+        <button type="submit" class="text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark float-right">Enviar</button>
+      </div>
+      <div class="md:mx-3 md:w-1/2">
+        <textarea name="content" placeholder="Tu pregunta / mensaje..." rows="5" class="bg-grey-lightest border hover:border-grey border-solid border-grey-light h-full w-full px-6 py-4 text-grey-darker font-light mb-2" required></textarea>
+      </div>
+    </form>
+
+    <div class="border-t border-grey-light pt-16">
+      <p class="max-w-lg mx-auto text-center mb-6">O, si prefieres contactarnos de lo contrario, a continuación se muestran nuestra dirección de correo electrónico y número de teléfono.</p>
+
+      <div class="sm:flex md:w-2/3 mx-auto">
+        <a href="mailto:{{ site.email }}" class="flex flex-1 items-center sm:mr-4 mb-4 sm:mb-0 text-white bg-green px-6 py-3 inline-block hover:bg-green-dark">
+          <svg width="30" height="30" class="mr-4">
+            <use xlink:href="/images/icons/symbol-defs.svg#envelope"></use>
+          </svg>
+          <div>
+            <span class="font-bold block">Escribe un correo electrónico</span>
+            <span class="font-light">{{ site.email }}</span>
+          </div>
+        </a>
+        <a href="tel:{{ site.phone | remove: ' '}}" class="flex flex-1 items-center text-white bg-green px-6 py-3 inline-block hover:bg-green-dark">
+          <svg width="30" height="30" class="mr-4">
+            <use xlink:href="/images/icons/symbol-defs.svg#phone"></use>
+          </svg>
+          <div>
+            <span class="font-bold block">Llámanos</span>
+            <span class="font-light">{{ site.phone }}</span>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </section>
