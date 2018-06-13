@@ -1,8 +1,11 @@
-const gulp         = require('gulp');
-const postcss      = require('gulp-postcss');
-const tailwind     = require('tailwindcss');
-const cleancss     = require('gulp-clean-css');
-const autoprefixer = require('gulp-autoprefixer');
+var gulp         = require('gulp');
+var postcss      = require('gulp-postcss');
+var tailwind     = require('tailwindcss');
+var cleancss     = require('gulp-clean-css');
+var autoprefixer = require('gulp-autoprefixer');
+var htmllint     = require('gulp-htmllint');
+var fancyLog     = require('fancy-log');
+var colors       = require('ansi-colors');
 
 gulp.task('css', () => {
   return gulp.src('./src/styles.css')
@@ -15,6 +18,23 @@ gulp.task('css', () => {
     .pipe(cleancss())
     .pipe(gulp.dest('./css'));
 });
+
+gulp.task('html', function() {
+  return gulp.src('./_site//index.html')
+    .pipe(htmllint({ rules: {
+      'class-style': false
+    }}, htmllintReporter));
+});
+
+function htmllintReporter(filepath, issues) {
+  if (issues.length > 0) {
+    issues.forEach(function (issue) {
+      fancyLog(colors.cyan('[gulp-htmllint] ') + colors.white(filepath + ' [' + issue.line + ',' + issue.column + ']: ') + colors.red('(' + issue.code + ') ' + issue.msg));
+    });
+
+    process.exitCode = 1;
+  }
+}
 
 gulp.task('watch', () => {
   gulp.watch('./src/styles.css', ['css']);

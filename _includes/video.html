@@ -1,0 +1,10 @@
+<section class="h-128 mt-8 p-6 text-center flex items-center justify-center flex-col bg-video bg-cover bg-no-repeat bg-center">
+  <p class="font-serif text-green text-2xl">{{ include.pretitle }}</p>
+  <h2 class="mb-8 text-white text-3xl sm:text-5xl font-bold uppercase">{{ include.title }}</h2>
+
+  <a data-fancybox data-type="iframe" data-src="{{ include.url }}" href="{{ include.url }}" target="_blank" rel="noopener" title="Abre video" class="button-play block text-green border border-solid border-green w-16 h-16 flex items-center justify-center rounded-full hover:text-white hover:border-white">
+    <svg class="" width="30" height="30">
+      <use xlink:href="/images/icons/symbol-defs.svg#play"></use>
+    </svg>
+  </a>
+</section>

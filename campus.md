@@ -15,10 +15,10 @@ area_production:
   items:
     - title: Herbolario
       icon: herbs
-      content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
+      content: Establecido en un área integrada de terrazas de banco y de sistema agroforestal permanente. Su objetivo es básicamente académico, pero se conjugan en este el uso de las diferentes plantas tanto en lo culinario, medicinal, repelente y de bebida.
     - title: Viveros
       icon: nursery
-      content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
+      content: En nuestros viveros se producen plantas forestales que luego son establecidas en diferentes partes del país, pero especialmente en Jarabacoa. Hacen posible los programas de reforestación que se llevan a cabo cada año en el municipio y en muchas partes del país.
     - title: Área de compostaje
       icon: recycling
       content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
@@ -27,10 +27,10 @@ area_production:
       content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
     - title: Arboretum
       icon: tree
-      content: Colección de plantas endemicas y nativas de la isla que buscan enseñar ex_situ especies de la flora existente.
+      content: Establecido en un área de x metros² y reuniendo especies arbóreas, latifoliadas y coníferas, endémicas, nativas e introducidas. Estas plantas se identifican botánicamente y su objetivo principal es académico.
     - title: Invernaderos
       icon: greenhouse
-      content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
+      content: Un invernadero de tecnología media o de segunda con 544 metros², compuesto por materiales de hierro galvanizado, plástico y malla anti insectos. En este se establecen cultivos hortícolas o intensivos como el tomate, ají, pepino y, en algún momento el cilantro.
   
   images:
     - path: /images/pages/campus/fresas.jpg
@@ -68,16 +68,25 @@ area_educational:
       content: Tenemos un taller de ebanistería y carpintería para trabajar con mardera.
 
 area_forests:
-  title: Bosques y áreas verdes
+  title: Rodales y áreas verdes
 
   items:
     - title: Parque acuático
-      image_path: /images/parque-acuatico.jpg
+      image_path: /uploads/2018/06/12/parque-acuatico.jpg
       description: lorem ipsum dolor sit amet, olor se tal.
     - title: Senderos
+      image_path: /uploads/2018/06/12/senderos.jpg
+      description: lorem ipsum dolor sit amet, olor se tal.
+    - title: Área de investigación
       image_path: /images/parque-acuatico.jpg
       description: lorem ipsum dolor sit amet, olor se tal.
-    - title: Parques
+    - title: Estación climatológica
       image_path: /images/parque-acuatico.jpg
+      description: lorem ipsum dolor sit amet, olor se tal.
+    - title: Parque de formas
+      image_path: /images/parque-acuatico.jpg
+      description: lorem ipsum dolor sit amet, olor se tal.
+    - title: Parque de la Caoba
+      image_path: /uploads/2018/06/12/parque-caoba.jpg
       description: lorem ipsum dolor sit amet, olor se tal.
 ---

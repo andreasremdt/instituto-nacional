@@ -30,7 +30,7 @@ layout: default
 <figure class="mt-8">
   <div class="flex transition">
     {% for image in page.images %}
-      <a data-fancybox="gallery" href="{{ image.image_path }}" class="block w-1/4 flex-no-shrink opacity-50 hover:opacity-100 transition">
+      <a data-fancybox="gallery" href="{{ image.image_path }}" class="block w-1/4 flex-no-shrink opacity-75 hover:opacity-100 transition">
         <img src="{{ image.image_path }}" alt="{{ image.title }}" width="720" height="900">
       </a>
     {% endfor %}
@@ -45,11 +45,11 @@ layout: default
 
 
 <section class="py-16 px-6 max-w-2xl mx-auto">
-  <h2 class="text-black text-lined-left-green text-3xl mb-6" data-action="colorize">{{ site.data.weddings.others.title }}</h2>
-  <p class="text-xl font-light">{{ site.data.weddings.others.intro }}</p>
+  <h2 class="text-black text-lined-left-green text-3xl mb-6" data-action="colorize">{{ page.others.title }}</h2>
+  <p class="text-xl font-light">{{ page.others.intro }}</p>
 
   <div class="md:flex md:-mx-4 mt-8 pt-8">
-    {% for item in site.data.weddings.others.items %}
+    {% for item in page.others.items %}
       <article class="md:mx-4 flex-1 clearfix mb-6 md:mb-0">
         <h3 class="text-lined-left-green uppercase text-black mb-6">{{ item.title }}</h3>
         <svg class="text-green border border-solid border-grey-light p-3 box-content float-left mt-1 mr-6 mb-2" width="50" height="50">

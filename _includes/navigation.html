@@ -26,23 +26,4 @@
       </li>
     {% endfor %}
   </ul>
-  <!--<ul class="md:flex list-reset">
-    {% for item in site.data.navigation %}
-      <li class="md:flex md:items-center md:relative {% if forloop.last %}md:ml-auto{% else %}md:px-6{% endif %}">
-        <a href="{{ item.url }}" class="flex items-center py-2 md:border-transparent md:border-b-2 md:text-white md:h-13{% if item.url == page.url %} font-medium text-green md:border-green{% endif %}{% if forloop.last %} md:bg-green md:pr-6 md:uppercase last hover:bg-green-dark hover:border-green-dark{% else %} hover:text-green{% endif %}">{{ item.name }}</a>
-        {% if item.children %}
-        <svg class="hidden md:block ml-1 text-white" width="20" height="20" aria-hidden="true">
-          <use xlink:href="/images/icons/symbol-defs.svg#arrow-down"></use>
-        </svg>
-        <ul class="md:hidden md:absolute md:bg-green md:pin-l md:pin-t-100 list-reset pl-4 md:pl-0 mb-6 md:mb-0">
-          {% for subitem in item.children %}
-            <li>
-              <a href="{{ subitem.url }}" class="md:text-grey-lighter block hover:bg-green-dark px-6 py-2 md:py-3 whitespace-no-wrap {% if subitem.url == page.url %} text-green{% endif %}">{{ subitem.name }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>-->
 </nav>

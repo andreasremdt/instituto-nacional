@@ -23,7 +23,7 @@ layout: default
           </div>
         
           <footer class="border-t border-grey-light border-solid py-4 px-6 text-right text-grey font-light mt-auto text-sm">
-            <time datatime="{{ post.date }}">{{ post.date | date: "%d/%m/%Y" }}</time>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d/%m/%Y" }}</time>
           </footer>
         </article>
       {% endfor %}

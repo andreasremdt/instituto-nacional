@@ -21,10 +21,12 @@ layout: default
   </div>
 </section>
 
+<h2 class="text-black text-4xl leading-tight text-center">Características de nuestros servicios</h2>
+
 
 {% for characteristic in page.characteristics %}
   {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-  <section class="md:py-16 md:px-6{% if thecycle == 'odd' %} md:bg-grey-lighter{% endif %}">
+  <section class="md:py-16 md:px-6{% if thecycle == 'even' %} md:bg-grey-lighter{% endif %}">
     <div class="max-w-2xl mx-auto flex items-center relative{% if thecycle == 'even' %} flex-row-reverse{% endif %}">
       <figure class="md:w-2/5 absolute md:static pin-l pin-t w-full h-full z-10">
         <img src="{{ characteristic.image_path }}" class="w-full h-full object-cover" alt="{{ characteristic.title }}" width="800" height="533">

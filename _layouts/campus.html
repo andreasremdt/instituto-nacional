@@ -71,17 +71,19 @@ layout: default
   <h2 class="text-4xl text-black text-lined-left-green mb-6" data-action="colorize">{{ page.area_forests.title }}</h2>
   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta hic quos nesciunt quidem provident labore consequatur quas minus corrupti beatae.</p>
 
-  <div class="sm:flex md:-mx-4 mt-8 pt-8">
+  <div class="sm:flex sm:flex-wrap md:-mx-4 mt-8 pt-8">
     {% for item in page.area_forests.items %}
-    <a href="{{ item.image_path }}" class="sm:w-1/3 sm:mx-4 bg-grey-lightest block mb-4 hover:bg-grey-darkest hover:text-white lift">
-      <figure>
-        <img src="{{ item.image_path }}" class="w-full" alt="{{ item.title }}" width="300" height="250">
-        <figcaption class="px-4 py-3">
-          <h3 class="mb-2 text-black font-medium text-xl">{{ item.title }}</h3>
-          <p class="font-light">{{ item.description }}</p>
-        </figcaption>
-      </figure>
-    </a>
+      <div class="sm:w-1/3 sm:px-4">
+        <a href="{{ item.image_path }}" class="bg-grey-lightest block mb-4 hover:bg-grey-darkest hover:text-white lift">
+          <figure>
+            <img src="{{ item.image_path }}" class="w-full" alt="{{ item.title }}" width="300" height="250">
+            <figcaption class="px-4 py-3">
+              <h3 class="mb-2 text-black font-medium text-xl">{{ item.title }}</h3>
+              <p class="font-light">{{ item.description }}</p>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
     {% endfor %}
   </div>
 </section>

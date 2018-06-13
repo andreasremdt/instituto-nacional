@@ -30,7 +30,7 @@
         <h4 class="text-black hover:text-green">
           <a href="{{ post.url }}">{{ post.title }}</a>
         </h4>
-        <time datatime="{{ post.date }}" class="font-light text-gray-dark">{{ post.date | date: "%d/%m/%Y" }}</time>
+        <time datetime="{{ post.date | date_to_xmlschema }}" class="font-light text-gray-dark">{{ post.date | date: "%d/%m/%Y" }}</time>
       </div>
     </article>
   {% endfor %}

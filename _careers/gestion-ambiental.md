@@ -10,41 +10,6 @@ thumbnail: /uploads/2018/06/12/gestion-ambiental.jpg
 curriculum:
   - title: Periodo I (Nivelación)
     subjects:
-      - name: Introducción Recursos Naturales y Sociedad
-        credit: 3
-        theory: 3
-        practice: 0
-      - name: Lengua española y comunicación
-        credit: 3
-        theory: 2
-        practice: 2
-      - name: Algebra superior
-        credit: 4
-        theory: 3
-        practice: 2
-      - name: Química general
-        credit: 3
-        theory: 3
-        practice: 0
-      - name: Laboratorio de química general
-        credit: 1
-        theory: 0
-        practice: 3
-      - name: Educación física
-        credit: 2
-        theory: 1
-        practice: 3
-      - name: Informática aplicada
-        credit: 3
-        theory: 2
-        practice: 2
-      - name: Orientación institucional
-        credit: 1
-        theory: 1
-        practice: 0
-
-  - title: Periodo II
-    subjects:
       - name: Metodos estadisticos
         credit: 3
         theory: 2
