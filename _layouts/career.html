@@ -7,7 +7,9 @@ layout: default
     <img src="{{ page.thumbnail }}" alt="{{ page.title }}" width="400" height="266">
   </figure>  
     
-  {{ content }}
+  <div class="text-content">
+    {{ content }}
+  </div>
 
   <a href="/instituto/carreras/" class="button mt-8">Volver</a>
   <a href="/instituto/horario/#{{ page.title | slugify | cgi_escape }}" class="button-white mt-8">Mira el horario</a>

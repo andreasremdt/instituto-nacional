@@ -24,7 +24,7 @@ layout: default
       {% for event in page.events %}
         <button type="button" class="text-left bg-white uppercase px-4 py-6 font-medium text-grey-darkest {% unless forloop.last %}sm:mb-1{% endunless %} w-full md:w-4/5 flex items-center" data-action="tab" data-target="{{ event.title | slugify | cgi_escape }}">
           <svg class="text-green mr-4" width="28" height="28">
-            <use xlink:href="/images/icons/symbol-defs.svg#{{ event.icon }}"></use>
+            <use xlink:href="/icons/symbol-defs.svg#{{ event.icon }}"></use>
           </svg> {{ event.title }}
         </button>
       {% endfor %}

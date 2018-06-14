@@ -5,7 +5,7 @@ title: Ciencias Forestales
 description: Es un profesional con conocimientos teóricos y prácticos en las técnicas de producción y protección de bosques y con la capacidad de transferirlo a los potenciales productores.
 
 icon: nature
-thumbnail: /uploads/2018/06/12/ciencias-forestales.jpg
+thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/ciencias-forestales.jpg
 
 curriculum:
   - title: Periodo I (Nivelación)

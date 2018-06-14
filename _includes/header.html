@@ -8,13 +8,13 @@
     <ul class="list-reset hidden lg:block flex-no-shrink">
       <li class="inline-flex items-center mr-6">
         <svg class="p-2 mr-2 bg-green text-white" width="40" height="40">
-          <use xlink:href="/images/icons/symbol-defs.svg#address"></use>
+          <use xlink:href="/icons/symbol-defs.svg#address"></use>
         </svg>
         <span class="font-light">{{ site.address }}</span>
       </li>
       <li class="inline-flex items-center mr-6">
         <svg class="p-2 mr-2 bg-green text-white" width="40" height="40">
-          <use xlink:href="/images/icons/symbol-defs.svg#phone"></use>
+          <use xlink:href="/icons/symbol-defs.svg#phone"></use>
         </svg>
         <a href="tel:{{ site.phone | remove: ' '}}" class="font-light">{{ site.phone }}</a>
         <br>
@@ -25,7 +25,7 @@
       {% for item in site.social %}
       <a href="{{ item.url }}" target="_blank" rel="noopener" class="link inline-flex w-10 ml-2 h-10 items-center justify-center border-grey-light border-solid border text-grey hover:text-green hover:border-green rounded-full" title="{{ item.text }}">
         <svg width="18" height="18">
-          <use xlink:href="/images/icons/symbol-defs.svg#{{ item.name | downcase }}"></use>
+          <use xlink:href="/icons/symbol-defs.svg#{{ item.name | downcase }}"></use>
         </svg>
       </a>
       {% endfor %}
@@ -33,7 +33,7 @@
 
     <button type="button" data-action="menu" class="md:hidden ml-2 bg-white hover:bg-grey-lighter z-20 py-2 px-4 rounded border text-grey-darker flex" title="Navegación de palanca">
       <svg width="28" height="28">
-        <use xlink:href="/images/icons/symbol-defs.svg#bars"></use>
+        <use xlink:href="/icons/symbol-defs.svg#bars"></use>
       </svg>
     </button>
   </div>

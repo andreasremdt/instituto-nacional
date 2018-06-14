@@ -21,7 +21,7 @@ layout: default
   </div>
 </section>
 
-<h2 class="text-black text-4xl leading-tight text-center">Características de nuestros servicios</h2>
+<h2 class="text-black text-4xl leading-tight text-center mb-6" data-action="colorize">Características de nuestros servicios</h2>
 
 
 {% for characteristic in page.characteristics %}
@@ -32,10 +32,10 @@ layout: default
         <img src="{{ characteristic.image_path }}" class="w-full h-full object-cover" alt="{{ characteristic.title }}" width="800" height="533">
       </figure>
 
-      <div class="{% if thecycle == 'odd' %}md:ml-8{% else %}md:mr-8{% endif %} md:w-3/5 z-20 px-6 py-8 md:p-0{% if thecycle == 'even' %} text-right{% endif %}">
+      <div class="{% if thecycle == 'odd' %}md:ml-8{% else %}md:mr-8{% endif %} md:w-3/5 z-20 px-6 py-16 md:p-0{% if thecycle == 'even' %} text-right{% endif %}">
         <h3 class="text-black mb-6 text-3xl bg-white md:bg-transparent inline-block px-3 md:px-0">{{ characteristic.title }}</h3>
 
-        <ul class="bg-white md:bg-transparent list-reset">
+        <ul class="bg-white md:bg-transparent p-3 md:p-0 list-reset">
           {% for item in characteristic.items %}
           <li class="mb-3">{{ item }}</li>
           {% endfor %}

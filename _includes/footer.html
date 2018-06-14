@@ -13,7 +13,7 @@
           {% for item in site.social %}
           <a href="{{ item.url }}" target="_blank" rel="noopener" class="mr-1 link inline-flex w-10 h-10 items-center justify-center bg-grey-darker text-white hover:text-green hover:border-green rounded-full" title="{{ item.text }}">
             <svg width="18" height="18">
-              <use xlink:href="/images/icons/symbol-defs.svg#{{ item.name | downcase }}"></use>
+              <use xlink:href="/icons/symbol-defs.svg#{{ item.name | downcase }}"></use>
             </svg>
           </a>
           {% endfor %}

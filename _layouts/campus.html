@@ -18,7 +18,7 @@ layout: default
     {% for area in page.area_production.items %}
       <article class="md:px-4 mb-8 pb-8 md:w-1/2 flex">
         <svg class="sm:border sm:border-solid sm:border-grey-light sm:p-6 box-content mr-2 sm:mr-6 mt-1 flex-no-shrink" width="50" height="50" role="img">
-          <use xlink:href="/images/icons/symbol-defs.svg#{{ area.icon }}"></use>
+          <use xlink:href="/icons/symbol-defs.svg#{{ area.icon }}"></use>
         </svg>
         <div>
           <h3 class="lined uppercase text-black mb-6">{{ area.title }}</h3>
@@ -33,8 +33,8 @@ layout: default
 
 <figure class="mt-8 flex flex-wrap">
   {% for image in page.area_production.images %}
-    <a data-fancybox="gallery" href="{{ image.path }}" class="block opacity-75 transition hover:opacity-100 w-1/4 flex-no-shrink">
-      <img src="{{ image.path }}" alt="{{ image.caption }}" width="640" height="360">
+    <a data-fancybox="gallery" href="{{ image.url }}" class="block opacity-75 transition hover:opacity-100 w-1/4 flex-no-shrink">
+      <img src="{{ image.thumbnail }}" alt="{{ image.caption }}" width="640" height="360">
     </a>
   {% endfor %}
   <figcaption class="bg-grey-lighter py-8 w-full text-center">
@@ -74,9 +74,9 @@ layout: default
   <div class="sm:flex sm:flex-wrap md:-mx-4 mt-8 pt-8">
     {% for item in page.area_forests.items %}
       <div class="sm:w-1/3 sm:px-4">
-        <a href="{{ item.image_path }}" class="card block transition">
+        <a href="{{ item.url }}" class="card block transition" data-fancybox="gallery">
           <figure>
-            <img src="{{ item.image_path }}" class="w-full" alt="{{ item.title }}" width="300" height="250">
+            <img src="{{ item.thumbnail }}" class="w-full" alt="{{ item.title }}" width="300" height="250">
             <figcaption class="px-4 py-3">
               <h3 class="mb-2 text-black font-medium text-xl">{{ item.title }}</h3>
               <p class="font-light">{{ item.description }}</p>
@@ -88,21 +88,7 @@ layout: default
   </div>
 </section>
 
-
-<figure class="mt-8 flex flex-wrap">
-  {% for image in page.area_production.images %}
-    <a data-fancybox="gallery" href="{{ image.path }}" class="block opacity-75 transition hover:opacity-100 w-1/4 flex-no-shrink">
-      <img src="{{ image.path }}" alt="{{ image.caption }}" width="640" height="360">
-    </a>
-  {% endfor %}
-  <figcaption class="bg-grey-lighter py-8 w-full text-center">
-    <p class="font-light text-lg mx-auto max-w-2xl mb-4">{{ page.area_production.image_caption }}</p>
-    <a href="/instituto/galeria/" class="button">Ver todas las fotos en la galería</a>
-  </figcaption>
-</figure>
-
-
-<section class="py-16 mx-auto max-w-2xl px-6">
+<section class="pb-16 mx-auto max-w-2xl px-6">
   <h2 class="text-4xl text-black text-center" data-action="colorize">Recinto Jimenoa</h2>
   <p class="text-center font-light text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta hic quos nesciunt quidem provident labore consequatur quas
     minus corrupti beatae.</p>

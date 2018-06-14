@@ -35,7 +35,7 @@ layout: default
       {% for career in site.careers %}
         <button type="button" class="text-left bg-white uppercase px-4 py-6 font-medium text-grey-darkest {% unless forloop.last %}sm:mb-1{% endunless %} w-full md:w-4/5 flex items-center" data-action="tab" data-target="{{ career.title | slugify | cgi_escape }}">
           <svg class="text-green mr-4" width="28" height="28">
-            <use xlink:href="/images/icons/symbol-defs.svg#{{ career.icon }}"></use>
+            <use xlink:href="/icons/symbol-defs.svg#{{ career.icon }}"></use>
           </svg> {{ career.title }}
         </button>
       {% endfor %}
@@ -47,7 +47,7 @@ layout: default
           <article class="lg:flex bg-white shadow-md h-full">
             <div style="background-image: url('{{ career.thumbnail }}');" class="bg-cover flex-no-shrink lg:w-48 h-48 lg:h-full"></div>
             <div class="py-4 px-6">
-              <h2 class="mb-2 font-medium" data-action="colorize">{{ career.title }}</h2>
+              <h2 class="mb-2 text-black font-medium" data-action="colorize">{{ career.title }}</h2>
               <p class="font-light">{{ career.description }}</p>
               <a href="{{ career.url }}" class="button mt-4">Más detalles</a>
             </div>

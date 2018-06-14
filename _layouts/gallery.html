@@ -10,14 +10,12 @@ layout: default
   <button type="button" class="button" data-filter="aulas">Aulas</button>
 </nav>
 
-<main class="max-w-2xl mb-8 mx-auto px-6">
-  <div class="flex -mx-2 flex-wrap" data-gallery>
+<main class="mb-8 px-6">
+  <figure class="flex -mx-2 flex-wrap" data-gallery>
     {% for image in page.images %}
-      <figure class="px-2 mb-4 w-1/4" data-category="{{ image.category }}" data-gallery-item>
-        <a href="{{ image.src}}" class="opacity-75 hover:opacity-100 transition" data-lightbox data-caption="{{ image.caption }}">
-          <img src="{{ image.src }}" alt="{{ image.caption }}" width="300">
-        </a>
-      </figure>
+      <a href="{{ image.url }}" class="px-2 mb-4 w-1/2 sm:w-1/4 md:w-1/6 opacity-75 hover:opacity-100 transition" data-fancybox="gallery" data-caption="{{ image.caption }}" data-category="{{ image.category }}" data-gallery-item>
+        <img src="{{ image.url | replace: 'q_75', 'c_scale,q_75,w_400' }}" alt="{{ image.caption }}" width="300">
+      </a>
     {% endfor %}
   </div>
 </main>

@@ -22,7 +22,8 @@
       const buttons = document.querySelectorAll('button[data-filter]');
       const plugin = new Isotope(gallery, {
         itemSelector: '[data-gallery-item]',
-        layoutMode: 'fitRows'
+        layoutMode: 'fitRows',
+        transitionDuration: '0.4s'
       });
 
       buttons.forEach(button => button.addEventListener('click', (event) => {
@@ -149,9 +150,17 @@
       // Hide / show tab content
       tabContents.forEach(content => {
         if (content.dataset.tab === id) {
-          content.classList.replace('lg:hidden', 'lg:flex');
+          if (content.classList.contains('lg:hidden')) {
+            content.classList.replace('lg:hidden', 'lg:flex');
+          } else {
+            content.classList.replace('hidden', 'block');
+          }
         } else {
-          content.classList.replace('lg:flex', 'lg:hidden');
+          if (content.classList.contains('lg:flex')) {
+            content.classList.replace('lg:flex', 'lg:hidden');
+          } else {
+            content.classList.replace('block', 'hidden');
+          }
         }
       });
     }

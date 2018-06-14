@@ -39,3 +39,6 @@ exclude:
   - package-lock.json
   - src
   - tailwind.js
+
+cloudinary:
+  cloud_name: instituto-del-ambiente

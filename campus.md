@@ -33,13 +33,17 @@ area_production:
       content: Un invernadero de tecnología media o de segunda con 544 metros², compuesto por materiales de hierro galvanizado, plástico y malla anti insectos. En este se establecen cultivos hortícolas o intensivos como el tomate, ají, pepino y, en algún momento el cilantro.
   
   images:
-    - path: /images/pages/campus/fresas.jpg
+    - thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/fresas.jpg
+      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/fresas.jpg
       caption: Produccion de fresas
-    - path: /images/pages/campus/hierbas.jpg
+    - thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/hierbas.jpg
+      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/hierbas.jpg
       caption: Hierbas para la cocina
-    - path: /images/pages/campus/plantas-jovenes.jpg
+    - thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/plantas-jovenes.jpg
+      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/plantas-jovenes.jpg
       caption: Plantas jovenes en el invernadero
-    - path: /images/pages/campus/vivero-pinos.jpg
+    - thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/vivero-pinos.jpg
+      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/vivero-pinos.jpg
       caption: Vivero de pinos
   image_caption: Producción de fresas, hierbas para la cocina, invernadero y vivero.
 
@@ -72,21 +76,27 @@ area_forests:
 
   items:
     - title: Parque acuático
-      image_path: /uploads/2018/06/12/parque-acuatico.jpg
+      thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/parque-acuatico.jpg
+      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/parque-acuatico.jpg
       description: lorem ipsum dolor sit amet, olor se tal.
     - title: Senderos
-      image_path: /uploads/2018/06/12/senderos.jpg
+      thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/senderos.jpg
+      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/senderos.jpg
       description: lorem ipsum dolor sit amet, olor se tal.
     - title: Área de investigación
-      image_path: /images/parque-acuatico.jpg
+      thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/parque-acuatico.jpg
+      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/parque-acuatico.jpg
       description: lorem ipsum dolor sit amet, olor se tal.
     - title: Estación climatológica
-      image_path: /images/parque-acuatico.jpg
+      thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/parque-acuatico.jpg
+      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/parque-acuatico.jpg
       description: lorem ipsum dolor sit amet, olor se tal.
     - title: Parque de formas
-      image_path: /images/parque-acuatico.jpg
+      thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/parque-acuatico.jpg
+      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/parque-acuatico.jpg
       description: lorem ipsum dolor sit amet, olor se tal.
     - title: Parque de la Caoba
-      image_path: /uploads/2018/06/12/parque-caoba.jpg
+      thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/parque-caoba.jpg
+      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/parque-caoba.jpg
       description: lorem ipsum dolor sit amet, olor se tal.
 ---

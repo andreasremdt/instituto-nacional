@@ -25,13 +25,13 @@ items:
 
 images:
   - title: Titulo 1
-    image_path: /images/pages/services/boda-1.jpg
+    image_path: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_80/pages/boda-1.jpg
   - title: Titulo 2
-    image_path: /images/pages/services/boda-2.jpg
+    image_path: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_80/pages/boda-2.jpg
   - title: Titulo 3
-    image_path: /images/pages/services/boda-3.jpg
+    image_path: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_80/pages/boda-3.jpg
   - title: Titulo 4
-    image_path: /images/pages/services/boda-4.jpg
+    image_path: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_80/pages/boda-4.jpg
 image_caption: Estas fotos fueron tomadas de la boda de la Miss. República Dominicana Kimberly Castillo.
 
 others:

@@ -1,6 +1,5 @@
 ---
 title: Ilonka Holt
-thumbnail: /uploads/2018/06/11/ilonka-holt.jpg
 published: true
 ---
 

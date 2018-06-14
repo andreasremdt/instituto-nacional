@@ -1,6 +1,5 @@
 ---
 title: Roberto Herasme
-thumbnail: /uploads/2018/06/11/roberto-herasme.jpg
 published: true
 ---
 
