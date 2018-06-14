@@ -1,0 +1,8 @@
+.input {
+  @apply .bg-grey-lightest .border .border-grey-light .w-full .px-6 .py-4 .text-grey-darker .font-light .mb-3;
+}
+
+  .input:hover,
+  .input:focus {
+    @apply .border-grey;
+  }

@@ -5,7 +5,7 @@ layout: default
 {% assign careers = site.careers | size %}
 
 <main class="py-16 max-w-2xl mx-auto px-6">
-  <h2 class="text-lined-left-green text-3xl text-black mb-8" data-action="colorize">Actualmente, ofrecemos {{ careers }} carreras</h2>
+  <h2 class="lined text-3xl text-black mb-8" data-action="colorize">Actualmente, ofrecemos {{ careers }} carreras</h2>
 
   <div class="lg:flex lg:-mx-4">
     {% for career in site.careers %}
@@ -14,7 +14,7 @@ layout: default
         <div class="py-4 px-6 sm:border-l-0 border border-solid border-grey-light flex flex-col items-start">
           <h3 class="mb-4 font-medium text-black text-xl" data-action="colorize">{{ career.title }}</h3>
           <p class="font-light mb-4">{{ career.description }}</p>
-          <a href="{{ career.url }}" class="mt-auto text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark">Más detalles</a>
+          <a href="{{ career.url }}" class="mt-auto button">Más detalles</a>
         </div>
       </article>
     {% endfor %}

@@ -1,0 +1,32 @@
+.text-content p,
+.text-content ul,
+.text-content ol,
+.text-content h1,
+.text-content h2,
+.text-content h3,
+.text-content h4,
+.text-content h5,
+.text-content h6 {
+  margin-bottom: 1rem;
+}
+
+.text-content h1,
+.text-content h2,
+.text-content h3,
+.text-content h4,
+.text-content h5,
+.text-content h6 {
+  color: config('colors.black');
+}
+
+.text-content a {
+  color: config('colors.green');
+}
+
+.text-content a:hover {
+  color: config('colors.green-dark');
+}
+
+.career-img {
+  clip-path: polygon(0 2%, 90% 0, 100% 100%, 3% 92%);
+}

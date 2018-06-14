@@ -1,13 +1,13 @@
-<section class="bg-forest-faded bg-cover bg-no-repeat bg-center py-16 px-6">
+<section class="bg-forest bg-cover py-16 px-6">
   <div class="max-w-2xl mx-auto text-white text-center">
     <h2 class="text-shadow text-4xl">Contáctanos</h2>
     <p class="text-shadow text-xl font-light md:w-1/2 md:mx-auto mb-8">¿Tienes alguna pregunta o deseas hacer una reserva? Puedes contactarnos y estaremos encantados de ayudarte.</p>
 
-    <a href="/contactanos/" class="text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark" data-contact-toggle>Contáctanos ahora</a>
+    <a href="/contactanos/" class="button" data-contact-toggle>Contáctanos ahora</a>
   </div>
 </section>
 
-<section class="hidden bg-water bg-cover bg-no-repeat" data-contact-wrapper>
+<section class="hidden bg-water bg-cover" data-contact-wrapper>
   <div class="mx-auto max-w-2xl py-16 px-6">
     <p class="max-w-lg mx-auto text-center mb-6">La forma más fácil de comunicarte con nosotros es completar el siguiente formulario. Nos pondremos en contacto contigo lo antes posible.</p>
     
@@ -16,10 +16,10 @@
         <p class="hidden">
           <label>Don’t fill this out if you're human: <input name="bot-field"></label>
         </p>
-        <input type="text" name="name" placeholder="Tu nombre..." class="bg-grey-lightest border hover:border-grey border-solid border-grey-light w-full px-6 py-4 text-grey-darker font-light mb-3" required>
-        <input type="email" name="email" placeholder="Tu correo electrónico..." class="bg-grey-lightest border hover:border-grey border-solid border-grey-light w-full px-6 py-4 text-grey-darker font-light mb-3" required>
-        <input type="tel" name="phone" placeholder="Tu número de teléfono..." class="bg-grey-lightest border hover:border-grey border-solid border-grey-light w-full px-6 py-4 text-grey-darker font-light mb-3">
-        <select name="subject" class="bg-grey-lightest border hover:border-grey border-solid border-grey-light w-full px-6 py-4 text-grey-darker font-light mb-3" required>
+        <input type="text" name="name" placeholder="Tu nombre..." class="input" required>
+        <input type="email" name="email" placeholder="Tu correo electrónico..." class="input" required>
+        <input type="tel" name="phone" placeholder="Tu número de teléfono..." class="input">
+        <select name="subject" class="input" required>
           <option value="" disabled selected>Tu asunto...</option>
           <option value="Quiero aplicarme al Instituto como estudiante">Quiero aplicarme al Instituto como estudiante</option>
           <option value="Quiero hacer la Labor Social en el Institito">Quiero hacer la Labor Social en el Institito</option>
@@ -30,10 +30,10 @@
           <option value="Quiero preguntar algo general">Quiero preguntar algo general</option>
           <option value="Algo diferente">Algo diferente</option>
         </select>
-        <button type="submit" class="text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark float-right">Enviar</button>
+        <button type="submit" class="button float-right">Enviar</button>
       </div>
       <div class="md:mx-3 md:w-1/2">
-        <textarea name="content" placeholder="Tu pregunta / mensaje..." rows="5" class="bg-grey-lightest border hover:border-grey border-solid border-grey-light h-full w-full px-6 py-4 text-grey-darker font-light mb-2" required></textarea>
+        <textarea name="content" placeholder="Tu pregunta / mensaje..." rows="5" class="input h-full" required></textarea>
       </div>
     </form>
 

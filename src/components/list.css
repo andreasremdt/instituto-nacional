@@ -1,0 +1,40 @@
+.list-styled{
+  counter-reset: styled-list;
+}
+
+  .list-styled > .item{
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 4.5rem;
+  }
+
+  .list-styled > .item::before {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    left: 0;
+    top: calc(50% - 1.5rem);
+
+    background-color: config('colors.green');
+    color: white;
+    
+    line-height: 3rem;
+    text-align: center;
+    
+    content: counter(styled-list);
+    counter-increment: styled-list;
+    z-index: 2;
+  }
+
+  .list-styled > .item:not(:last-of-type)::after{
+      position: absolute;
+      width: 1px;
+      left: 1.5rem;
+      top: 1.5rem;
+      bottom: -3.5rem;
+
+      background-color: config('colors.green');
+      
+      content: '';
+      z-index: 1;
+  }

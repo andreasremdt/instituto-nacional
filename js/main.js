@@ -149,9 +149,9 @@
       // Hide / show tab content
       tabContents.forEach(content => {
         if (content.dataset.tab === id) {
-          content.classList.replace('hidden', 'flex');
+          content.classList.replace('lg:hidden', 'lg:flex');
         } else {
-          content.classList.replace('flex', 'hidden');
+          content.classList.replace('lg:flex', 'lg:hidden');
         }
       });
     }

@@ -1,5 +1,5 @@
 <aside class="md:w-1/4">
-  <h3 class="text-lined-left-green text-black uppercase font-medium mb-8">Buscar</h3>
+  <h3 class="lined text-black uppercase font-medium mb-8">Buscar</h3>
   
   <form action="search" class="flex">
     <input type="search" class="bg-white w-full border border-solid hover:border-grey border-grey-light border-r-0 p-4 text-grey-darker font-light" placeholder="Buscar publicaciones en el blog...">
@@ -10,7 +10,7 @@
     </button>
   </form>
 
-  <h3 class="text-lined-left-green text-black uppercase font-medium my-8 pt-8">Categorias</h3>
+  <h3 class="lined text-black uppercase font-medium my-8 pt-8">Categorias</h3>
   <ul class="list-reset">
     <li><a href="#" class="flex justify-between hover:text-green font-light py-3 border-b border-dashed border-grey-light">Actividades <span>(12)</span></a></li>
     <li><a href="#" class="flex justify-between hover:text-green font-light py-3 border-b border-dashed border-grey-light">Noticias <span>(6)</span></a></li>
@@ -19,9 +19,9 @@
     <li><a href="#" class="flex justify-between hover:text-green font-light py-3">Otros <span>(9)</span></a></li>
   </ul>
 
-  <h3 class="text-lined-left-green text-black uppercase font-medium my-8 pt-8">Recent blog posts</h3>
+  <h3 class="lined text-black uppercase font-medium my-8 pt-8">Recent blog posts</h3>
   {% for post in site.posts limit: 2 %}
-    <article class="flex py-6 items-center{% unless forloop.last %} border-b border-dashed border-grey-light{% endunless %}">
+    <article class="flex pb-6 items-center{% unless forloop.last %} border-b border-dashed border-grey-light{% endunless %}">
       <figure>
         <img src="{{ post.image_path }}" class="mr-4 w-16 h-16 object-cover" alt="{{ post.title }}" width="100" height="100">
       </figure>

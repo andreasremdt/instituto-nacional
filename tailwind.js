@@ -20,7 +20,8 @@ let colors = {
   'green-dark': '#81ac00',
   'green': '#9DC701',
 
-  'white-transparent': 'rgba(255, 255, 255, .1)'
+  'white-transparent': 'rgba(255, 255, 255, .1)',
+  'black-transparent': 'rgba(0, 0, 0, .4)'
 }
 
 module.exports = {
@@ -139,11 +140,11 @@ module.exports = {
   |-----------------------------------------------------------------------------
   */
 
-  /*tracking: {
+  tracking: {
     'tight': '-0.05em',
     'normal': '0',
     'wide': '0.05em',
-  },*/
+  },
 
 
   /*
@@ -207,13 +208,13 @@ module.exports = {
   |-----------------------------------------------------------------------------
   */
 
-  /*borderRadius: {
+  borderRadius: {
     'none': '0',
     'sm': '.125rem',
     default: '.25rem',
     'lg': '.5rem',
     'full': '9999px',
-  },*/
+  },
 
 
   /*
@@ -271,6 +272,7 @@ module.exports = {
     '8': '2rem',
     '10': '2.5rem',
     '12': '3rem',
+    '13': '3.3rem',
     '16': '4rem',
     '24': '6rem',
     '32': '8rem',
@@ -278,7 +280,9 @@ module.exports = {
     '64': '16rem',
     '128': '30rem',
     'full': '100%',
-    'screen': '100vh'
+    'screen': '100vh',
+    'hero-small': '300px',
+    'hero-big': '700px'
   },
 
 
@@ -363,6 +367,7 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    '12': '4rem',
     '16': '6rem'
   },
 
@@ -392,6 +397,7 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    '12': '4rem'
   },
 
 
@@ -419,6 +425,7 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    '13': '3.3rem'
   },
 
 
@@ -618,6 +625,33 @@ module.exports = {
       // center: true,
       // padding: '1rem',
     }),
+
+    function ({ addUtilities }) {
+      var customUtilities = {
+        '.transition': {
+          transition: 'all .2s ease-in-out'
+        },
+        '.text-shadow': {
+          textShadow: '0.05em 0.05em 0 rgba(0,0,0,.4)'
+        },
+        '.object-cover': {
+          objectFit: 'cover'
+        },
+        '.box-content': {
+          boxSizing: 'content-box'
+        },
+        '.pin-rt': {
+          top: '-2rem',
+          right: '-2rem'
+        },
+        '.pin-lt': {
+          top: '-2rem',
+          left: '-2rem'
+        }
+      };
+
+      addUtilities(customUtilities);
+    }
   ],
 
 
@@ -635,6 +669,5 @@ module.exports = {
     prefix: '',
     important: false,
     separator: ':',
-  },
-
+  }
 }

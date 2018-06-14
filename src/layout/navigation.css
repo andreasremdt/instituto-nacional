@@ -1,0 +1,25 @@
+@media (min-width: config('screens.md')) {
+  .top-navigation ul ul {
+    top: 100%;
+  }
+  
+  .top-navigation li:hover ul {
+    display: block;
+  }
+
+  .top-navigation .last {
+    clip-path: polygon(0 0, 101% 0, 101% 101%, 25px 101%);
+  }
+}
+
+@media (max-width: config('screens.md')) {
+  .top-navigation {
+    transform: translate3d(-100%, 0, 0);
+    transition: transform .3s ease-in-out;
+    overflow-y: auto;
+  }
+
+  .top-navigation.opened {
+    transform: translate3d(0, 0, 0);
+  }
+}

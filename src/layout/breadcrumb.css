@@ -1,0 +1,6 @@
+.breadcrumbs>a:not(:last-child)::after{
+    margin-left: .5rem;
+    margin-right: .5rem;
+ 
+    content: '\\';
+}

@@ -14,13 +14,13 @@ layout: default
 </section>
 
 
-<section class="bg-tree educational-services bg-no-repeat py-16 relative z-0">
+<section class="bg-tree lg:tabs py-16 px-6 relative z-0">
   <div class="flex justify-center mb-8">
-    <h2 class="bg-white text-black px-6 py-2 text-4xl shadow-md">Nuestros eventos</h2>
+    <h2 class="bg-white text-green px-6 py-2 text-4xl shadow-md">Nuestros eventos</h2>
   </div>
 
   <div class="mx-auto max-w-2xl md:flex">
-    <div class="flex flex-1 flex-col sm:flex-row md:flex-col md:items-end mx-6 mb-4 md:mb-0">
+    <div class="hidden lg:flex flex-col items-end flex-1 mx-6 mb-0">
       {% for event in page.events %}
         <button type="button" class="text-left bg-white uppercase px-4 py-6 font-medium text-grey-darkest {% unless forloop.last %}sm:mb-1{% endunless %} w-full md:w-4/5 flex items-center" data-action="tab" data-target="{{ event.title | slugify | cgi_escape }}">
           <svg class="text-green mr-4" width="28" height="28">
@@ -30,22 +30,23 @@ layout: default
       {% endfor %}
     </div>
 
-    <div class="flex flex-1">
+    <div class="flex flex-1 flex-wrap -mx-2 lg:-mx-0">
       {% for event in page.events %}
-        <article class="bg-white mx-6 flex-col lg:flex-row shadow-md hidden" data-tab="{{ event.title | slugify | cgi_escape }}">
-          <div style="background-image: url('{{ event.image_path }}');" class="bg-cover flex-no-shrink lg:w-48 h-48 lg:h-full"></div>
-          <div class="py-4 px-6">
-            <h2 class="mb-2 font-medium text-black leading-tight" data-action="colorize">{{ event.title }}</h2>
-            <p class="font-light">{{ event.content }}</p>
-            {% if event.url %}
-              <a href="{{ event.url }}" class="text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark mt-4">Más detalles</a>
-            {% endif %}
-          </div>
-        </article>
+        <div class="px-2 lg:px-0 mb-4 lg:mb-0 sm:w-1/2 lg:w-full lg:hidden" data-tab="{{ event.title | slugify | cgi_escape }}">
+          <article class="lg:flex bg-white shadow-md h-full">
+            <div style="background-image: url('{{ event.image_path }}');" class="bg-cover flex-no-shrink lg:w-48 h-48 lg:h-full"></div>
+            <div class="py-4 px-6">
+              <h2 class="mb-2 font-medium text-black leading-tight" data-action="colorize">{{ event.title }}</h2>
+              <p class="font-light">{{ event.content }}</p>
+              {% if event.url %}
+                <a href="{{ event.url }}" class="button mt-4">Más detalles</a>
+              {% endif %}
+            </div>
+          </article>
+        </div>
       {% endfor %}
     </div>
   </div>
 </section>
-
 
 {% include contact-us.html %}

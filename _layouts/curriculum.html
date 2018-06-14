@@ -15,12 +15,12 @@ layout: default
 <main class="px-6 max-w-2xl mx-auto">
   {% for career in site.careers %}
     <div class="hidden flex-col py-16" data-tab="{{ career.title | slugify | cgi_escape }}">
-      <h2 class="text-black text-4xl text-lined-left-green leading-tight mb-8" data-action="colorize">{{ career.title }}</h2>
+      <h2 class="text-black text-4xl lined leading-tight mb-8" data-action="colorize">{{ career.title }}</h2>
       <p class="mb-12">{{ career.description }}</p>
 
       {% for quarter in career.curriculum %}
         <div class="py-8 sm:py-16 sm:px-6 sm:relative {% if forloop.first %}sm:pt-0{% endif %} {% if forloop.last %}sm:pb-0{% endif %} flex flex-col {% unless forloop.first %}sm:border-t-2{% endunless %} sm:border-dashed sm:border-green {% cycle 'sm:items-start sm:border-l-2', 'sm:items-end sm:border-r-2' %}">
-          <span class="hidden sm:absolute {% cycle 'pin-corner-l', 'pin-corner-r' %} bg-green w-16 h-16 text-white font-light text-2xl rounded-full sm:flex sm:items-center sm:justify-center">{{ forloop.index }}</span>
+          <span class="hidden sm:absolute {% cycle 'pin-lt', 'pin-rt' %} bg-green w-16 h-16 text-white font-light text-2xl rounded-full sm:flex sm:items-center sm:justify-center">{{ forloop.index }}</span>
           <table {% if forloop.first %}class="mt-8"{% endif %}>
             <caption class="text-left text-2xl font-light px-4 py-2 bg-grey-lighter text-gray-darker mb-6">{{ quarter.title }}</caption>
             <thead class="text-black uppercase font-medium text-left text-sm text-green">

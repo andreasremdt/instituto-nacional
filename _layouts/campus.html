@@ -21,7 +21,7 @@ layout: default
           <use xlink:href="/images/icons/symbol-defs.svg#{{ area.icon }}"></use>
         </svg>
         <div>
-          <h3 class="text-lined-left-green uppercase text-black mb-6">{{ area.title }}</h3>
+          <h3 class="lined uppercase text-black mb-6">{{ area.title }}</h3>
           <p class="font-light">{{ area.content }}</p>
         </div>
       </article>
@@ -39,7 +39,7 @@ layout: default
   {% endfor %}
   <figcaption class="bg-grey-lighter py-8 w-full text-center">
     <p class="font-light text-lg mx-auto max-w-2xl mb-4">{{ page.area_production.image_caption }}</p>
-    <a href="/instituto/galeria/" class="text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark">Ver todas las fotos en la galería</a>
+    <a href="/instituto/galeria/" class="button">Ver todas las fotos en la galería</a>
   </figcaption>
 </figure>
 
@@ -47,10 +47,10 @@ layout: default
 
 <section class="py-16 px-6 bg-water bg-cover bg-center bg-no-repeat">
   <div class="max-w-2xl mx-auto">
-    <h2 class="text-lined-left-green leading-tight text-2xl md:text-4xl mb-6 text-black" data-action="colorize">{{ page.area_educational.title }}</h2>
+    <h2 class="lined leading-tight text-2xl md:text-4xl mb-6 text-black" data-action="colorize">{{ page.area_educational.title }}</h2>
     <p>{{ page.area_educational.content }}</p>
 
-    <div class="md:flex md:flex-wrap md:-mx-2">
+    <div class="md:flex md:flex-wrap md:-mx-2 mb-6">
       {% for installation in page.area_educational.items %}
         <div class="md:px-2 mt-4 md:w-1/3 border border solid border-grey-light md:border-transparent">
           <article class="bg-white h-full py-3 px-6">
@@ -61,20 +61,20 @@ layout: default
       {% endfor %}
     </div>
 
-    <a href="/instituto/galeria/" class="text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark mt-6">Ver fotos en la galería</a>
+    <a href="/instituto/galeria/" class="button">Ver fotos en la galería</a>
   </div>
 </section>
 
 
 
 <section class="max-w-2xl px-6 py-16 mx-auto">
-  <h2 class="text-4xl text-black text-lined-left-green mb-6" data-action="colorize">{{ page.area_forests.title }}</h2>
+  <h2 class="text-4xl text-black lined mb-6" data-action="colorize">{{ page.area_forests.title }}</h2>
   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta hic quos nesciunt quidem provident labore consequatur quas minus corrupti beatae.</p>
 
   <div class="sm:flex sm:flex-wrap md:-mx-4 mt-8 pt-8">
     {% for item in page.area_forests.items %}
       <div class="sm:w-1/3 sm:px-4">
-        <a href="{{ item.image_path }}" class="bg-grey-lightest block mb-4 hover:bg-grey-darkest hover:text-white lift">
+        <a href="{{ item.image_path }}" class="card block transition">
           <figure>
             <img src="{{ item.image_path }}" class="w-full" alt="{{ item.title }}" width="300" height="250">
             <figcaption class="px-4 py-3">
@@ -97,7 +97,7 @@ layout: default
   {% endfor %}
   <figcaption class="bg-grey-lighter py-8 w-full text-center">
     <p class="font-light text-lg mx-auto max-w-2xl mb-4">{{ page.area_production.image_caption }}</p>
-    <a href="/instituto/galeria/" class="text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark">Ver todas las fotos en la galería</a>
+    <a href="/instituto/galeria/" class="button">Ver todas las fotos en la galería</a>
   </figcaption>
 </figure>
 

@@ -1,0 +1,15 @@
+.card {
+  @apply .bg-grey-lightest .mb-4;
+}
+
+  .card:hover {
+    @apply .bg-grey-darkest;
+    
+    color: white;
+    transform: translate3d(0, -1rem, 0);
+    box-shadow: 0 25px 20px -10px rgba(0, 0, 0, 0.15); 
+  }
+
+  .card:hover h3 {
+    color: white;
+  }

@@ -1,0 +1,14 @@
+.lined{
+  position: relative;
+}
+
+.lined::before{
+  position: absolute;
+  left: 0;
+  top: 105%;
+  width: 50px;
+
+  content: '';
+  
+  border-bottom: 2px solid config('colors.green');
+}

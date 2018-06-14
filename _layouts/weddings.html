@@ -15,7 +15,7 @@ layout: default
   <div class="md:flex md:-mx-4 mt-8 pt-8">
     {% for item in page.items %}
       <article class="md:mx-4 flex-1 clearfix mb-6 md:mb-0">
-        <h3 class="text-lined-left-green uppercase text-black mb-6">{{ item.title }}</h3>
+        <h3 class="lined uppercase text-black mb-6">{{ item.title }}</h3>
         <svg class="text-green border border-solid border-grey-light p-3 box-content float-left mt-1 mr-6 mb-2" width="50" height="50">
           <use xlink:href="/images/icons/symbol-defs.svg#{{ item.icon }}"></use>
         </svg>
@@ -45,13 +45,13 @@ layout: default
 
 
 <section class="py-16 px-6 max-w-2xl mx-auto">
-  <h2 class="text-black text-lined-left-green text-3xl mb-6" data-action="colorize">{{ page.others.title }}</h2>
+  <h2 class="text-black lined text-3xl mb-6" data-action="colorize">{{ page.others.title }}</h2>
   <p class="text-xl font-light">{{ page.others.intro }}</p>
 
   <div class="md:flex md:-mx-4 mt-8 pt-8">
     {% for item in page.others.items %}
       <article class="md:mx-4 flex-1 clearfix mb-6 md:mb-0">
-        <h3 class="text-lined-left-green uppercase text-black mb-6">{{ item.title }}</h3>
+        <h3 class="lined uppercase text-black mb-6">{{ item.title }}</h3>
         <svg class="text-green border border-solid border-grey-light p-3 box-content float-left mt-1 mr-6 mb-2" width="50" height="50">
           <use xlink:href="/images/icons/symbol-defs.svg#{{ item.icon }}"></use>
         </svg>

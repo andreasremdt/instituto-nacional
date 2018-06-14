@@ -1,0 +1,54 @@
+.button {
+  @apply .text-white .bg-green .uppercase .px-6 .py-3 .inline-block;
+}
+
+  .button:hover,
+  .button:focus {
+    @apply .bg-green-dark;
+    
+    outline: none;
+  }
+
+.button-white {
+  @apply .text-green .bg-white .uppercase .px-6 .py-3 .inline-block;
+}
+
+  .button-white:hover,
+  .button-white:focus {
+    @apply .bg-grey-light .text-grey-darker;
+  }
+
+.button-play {
+  @apply .relative .block .text-green .border .border-green .w-16 .h-16 .flex .items-center .justify-center .rounded-full;
+
+  background-color: rgba(255, 255, 255, .15);
+
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, .15);
+}
+
+  .button-play:hover,
+  .button-play:focus {
+    @apply .text-white .border-white;
+
+    outline: none;
+  }
+
+  .button-play::after,
+  .button-play::before {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+    width: 4rem;
+    height: 1px;
+
+    background-color: white;
+  }
+
+  .button-play::after {
+    left: 160%;
+  }
+
+  .button-play::before {
+    right: 160%;
+  }

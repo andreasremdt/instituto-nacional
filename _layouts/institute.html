@@ -19,7 +19,7 @@ layout: default
   <div class="md:flex md:-mx-4">
     {% for principle in page.principles %}
       <article class="md:mx-4 mb-6">
-        <h3 class="text-lined-left-green uppercase text-black mb-6">{{ principle.title }}</h3>
+        <h3 class="lined uppercase text-black mb-6">{{ principle.title }}</h3>
         <svg class="text-green border border-solid border-grey-light p-3 box-content float-left mt-1 mr-6 mb-2" width="50" height="50">
           <use xlink:href="/images/icons/symbol-defs.svg#{{ principle.icon }}"></use>
         </svg>
@@ -40,10 +40,10 @@ layout: default
     <div class="text-right md:mr-8 md:w-3/5 z-20 px-6 py-8 md:p-0">
       <h2 class="text-black mb-6 text-3xl bg-white inline-block px-3 md:px-0">{{ page.careers.title }}</h2>
     
-       <p class="bg-white p-3 md:p-0">{{ page.careers.content }}</p>
+       <p class="bg-white p-3 mb-6 md:p-0">{{ page.careers.content }}</p>
     
-       <a href="/instituto/requisitos/" class="text-green bg-white uppercase px-6 py-3 inline-block hover:bg-grey-lighter mt-6">Como aplicar</a>
-       <a href="/instituto/carreras/" class="text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark mt-6">Las carreras</a>
+       <a href="/instituto/requisitos/" class="button-white mt-6">Como aplicar</a>
+       <a href="/instituto/carreras/" class="button mt-6">Las carreras</a>
     </div>
   
     <figure class="md:w-2/5 absolute md:static pin-l pin-t w-full h-full z-10">
@@ -63,9 +63,9 @@ layout: default
     <div class="md:ml-8 md:w-3/5 z-20 px-6 py-8 md:p-0">
       <h2 class="text-black mb-6 text-3xl bg-white md:bg-transparent inline-block px-3 md:px-0">{{ page.campus.title }}</h2>
   
-      <p class="bg-white md:bg-transparent p-3 md:p-0">{{ page.campus.content }}</p>
+      <p class="bg-white md:bg-transparent p-3 mb-6 md:p-0">{{ page.campus.content }}</p>
   
-      <a href="/instituto/campus/" class="text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark mt-6">Detalles y fotografías</a>
+      <a href="/instituto/campus/" class="button">Detalles y fotografías</a>
     </div>
   </div>
 </section>
@@ -77,9 +77,9 @@ layout: default
     <div class="text-right md:mr-8 md:w-3/5 z-20 px-6 py-8 md:p-0">
       <h2 class="text-black mb-6 text-3xl bg-white md:bg-transparent inline-block px-3 md:px-0">{{ page.teachers.title }}</h2>
 
-      <p class="bg-white md:bg-transparent p-3 md:p-0">{{ page.teachers.content }}</p>
+      <p class="bg-white md:bg-transparent mb-6 p-3 md:p-0">{{ page.teachers.content }}</p>
 
-      <a href="/instituto/profesores/" class="text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark mt-6">Los profesores</a>
+      <a href="/instituto/profesores/" class="button">Los profesores</a>
     </div>
 
     <figure class="md:w-2/5 absolute md:static pin-l pin-t w-full h-full z-10">
@@ -94,21 +94,21 @@ layout: default
   <div class="max-w-2xl mx-auto md:flex md:text-center">
     <div class="flex-1 mb-6 md:mb-0">
       <h3 class="text-black mb-6 text-3xl">{{ page.application.title }}</h3>
-      <p class="content">{{ page.application.content }}</p>
-      <a href="/instituto/requisitos/" class="text-green bg-white uppercase px-6 py-3 inline-block hover:bg-green hover:text-white mt-6">Más detalles</a>
+      <p class="content mb-6">{{ page.application.content }}</p>
+      <a href="/instituto/requisitos/" class="button-white">Más detalles</a>
     </div>
 
     <div class="md:ml-8 flex-1">
       <h3 class="text-black mb-6 text-3xl">{{ page.history.title }}</h3>
-      <p class="content">{{ page.history.content }}</p>
-      <a href="/instituto/historia/" class="text-green bg-white uppercase px-6 py-3 inline-block hover:bg-green hover:text-white mt-6">Más detalles</a>
+      <p class="content mb-6">{{ page.history.content }}</p>
+      <a href="/instituto/historia/" class="button-white">Más detalles</a>
     </div>
   </div>
 </section>
 
 
 
-<section class="py-16 px-6 bg-forest-roof bg-cover bg-no-repeat bg-center">
+<section class="py-16 px-6 bg-forest-roof bg-cover">
   <div class="max-w-2xl mx-auto">
     <h2 class="text-black mb-8 text-3xl inline-block bg-white px-6 py-1" data-action="colorize">{{ page.values.title }}</h2>
 
@@ -116,7 +116,7 @@ layout: default
       {% for value in page.values.items %}
         <div class="md:px-2 md:w-1/2 mb-4">
           <article class="bg-white p-6 h-full">
-            <h3 class="text-black uppercase font-medium text-lined-left-green mb-6">{{ value.title }}</h3>
+            <h3 class="text-black uppercase font-medium lined mb-6">{{ value.title }}</h3>
             <p class="font-light">{{ value.text }}</p>
           </article>
         </div>

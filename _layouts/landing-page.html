@@ -12,7 +12,7 @@ layout: default
 
   <div class="sm:flex md:-mx-4">
     {% for tile in page.tiles %}
-      <a href="{{ tile.url }}" class="sm:w-1/3 sm:mx-4 bg-grey-lightest block mb-4 hover:bg-grey-darkest hover:text-white lift">
+      <a href="{{ tile.url }}" class="sm:w-1/3 sm:mx-4 card transition">
         <figure>
           <img src="{{ tile.thumbnail }}" class="w-full" alt="{{ tile.name }}" width="300" height="250">
           <figcaption class="px-4 py-3">
@@ -25,40 +25,42 @@ layout: default
   </div>
 </section>
 
-<section class="bg-forest careers bg-center bg-no-repeat py-16 bg-cover relative z-0">
+<section class="bg-tree lg:tabs py-16 px-6 relative z-0">
   <div class="flex justify-center mb-8">
     <h2 class="bg-white text-green px-6 py-2 text-4xl shadow-md">Carreras</h2>
   </div>
 
   <div class="mx-auto max-w-2xl md:flex">
-    <div class="flex flex-1 flex-col sm:flex-row md:flex-col md:items-end mx-6 mb-4">
+    <div class="hidden lg:flex flex-col items-end flex-1 mx-6 mb-0">
       {% for career in site.careers %}
-        <button type="button" class="text-left bg-white uppercase px-4 py-6 font-medium text-grey-darkest sm:mb-1 w-full md:w-4/5 flex items-center" data-action="tab" data-target="{{ career.title | slugify | cgi_escape }}">
+        <button type="button" class="text-left bg-white uppercase px-4 py-6 font-medium text-grey-darkest {% unless forloop.last %}sm:mb-1{% endunless %} w-full md:w-4/5 flex items-center" data-action="tab" data-target="{{ career.title | slugify | cgi_escape }}">
           <svg class="text-green mr-4" width="28" height="28">
-            <use xlink:href="images/icons/symbol-defs.svg#{{ career.icon }}"></use>
+            <use xlink:href="/images/icons/symbol-defs.svg#{{ career.icon }}"></use>
           </svg> {{ career.title }}
         </button>
       {% endfor %}
     </div>
 
-    <div class="flex flex-1">
+    <div class="flex flex-1 flex-wrap -mx-2 lg:-mx-0">
       {% for career in site.careers %}
-        <article class="bg-white mx-6 flex-col lg:flex-row shadow-md hidden" data-tab="{{ career.title | slugify | cgi_escape }}">
-          <div style="background-image: url('{{ career.thumbnail }}');" class="bg-cover flex-no-shrink lg:w-48 h-48 lg:h-full"></div>
-          <div class="py-4 px-6">
-            <h2 class="mb-2 font-medium" data-action="colorize">{{ career.title }}</h2>
-            <p class="font-light">{{ career.description }}</p>
-            <a href="{{ career.url }}" class="text-white bg-green uppercase px-6 py-3 inline-block hover:bg-green-dark mt-4">Más detalles</a>
-          </div>
-        </article>
+        <div class="px-2 lg:px-0 mb-4 lg:mb-0 sm:w-1/2 lg:w-full lg:hidden" data-tab="{{ career.title | slugify | cgi_escape }}">
+          <article class="lg:flex bg-white shadow-md h-full">
+            <div style="background-image: url('{{ career.thumbnail }}');" class="bg-cover flex-no-shrink lg:w-48 h-48 lg:h-full"></div>
+            <div class="py-4 px-6">
+              <h2 class="mb-2 font-medium" data-action="colorize">{{ career.title }}</h2>
+              <p class="font-light">{{ career.description }}</p>
+              <a href="{{ career.url }}" class="button mt-4">Más detalles</a>
+            </div>
+          </article>
+        </div>
       {% endfor %}
     </div>
   </div>
 </section>
 
-<section class="bg-water bg-no-repeat py-16 px-6 bg-center bg-cover">
+<section class="bg-water bg-cover py-16 px-6">
   <div class="mx-auto max-w-2xl">
-    <h2 class="text-lined-left-green leading-tight text-4xl mb-6 text-black" data-action="colorize">Últimas Noticias</h2>
+    <h2 class="lined leading-tight text-4xl mb-6 text-black" data-action="colorize">Últimas Noticias</h2>
     <p class="mb-8">Lea nuestras últimas noticias sobre grandes eventos o anuncios interesantes.</p>
 
     <div class="md:flex md:-mx-4">
