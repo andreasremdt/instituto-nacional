@@ -14,5 +14,3 @@ fields:
   description: 'Upload or select an existing image of the teacher '
   config:
     maxSize: '1'
-pages:
-- _teachers/andreas-remdt.md
