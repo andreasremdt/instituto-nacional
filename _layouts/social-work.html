@@ -10,7 +10,7 @@ layout: default
     <dl class="sm:w-3/5" data-faq>
       {% for item in page.items %}
         <dt class="font-medium uppercase text-black pt-4 mt-4 hover:text-green cursor-pointer{% unless forloop.first %} border-t border-solid border-grey-light{% endunless %}">{{ item.question }}</dt>
-        <dd class="mt-2 ml-4 text-content">{{ item.answer | markdownify }}</dd>
+        <dd class="mt-2 ml-4 hidden">{{ item.answer | markdownify }}</dd>
       {% endfor %}
     </dl>
   </div>

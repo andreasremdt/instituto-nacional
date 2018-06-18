@@ -10,13 +10,13 @@
         <svg class="p-2 mr-2 bg-green text-white" width="40" height="40">
           <use xlink:href="/icons/symbol-defs.svg#address"></use>
         </svg>
-        <span class="font-light">{{ site.address }}</span>
+        <a href="https://goo.gl/maps/rF5VnUB5CGK2" class=" text-grey-darker font-light" target="_blank" rel="noopener">{{ site.address }}</a>
       </li>
       <li class="inline-flex items-center mr-6">
         <svg class="p-2 mr-2 bg-green text-white" width="40" height="40">
           <use xlink:href="/icons/symbol-defs.svg#phone"></use>
         </svg>
-        <a href="tel:{{ site.phone | remove: ' '}}" class="font-light">{{ site.phone }}</a>
+        <a href="tel:{{ site.phone | remove: ' '}}" class=" text-grey-darker font-light">{{ site.phone }}</a>
         <br>
       </li>
     </ul>

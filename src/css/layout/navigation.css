@@ -20,6 +20,8 @@
   }
 
   .top-navigation.opened {
+    @apply .shadow-lg;
+
     transform: translate3d(0, 0, 0);
   }
 }

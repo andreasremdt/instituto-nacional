@@ -4,7 +4,7 @@
 
   .button:hover,
   .button:focus {
-    @apply .bg-green-dark;
+    @apply .bg-green-dark .text-white;
     
     outline: none;
   }

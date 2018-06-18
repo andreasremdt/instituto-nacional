@@ -1,13 +1,13 @@
-<nav class="fixed bg-grey-lighter md:bg-black-transparent shadow-lg md:shadow-none py-6 px-8 pin-t pin-l md:p-0 h-full z-10 md:max-w-2xl md:mx-auto -mb-13 top-navigation md:relative">
+<nav class="fixed bg-grey-lighter md:bg-black-transparent py-6 px-8 pin-t pin-l md:p-0 h-full z-10 md:max-w-2xl md:mx-auto -mb-13 top-navigation md:relative">
   <h2 class="md:hidden text-grey-darker mb-6 font-light">Navegación</h2>
 
   <ul class="md:flex list-reset">
     {% for item in site.menus.header %}
       <li class="md:flex md:items-center md:relative{% if forloop.last %} md:ml-auto{% else %} md:px-6{% endif %}">
         {% unless forloop.last %}
-          <a href="{{ item.url }}" title="Ir a {{ item.title }}" class="flex items-center py-2 md:border-transparent md:border-b-2 md:text-white md:h-13 hover:text-green{% if page.url == item.url %} font-medium text-green md:border-green{% endif %}">{{ item.title }}</a>
+          <a href="{{ item.url }}" title="Ir a {{ item.title }}" class="flex items-center py-2 md:border-transparent md:border-b-2 text-grey-darker md:text-white md:h-13 hover:text-green{% if page.url == item.url %} font-medium text-green md:border-green{% endif %}">{{ item.title }}</a>
         {% else %}
-          <a href="{{ item.url }}" title="Ir a {{ item.title }}" class="flex items-center py-2 md:border-transparent md:border-b-2 md:text-white md:h-13 md:bg-green md:pr-6 md:uppercase last md:pl-12 hover:bg-green-dark hover:border-green-dark">{{ item.title }}</a>
+          <a href="{{ item.url }}" title="Ir a {{ item.title }}" class="flex items-center py-2 md:border-transparent md:border-b-2 text-grey-darker md:text-white md:h-13 md:bg-green md:pr-6 md:uppercase last md:pl-12 md:hover:bg-green-dark md:hover:border-green-dark md:hover:text-white">{{ item.title }}</a>
         {% endunless %}
 
         {% if item.children %}
@@ -18,7 +18,7 @@
           <ul class="md:hidden md:absolute md:bg-green md:pin-l list-reset">
             {% for item in item.children %}
               <li>
-                <a href="{{ item.url }}" title="Ir a {{ item.title }}" class="md:text-grey-lighter block hover:text-green md:hover:text-white md:hover:bg-green-dark px-6 py-2 md:py-3 whitespace-no-wrap{% if subitem.url == page.url %} text-green{% endif %}">{{ item.title }}</a>
+                <a href="{{ item.url }}" title="Ir a {{ item.title }}" class="text-grey-darker md:text-grey-lighter block hover:text-green md:hover:text-white md:hover:bg-green-dark px-6 py-2 md:py-3 whitespace-no-wrap{% if subitem.url == page.url %} text-green{% endif %}">{{ item.title }}</a>
               </li>
             {% endfor %}
           </ul>

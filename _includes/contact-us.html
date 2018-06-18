@@ -41,7 +41,7 @@
       <p class="max-w-lg mx-auto text-center mb-6">O, si prefieres contactarnos de lo contrario, a continuación se muestran nuestra dirección de correo electrónico y número de teléfono.</p>
 
       <div class="sm:flex md:w-2/3 mx-auto">
-        <a href="mailto:{{ site.email }}" class="flex flex-1 items-center sm:mr-4 mb-4 sm:mb-0 text-white bg-green px-6 py-3 inline-block hover:bg-green-dark">
+        <a href="mailto:{{ site.email }}" class="flex flex-1 items-center sm:mr-4 mb-4 sm:mb-0 text-white bg-green px-6 py-3 inline-block hover:bg-green-dark hover:text-white">
           <svg width="30" height="30" class="mr-4">
             <use xlink:href="/icons/symbol-defs.svg#envelope"></use>
           </svg>
@@ -50,7 +50,7 @@
             <span class="font-light">{{ site.email }}</span>
           </div>
         </a>
-        <a href="tel:{{ site.phone | remove: ' '}}" class="flex flex-1 items-center text-white bg-green px-6 py-3 inline-block hover:bg-green-dark">
+        <a href="tel:{{ site.phone | remove: ' '}}" class="flex flex-1 items-center text-white bg-green px-6 py-3 inline-block hover:bg-green-dark hover:text-white">
           <svg width="30" height="30" class="mr-4">
             <use xlink:href="/icons/symbol-defs.svg#phone"></use>
           </svg>

@@ -8,7 +8,7 @@ var gulp = require('gulp');
  * autoprefixes for a better browser support. Finally, the
  * CSS is minified using clean-css.
  */
-gulp.task('css', () => {
+gulp.task('css', function() {
   // Required modules for CSS processing
   var postcss      = require('gulp-postcss'),
       atimport     = require('postcss-import'),
@@ -26,7 +26,7 @@ gulp.task('css', () => {
   }
 
   // The gulp task which looks for a styles.css in `./src/`
-  return gulp.src('./src/styles.css')
+  return gulp.src('./src/css/styles.css')
     .pipe(postcss([
       atimport(),
       tailwind('./tailwind.js'),
@@ -50,16 +50,32 @@ gulp.task('css', () => {
 
 
 /**
+ * Task for processing the JS. It gets compiled into
+ * the more supported ES5 first and afterwards is minified.
+ */
+gulp.task('js', function() {
+  var babel = require('gulp-babel');
+  var uglify = require('gulp-uglify');
+
+  return gulp.src('./src/js/main.js')
+    .pipe(babel({ presets: ['env'] }))
+    .pipe(uglify())
+    .pipe(gulp.dest('./js'));
+});
+
+
+
+/**
  * Global watcher which automatically compiles the
- * CSS upon file changes in the Tailwind config or 
- * `src` directory.
+ * CSS and JS upon file changes.
  */
 gulp.task('watch', () => {
-  gulp.watch('./src/**/*.css', ['css']);
+  gulp.watch('./src/css/**/*.css', ['css']);
   gulp.watch('./tailwind.js', ['css']);
+  gulp.watch('./src/js/main.js', ['js']);
 });
 
 
 
 // Gulp default task
-gulp.task('default', ['css', 'watch']);
+gulp.task('default', ['css', 'js', 'watch']);

@@ -1,5 +1,5 @@
 .card {
-  @apply .bg-grey-lightest .mb-4;
+  @apply .bg-grey-lightest .mb-4 .text-grey-darker;
 }
 
   .card:hover {

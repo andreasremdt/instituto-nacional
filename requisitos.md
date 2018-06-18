@@ -18,7 +18,7 @@ how_to_apply:
   content: |
     Aceptaremos aplicaciones en **verano 2019**, cuando la promoción actual se ha graduado. En este momento no se puede aplicar, pero tú puedes prepararte. Abajo encuentras los requisitos de admisión.
 
-    ¿Más preguntas? Ponte <a href="/contactenos/" class="text-green border-b border-dotted border-grey">en contacto</a> con nosotros y te ayudaremos pronto.
+    ¿Más preguntas? Ponte [en contacto](/contactenos/) con nosotros y te ayudaremos pronto.
 process:
   title: El proceso
   items:
