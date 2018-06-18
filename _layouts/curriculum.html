@@ -2,17 +2,19 @@
 layout: default
 ---
 
-<nav class="bg-grey-lighter py-8 px-6">
-  <div class="max-w-2xl mx-auto sm:flex sm:items-center text-center sm:text-left">
-    <p class="font-light text-xl sm:mr-6 mb-4 sm:mb-0">Por favor elige una carrera:</p>
-    
-    {% for career in site.careers %}
-      <button type="button" class="text-grey-darkest py-3 px-6 hover:bg-green hover:text-white mr-2" role="menuitem" data-action="tab" data-target="{{ career.title | slugify | cgi_escape }}">{{ career.title }}</button>
-    {% endfor %}
-  </div>
-</nav>
+<main class="px-6 py-16 max-w-2xl mx-auto">
+  <nav class="text-center">
+    <p class="font-light text-xl mb-6">En está página puedes ver cuales clases y materias tiene cada carrera. Por favor elige una carrera:</p>
 
-<main class="px-6 max-w-2xl mx-auto">
+    {% for career in site.careers %}
+      <button data-action="tab" data-target="{{ career.title | slugify | cgi_escape }}" class="inline-flex flex-1 items-center font-medium uppercase text-white bg-green px-6 py-3 inline-block cursor-pointer">
+        <svg width="30" height="30" class="mr-4">
+          <use xlink:href="/icons/symbol-defs.svg#{{ career.icon }}"></use>
+        </svg> {{ career.title }}
+      </button>
+    {% endfor %}
+  </nav>
+
   {% for career in site.careers %}
     <div class="hidden flex-col py-16" data-tab="{{ career.title | slugify | cgi_escape }}">
       <h2 class="text-black text-4xl lined leading-tight mb-8" data-action="colorize">{{ career.title }}</h2>

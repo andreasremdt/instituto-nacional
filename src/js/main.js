@@ -94,17 +94,15 @@
     for (let i = 0; i < elements.length; i++) {
       var arr = elements[i].textContent.split(' ');
 
-      if (arr.length <= 1) {
-        return;
+      if (arr.length > 1) {
+        elements[i].innerHTML = arr.map(function createMarkup(item, index) {
+          if (arr.length === index + 1) {
+            return `<span class="text-green">${item}</span>`;
+          }
+
+          return item;
+        }).join(' ');
       }
-
-      elements[i].innerHTML = arr.map(function createMarkup(item, index) {
-        if (arr.length === index + 1) {
-          return `<span class="text-green">${item}</span>`;
-        }
-
-        return item;
-      }).join(' ');
     }
   }
 

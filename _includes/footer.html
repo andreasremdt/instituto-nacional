@@ -1,13 +1,11 @@
 <footer class="text-grey-dark bg-grey-darkest pt-8 px-6">
   <div class="max-w-2xl mx-auto mb-8">
     <div class="md:flex md:-mx-4">
-      <section class="lg:flex-1 md:mx-4 mb-8">
-        <div class="logo">
-          <h2 class="font-serif text-white" data-action="colorize">{{ site.title }}</h2>
-          <p class="font-light">{{ site.subtitle }}</p>
-        </div>
+      <section class="lg:w-1/4 md:mx-4 mb-8">
+        <h2 class="font-serif text-lg text-white" data-action="colorize">{{ site.title }}</h2>
+        <p class="font-light">{{ site.subtitle }}</p>
 
-        <h3 class="text-white font-normal text-lg mb-4 mt-6 pt-6 uppercase border-t border-solid border-grey-darker">Síguenos:</h3>
+        <h3 class="text-white font-normal text-lg mb-4 mt-6 pt-6 uppercase">Síguenos:</h3>
 
         <nav>
           {% for item in site.social %}
@@ -20,7 +18,7 @@
         </nav>
       </section>
 
-      <section class="lg:flex-1 md:mx-4 mb-8">
+      <section class="lg:w-1/4 md:mx-4 mb-8">
         <h3 class="text-white font-normal text-lg uppercase mb-4">Noticias</h3>
 
         {% for post in site.posts limit: 2 %}
@@ -31,7 +29,21 @@
         {% endfor %}
       </section>
 
-      <nav class="lg:flex-1 md:mx-4">
+      <section class="lg:w-1/4 md:mx-4 mb-8">
+        <h3 class="text-white font-normal text-lg uppercase mb-4">Galeria</h3>
+
+        <figure class="flex flex-wrap -mx-1">
+          {% assign subpage = site.pages | where: 'title', 'Galería' | first %}
+
+          {% for image in subpage.images limit:6 %}
+            <a href="/instituto/galeria/" class="block w-1/3 mb-2 px-1">
+              <img src="{{ image.url | replace: 'q_75', 'c_thumb,g_center,h_100,q_80,w_100' }}" alt="{{ image.description }}" width="100" height="100">
+            </a>
+          {% endfor %}
+        </figure>
+      </section>
+
+      <nav class="lg:w-1/4 md:mx-4">
         <h3 class="text-white font-normal text-lg uppercase mb-4">Navegación</h3>
 
         <ul class="list-reset">
