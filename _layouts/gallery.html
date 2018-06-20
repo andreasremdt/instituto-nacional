@@ -3,18 +3,21 @@ layout: default
 ---
 
 <nav class="py-16 px-6 mx-auto max-w-2xl text-center">
-  <button type="button" class="button" data-filter="*">Todas</button>
-  <button type="button" class="button" data-filter="recinto-1">Recinto I</button>
-  <button type="button" class="button" data-filter="recinto-2">Recinto II</button>
-  <button type="button" class="button" data-filter="eventos">Eventos</button>
-  <button type="button" class="button" data-filter="aulas">Aulas</button>
+  <h2 class="text-4xl md:text-5xl mb-8 text-black leading-tight text-center" data-action="colorize">Fotografías del Instituto</h2>
+  <p class="text-center mb-6">{{ content | strip_html }}</p>
+
+  <button type="button" class="button mb-1" data-filter="*">Todas</button>
+  <button type="button" class="button mb-1" data-filter="produccion">Áreas de producción</button>
+  <button type="button" class="button mb-1" data-filter="residencia">Instalaciones docentes y Residencia</button>
+  <button type="button" class="button mb-1" data-filter="bosques">Bosques y áreas verdes</button>
+  <button type="button" class="button mb-1" data-filter="jimenoa">Recinto Jimenoa</button>
 </nav>
 
 <main class="mb-8 px-6">
   <figure class="flex -mx-2 flex-wrap" data-gallery>
     {% for image in page.images %}
-      <a href="{{ image.url }}" class="px-2 mb-4 w-1/2 sm:w-1/4 md:w-1/6 opacity-75 hover:opacity-100 transition" data-lightbox data-caption="{{ image.caption }}" data-category="{{ image.category }}" data-gallery-item>
-        <img src="{{ image.url | replace: 'q_75', 'c_scale,q_75,w_400' }}" alt="{{ image.caption }}" width="300">
+      <a href="{{ image.url }}" class="px-2 mb-4 w-1/2 sm:w-1/4 md:w-1/6 opacity-75 hover:opacity-100 transition block" data-lightbox data-caption="{{ image.caption }}" data-category="{{ image.category }}" data-gallery-item>
+        <img src="{{ image.url | replace: 'q_75', 'c_scale,q_76,w_400' }}" alt="{{ image.caption }}" width="300">
       </a>
     {% endfor %}
   </div>

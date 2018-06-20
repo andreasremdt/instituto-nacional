@@ -48,7 +48,7 @@ layout: default
   <h2 class="text-black lined text-3xl mb-6" data-action="colorize">{{ page.others.title }}</h2>
   <p class="text-xl font-light">{{ page.others.intro }}</p>
 
-  <div class="md:flex md:-mx-4 mt-8 pt-8">
+  <div class="md:flex md:-mx-4 mt-8 py-8">
     {% for item in page.others.items %}
       <article class="md:mx-4 flex-1 clearfix mb-6 md:mb-0">
         <h3 class="lined uppercase text-black mb-6">{{ item.title }}</h3>
@@ -58,6 +58,38 @@ layout: default
         <p class="font-light">{{ item.content }}</p>
       </article>
     {% endfor %}
+  </div>
+
+  <div class="mt-8 pt-16 border-t border-grey-light">
+    <h2 class="text-black lined text-3xl mb-6" data-action="colorize">Precios, reglas y detalles</h2>
+    <p class="text-xl font-light">En esta sección hay todos los detalles sobre nuestros servicios. Si tienes más preguntas, puedes contactarnos en cualquier momento en la sección de abajo.</p>
+  
+    <article>
+      <h3 class="uppercase text-black mb-2 mt-8">Costos por evento</h3>
+      <ul>
+        <li>RD$10,000 para bodas, cumpleaños, graduaciones y actividades afines.</li>
+        <li>RD$5,000. Para reuniones, talleres, seminarios y actividades afines.</li>
+      </ul>
+      <h3 class="uppercase text-black mb-2 mt-8">Los servicios incluyen:</h3>
+      <ul>
+        <li>Planta Eléctrica</li>
+        <li>Baños equipados a la entrega</li>
+        <li>Parqueos</li>
+      </ul>
+      <h3 class="uppercase text-black mb-2 mt-8">Las reglas</h3>
+      <ul>
+        <li>Cuidar el área verde y jardines del Instituto. Respetar los límites naturales al momento de colocar carpas y objetos de decoración.</li>
+        <li>Evitar circular vehículos en lugares no autorizados.</li>
+        <li>Dejar alquileres en las áreas antes o después del evento sin responsabilidad del Instituto.</li>
+        <li>Hacer el montaje de la actividad un día antes si fuese necesario y retirar los alquileres a más tardar el día después de
+        la actividad.</li>
+        <li>Respetar el horario establecido para llevar a cabo el evento. La hora máxima para tener música alta es a las 10:00 PM.</li>
+        <li>Dejar el lugar lo más recogido posible inmediatamente después del evento; utilizando los zafacones suministrados para desechos
+        sólidos.</li>
+        <li>Realizar el pago al menos una semana antes del evento. Este pago incluirá un depósito reembolsable de 2,500 pesos para cubrir
+        posibles daños ocasionados al área, si así fuere el caso.</li>
+      </ul>
+    </article>
   </div>
 </section>
 

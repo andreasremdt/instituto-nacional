@@ -10,7 +10,6 @@ menus: institute
 area_production:
   pretitle: El paraíso de la naturaleza...
   title: 320 tareas de tierra para explorar
-  intro: Nuestro instituto cuenta con un campus extraordinario. Diferentes ecosistemas, áreas temáticas representativas de la biodiversidad de todo el país, áreas para la producción de plantas y más...
 
   items:
     - title: Herbolario
@@ -72,31 +71,34 @@ area_educational:
       content: Tenemos un taller de ebanistería y carpintería para trabajar con mardera.
 
 area_forests:
-  title: Rodales y áreas verdes
+  title: Bosques y áreas verdes
+  description: Una gran parte de nuestro campus se divide entre las siguientes áreas. Estas áreas son las que hacen que nuestro Instituto sea tan especial.
 
   items:
     - title: Parque acuático
       thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/parque-acuatico.jpg
       url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/parque-acuatico.jpg
-      description: lorem ipsum dolor sit amet, olor se tal.
+      description: El parque acuático es un sistema ecologico y una área ecoturistica que contiene una variedad de diferentes plantas y vidas acuaticas. Se encuentran diferentes especies de aves, peces, tortugas y más.
     - title: Senderos
       thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/senderos.jpg
       url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/senderos.jpg
-      description: lorem ipsum dolor sit amet, olor se tal.
-    - title: Área de investigación
-      thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/parque-acuatico.jpg
-      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/parque-acuatico.jpg
-      description: lorem ipsum dolor sit amet, olor se tal.
+      description: Dentro del campus tenemos varios senderos que te guian sobre diferentes zonas tematicas. El objectivo de esos senderos es la explicación de los diferentes eco-sistemas, sus plantas endemicas y caracteristicas.
+    - title: Áreas de investigación
+      thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/area-de-investigacion.jpg
+      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/area-de-investigacion.jpg
+      description: Estas áreas nos sirven para la ensenanza de las diferentes clases. Lo mejor que los estudiantes pueden hacer es practicar su conocimiento teorico en practica. Para eso hemos creados dichas áreas.
     - title: Estación climatológica
-      thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/parque-acuatico.jpg
-      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/parque-acuatico.jpg
-      description: lorem ipsum dolor sit amet, olor se tal.
+      thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/estacion-climatologica.jpg
+      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/estacion-climatologica.jpg
+      description: Donada por la fundación REDDOM, esta estación toma medidas diarias del clima en Jarabacoa. Esos datos van analizados en el Instituto y en ... 
     - title: Parque de formas
-      thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/parque-acuatico.jpg
-      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/parque-acuatico.jpg
+      thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/parque-de-formas.jpg
+      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/parque-de-formas.jpg
       description: lorem ipsum dolor sit amet, olor se tal.
     - title: Parque de la Caoba
       thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/parque-caoba.jpg
       url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/parque-caoba.jpg
       description: lorem ipsum dolor sit amet, olor se tal.
 ---
+
+Nuestro instituto cuenta con un campus extraordinario. Diferentes ecosistemas, áreas temáticas representativas de la biodiversidad de todo el país, áreas para la producción de plantas y más...
