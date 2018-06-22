@@ -48,8 +48,11 @@ layout: default
   
     <figure class="md:w-2/5 absolute md:static pin-l pin-t w-full h-full z-10">
       <picture>
-        <source srcset="{{ page.careers.image_path | replace: 'upload', 'upload/c_scale,q_70,w_750' | replace: '.jpg', '.webp' }}" type="image/webp">
-        <img src="{{ page.careers.image_path | replace: 'upload', 'upload/c_scale,q_70,w_750' }}" class="w-full h-full object-cover" alt="{{ page.careers.title }}" width="800" height="533">
+        <source data-lazy data-srcset="{{ page.careers.image_path | replace: 'upload', 'upload/c_scale,q_70,w_750' | replace: '.jpg', '.webp' }}" type="image/webp">
+        <img data-lazy data-src="{{ page.careers.image_path | replace: 'upload', 'upload/c_scale,q_70,w_750' }}" class="w-full h-full object-cover" alt="{{ page.careers.title }}" width="800" height="533">
+        <noscript>
+          <img src="{{ page.careers.image_path | replace: 'upload', 'upload/c_scale,q_70,w_750' }}" class="w-full h-full object-cover" alt="{{ page.careers.title }}" width="800" height="533">
+        </noscript>
       </picture>
     </figure>
   </div>
@@ -61,8 +64,11 @@ layout: default
   <div class="max-w-2xl mx-auto flex items-center relative">
     <figure class="md:w-2/5 absolute md:static pin-l pin-t w-full h-full z-10">
       <picture>
-        <source srcset="{{ page.campus.image_path | replace: 'upload', 'upload/c_scale,q_70,w_750' | replace: '.jpg', '.webp' }}" type="image/webp">
-        <img src="{{ page.campus.image_path | replace: 'upload', 'upload/c_scale,q_70,w_750' }}" class="w-full h-full object-cover" alt="{{ page.campus.title }}" width="800" height="533">
+        <source data-lazy data-srcset="{{ page.campus.image_path | replace: 'upload', 'upload/c_scale,q_70,w_750' | replace: '.jpg', '.webp' }}" type="image/webp">
+        <img data-lazy data-src="{{ page.campus.image_path | replace: 'upload', 'upload/c_scale,q_70,w_750' }}" class="w-full h-full object-cover" alt="{{ page.campus.title }}" width="800" height="533">
+        <noscript>
+          <img src="{{ page.campus.image_path | replace: 'upload', 'upload/c_scale,q_70,w_750' }}" class="w-full h-full object-cover" alt="{{ page.campus.title }}" width="800" height="533">
+        </noscript>
       </picture>
     </figure>
   
@@ -90,8 +96,11 @@ layout: default
 
     <figure class="md:w-2/5 absolute md:static pin-l pin-t w-full h-full z-10">
       <picture>
-        <source srcset="{{ page.teachers.image_path | replace: 'upload', 'upload/c_scale,q_70,w_750' | replace: '.jpg', '.webp' }}" type="image/webp">
-        <img src="{{ page.teachers.image_path | replace: 'upload', 'upload/c_scale,q_70,w_750' }}" class="w-full h-full object-cover" alt="{{ page.teachers.title }}" width="800" height="533">
+        <source data-lazy data-srcset="{{ page.teachers.image_path | replace: 'upload', 'upload/c_scale,q_70,w_750' | replace: '.jpg', '.webp' }}" type="image/webp">
+        <img data-lazy data-src="{{ page.teachers.image_path | replace: 'upload', 'upload/c_scale,q_70,w_750' }}" class="w-full h-full object-cover" alt="{{ page.teachers.title }}" width="800" height="533">
+        <noscript>
+          <img src="{{ page.teachers.image_path | replace: 'upload', 'upload/c_scale,q_70,w_750' }}" class="w-full h-full object-cover" alt="{{ page.teachers.title }}" width="800" height="533">
+        </noscript>
       </picture>
     </figure>
   </div>

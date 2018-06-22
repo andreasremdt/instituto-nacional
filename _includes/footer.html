@@ -38,8 +38,11 @@
           {% for image in subpage.images limit:6 %}
             <a href="/instituto/galeria/" class="block w-1/3 mb-2 px-1 opacity-75 hover:opacity-100 transition">
               <picture>
-                <source srcset="{{ image.url | replace: 'upload', 'upload/c_thumb,g_center,q_60,w_100,h_100' | replace: '.jpg', '.webp' }}" type="image/webp">
-                <img src="{{ image.url | replace: 'upload', 'upload/c_thumb,g_center,q_60,w_100,h_100' }}" alt="{{ image.description }}" width="100" height="100">
+                <source data-lazy data-srcset="{{ image.url | replace: 'upload', 'upload/c_thumb,g_center,q_60,w_100,h_100' | replace: '.jpg', '.webp' }}" type="image/webp">
+                <img data-lazy data-src="{{ image.url | replace: 'upload', 'upload/c_thumb,g_center,q_60,w_100,h_100' }}" alt="{{ image.description }}" width="100" height="100">
+                <noscript>
+                  <img src="{{ image.url | replace: 'upload', 'upload/c_thumb,g_center,q_60,w_100,h_100' }}" alt="{{ image.description }}" width="100" height="100">
+                </noscript>
               </picture>
             </a>
           {% endfor %}

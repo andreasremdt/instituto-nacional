@@ -35,8 +35,11 @@ layout: default
   {% for image in page.area_production.images %}
     <a data-fancybox="gallery" href="{{ image.url | replace: 'upload', 'upload/q_60' }}" class="block opacity-75 transition hover:opacity-100 w-1/4 flex-no-shrink">
       <picture>
-        <source srcset="{{ image.url | replace: 'upload', 'upload/c_scale,q_60,w_550' | replace: '.jpg', '.webp' }}" type="image/webp">
-        <img src="{{ image.url | replace: 'upload', 'upload/c_scale,q_60,w_550' }}" alt="{{ image.caption }}" width="640" height="360">
+        <source data-lazy data-srcset="{{ image.url | replace: 'upload', 'upload/c_scale,q_60,w_550' | replace: '.jpg', '.webp' }}" type="image/webp">
+        <img data-lazy data-src="{{ image.url | replace: 'upload', 'upload/c_scale,q_60,w_550' }}" alt="{{ image.caption }}" width="640" height="360">
+        <noscript>
+          <img src="{{ image.url | replace: 'upload', 'upload/c_scale,q_60,w_550' }}" alt="{{ image.caption }}" width="640" height="360">
+        </noscript>
       </picture>
     </a>
   {% endfor %}
@@ -80,8 +83,11 @@ layout: default
         <a href="{{ item.image | replace: 'upload', 'upload/q_60' }}" class="card block transition" data-fancybox="gallery" data-caption="{{ item.description }}">
           <figure>
             <picture>
-              <source srcset="{{ item.image | replace: 'upload', 'upload/c_scale,q_60,w_550' | replace: '.jpg', '.webp' }}" type="image/webp">
-              <img src="{{ item.image | replace: 'upload', 'upload/c_scale,q_60,w_550' }}" class="w-full" alt="{{ item.title }}" width="300" height="250">
+              <source data-lazy data-srcset="{{ item.image | replace: 'upload', 'upload/c_scale,q_60,w_550' | replace: '.jpg', '.webp' }}" type="image/webp">
+              <img data-lazy data-src="{{ item.image | replace: 'upload', 'upload/c_scale,q_60,w_550' }}" class="w-full" alt="{{ item.title }}" width="300" height="250">
+              <noscript>
+                <img src="{{ item.image | replace: 'upload', 'upload/c_scale,q_60,w_550' }}" class="w-full" alt="{{ item.title }}" width="300" height="250">
+              </noscript>
             </picture>
             <figcaption class="px-4 py-3">
               <h3 class="mb-2 text-black font-medium text-xl">{{ item.title }}</h3>

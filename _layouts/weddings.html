@@ -32,8 +32,11 @@ layout: default
     {% for image in page.images %}
       <a data-fancybox="gallery" href="{{ image.url | replace: 'upload', 'upload/q_60' }}" class="block w-1/4 flex-no-shrink opacity-75 hover:opacity-100 transition">
         <picture>
-          <source srcset="{{ image.url | replace: 'upload', 'upload/c_scale,q_60,w_500' | replace: '.jpg', '.webp' }}" type="image/webp">
-          <img src="{{ image.url | replace: 'upload', 'upload/c_scale,q_60,w_500' }}" alt="{{ image.title }}" width="500" height="625">
+          <source data-lazy data-srcset="{{ image.url | replace: 'upload', 'upload/c_scale,q_60,w_500' | replace: '.jpg', '.webp' }}" type="image/webp">
+          <img data-lazy data-src="{{ image.url | replace: 'upload', 'upload/c_scale,q_60,w_500' }}" alt="{{ image.title }}" width="500" height="625">
+          <noscript>
+            <img src="{{ image.url | replace: 'upload', 'upload/c_scale,q_60,w_500' }}" alt="{{ image.title }}" width="500" height="625">
+          </noscript>
         </picture>
       </a>
     {% endfor %}

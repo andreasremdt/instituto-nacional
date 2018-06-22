@@ -30,8 +30,11 @@
     <article class="flex pb-6 items-center{% unless forloop.last %} border-b border-dashed border-grey-light{% endunless %}">
       <figure>
         <picture>
-          <source srcset="{{ post.image | replace: 'upload', 'upload/c_thumb,w_100,h_100,q_60' | replace: '.jpg', '.webp' }}" type="image/webp">
-          <img src="{{ post.image | replace: 'upload', 'upload/c_thumb,w_100,h_100,q_60' }}" class="mr-4 w-16 h-16 object-cover" alt="{{ post.title }}" width="100" height="100">
+          <source data-lazy data-srcset="{{ post.image | replace: 'upload', 'upload/c_thumb,w_100,h_100,q_60' | replace: '.jpg', '.webp' }}" type="image/webp">
+          <img data-lazy data-src="{{ post.image | replace: 'upload', 'upload/c_thumb,w_100,h_100,q_60' }}" class="mr-4 w-16 h-16 object-cover" alt="{{ post.title }}" width="100" height="100">
+          <noscript>
+            <img src="{{ post.image | replace: 'upload', 'upload/c_thumb,w_100,h_100,q_60' }}" class="mr-4 w-16 h-16 object-cover" alt="{{ post.title }}" width="100" height="100">
+          </noscript>
         </picture>
       </figure>
     

@@ -17,8 +17,11 @@ layout: default
     {% for image in page.images %}
       <a href="{{ image.url | replace: 'upload', 'upload/q_60' }}" class="px-2 mb-4 w-1/2 sm:w-1/4 md:w-1/6 opacity-75 hover:opacity-100 transition block" data-lightbox data-caption="{{ image.caption }}" data-category="{{ image.category }}" data-gallery-item>
         <picture>
-          <source srcset="{{ image.url | replace: 'upload', 'upload/c_scale,q_60,w_400' | replace: '.jpg', '.webp' }}" type="image/webp">
-          <img src="{{ image.url | replace: 'upload', 'upload/c_scale,q_60,w_400' }}" alt="{{ image.caption }}" width="400" height="267">
+          <source data-srcset="{{ image.url | replace: 'upload', 'upload/c_scale,q_60,w_400' | replace: '.jpg', '.webp' }}" type="image/webp" data-lazy>
+          <img data-src="{{ image.url | replace: 'upload', 'upload/c_scale,q_60,w_400' }}" alt="{{ image.caption }}" width="400" height="267" data-lazy>
+          <noscript>
+            <img src="{{ image.url | replace: 'upload', 'upload/c_scale,q_60,w_400' }}" alt="{{ image.caption }}" width="400" height="267" data-lazy>
+          </noscript>
         </picture>
       </a>
     {% endfor %}

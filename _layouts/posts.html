@@ -9,8 +9,11 @@ layout: default
         <article class="flex flex-col mb-8 bg-white border-grey-light border-solid border">
           <figure>
             <picture>
-              <source srcset="{{ post.image | replace: 'upload', 'upload/c_thumb,w_750,h_256,q_60' | replace: '.jpg', '.webp' }}" type="image/webp">
-              <img src="{{ post.image | replace: 'upload', 'upload/c_thumb,w_750,h_256,q_60' }}" class="w-full sm:h-64" alt="{{ post.title }}" width="750" height="256">
+              <source data-lazy data-srcset="{{ post.image | replace: 'upload', 'upload/c_thumb,w_750,h_256,q_60' | replace: '.jpg', '.webp' }}" type="image/webp">
+              <img data-lazy data-src="{{ post.image | replace: 'upload', 'upload/c_thumb,w_750,h_256,q_60' }}" class="w-full sm:h-64" alt="{{ post.title }}" width="750" height="256">
+              <noscript>
+                <img src="{{ post.image | replace: 'upload', 'upload/c_thumb,w_750,h_256,q_60' }}" class="w-full sm:h-64" alt="{{ post.title }}" width="750" height="256">
+              </noscript>
             </picture>
           </figure>
         

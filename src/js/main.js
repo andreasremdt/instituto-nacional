@@ -210,6 +210,35 @@
     }
   }
 
+
+
+  function initOffscreenImages() {
+    var lazyImages = [].slice.call(document.querySelectorAll('[data-lazy]'));
+    var lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target;
+
+          if (lazyImage.dataset.src) {
+            lazyImage.src = lazyImage.dataset.src;
+            lazyImage.removeAttribute('data-src');
+          }
+
+          if (lazyImage.dataset.srcset) {
+            lazyImage.srcset = lazyImage.dataset.srcset;
+            lazyImage.removeAttribute('data-srcset');
+          }
+
+          lazyImageObserver.unobserve(lazyImage);
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+    });
+  }
+
   
   
   /**
@@ -224,6 +253,7 @@
     initMenuToggle();
     initContactUsSection();
     initTabs();
+    initOffscreenImages();
   });
 
 })(document);

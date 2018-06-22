@@ -30,8 +30,11 @@ layout: default
     <div class="max-w-2xl mx-auto flex items-center relative{% if thecycle == 'even' %} flex-row-reverse{% endif %}">
       <figure class="md:w-2/5 absolute md:static pin-l pin-t w-full h-full z-10">
         <picture>
-          <source srcset="{{ characteristic.image | replace: 'upload', 'upload/c_scale,q_60,w_750' | replace: '.jpg', '.webp' }}" type="image/webp">
-          <img src="{{ characteristic.image | replace: 'upload', 'upload/c_scale,q_60,w_750' }}" class="w-full h-full object-cover" alt="{{ characteristic.title }}" width="800" height="533">
+          <source data-lazy data-srcset="{{ characteristic.image | replace: 'upload', 'upload/c_scale,q_60,w_750' | replace: '.jpg', '.webp' }}" type="image/webp">
+          <img data-lazy data-src="{{ characteristic.image | replace: 'upload', 'upload/c_scale,q_60,w_750' }}" class="w-full h-full object-cover" alt="{{ characteristic.title }}" width="800" height="533">
+          <noscript>
+            <img src="{{ characteristic.image | replace: 'upload', 'upload/c_scale,q_60,w_750' }}" class="w-full h-full object-cover" alt="{{ characteristic.title }}" width="800" height="533">
+          </noscript>
         </picture>
       </figure>
 
