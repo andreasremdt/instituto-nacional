@@ -56,12 +56,14 @@ gulp.task('css', function() {
 gulp.task('js', function() {
   var babel = require('gulp-babel');
   var uglify = require('gulp-uglify');
+  var rename = require('gulp-rename');
 
-  return gulp.src('./src/js/main.js')
+  return gulp.src('./src/js/*.js')
     .pipe(babel({ presets: ['env'] }))
     .pipe(uglify())
+    .pipe(rename({ suffix: '.min'}))
     .pipe(gulp.dest('./js'));
-});
+  });
 
 
 

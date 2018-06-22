@@ -47,14 +47,14 @@
     
     {% include footer.html %}
 
-    <script src="/js/modernizr.js" defer></script>
-    <script src="/js/observer-polyfill.js" defer></script>
+    <script src="/js/modernizr.min.js" defer></script>
+    <script src="/js/observer-polyfill.min.js" defer></script>
     <script src="/js/jquery.min.js" defer></script>
-    <script src="/js/fancybox.min.js" defer></script>
-    <script src="/js/main.js" defer></script>
+    <script src="/js/jquery.fancybox.min.js" defer></script>
+    <script src="/js/main.min.js" defer></script>
     
     {% if page.url == "/blog/buscar/" %}
-      <script src="/js/search.js" defer></script>
+      <script src="/js/search.min.js" defer></script>
     {% elsif page.url == "/contactanos/" %}
       <script>
         function initMap() {
