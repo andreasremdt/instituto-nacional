@@ -75,8 +75,8 @@ layout: default
         <article class="flex flex-col mb-4 bg-white border-grey-light border-solid border md:mx-4 sm:w-1/2 md:w-1/3">
           <figure>
             <picture>
-              <source srcset="{{ post.image_path | replace: 'upload', 'upload/c_scale,q_60,w_550' | replace: '.jpg', '.webp' }}" type="image/webp">
-              <img src="{{ post.image_path | replace: 'upload', 'upload/c_scale,q_60,w_550' }}" class="w-full sm:h-64 md:h-auto object-cover" alt="{{ post.title }}" width="300" height="250">
+              <source srcset="{{ post.image | replace: 'upload', 'upload/c_scale,q_60,w_550' | replace: '.jpg', '.webp' }}" type="image/webp">
+              <img src="{{ post.image | replace: 'upload', 'upload/c_scale,q_60,w_550' }}" class="w-full sm:h-64 md:h-auto object-cover" alt="{{ post.title }}" width="300" height="250">
             </picture>
           </figure>
   

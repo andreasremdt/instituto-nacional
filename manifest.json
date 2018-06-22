@@ -1,0 +1,23 @@
+---
+layout: null
+---
+{
+  "short_name": "Instituto",
+  "name": "{{ site.title }}",
+  "icons": [
+    {
+      "src": "/icons/manifest-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/mstile-310x310.png",
+      "type": "image/png",
+      "sizes": "310x310"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#FFFFFF",
+  "display": "browser",
+  "theme_color": "#9DC701"
+}
