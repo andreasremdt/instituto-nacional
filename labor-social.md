@@ -2,7 +2,7 @@
 layout: social-work
 
 title: Labor social
-description: asdasdasd
+description: La labor social es una serie de actividades en beneficio del Medio Ambiente, que puedes hacer en nuestro Instituto.
 
 menus: services
 

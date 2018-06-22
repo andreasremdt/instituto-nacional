@@ -2,7 +2,7 @@
 layout: tourism
 
 title: Turismo Educativo
-description: adasdasd
+description: Un Día con la Naturaleza, campamentos, Un Fin de Semana con la Naturaleza y más eventos para grupos.
 
 menus: services
 

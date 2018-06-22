@@ -2,7 +2,7 @@
 layout: weddings
 
 title: Bodas, fiestas y más
-description: sadasdasd
+description: Casarte en el medio ambiente con nuestros servicios de bodas y fiestas.
 
 permalink: /servicios/bodas-fiestas/
 

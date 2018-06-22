@@ -2,7 +2,7 @@
 layout: requirements
 
 title: Requisitos de Admisión
-description: sdasd
+description: Informate sobre lo que tienes que hacer para estudiar en nuestro Instituto.
 
 permalink: /instituto/requisitos/
 menus: institute

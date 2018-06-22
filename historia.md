@@ -2,7 +2,7 @@
 layout: history
 
 title: Historia
-description: La historia del Instituto desde su fundación
+description: La historia del Instituto desde su fundación en 1968.
 
 permalink: /instituto/historia/
 menus: institute

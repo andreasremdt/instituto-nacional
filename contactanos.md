@@ -2,7 +2,7 @@
 layout: contact
 
 title: Contáctenos
-description: asdsadas
+description: Ponte en contacto con nosotros si tienes alguna pregunta sobre nuestros servicios o el Instituto.
 
 menus:
   header:

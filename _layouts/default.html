@@ -1,20 +1,39 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="description" content="{{ page.description }}">
     <meta name="author" content="Andreas Remdt">
     
-    <title>{{ page.title }} | {{ site.title }} de {{ site.subtitle }}</title>
-
-    <link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96">
+    <title>{{ page.title }} | {{ site.title }}</title>
 
     <link href="https://fonts.googleapis.com/css?family=Merienda+One%7CRoboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/icons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/icons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="/icons/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/icons/favicon-128.png" sizes="128x128">
+    <meta name="application-name" content="{{ site.title }}">
+    <meta name="msapplication-TileColor" content="#9dc701">
+    <meta name="msapplication-TileImage" content="/icons/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="/icons/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="/icons/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="/icons/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="/icons/mstile-310x310.png">
+
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed para {{ site.title }}" href="/feed.xml" />
   </head>
   <body>
 
@@ -32,6 +51,8 @@
     
     {% if page.url == "/instituto/galeria/" %}
       <script src="/js/isotope.min.js" defer></script>
+    {% elsif page.url == "/blog/buscar/" %}
+      <script src="/js/search.js" defer></script>
     {% elsif page.url == "/contactanos/" %}
       <script>
         function initMap() {

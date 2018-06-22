@@ -2,7 +2,7 @@
 layout: tourism-details
 
 title: Detalles
-description: adasd 
+description: Lee más detalles sobre las actividades que ofrecemos para el turismo educativo.
 
 permalink: /servicios/turismo-educativo/detalles/
 

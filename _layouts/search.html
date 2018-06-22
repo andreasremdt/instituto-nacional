@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<main class="max-w-2xl py-16 px-6 mx-auto">
+  <h2 class="text-black text-4xl leading-tight lined mb-6">Buscar el Blog</h2>
+  
+  <form action="">
+    <input type="text" name="q" id="search" class="bg-white w-full border border-solid hover:border-grey border-grey-light p-4 text-grey-darker font-light mb-8" placeholder="Buscar publicaciones en el blog...">
+  </form>
+
+  <p class="mb-6 text-xl font-light">Resultados encontrados: <span data-search-number></span></p>
+  <div id="search-results"></div>
+</main>
+
+<script>
+  var posts = [
+    {% for post in site.posts %}
+      {
+        "title": "{{ post.title | xml_escape }}",
+        "date": "{{ post.date | date: "%d/%m/%Y" }}",
+        "content": {{ post.content | strip_html | strip_newlines | jsonify }},
+        "url": "{{ post.url | xml_escape }}"
+      }
+      {% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  ];
+</script>

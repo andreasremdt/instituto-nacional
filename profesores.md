@@ -1,8 +1,8 @@
 ---
-layout: "teachers"
+layout: teachers
 
-title: "Profesores"
-description: "Nuestros profesores son el fundamento para una educación sostenible"
+title: Profesores
+description: Nuestros profesores son el fundamento para una educación sostenible.
 
 permalink: /instituto/profesores/
 menus: institute

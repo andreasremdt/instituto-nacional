@@ -2,7 +2,7 @@
 layout: institute
 
 title: El Instituto
-description: adasds
+description: Esta página contiene informaciones sobre nuestros profesores, campus, carreras y más.
 
 menus:
   header:

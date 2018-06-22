@@ -2,7 +2,7 @@
 layout: social-program
 
 title: Programa
-description: asdas
+description: El programa de la Labor Social para que sepas lo que vas a hacer.
 
 permalink: /servicios/labor-social/programa
 

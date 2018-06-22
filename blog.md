@@ -2,7 +2,7 @@
 layout: posts
 
 title: Blog
-description: asdasd
+description: Lee las últimas noticias sobre eventos y vida escolar en nuestro blog.
 
 menus:
   header:

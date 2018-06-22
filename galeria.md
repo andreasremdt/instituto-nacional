@@ -2,7 +2,7 @@
 layout: gallery
 
 title: Galería
-description: asdasdasd
+description: En nuestra galería, hemos preparado una colección de imágenes para que conozces nuestro Instituto mejor.
 
 permalink: /instituto/galeria/
 menus: institute

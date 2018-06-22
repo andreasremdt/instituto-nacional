@@ -2,7 +2,7 @@
 layout: campus
 
 title: Campus
-description: asdasdas
+description: Lee todo sobre nuestro campus y su variedad de naturaleza.
 
 permalink: /instituto/campus/
 menus: institute

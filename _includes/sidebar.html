@@ -1,8 +1,8 @@
 <aside class="md:w-1/4">
   <h3 class="lined text-black uppercase font-medium mb-8">Buscar</h3>
   
-  <form action="search" class="flex">
-    <input type="search" class="bg-white w-full border border-solid hover:border-grey border-grey-light border-r-0 p-4 text-grey-darker font-light" placeholder="Buscar publicaciones en el blog...">
+  <form action="/blog/buscar/" method="get" class="flex">
+    <input type="search" name="q" class="bg-white w-full border border-solid hover:border-grey border-grey-light border-r-0 p-4 text-grey-darker font-light" placeholder="Buscar publicaciones en el blog...">
     <button type="submit" class="bg-green text-white w-12 hover:bg-green-dark flex-no-shrink" title="Buscar">
       <svg class="" width="20" height="20">
         <use xlink:href="/icons/symbol-defs.svg#search"></use>
@@ -12,14 +12,20 @@
 
   <h3 class="lined text-black uppercase font-medium my-8 pt-8">Categorias</h3>
   <ul class="list-reset">
-    <li><a href="#" class="flex justify-between text-grey-darker hover:text-green font-light py-3 border-b border-dashed border-grey-light">Actividades <span>(12)</span></a></li>
-    <li><a href="#" class="flex justify-between text-grey-darker hover:text-green font-light py-3 border-b border-dashed border-grey-light">Noticias <span>(6)</span></a></li>
-    <li><a href="#" class="flex justify-between text-grey-darker hover:text-green font-light py-3 border-b border-dashed border-grey-light">Fiestas <span>(10)</span></a></li>
-    <li><a href="#" class="flex justify-between text-grey-darker hover:text-green font-light py-3 border-b border-dashed border-grey-light">Naturaleza <span>(1)</span></a></li>
-    <li><a href="#" class="flex justify-between text-grey-darker hover:text-green font-light py-3">Otros <span>(9)</span></a></li>
+    {% assign tags_list = site.categories %}
+    {% if tags_list.first[0] == null %}
+      {% for tag in tags_list %} 
+        <li><a href="#{{ tag }}" class="flex justify-between text-grey-darker hover:text-green font-light py-3 border-b border-dashed border-grey-light">{{ tag | capitalize }} <span>({{ site.tags[tag].size }})</span></a></li>
+      {% endfor %}
+    {% else %}
+      {% for tag in tags_list %} 
+        <li><a href="#{{ tag[0] }}" class="flex justify-between text-grey-darker hover:text-green font-light py-3 border-b border-dashed border-grey-light">{{ tag[0] | capitalize }} <span>({{ tag[1].size }})</span></a></li>
+      {% endfor %}
+    {% endif %}
+    {% assign tags_list = nil %}
   </ul>
 
-  <h3 class="lined text-black uppercase font-medium my-8 pt-8">Recent blog posts</h3>
+  <h3 class="lined text-black uppercase font-medium my-8 pt-8">Entradas recientes</h3>
   {% for post in site.posts limit: 2 %}
     <article class="flex pb-6 items-center{% unless forloop.last %} border-b border-dashed border-grey-light{% endunless %}">
       <figure>

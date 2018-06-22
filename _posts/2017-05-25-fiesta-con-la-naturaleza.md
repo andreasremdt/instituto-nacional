@@ -2,7 +2,7 @@
 layout: post
 title: Fiesta con la Naturaleza 2017
 date: 2017-05-25 16:16:01 -0600
-tag: naturaleza
+category: naturaleza
 image_path: http://res.cloudinary.com/instituto-del-ambiente/image/upload/q_80/blog/fiesta-con-la-naturaleza.jpg
 ---
 

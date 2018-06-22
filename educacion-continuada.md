@@ -2,7 +2,7 @@
 layout: default
 
 title: Educación Continuada
-description: sadasdsa
+description: 
 
 menus: services
 

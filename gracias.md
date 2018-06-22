@@ -2,7 +2,6 @@
 layout: thank-you
 
 title: Gracias
-description: adasda
 
 permalink: /contactanos/gracias/
 ---

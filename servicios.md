@@ -2,7 +2,7 @@
 layout: services
 
 title: Servicios
-description: This is a sample description
+description: Los servicios que ofrecemos son bodas, fiestas, turismo educativo, labor social y más.
 
 menus:
   header:

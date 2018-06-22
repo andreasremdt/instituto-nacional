@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Disallow: /contactanos/gracias/
+Disallow: /404/
+Disallow: /blog/buscar/
