@@ -34,7 +34,7 @@ layout: default
       {% for event in page.events %}
         <div class="px-2 lg:px-0 mb-4 lg:mb-0 sm:w-1/2 lg:w-full lg:hidden" data-tab="{{ event.title | slugify | cgi_escape }}">
           <article class="lg:flex bg-white shadow-md h-full">
-            <div style="background-image: url('{{ event.image | replace: 'upload', 'upload/c_scale,w_500,q_60' }}');" class="bg-cover flex-no-shrink lg:w-48 h-48 lg:h-full"></div>
+            <div style="background-image: url('{{ event.image | replace: 'upload', 'upload/c_scale,w_500,q_60' }}');" class="bg-cover flex-no-shrink lg:w-48 h-48 lg:h-auto"></div>
             <div class="py-4 px-6">
               <h2 class="mb-2 font-medium text-black leading-tight" data-action="colorize">{{ event.title }}</h2>
               <p class="font-light">{{ event.content }}</p>

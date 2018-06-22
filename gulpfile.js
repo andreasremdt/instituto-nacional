@@ -60,7 +60,7 @@ gulp.task('js', function() {
 
   return gulp.src('./src/js/*.js')
     .pipe(babel({ presets: ['env'] }))
-    .pipe(uglify())
+    //.pipe(uglify())
     .pipe(rename({ suffix: '.min'}))
     .pipe(gulp.dest('./js'));
   });
