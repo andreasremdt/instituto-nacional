@@ -3,7 +3,7 @@ layout: post
 title: Fiesta con la Naturaleza 2017
 date: 2017-05-25 16:16:01 -0600
 category: naturaleza
-image_path: http://res.cloudinary.com/instituto-del-ambiente/image/upload/q_80/blog/fiesta-con-la-naturaleza.jpg
+image: https://res.cloudinary.com/instituto-del-ambiente/image/upload/blog/fiesta-con-la-naturaleza.jpg
 ---
 
 Por segundo año consecutivo Jarabacoa se viste de gala para celebrar su pasadía familiar y el Día del Egresado, al que hemos llamado “Fiesta con la Naturaleza”, en conmemoración al Día Mundial del Medio Ambiente, estará llevándose a cabo el sábado 6 de junio en las instalaciones de la Escuela Ambiental de 9:00 A.M a 5:00 P.M.

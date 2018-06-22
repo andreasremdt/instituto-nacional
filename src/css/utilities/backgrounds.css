@@ -1,13 +1,33 @@
 @responsive {
-  .bg-hero-small  { background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_80/backgrounds/hero-small.jpg") center no-repeat; }
-  .bg-hero-big    { background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_80/backgrounds/hero-big.jpg") center no-repeat; }
-  .bg-forest      { background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_80/backgrounds/forest.jpg") center no-repeat; }
-  .bg-video       { background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_80/backgrounds/video-bg.jpg") center no-repeat; }
-  .bg-water       { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_80/backgrounds/water.jpg") center no-repeat; }
-  .bg-forest-roof { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_80/backgrounds/forest-roof.jpg") center no-repeat; }
-  .bg-palm        { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_80/backgrounds/palm-leaf.jpg") bottom right/50% no-repeat; }
-  .bg-tree        { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_80/backgrounds/tree.jpg") left/auto 100% no-repeat; }
-  .bg-fake-plant  { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_80/backgrounds/plastic-plant.png") 50px bottom/400px no-repeat; }
-  .bg-room-plant  { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_80/backgrounds/room-plant.jpg") center/cover no-repeat; }
-  .logo           { background: url("/icons/favicon-96x96.png") center left/60px no-repeat; padding-left:4.3rem; }
+  .no-webp .bg-hero-small  { background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/backgrounds/hero-small.jpg") center no-repeat; }
+  .webp .bg-hero-small     { background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_55/backgrounds/hero-small.webp") center no-repeat; }
+  
+  .no-webp .bg-hero-big    { background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/backgrounds/hero-big.jpg") center no-repeat; }
+  .webp .bg-hero-big       { background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_65/backgrounds/hero-big.webp") center no-repeat; }
+  
+  .no-webp .bg-forest      { background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/backgrounds/forest.jpg") center no-repeat; }
+  .webp .bg-forest         { background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_55/backgrounds/forest.webp") center no-repeat; }
+  
+  .no-webp .bg-video       { background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/backgrounds/video-bg.jpg") center no-repeat; }
+  .webp .bg-video          { background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_55/backgrounds/video-bg.webp") center no-repeat; }
+  
+  .no-webp .bg-water       { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/backgrounds/water.jpg") center no-repeat; }
+  .webp .bg-water          { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_55/backgrounds/water.webp") center no-repeat; }
+  
+  .no-webp .bg-forest-roof { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/backgrounds/forest-roof.jpg") center no-repeat; }
+  .webp .bg-forest-roof    { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_55/backgrounds/forest-roof.webp") center no-repeat; }
+  
+  .no-webp .bg-palm        { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/backgrounds/palm-leaf.jpg") bottom right/50% no-repeat; }
+  .webp .bg-palm           { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_55/backgrounds/palm-leaf.webp") bottom right/50% no-repeat; }
+  
+  .no-webp .bg-tree        { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/backgrounds/tree.jpg") left/auto 100% no-repeat; }
+  .webp .bg-tree           { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_55/backgrounds/tree.webp") left/auto 100% no-repeat; }
+  
+  /*.no-webp .bg-fake-plant  { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/backgrounds/plastic-plant.png") 50px bottom/400px no-repeat; }*/
+  .bg-fake-plant           { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_55/backgrounds/plastic-plant.jpg") 50px bottom/400px no-repeat; }
+  
+  /*.no-webp .bg-room-plant  { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/backgrounds/room-plant.jpg") center/cover no-repeat; }*/
+  .bg-room-plant           { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_55/backgrounds/room-plant.jpg") center/cover no-repeat; }
+  
+  .logo                    { background: url("/icons/favicon-96x96.png") center left/60px no-repeat; padding-left:4.3rem; }
 }

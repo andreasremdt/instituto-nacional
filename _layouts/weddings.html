@@ -30,8 +30,11 @@ layout: default
 <figure class="mt-8">
   <div class="flex transition">
     {% for image in page.images %}
-      <a data-fancybox="gallery" href="{{ image.image_path }}" class="block w-1/4 flex-no-shrink opacity-75 hover:opacity-100 transition">
-        <img src="{{ image.image_path }}" alt="{{ image.title }}" width="720" height="900">
+      <a data-fancybox="gallery" href="{{ image.url | replace: 'upload', 'upload/q_60' }}" class="block w-1/4 flex-no-shrink opacity-75 hover:opacity-100 transition">
+        <picture>
+          <source srcset="{{ image.url | replace: 'upload', 'upload/c_scale,q_60,w_500' | replace: '.jpg', '.webp' }}" type="image/webp">
+          <img src="{{ image.url | replace: 'upload', 'upload/c_scale,q_60,w_500' }}" alt="{{ image.title }}" width="500" height="625">
+        </picture>
       </a>
     {% endfor %}
   </div>

@@ -9,9 +9,9 @@ layout: default
 
   <div class="lg:flex lg:-mx-4 lg:flex-wrap mt-8 pt-8">
     {% for service in page.servicios %}
-    <article class="lg:w-1/2 flex lg:px-4 mb-8">
-      <div class="bg-cover bg-center bg-no-repeat sm:w-1/3 flex-no-shrink" style="background-image: url('{{ service.image_path }}');"></div>
-      <div class="py-4 px-6 border-l-0 border border-solid border-grey-light flex flex-col items-start">
+    <article class="lg:w-1/2 flex flex-col sm:flex-row lg:px-4 mb-8">
+      <div class="bg-cover bg-center bg-no-repeat sm:w-1/3 flex-no-shrink h-48 sm:h-auto" style="background-image: url('{{ service.image | replace: 'upload', 'upload/c_scale,q_60,w_500' }}');"></div>
+      <div class="py-4 px-6 sm:border-l-0 border border-solid border-grey-light flex flex-col items-start">
         <h3 class="mb-4 font-medium text-black text-xl" data-action="colorize">{{ service.title }}</h3>
         <p class="font-light mb-4">{{ service.description }}</p>
         <a href="{{ service.url }}" class="mt-auto button">Más detalles</a>
@@ -29,7 +29,10 @@ layout: default
   <section class="md:py-16 md:px-6{% if thecycle == 'even' %} md:bg-grey-lighter{% endif %}">
     <div class="max-w-2xl mx-auto flex items-center relative{% if thecycle == 'even' %} flex-row-reverse{% endif %}">
       <figure class="md:w-2/5 absolute md:static pin-l pin-t w-full h-full z-10">
-        <img src="{{ characteristic.image_path }}" class="w-full h-full object-cover" alt="{{ characteristic.title }}" width="800" height="533">
+        <picture>
+          <source srcset="{{ characteristic.image | replace: 'upload', 'upload/c_scale,q_60,w_750' | replace: '.jpg', '.webp' }}" type="image/webp">
+          <img src="{{ characteristic.image | replace: 'upload', 'upload/c_scale,q_60,w_750' }}" class="w-full h-full object-cover" alt="{{ characteristic.title }}" width="800" height="533">
+        </picture>
       </figure>
 
       <div class="{% if thecycle == 'odd' %}md:ml-8{% else %}md:mr-8{% endif %} md:w-3/5 z-20 px-6 py-16 md:p-0{% if thecycle == 'even' %} text-right{% endif %}">

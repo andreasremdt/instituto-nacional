@@ -1,6 +1,6 @@
 ---
 title: David Rodriguez
-thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/teachers/david-rodriguez.jpg
+image: https://res.cloudinary.com/instituto-del-ambiente/image/upload/teachers/david-rodriguez.jpg
 published: true
 ---
 

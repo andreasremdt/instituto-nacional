@@ -34,7 +34,7 @@ gulp.task('css', function() {
     .pipe(purgecss({
       content: ['_layouts/*.html', '_includes/*.html'],
       whitelist: ['opened', 'compensate-for-scrollbar'],
-      whitelistPatternsChildren: [/fancybox/],
+      whitelistPatternsChildren: [/fancybox/, /webp/, /no\-webp/],
       extractors: [{
         extractor: TailwindExtractor,
         extensions: ['html']

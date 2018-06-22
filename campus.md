@@ -32,17 +32,13 @@ area_production:
       content: Un invernadero de tecnología media o de segunda con 544 metros², compuesto por materiales de hierro galvanizado, plástico y malla anti insectos. En este se establecen cultivos hortícolas o intensivos como el tomate, ají, pepino y, en algún momento el cilantro.
   
   images:
-    - thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/fresas.jpg
-      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/fresas.jpg
+    - url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/pages/fresas.jpg
       caption: Produccion de fresas
-    - thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/hierbas.jpg
-      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/hierbas.jpg
+    - url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/pages/hierbas.jpg
       caption: Hierbas para la cocina
-    - thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/plantas-jovenes.jpg
-      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/plantas-jovenes.jpg
+    - url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/pages/plantas-jovenes.jpg
       caption: Plantas jovenes en el invernadero
-    - thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/vivero-pinos.jpg
-      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/vivero-pinos.jpg
+    - url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/pages/vivero-pinos.jpg
       caption: Vivero de pinos
   image_caption: Producción de fresas, hierbas para la cocina, invernadero y vivero.
 
@@ -76,28 +72,22 @@ area_forests:
 
   items:
     - title: Parque acuático
-      thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/parque-acuatico.jpg
-      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/parque-acuatico.jpg
+      image: https://res.cloudinary.com/instituto-del-ambiente/image/upload/pages/parque-acuatico.jpg
       description: El parque acuático es un sistema ecologico y una área ecoturistica que contiene una variedad de diferentes plantas y vidas acuaticas. Se encuentran diferentes especies de aves, peces, tortugas y más.
     - title: Senderos
-      thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/senderos.jpg
-      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/senderos.jpg
+      image: https://res.cloudinary.com/instituto-del-ambiente/image/upload/pages/senderos.jpg
       description: Dentro del campus tenemos varios senderos que te guian sobre diferentes zonas tematicas. El objectivo de esos senderos es la explicación de los diferentes eco-sistemas, sus plantas endemicas y caracteristicas.
     - title: Áreas de investigación
-      thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/area-de-investigacion.jpg
-      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/area-de-investigacion.jpg
+      image: https://res.cloudinary.com/instituto-del-ambiente/image/upload/pages/area-de-investigacion.jpg
       description: Estas áreas nos sirven para la ensenanza de las diferentes clases. Lo mejor que los estudiantes pueden hacer es practicar su conocimiento teorico en practica. Para eso hemos creados dichas áreas.
     - title: Estación climatológica
-      thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/estacion-climatologica.jpg
-      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/estacion-climatologica.jpg
+      image: https://res.cloudinary.com/instituto-del-ambiente/image/upload/pages/estacion-climatologica.jpg
       description: Donada por la fundación REDDOM, esta estación toma medidas diarias del clima en Jarabacoa. Esos datos van analizados en el Instituto y en ... 
     - title: Parque de formas
-      thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/parque-de-formas.jpg
-      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/parque-de-formas.jpg
+      image: https://res.cloudinary.com/instituto-del-ambiente/image/upload/pages/parque-de-formas.jpg
       description: lorem ipsum dolor sit amet, olor se tal.
     - title: Parque de la Caoba
-      thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/parque-caoba.jpg
-      url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/pages/parque-caoba.jpg
+      image: https://res.cloudinary.com/instituto-del-ambiente/image/upload/pages/parque-caoba.jpg
       description: lorem ipsum dolor sit amet, olor se tal.
 ---
 

@@ -33,7 +33,9 @@
     <meta name="msapplication-wide310x150logo" content="/icons/mstile-310x150.png">
     <meta name="msapplication-square310x310logo" content="/icons/mstile-310x310.png">
 
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed para {{ site.title }}" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed para {{ site.title }}" href="/feed.xml">
+
+    <script src="/js/modernizr.js"></script>
   </head>
   <body>
 
@@ -49,9 +51,7 @@
     <script src="/js/fancybox.min.js" defer></script>
     <script src="/js/main.js" defer></script>
     
-    {% if page.url == "/instituto/galeria/" %}
-      <script src="/js/isotope.min.js" defer></script>
-    {% elsif page.url == "/blog/buscar/" %}
+    {% if page.url == "/blog/buscar/" %}
       <script src="/js/search.js" defer></script>
     {% elsif page.url == "/contactanos/" %}
       <script>

@@ -8,7 +8,7 @@
         <h3 class="text-white font-normal text-lg mb-4 mt-6 pt-6 uppercase">Síguenos:</h3>
 
         <nav>
-          {% for item in site.social %}
+          {% for item in site.data.information.social %}
           <a href="{{ item.url }}" target="_blank" rel="noopener" class="mr-1 link inline-flex w-10 h-10 items-center justify-center bg-grey-darker text-white hover:text-green hover:border-green rounded-full" title="{{ item.text }}">
             <svg width="18" height="18">
               <use xlink:href="/icons/symbol-defs.svg#{{ item.name | downcase }}"></use>
@@ -37,7 +37,10 @@
 
           {% for image in subpage.images limit:6 %}
             <a href="/instituto/galeria/" class="block w-1/3 mb-2 px-1 opacity-75 hover:opacity-100 transition">
-              <img src="{{ image.url | replace: 'q_75', 'c_thumb,g_center,h_100,q_80,w_100' }}" alt="{{ image.description }}" width="100" height="100">
+              <picture>
+                <source srcset="{{ image.url | replace: 'upload', 'upload/c_thumb,g_center,q_60,w_100,h_100' | replace: '.jpg', '.webp' }}" type="image/webp">
+                <img src="{{ image.url | replace: 'upload', 'upload/c_thumb,g_center,q_60,w_100,h_100' }}" alt="{{ image.description }}" width="100" height="100">
+              </picture>
             </a>
           {% endfor %}
         </figure>

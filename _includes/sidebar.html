@@ -2,7 +2,7 @@
   <h3 class="lined text-black uppercase font-medium mb-8">Buscar</h3>
   
   <form action="/blog/buscar/" method="get" class="flex">
-    <input type="search" name="q" class="bg-white w-full border border-solid hover:border-grey border-grey-light border-r-0 p-4 text-grey-darker font-light" placeholder="Buscar publicaciones en el blog...">
+    <input type="search" name="q" class="bg-white w-full border border-solid hover:border-grey border-grey-light border-r-0 p-4 text-grey-darker font-light" placeholder="Buscar publicaciones en el blog..." required>
     <button type="submit" class="bg-green text-white w-12 hover:bg-green-dark flex-no-shrink" title="Buscar">
       <svg class="" width="20" height="20">
         <use xlink:href="/icons/symbol-defs.svg#search"></use>
@@ -29,7 +29,10 @@
   {% for post in site.posts limit: 2 %}
     <article class="flex pb-6 items-center{% unless forloop.last %} border-b border-dashed border-grey-light{% endunless %}">
       <figure>
-        <img src="{{ post.image_path }}" class="mr-4 w-16 h-16 object-cover" alt="{{ post.title }}" width="100" height="100">
+        <picture>
+          <source srcset="{{ post.image | replace: 'upload', 'upload/c_thumb,w_100,h_100,q_60' | replace: '.jpg', '.webp' }}" type="image/webp">
+          <img src="{{ post.image | replace: 'upload', 'upload/c_thumb,w_100,h_100,q_60' }}" class="mr-4 w-16 h-16 object-cover" alt="{{ post.title }}" width="100" height="100">
+        </picture>
       </figure>
     
       <div class="">        

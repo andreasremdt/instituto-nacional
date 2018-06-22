@@ -1,0 +1,133 @@
+---
+layout: null
+sitemap:
+  exclude: 'yes'
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{{ site.url }}/</loc>
+    <lastmod>2018-04-04T01:13:00-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/instituto/</loc>
+    <lastmod>2018-04-04T01:13:00-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/instituto/campus/</loc>
+    <lastmod>2018-04-04T01:13:00-04:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/instituto/carreras/</loc>
+    <lastmod>2018-04-04T01:13:00-04:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/instituto/careers/ciencias-forestales/</loc>
+    <lastmod>2018-04-04T01:13:00-04:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/instituto/carreras/gestion-ambiental/</loc>
+    <lastmod>2018-04-04T01:13:00-04:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/instituto/galeria/</loc>
+    <lastmod>2018-04-04T01:13:00-04:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/instituto/historia/</loc>
+    <lastmod>2018-04-04T01:13:00-04:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/instituto/horario/</loc>
+    <lastmod>2018-04-04T01:13:00-04:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/instituto/profesores/</loc>
+    <lastmod>2018-04-04T01:13:00-04:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/instituto/requisitos/</loc>
+    <lastmod>2018-04-04T01:13:00-04:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/servicios/</loc>
+    <lastmod>2018-04-04T01:13:00-04:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/servicios/bodas-fiestas/</loc>
+    <lastmod>2018-04-04T01:13:00-04:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/servicios/labor-social/</loc>
+    <lastmod>2018-04-04T01:13:00-04:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/servicios/labor-social/programa/</loc>
+    <lastmod>2018-04-04T01:13:00-04:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/servicios/turismo-educativo/</loc>
+    <lastmod>2018-04-04T01:13:00-04:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/servicios/turismo-educativo/detalles/</loc>
+    <lastmod>2018-04-04T01:13:00-04:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/contactanos/</loc>
+    <lastmod>2018-04-04T01:13:00-04:00</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/sitemap/</loc>
+    <lastmod>2018-04-04T01:13:00-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  {% for post in site.posts %}
+    {% unless post.published == false %}
+    <url>
+      <loc>{{ site.url }}{{ post.url }}</loc>
+      <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      <changefreq>never</changefreq>
+      <priority>0.6</priority>
+    </url>
+    {% endunless %}
+  {% endfor %}
+</urlset>

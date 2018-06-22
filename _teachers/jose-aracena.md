@@ -1,6 +1,6 @@
 ---
 title: José Aracena
-thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/teachers/jose-aracena.jpg
+image: https://res.cloudinary.com/instituto-del-ambiente/image/upload/teachers/jose-aracena.jpg
 published: true
 ---
 

@@ -47,7 +47,10 @@ layout: default
     </div>
   
     <figure class="md:w-2/5 absolute md:static pin-l pin-t w-full h-full z-10">
-      <img src="{{ page.careers.image_path }}" class="w-full h-full object-cover" alt="{{ page.careers.title }}" width="800" height="533">
+      <picture>
+        <source srcset="{{ page.careers.image_path | replace: 'upload', 'upload/c_scale,q_70,w_750' | replace: '.jpg', '.webp' }}" type="image/webp">
+        <img src="{{ page.careers.image_path | replace: 'upload', 'upload/c_scale,q_70,w_750' }}" class="w-full h-full object-cover" alt="{{ page.careers.title }}" width="800" height="533">
+      </picture>
     </figure>
   </div>
 </section>
@@ -57,7 +60,10 @@ layout: default
 <section class="md:py-16 md:bg-grey-lighter md:px-6">
   <div class="max-w-2xl mx-auto flex items-center relative">
     <figure class="md:w-2/5 absolute md:static pin-l pin-t w-full h-full z-10">
-      <img src="{{ page.campus.image_path }}" class="w-full h-full object-cover" alt="{{ page.campus.title }}" width="800" height="533">
+      <picture>
+        <source srcset="{{ page.campus.image_path | replace: 'upload', 'upload/c_scale,q_70,w_750' | replace: '.jpg', '.webp' }}" type="image/webp">
+        <img src="{{ page.campus.image_path | replace: 'upload', 'upload/c_scale,q_70,w_750' }}" class="w-full h-full object-cover" alt="{{ page.campus.title }}" width="800" height="533">
+      </picture>
     </figure>
   
     <div class="md:ml-8 md:w-3/5 z-20 px-6 py-16 md:p-0">
@@ -83,7 +89,10 @@ layout: default
     </div>
 
     <figure class="md:w-2/5 absolute md:static pin-l pin-t w-full h-full z-10">
-      <img src="{{ page.teachers.image_path }}" class="w-full h-full object-cover" alt="{{ page.teachers.title }}" width="800" height="533">
+      <picture>
+        <source srcset="{{ page.teachers.image_path | replace: 'upload', 'upload/c_scale,q_70,w_750' | replace: '.jpg', '.webp' }}" type="image/webp">
+        <img src="{{ page.teachers.image_path | replace: 'upload', 'upload/c_scale,q_70,w_750' }}" class="w-full h-full object-cover" alt="{{ page.teachers.title }}" width="800" height="533">
+      </picture>
     </figure>
   </div>
 </section>

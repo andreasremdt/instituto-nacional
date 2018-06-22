@@ -6,7 +6,10 @@ layout: default
   <div class="md:flex">
     <main class="md:w-3/4 md:mr-8 flex flex-col mb-8 bg-white border-grey-light border-solid border">
       <figure>
-        <img src="{{ page.image_path }}" class="w-full" alt="{{ page.title }}" width="300" height="250">
+        <picture>
+          <source srcset="{{ page.image | replace: 'upload', 'upload/c_thumb,w_750,h_400,q_60' | replace: '.jpg', '.webp' }}" type="image/webp">
+          <img src="{{ page.image | replace: 'upload', 'upload/c_thumb,w_750,h_400,q_60' }}" class="w-full" alt="{{ page.title }}" width="300" height="250">
+        </picture>
       </figure>
     
       <div class="p-6">

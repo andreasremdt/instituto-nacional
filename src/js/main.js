@@ -10,31 +10,32 @@
    */
   function initGalleryFilter() {
     var gallery = document.querySelector('[data-gallery]'),
-        buttons = document.querySelectorAll('[data-filter]');
+        buttons = document.querySelectorAll('[data-filter]'),
+        images = document.querySelectorAll('[data-gallery-item]');
     
     if (!gallery) {
       return;
     }
 
-    var plugin = new Isotope(gallery, {
-      itemSelector: '[data-gallery-item]',
-      layoutMode: 'fitRows',
-      transitionDuration: '0s'
-    });
-
     for (let i = 0; i < buttons.length; i++) {
-      buttons[i].addEventListener('click', (e) => filterItems(e, plugin));
+      buttons[i].addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        filterItems(e.target.dataset.filter, images);
+      });
     }
   }
 
 
 
-  function filterItems(e, plugin) {
-    var filter = e.target.dataset.filter;
-
-    e.preventDefault();
-
-    plugin.arrange({ filter: (filter === '*' ? '*' : `[data-category="${filter}"]`) });
+  function filterItems(filter, images) {
+    for (let i = 0; i < images.length; i++) {
+      if (images[i].dataset.category === filter || filter === '*') {
+        images[i].classList.replace('hidden', 'block');
+      } else {
+        images[i].classList.replace('block', 'hidden');
+      }
+    }
   }
 
 

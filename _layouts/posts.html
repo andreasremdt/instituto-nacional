@@ -8,7 +8,10 @@ layout: default
        {% for post in site.posts %}
         <article class="flex flex-col mb-8 bg-white border-grey-light border-solid border">
           <figure>
-            <img src="{{ post.image_path }}" class="w-full sm:h-64 object-cover" alt="{{ post.title }}" width="300" height="250">
+            <picture>
+              <source srcset="{{ post.image | replace: 'upload', 'upload/c_thumb,w_750,h_256,q_60' | replace: '.jpg', '.webp' }}" type="image/webp">
+              <img src="{{ post.image | replace: 'upload', 'upload/c_thumb,w_750,h_256,q_60' }}" class="w-full sm:h-64" alt="{{ post.title }}" width="750" height="256">
+            </picture>
           </figure>
         
           <div class="p-6">

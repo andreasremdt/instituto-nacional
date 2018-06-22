@@ -29,15 +29,15 @@ principles:
     icon: vision
 careers:
   title: Carreras
-  image_path: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_750/pages/hombre-trabajando.jpg
+  image_path: https://res.cloudinary.com/instituto-del-ambiente/image/upload/pages/hombre-trabajando.jpg
   content: "Ofrecemos 2 carreras diferentes: <b>Ciencias Forestales</b> y <b>Gestión Ambiental</b>. Haz clic en el botón abajo para obtener más informaciones acerca de estas carreras.<br><br>¿Te gustaría una?"
 campus:
   title: Campus
-  image_path: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_750/pages/camino-de-puerta.jpg
+  image_path: https://res.cloudinary.com/instituto-del-ambiente/image/upload/pages/camino-de-puerta.jpg
   content: Este Instituto cuenta con 2 campus que ofrecen una gran variedad de plantas, áreas temáticas y más. Haz clic en el botón de abajo para obtener más información sobre esto y para ver las fotos.
 teachers:
   title: Profesores
-  image_path: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_750/pages/profesores.jpg
+  image_path: https://res.cloudinary.com/instituto-del-ambiente/image/upload/pages/profesores.jpg
   content: Como parte de nuestra misión académica, contamos con un cuerpo de profesores con amplios conocimientos y una gran experiencia.<br><br>¡Ven y conócenos!
 application:
   title: Como aplicar

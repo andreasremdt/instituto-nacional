@@ -24,7 +24,7 @@ tiles:
   - name: El Campus
     description: 320 tareas de tierra con una gran biodiversidad...
     url: /instituto/campus/
-    thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/pages/campus.jpg
+    thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/pages/campus.jpg
   - name: Las Carreras
     description: Infórmate sobre las carreras que puedes estudiar...
     url: /instituto/carreras/
