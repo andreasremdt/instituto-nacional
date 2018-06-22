@@ -30,10 +30,11 @@
 
   function filterItems(filter, images) {
     for (let i = 0; i < images.length; i++) {
-      if (images[i].dataset.category === filter || filter === '*') {
-        images[i].classList.replace('hidden', 'block');
+      var $image = $(images[i]);
+      if ($image.data('category') === filter || filter === '*') {
+        $image.addClass('block').removeClass('hidden');
       } else {
-        images[i].classList.replace('block', 'hidden');
+        $image.addClass('hidden').removeClass('block');
       }
     }
   }
@@ -115,14 +116,14 @@
    * the button.
    */
   function initMenuToggle() {
-    var menuToggleButton = document.querySelector('button[data-action="menu"]'),
-      menuWrapper = document.querySelector('.top-navigation');
+    var $menuToggleButton = $('button[data-action="menu"]'),
+      $menuWrapper = $('.top-navigation');
 
-    menuToggleButton.addEventListener('click', function handleMenuToggle(e) {
+    $menuToggleButton.on('click', function handleMenuToggle(e) {
       e.preventDefault();
 
-      menuToggleButton.classList.toggle('text-green');
-      menuWrapper.classList.toggle('opened');
+      $menuToggleButton.toggleClass('text-green');
+      $menuWrapper.toggleClass('opened');
     });
   }
 
