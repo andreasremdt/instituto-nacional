@@ -14,7 +14,7 @@ menus:
     weight: 2
 
 intro:
-  pretitle: 326 estudiantes graduarón...
+  pretitle: 326 estudiantes graduados...
   title: ¡Ven a conocer Nuestro Instituto!
 
 principles:

@@ -37,7 +37,9 @@
     <meta name="theme-color" content="#9DC701">
   </head>
   <body>
-
+    <noscript>
+      <p class="bg-green text-center p-4 text-white">JavaScript está deshabilitado en tu navegador. Este sitio web usa JavaScript para mejorar tu experiencia. Si no activas JavaScript, este sitio web no puede funcionar o mostrarse correctamente.</p>
+    </noscript>
     {% include header.html %}
     {% include navigation.html %}
     {% include hero.html %}
@@ -52,29 +54,10 @@
     <script src="/js/jquery.min.js" defer></script>
     <script src="/js/jquery.fancybox.min.js" defer></script>
     <script src="/js/main.min.js" defer></script>
-    
     {% if page.url == "/blog/buscar/" %}
       <script src="/js/search.min.js" defer></script>
     {% elsif page.url == "/contactanos/" %}
-      <script>
-        function initMap() {
-            var url = {
-              lat: 19.1235663,
-              lng: -70.6060518
-            };
-
-            var map = new google.maps.Map(document.querySelector('div.map'), {
-              zoom: 14,
-              center: url,
-              disableDefaultUI: true
-            });
-            var marker = new google.maps.Marker({
-              position: url,
-              map: map
-            });
-          }
-      </script>
-      <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvasE3DqVJKzmtB5xXkYfFtQkQ7kxEhZM&callback=initMap"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvasE3DqVJKzmtB5xXkYfFtQkQ7kxEhZM&callback=initMap" defer></script>
     {% endif %}
   </body>
 </html>

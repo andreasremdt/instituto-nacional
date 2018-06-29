@@ -7,11 +7,7 @@ layout: default
     <p class="font-light text-xl mb-6">En está página puedes ver cuales clases y materias tiene cada carrera. Por favor elige una carrera:</p>
 
     {% for career in site.careers %}
-      <button data-action="tab" data-target="{{ career.title | slugify | cgi_escape }}" class="inline-flex flex-1 items-center font-medium uppercase text-white bg-green px-6 py-3 inline-block cursor-pointer">
-        <svg width="30" height="30" class="mr-4">
-          <use xlink:href="/icons/symbol-defs.svg#{{ career.icon }}"></use>
-        </svg> {{ career.title }}
-      </button>
+      <button data-action="tab" data-target="{{ career.title | slugify | cgi_escape }}" class="inline-flex flex-1 items-center font-medium uppercase text-white bg-green px-6 py-4 inline-block cursor-pointer hover:bg-green-dark hover:text-white">{{ career.title }}</button>
     {% endfor %}
   </nav>
 

@@ -223,15 +223,21 @@
         if (entry.isIntersecting) {
           let lazyImage = entry.target;
 
-          if (lazyImage.dataset.src) {
-            lazyImage.src = lazyImage.dataset.src;
-            lazyImage.removeAttribute('data-src');
+          if (lazyImage.tagName === 'IMG' || lazyImage.tagName === 'SOURCE') {
+            if (lazyImage.dataset.src) {
+              lazyImage.src = lazyImage.dataset.src;
+              lazyImage.removeAttribute('data-src');
+            }
+
+            if (lazyImage.dataset.srcset) {
+              lazyImage.srcset = lazyImage.dataset.srcset;
+              lazyImage.removeAttribute('data-srcset');
+            }
+          } else {
+            lazyImage.classList.add(lazyImage.dataset.class);
           }
 
-          if (lazyImage.dataset.srcset) {
-            lazyImage.srcset = lazyImage.dataset.srcset;
-            lazyImage.removeAttribute('data-srcset');
-          }
+          
 
           lazyImageObserver.unobserve(lazyImage);
         }
@@ -261,3 +267,25 @@
   });
 
 })(document);
+
+
+/**
+ * ---------------------------------------------------------------------------
+ * Callback for Google Maps
+ */
+function initMap() {
+  var url = {
+    lat: 19.1235663,
+    lng: -70.6060518
+  };
+
+  var map = new google.maps.Map(document.querySelector('div.map'), {
+    zoom: 14,
+    center: url,
+    disableDefaultUI: true
+  });
+  var marker = new google.maps.Marker({
+    position: url,
+    map: map
+  });
+}

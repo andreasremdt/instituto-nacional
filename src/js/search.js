@@ -1,4 +1,4 @@
-(function() {
+(function(document) {
   function getQueryVariable(variable) {
     var query = window.location.search.substring(1);
     var vars = query.split('&');
@@ -69,4 +69,4 @@
   }
 
   document.querySelector('[data-search-number]').textContent = counter;
-})();
+})(document);

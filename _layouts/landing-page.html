@@ -33,7 +33,7 @@ layout: default
 
 
 
-<section class="bg-tree lg:tabs py-16 px-6 relative z-0">
+<section class="lg:tabs py-16 px-6 relative z-0" data-lazy data-class="bg-tree">
   <div class="flex justify-center mb-8">
     <h2 class="bg-white text-green px-6 py-2 text-4xl shadow-md">Carreras</h2>
   </div>
@@ -41,11 +41,7 @@ layout: default
   <div class="mx-auto max-w-2xl md:flex">
     <div class="hidden lg:flex flex-col items-end flex-1 mx-6 mb-0">
       {% for career in site.careers %}
-        <button type="button" class="text-left bg-white uppercase px-4 py-6 font-medium text-grey-darkest {% unless forloop.last %}sm:mb-1{% endunless %} w-full md:w-4/5 flex items-center" data-action="tab" data-target="{{ career.title | slugify | cgi_escape }}">
-          <svg class="text-green mr-4" width="28" height="28">
-            <use xlink:href="/icons/symbol-defs.svg#{{ career.icon }}"></use>
-          </svg> {{ career.title }}
-        </button>
+        <button type="button" class="text-left bg-white uppercase px-6 py-8 font-medium text-grey-darkest {% unless forloop.last %}sm:mb-1{% endunless %} w-full md:w-4/5 flex items-center" data-action="tab" data-target="{{ career.title | slugify | cgi_escape }}">{{ career.title }}</button>
       {% endfor %}
     </div>
 
@@ -68,7 +64,7 @@ layout: default
 
 
 
-<section class="bg-water bg-cover py-16 px-6">
+<section class="bg-cover py-16 px-6" data-lazy data-class="bg-water">
   <div class="mx-auto max-w-2xl">
     <h2 class="lined leading-tight text-4xl mb-6 text-black" data-action="colorize">Últimas Noticias</h2>
     <p class="mb-8">Lea nuestras últimas noticias sobre grandes eventos o anuncios interesantes.</p>

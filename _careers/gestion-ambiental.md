@@ -4,7 +4,6 @@ layout: career
 title: Gestión Ambiental
 description: Es un profesional con los conocimientos y las habilidades necesarias para aplicar las herramientas fundamentales en la evaluación y control de proyectos de gestión ambiental, con vocación social.
 
-icon: water
 thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/pages/gestion-ambiental.jpg
 
 curriculum:
