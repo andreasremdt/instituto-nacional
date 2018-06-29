@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="mx-auto max-w-2xl px-6 py-16 flex">
+  <div class="w-1/2">
+    <h2 class="lined uppercase text-black mb-6">Páginas</h2>
+    <ul>
+      {% for item in site.menus.header %}
+      <li>
+        <a href="{{ item.url }}" title="Ir a {{ item.title }}">{{ item.title }}</a>
+        {% if item.children %}
+        <ul>
+          {% for item in item.children %}
+          <li>
+            <a href="{{ item.url }}" title="Ir a {{ item.title }}">{{ item.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="w-1/2">
+    <h2 class="lined uppercase text-black mb-6">Entradas del Blog</h2>
+    <ul>
+      {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

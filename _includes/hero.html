@@ -14,7 +14,7 @@
 {% else %}
   <section class="bg-hero-small h-hero-small">
     <div class="text-center flex flex-col md:flex-row items-center justify-center md:justify-between h-full max-w-2xl mx-auto px-6 uppercase">
-      <h2 class="text-white text-3xl mb-3 md:mb-0 sm:text-5xl text-shadow" data-action="colorize">{% if page.layout == 'post' %}Blog{% else %}{{ page.title }}{% endif %}</h2>
+      <h1 class="text-white text-3xl mb-3 md:mb-0 sm:text-5xl text-shadow" data-action="colorize">{% if page.layout == 'post' %}Blog{% else %}{{ page.title }}{% endif %}</h1>
 
       {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
       
