@@ -4,7 +4,7 @@
   }
   
   .top-navigation li:hover ul {
-    display: flex;
+    display: block;
   }
 
   .top-navigation .last {
