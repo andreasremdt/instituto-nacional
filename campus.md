@@ -20,16 +20,22 @@ area_production:
       content: En nuestros viveros se producen plantas forestales que luego son establecidas en diferentes partes del país, pero especialmente en Jarabacoa. Hacen posible los programas de reforestación que se llevan a cabo cada año en el municipio y en muchas partes del país.
     - title: Área de compostaje
       icon: recycling
-      content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
+      content: Aquí se replica el ciclo natural de la materia orgánica. El objetivo primordial es clasificar, reusar y reciclar los residuos sólidos generados en el centro académico. Dentro de este concepto la materia organica es apilada, mezclando sus diferentes etapas de descomposición para lograr el producto final, que es el humus.
     - title: Producción a cielo abierto
       icon: open-air-production
-      content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum laudantium eaque officiis autem sunt omnis, doloribus quasi delectus? Doloribus, neque quaerat magnam at ad aut ipsam sequi autem?
+      content: Tenemos espacios habilitados para la producción de diversos rubros donde se conjugan técnicas como agroforestería, monocutivos y aprovechamiento de la materia orgánica en el manejo sostenible del suelo. Estas producciones son parte del aprendizaje del estudiante.
     - title: Arboretum
       icon: tree
-      content: Establecido en un área de x metros² y reuniendo especies arbóreas, latifoliadas y coníferas, endémicas, nativas e introducidas. Estas plantas se identifican botánicamente y su objetivo principal es académico.
+      content: Establecido en un área espacioso y reuniendo especies arbóreas, latifoliadas y coníferas, endémicas, nativas e introducidas. Estas plantas se identifican botánicamente y su objetivo principal es académico.
     - title: Invernaderos
       icon: greenhouse
       content: Un invernadero de tecnología media o de segunda con 544 metros², compuesto por materiales de hierro galvanizado, plástico y malla anti insectos. En este se establecen cultivos hortícolas o intensivos como el tomate, ají, pepino y, en algún momento el cilantro.
+    - title: Banco de Semillas
+      icon: wood
+      content: Establecido con el objetivo de recolectar, procesar y almacenar semillas forestales para ser utilizadas en las actividades de producción de plantas para los programas nacional y regional de reforestación.
+    - title: Área de la madera
+      icon: seeds
+      content: Incluye el procesado de la madera proveniente de cortes. De rolo a madera cortada, secado y utilización de esta para muebles y cualquier otro producto que se quiera lograr Consta de área de aserrío con sierra eléctrica, carro para el movimiento de los troncos, secadero solar y tina para tratamiento químico de la madera.
   
   images:
     - url: https://res.cloudinary.com/instituto-del-ambiente/image/upload/pages/fresas.jpg
@@ -71,24 +77,24 @@ area_forests:
   description: Una gran parte de nuestro campus se divide entre las siguientes áreas. Estas áreas son las que hacen que nuestro Instituto sea tan especial.
 
   items:
-    - title: Parque acuático
+    - title: Jardín acuático
       image: https://res.cloudinary.com/instituto-del-ambiente/image/upload/pages/parque-acuatico.jpg
-      description: El parque acuático es un sistema ecologico y una área ecoturistica que contiene una variedad de diferentes plantas y vidas acuaticas. Se encuentran diferentes especies de aves, peces, tortugas y más.
-    - title: Senderos
+      description: El parque acuático es un sistema ecologico y una área ecoturistica que contiene una variedad de diferentes plantas y vidas acuaticas. Se encuentran diferentes especies de aves, peces, tortugas y más. Aquí se plasma un modelo de manejo de microcuenca. Tomando como base una pequeña presa en la cañada La Baya para hacer posible el suministro de agua de riego para el vivero establecido en los terrenos del Instituto.
+    - title: Sendero Erik Ekman
       image: https://res.cloudinary.com/instituto-del-ambiente/image/upload/pages/senderos.jpg
-      description: Dentro del campus tenemos varios senderos que te guian sobre diferentes zonas tematicas. El objectivo de esos senderos es la explicación de los diferentes eco-sistemas, sus plantas endemicas y caracteristicas.
+      description: Con una longitud de aproximadamente 2.5 kilómetros, circunda el campus iniciando en la casa de estudiantes femeninas y bordeando La Cañada La Baya hasta llegar al club. Es un atractivo por el parque acuático y también tiene un alto interés académico, tanto por el bosque de galería como por los aspectos básicos de senderismo.
     - title: Áreas de investigación
       image: https://res.cloudinary.com/instituto-del-ambiente/image/upload/pages/area-de-investigacion.jpg
-      description: Estas áreas nos sirven para la ensenanza de las diferentes clases. Lo mejor que los estudiantes pueden hacer es practicar su conocimiento teorico en practica. Para eso hemos creados dichas áreas.
+      description: Estas áreas nos sirven para la ensenanza de las diferentes clases. Lo mejor que los estudiantes pueden hacer es practicar su conocimiento teorico en practica. Aunque todo el campus tiene alto interés académico, el Parque de Las Caobas se considera un rodal de investigación. Aquí se evalúa la interacción y el desarrollo de la especie Caoba Hondureña, introducida recientemente en el país.
     - title: Estación climatológica
       image: https://res.cloudinary.com/instituto-del-ambiente/image/upload/pages/estacion-climatologica.jpg
-      description: Donada por la fundación REDDOM, esta estación toma medidas diarias del clima en Jarabacoa. Esos datos van analizados en el Instituto y en ... 
+      description: El Instituto cuenta con dos estaciones de climatología. Una perteneciente al Instituto de Recursos Hidráulicos (INDRHRI) y la otra a Reddom. La de Reddom pertenece a un sistema moderno de registro climatológico, conectada a un servidor que traduce de manera puntual los datos y que pueden ser accesados en cualquier momento a nivel nacional. La del INDRHI es parte del sistema nacional de registros climatológicos y data de varias décadas. 
     - title: Parque de formas
       image: https://res.cloudinary.com/instituto-del-ambiente/image/upload/pages/parque-de-formas.jpg
-      description: lorem ipsum dolor sit amet, olor se tal.
+      description: Técnicamente se denomina topiario al arte de diseñar y preparar plantas mediante poda y conducción para formar figuras diferentes, tanto geométricas, de animales o de cosas sin vida como casa, bicicleta. Esta es una labor ejecutada a lo largo de la vida estudiantil donde se desarrolla el oficio de la poda y la imaginación.
     - title: Parque de la Caoba
       image: https://res.cloudinary.com/instituto-del-ambiente/image/upload/pages/parque-caoba.jpg
-      description: lorem ipsum dolor sit amet, olor se tal.
+      description: Desarrollado en el área de investigación del comportamiento de la Caoba hondureña. Aprovechando la sombra del lugar se establece un parque con plantas propias de climas húmedos y bancos y diseños con material reciclado convirtiendo este lugar de interés académico en un espacio de descanso y meditación.
 ---
 
 Nuestro instituto cuenta con un campus extraordinario. Diferentes ecosistemas, áreas temáticas representativas de la biodiversidad de todo el país, áreas para la producción de plantas y más...

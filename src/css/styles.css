@@ -3,6 +3,7 @@
 @import "utilities/reset";
 @import "utilities/backgrounds";
 @import "utilities/others";
+@import "utilities/fonts";
 
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
