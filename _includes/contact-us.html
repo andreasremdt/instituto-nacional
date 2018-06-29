@@ -16,10 +16,10 @@
         <p class="hidden">
           <label>Don’t fill this out if you're human: <input name="bot-field"></label>
         </p>
-        <input type="text" name="name" placeholder="Tu nombre..." class="input" required>
-        <input type="email" name="email" placeholder="Tu correo electrónico..." class="input" required>
-        <input type="tel" name="phone" placeholder="Tu número de teléfono..." class="input">
-        <select name="subject" class="input" required>
+        <input type="text" name="name" placeholder="Tu nombre..." class="input" required aria-label="Escribe tu nombre aquí" tabindex="1">
+        <input type="email" name="email" placeholder="Tu correo electrónico..." class="input" required aria-label="Escribe tu correo electrónico aquí" tabindex="1">
+        <input type="tel" name="phone" placeholder="Tu número de teléfono..." class="input" aria-label="Escribe tu número de teléfono aquí" tabindex="1">
+        <select name="subject" class="input" required aria-label="Elige tu asunto" tabindex="1">
           <option value="" disabled selected>Tu asunto...</option>
           <option value="Quiero aplicarme al Instituto como estudiante">Quiero aplicarme al Instituto como estudiante</option>
           <option value="Quiero hacer la Labor Social en el Institito">Quiero hacer la Labor Social en el Institito</option>
@@ -30,10 +30,10 @@
           <option value="Quiero preguntar algo general">Quiero preguntar algo general</option>
           <option value="Algo diferente">Algo diferente</option>
         </select>
-        <button type="submit" class="button float-right">Enviar</button>
+        <button type="submit" class="button float-right" tabindex="2">Enviar</button>
       </div>
       <div class="md:mx-3 md:w-1/2">
-        <textarea name="content" placeholder="Tu pregunta / mensaje..." rows="5" class="input h-full" required></textarea>
+        <textarea name="content" placeholder="Tu pregunta / mensaje..." rows="5" class="input h-full" required aria-label="Escribe tu mensaje aquí" tabindex="1"></textarea>
       </div>
     </form>
 
