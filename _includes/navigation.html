@@ -15,7 +15,7 @@
             <use xlink:href="/icons/symbol-defs.svg#arrow-down"></use>
           </svg>
 
-          <ul class="md:hidden md:absolute md:bg-green md:pin-l list-reset">
+          <ul class="md:hidden flex-col md:absolute md:bg-green md:pin-l list-reset">
             {% for item in item.children %}
               <li>
                 <a href="{{ item.url }}" title="Ir a {{ item.title }}" class="text-grey-darker md:text-grey-lighter block hover:text-green md:hover:text-white md:hover:bg-green-dark px-6 py-2 md:py-3 whitespace-no-wrap{% if subitem.url == page.url %} text-green{% endif %}">{{ item.title }}</a>
