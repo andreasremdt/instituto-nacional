@@ -9,8 +9,8 @@ fields:
   config:
     required: true
 - type: file
-  name: thumbnail
-  label: Thumbnail
-  description: 'Upload or select an existing image of the teacher '
+  name: image
+  label: Teacher's photo
+  description: Upload or set an image of the teacher
   config:
-    maxSize: '1'
+    maxSize: '2'
