@@ -11,11 +11,11 @@
   .no-webp .bg-video       { background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/backgrounds/video-bg.jpg") center no-repeat; }
   .webp .bg-video          { background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_55/backgrounds/video-bg.webp") center no-repeat; }
   
-  .no-webp .bg-water       { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/backgrounds/water.jpg") center no-repeat; }
-  .webp .bg-water          { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_55/backgrounds/water.webp") center no-repeat; }
+  .no-webp .bg-water       { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/backgrounds/water.jpg") center/cover no-repeat; }
+  .webp .bg-water          { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_55/backgrounds/water.webp") center/cover no-repeat; }
   
-  .no-webp .bg-forest-roof { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/backgrounds/forest-roof.jpg") center no-repeat; }
-  .webp .bg-forest-roof    { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_55/backgrounds/forest-roof.webp") center no-repeat; }
+  .no-webp .bg-forest-roof { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/backgrounds/forest-roof.jpg") center/cover no-repeat; }
+  .webp .bg-forest-roof    { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_55/backgrounds/forest-roof.webp") center/cover no-repeat; }
   
   .no-webp .bg-palm        { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_75/backgrounds/palm-leaf.jpg") bottom right/50% no-repeat; }
   .webp .bg-palm           { background: url("https://res.cloudinary.com/instituto-del-ambiente/image/upload/q_55/backgrounds/palm-leaf.webp") bottom right/50% no-repeat; }

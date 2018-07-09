@@ -3,9 +3,9 @@ layout: default
 ---
 
 <section class="py-16 px-6 max-w-2xl mx-auto">
-  <p class="sm:text-2xl text-green font-serif text-center">{{ page.intro.pretitle }}</p>
+  <p class="text-xl sm:text-2xl text-green font-serif text-center mb-3">{{ page.intro.pretitle }}</p>
   <h2 class="text-4xl md:text-5xl mb-8 text-black leading-tight text-center">{{ page.intro.title }}</h2>
-  <p class="text-center">{{ content | strip_html }}</p>
+  <p class="text-center text-lg md:text-xl font-light">{{ content | strip_html }}</p>
 
   <div class="lg:flex lg:-mx-4 lg:flex-wrap mt-8 pt-8">
     {% for service in page.servicios %}
@@ -39,9 +39,9 @@ layout: default
       </figure>
 
       <div class="{% if thecycle == 'odd' %}md:ml-8{% else %}md:mr-8{% endif %} md:w-3/5 z-20 px-6 py-16 md:p-0{% if thecycle == 'even' %} text-right{% endif %}">
-        <h3 class="text-black mb-6 text-3xl bg-white md:bg-transparent inline-block px-3 md:px-0">{{ characteristic.title }}</h3>
+        <h3 class="text-black mb-6 text-3xl bg-white md:bg-transparent inline-block px-4 py-1 md:px-0">{{ characteristic.title }}</h3>
 
-        <ul class="bg-white md:bg-transparent p-3 md:p-0 list-reset">
+        <ul class="bg-white md:bg-transparent p-4 md:p-0 list-reset">
           {% for item in characteristic.items %}
           <li class="mb-3">{{ item }}</li>
           {% endfor %}

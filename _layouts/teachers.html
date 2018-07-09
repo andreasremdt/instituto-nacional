@@ -3,7 +3,7 @@ layout: default
 ---
 
 <main class="py-16 px-6 max-w-2xl mx-auto text-center">
-  <p class="mb-12">{{ content | strip_html }}</p>
+  <p class="mb-12 text-lg md:text-xl font-light">{{ content | strip_html }}</p>
 
   <div class="flex flex-wrap -mx-4">
     {% for teacher in site.teachers %}
@@ -18,7 +18,7 @@ layout: default
               </noscript>
             </picture>
             <figcaption class="p-4">
-              <h3 class="text-black mb-4 text-xl font-normal">{{ teacher.title }}</h3>
+              <h3 class="text-black mb-4 text-xl font-medium">{{ teacher.title }}</h3>
               <p class="font-light">{{ teacher.content | strip_html }}</p>
             </figcaption>
           </figure>

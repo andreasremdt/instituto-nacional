@@ -4,7 +4,7 @@ layout: default
 
 <section class="px-6 py-16 bg-palm">
   <div class="mx-auto max-w-2xl">
-    <p class="font-light text-xl py-2 mb-8">{{ content | strip_html }}</p>
+    <p class="font-light text-lg md:text-xl py-2 mb-8">{{ content | strip_html }}</p>
 
     <ul>
       {% for activity in page.activities %}
@@ -16,7 +16,7 @@ layout: default
 
 <section class="py-16 bg-grey-lighter px-6">
   <div class="max-w-2xl mx-auto">
-    <h2 class="text-black mb-8 text-3xl">Opciones de Menú</h2>
+    <h2 class="text-black mb-8 text-3xl md:text-4xl leading-tight">Opciones de Menú</h2>
 
     {% for dish in page.dishes %}
       <table class="w-full mb-8">
@@ -47,7 +47,7 @@ layout: default
 </section>
 
 <section class="max-w-2xl mx-auto px-6 py-16">
-  <h2 class="text-black mb-8 text-3xl" data-action="colorize">Informaciones y costos</h2>
+  <h2 class="text-black mb-8 text-3xl md:text-4xl leading-tight" data-action="colorize">Informaciones y costos</h2>
 
   <ul class="mb-6">
     {% for item in page.information %}
