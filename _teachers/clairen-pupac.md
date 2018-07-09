@@ -1,6 +1,6 @@
 ---
 title: Clairen de Pupac
-image: https://res.cloudinary.com/instituto-del-ambiente/image/upload/teachers/clairen-pupac.jpg
+thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/teachers/clairen-pupac.jpg
 published: true
 ---
 

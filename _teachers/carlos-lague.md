@@ -1,6 +1,6 @@
 ---
 title: Carlos Lagué
-image: https://res.cloudinary.com/instituto-del-ambiente/image/upload/teachers/carlos-lague.jpg
+thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/teachers/carlos-lague.jpg
 published: true
 ---
 

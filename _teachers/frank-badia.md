@@ -1,6 +1,6 @@
 ---
 title: Frank Badía
-image: https://res.cloudinary.com/instituto-del-ambiente/image/upload/teachers/frank-badia.jpg
+thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/teachers/frank-badia.jpg
 published: true
 ---
 

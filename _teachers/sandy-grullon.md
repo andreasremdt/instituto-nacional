@@ -1,6 +1,6 @@
 ---
 title: Sandy Grullon
-image: https://res.cloudinary.com/instituto-del-ambiente/image/upload/teachers/sandy-grullon.jpg
+thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/teachers/sandy-grullon.jpg
 published: true
 ---
 

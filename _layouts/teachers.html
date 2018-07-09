@@ -11,10 +11,10 @@ layout: default
         <div class="sm:w-1/2 lg:w-1/3 px-4 mb-8 flex">
           <figure class="bg-grey-lighter">
             <picture>
-              <source data-lazy data-srcset="{% if teacher.image %}{{ teacher.image | replace: 'upload', 'upload/c_scale,q_60,w_550' | replace: '.jpg', '.webp' }}{% else %}https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/teachers/blank.webp{% endif %}" type="image/webp">
-              <img data-lazy data-src="{% if teacher.image %}{{ teacher.image | replace: 'upload', 'upload/c_scale,q_60,w_550' }}{% else %}https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/teachers/blank.png{% endif %}" alt="{{ teacher.name }}">
+              <source data-lazy data-srcset="{% if teacher.thumbnail %}{{ teacher.thumbnail | replace: 'upload', 'upload/c_scale,q_60,w_550' | replace: '.jpg', '.webp' }}{% else %}https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/teachers/blank.webp{% endif %}" type="image/webp">
+              <img data-lazy data-src="{% if teacher.thumbnail %}{{ teacher.thumbnail | replace: 'upload', 'upload/c_scale,q_60,w_550' }}{% else %}https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/teachers/blank.png{% endif %}" alt="{{ teacher.name }}">
               <noscript>
-                <img src="{% if teacher.image %}{{ teacher.image | replace: 'upload', 'upload/c_scale,q_60,w_550' }}{% else %}https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/teachers/blank.png{% endif %}" alt="{{ teacher.name }}">
+                <img src="{% if teacher.thumbnail %}{{ teacher.thumbnail | replace: 'upload', 'upload/c_scale,q_60,w_550' }}{% else %}https://res.cloudinary.com/instituto-del-ambiente/image/upload/c_scale,q_80,w_550/teachers/blank.png{% endif %}" alt="{{ teacher.name }}">
               </noscript>
             </picture>
             <figcaption class="p-4">

@@ -17,7 +17,7 @@ hero:
   subtitle: ¿Quieres estudiar en el área de medio ambiente y proteger tu mundo?<br>¡Empieza aquí!
 
 about:
-  pretitle: 377+ estudiantes graduados
+  pretitle: 326 estudiantes graduados
   title: Preparando técnicos desde 1968
 
 tiles:

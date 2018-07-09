@@ -1,6 +1,6 @@
 ---
 title: Elvis Lizardo
-image: https://res.cloudinary.com/instituto-del-ambiente/image/upload/teachers/elvis-lizardo.jpg
+thumbnail: https://res.cloudinary.com/instituto-del-ambiente/image/upload/teachers/elvis-lizardo.jpg
 published: true
 ---
 
